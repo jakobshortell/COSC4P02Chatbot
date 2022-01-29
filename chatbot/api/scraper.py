@@ -25,7 +25,7 @@ class Scraper:
 		]
 
 		for job in self.background_tasks:
-			self.scheduler.add_job(job, 'interval', seconds=5, timezone='EST')
+			self.scheduler.add_job(job, 'cron', hour=0, minute=0, timezone='EST')
 
 		self.scheduler.start()
 
