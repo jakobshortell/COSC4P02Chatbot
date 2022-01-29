@@ -4,6 +4,9 @@
 api/__pycache__/
 env/
 
+# database
+chatbot.db
+
 # dependencies
 /node_modules
 /.pnp
