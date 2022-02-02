@@ -1,14 +1,24 @@
-import React from "react";
+import React from 'react';
+
 import planet from '../assets/planet.png';
-import User from '../assets/User.png';
+import user from '../assets/user.png';
+
 export function Message({ author, content }) {
-	if (author == 'User') {
+
+	if (author === 'user') {
 		return (
-			<p class="box1 sb1"><img src={User} class="botimg" alt="User" />{content}</p>
-		)
-	}
-	return (
-		<><p class="box2 sb2" id="test"><img src={planet} class="botimg" alt="planet" />{content}</p></>
-	)
-	
-}
+			<p className='user-message-bubble sb1'>
+				<img src={user} className='user-icon' alt='User' />
+				{content}
+			</p>
+		);
+	} else {
+		return (
+			<p className='bot-message-bubble sb2'>
+				<img src={planet} className='user-icon' alt='planet' />
+				{content}
+			</p>
+		);
+	};
+
+};
