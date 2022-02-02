@@ -1,38 +1,29 @@
 
-.Applogo {
-	width: 420px;
-	pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.botimg {
+.App {
+    display: flex;
+  	flex-direction: column;
+  	align-items: center;
+    background-color: #282c34;
+	min-height: 100vh;
+  	font-size: calc(5px + 2vmin);
+}
+
+.logo {
+    width: 420px;
+}
+
+.user-icon {
     height: 40px;
     vertical-align: middle;
     padding-right: 10px; 
 }
 
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-  	
-  	font-size: calc(5px + 2vmin);
-  	color: white;
-}
-
-
-
-.App-link {
-    color: #61dafb;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
-.box {
-    
+.message-container {
     height: 200px;
     width: 400px;
     background: #628b89;
@@ -45,13 +36,11 @@
     overflow-y: scroll; 
     scroll-behavior: smooth;
 }
- 
- 
-
 
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #5d9696;
     border-radius: 5px;
@@ -66,7 +55,7 @@
     background: #555;
 }
 
-.box1 {
+.user-message-bubble {
     background: #5d9696;
     text-align: right;
     float: right;
@@ -96,9 +85,8 @@
     right: -20px;
     top: 10px;
 }
-  
 
-  .box2 {
+.bot-message-bubble {
     background: #3f8383;
     text-align: left;
     float: left;
@@ -114,11 +102,9 @@
     font-weight: 900;
     color: #fff;
     font-family: arial;
-    
-  }
+}
 
-
-  .sb2::before {
+.sb2::before {
     content: "";
     width: 0px;
     height: 0px;
@@ -129,18 +115,9 @@
     border-bottom: 5px solid transparent;
     left: -10px;
     top: 10px;
-  }
+}
 
-  .box3 {
-    background: #628b89;
-    text-align: center;
-    clear: both;
-    font-weight: 900;
-    color: #fff;
-    font-family: arial;
-  }
-
-  .chat {
+.input-container {
     width: 420px;
     height: 50px;
     background: #628b89;
@@ -149,15 +126,15 @@
     color: #fff;
     font-family: arial;
     position:relative;
-  }
+}
 
-  .input {
+.input-field {
     width: 300px;
     border-radius: 4px;
     padding: 8px;
-  }
+}
 
-  .button {
+.send-button {
     background-color: #3f8383;
     border: none;
     color: white;
@@ -168,14 +145,13 @@
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
+    border-radius: 8px;
+}
 
-  .button {border-radius: 8px;}
-
-  .button:hover {
+.send-button:hover {
     background-color: #5d9696;
     color: white;
-  }
+}
 
 
 
