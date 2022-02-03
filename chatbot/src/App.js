@@ -44,21 +44,33 @@ function App() {
 					'id': uuid.v4()
 			});
 		
-		fetch('/api', {
-			method: "POST",
-			headers: {'Content-Type' : 'application/json'},
-			body: JSON.stringify(message)
-			}).then((response) => {
+		const response = await fetch('/api', {
+		method: "POST",
+		headers: {'Content-Type' : 'application/json'},
+		body: JSON.stringify(message)
+		}).then((response) => {
 			if (response.ok) {
 				return response.json();
 			} else {
 				console.log(response.status)
 			}
-			})
-			addBotMessage();
+		}).then((data) => {
+			if (data !== {}) {
+				setMessages((previousMessages) => {
+					return [...previousMessages, {
+						'author': 'Bot',
+						'content': data.content,
+						'id': uuid.v4()
+					}];
+				});
+			}
+		})
 			userInput.current.value = null;
 		}
+
 	}
+
+
 
 	function addBotMessage() {
 
