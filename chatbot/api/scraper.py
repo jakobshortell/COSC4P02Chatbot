@@ -36,9 +36,24 @@ class Scraper:
 		clubs_list = self.browser.page.find_all('li', attrs={'class': 'filterable-item'})
 		output = {}
 
+		def decodeEmail(e):
+			'''
+			Decrypts emails obfuscated by Cloudflare
+
+			Author: sowa
+			Source: https://stackoverflow.com/questions/36911296/scraping-of-protected-email
+			'''
+			de = ""
+			k = int(e[:2], 16)
+
+			for i in range(2, len(e)-1, 2):
+				de += chr(int(e[i:i+2], 16)^k)
+
+			return de
+
 		for index, club in enumerate(clubs_list):
 			club_name = club.find('h3').text
-			club_contact = club.find('span').text
+			club_contact = decodeEmail(club.find('span')['data-cfemail'])	
 
 			# Check for clubs without descriptions
 			try:
