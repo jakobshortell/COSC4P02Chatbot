@@ -10,6 +10,7 @@ const uuid = require('uuid');
 
 function App() {
 
+	const userInput = useRef();
 	const [messages, setMessages] = useState([
 		{
 			'author': 'bot',
@@ -17,7 +18,6 @@ function App() {
 			'id': uuid.v4()
 		}
 	]);
-	const userInput = useRef();
 
 	function addMessage(message) {
 		setMessages((previousMessages) => {
@@ -30,31 +30,43 @@ function App() {
 		setTimeout(scroll, 200)
 	}
 
-	
-
 	async function addUserMessage() {
 
 		const message = userInput.current.value
 
 		if (message !== '') {
 			addMessage({
-			
-					'author': 'user',
-					'content': message,
-					'id': uuid.v4()
+				'author': 'user',
+				'content': message,
+				'id': uuid.v4()
 			});
-		
-		const response = await fetch('/api', {
-		method: "POST",
-		headers: {'Content-Type' : 'application/json'},
-		body: JSON.stringify(message)
+		};
+
+		userInput.current.value = null;
+		addBotMessage(message);
+
+	}
+
+
+
+	function addBotMessage(userMessage) {
+
+		fetch('/api', {
+			method: "POST",
+			headers: {'Content-Type' : 'application/json'},
+			body: JSON.stringify(userMessage)
 		}).then((response) => {
+
+			// Check response
 			if (response.ok) {
 				return response.json();
 			} else {
 				console.log(response.status)
-			}
+			};
+
 		}).then((data) => {
+
+			// Create bot message
 			if (data !== {}) {
 				setMessages((previousMessages) => {
 					return [...previousMessages, {
@@ -63,36 +75,7 @@ function App() {
 						'id': uuid.v4()
 					}];
 				});
-			}
-		})
-			userInput.current.value = null;
-		}
-
-	}
-
-
-
-	function addBotMessage() {
-
-		fetch('/api').then((response) => {
-
-			// Check response
-			if (response.ok) {
-				return response.json();
-			} else {
-				console.log(response.status)
-			}
-
-		}).then((data) => {
-
-			// Handle response
-			if (data !== {}) {
-				addMessage({
-					'author': 'bot',
-					'content': data.content,
-					'id': uuid.v4()
-				});
-			}
+			};
 
 		});
 
