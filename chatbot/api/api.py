@@ -3,18 +3,12 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route('/api', methods=['POST', 'GET'])
+@app.route('/api', methods=['POST'])
 def main():
-    message = request.get_json()
-    stringmessage = str(message)
-
-    if stringmessage=="None":
-        return {
-            'content': 'This is a test response. For testing purposes.'
-        }
-
+    request_data = request.get_json()
+    user_message = request_data['userMessage']
     return {
-        'content': stringmessage.upper()
+        'content': user_message.upper()
     }
 
 
