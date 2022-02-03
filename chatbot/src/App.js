@@ -30,18 +30,33 @@ function App() {
 		setTimeout(scroll, 200)
 	}
 
-	function addUserMessage() {
-		const message = userInput.current.value;
+	
+
+	async function addUserMessage() {
+
+		const message = userInput.current.value
 
 		if (message !== '') {
 			addMessage({
-				'author': 'user',
-				'content': message,
-				'id': uuid.v4()
+			
+					'author': 'user',
+					'content': message,
+					'id': uuid.v4()
 			});
-
+		
+		fetch('/api', {
+			method: "POST",
+			headers: {'Content-Type' : 'application/json'},
+			body: JSON.stringify(message)
+			}).then((response) => {
+			if (response.ok) {
+				return response.json();
+			} else {
+				console.log(response.status)
+			}
+			})
+			addBotMessage();
 			userInput.current.value = null;
-			addBotMessage()
 		}
 	}
 
