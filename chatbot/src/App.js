@@ -47,14 +47,14 @@ function App() {
 
 	}
 
-
-
 	function addBotMessage(userMessage) {
 
 		fetch('/api', {
 			method: "POST",
 			headers: {'Content-Type' : 'application/json'},
-			body: JSON.stringify(userMessage)
+			body: JSON.stringify({
+				'userMessage': userMessage
+			})
 		}).then((response) => {
 
 			// Check response
