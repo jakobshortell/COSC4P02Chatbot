@@ -5,7 +5,7 @@ app = Flask(__name__)
 scraper = Scraper()
 
 
-@app.route('/api', methods=['POST'])
+@app.route('/api', methods=['POST', 'GET'])
 def main():
     '''The main enpoint for requests made to the chatbot.'''
     
