@@ -7,6 +7,8 @@ scraper = Scraper()
 
 @app.route('/api', methods=['POST'])
 def main():
+    '''The main enpoint for requests made to the chatbot.'''
+    
     request_data = request.get_json()
     user_message = request_data['userMessage']
 
@@ -20,7 +22,6 @@ def main():
         response['content'] = 'Here are all the clubs at Brock:\n\n' + ', '.join(club_names)
 
     return response
-
 
 if __name__ == '__main__':
     app.run(debug=True)
