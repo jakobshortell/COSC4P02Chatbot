@@ -7,18 +7,18 @@ export function Message({ author, content }) {
 
 	if (author === 'user') {
 		return (
-			<p className='user-message-bubble sb1'>
-				<img src={user} className='user-icon' alt='User' />
+			<p className='user-message-bubble'>
+				<img src={user} className='message-icon' alt='user-icon' />
 				{content}
 			</p>
-		);
+		)
 	} else {
 		return (
-			<p className='bot-message-bubble sb2'>
-				<img src={planet} className='user-icon' alt='planet' />
+			<p className='bot-message-bubble'>
+				<img src={planet} className='message-icon' alt='bot-icon' />
 				{content}
 			</p>
-		);
-	};
+		)
+	}
 
-};
+}

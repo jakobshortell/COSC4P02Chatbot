@@ -17,7 +17,7 @@ function App() {
 			'content': 'I\'m a Bot, ask me a question!',
 			'id': uuid.v4()
 		}
-	]);
+	])
 
 	function addMessage(message) {
 		setMessages((previousMessages) => {
@@ -25,8 +25,8 @@ function App() {
 				'author': message.author,
 				'content': message.content,
 				'id': message.id
-			}];
-		});
+			}]
+		})
 		setTimeout(scroll, 200)
 	}
 
@@ -39,11 +39,11 @@ function App() {
 				'author': 'user',
 				'content': message,
 				'id': uuid.v4()
-			});
+			})
 			
-			userInput.current.value = null;
-			addBotMessage(message);
-		};
+			userInput.current.value = null
+			addBotMessage(message)
+		}
 
 	}
 
@@ -73,17 +73,17 @@ function App() {
 						'author': 'Bot',
 						'content': data.content,
 						'id': uuid.v4()
-					}];
-				});
-			};
+					}]
+				})
+			}
 
-		});
+		})
 
 	}
 
 	function scroll() {
-		var chatHistory = document.getElementById('scroll');
-		chatHistory.scrollTop = chatHistory.scrollHeight;
+		var chatHistory = document.getElementById('scroll')
+		chatHistory.scrollTop = chatHistory.scrollHeight
 	}
 
 	return (
@@ -92,8 +92,8 @@ function App() {
 			<MessageContainer messages={messages} />
 			<Input userInput={userInput} onClick={addUserMessage} />
 		</div>
-	);
+	)
 
-};
+}
 
 export default App;

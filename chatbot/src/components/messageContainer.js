@@ -12,6 +12,6 @@ export function MessageContainer({ messages }) {
 				})
 			}
 		</div>
-	);
+	)
 
-};
+}

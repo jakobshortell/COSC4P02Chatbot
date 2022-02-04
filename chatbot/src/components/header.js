@@ -8,6 +8,6 @@ export function Header() {
 		<header className='chatbot-header'>
 			<img src={logo} className='logo' alt='logo' />
 		</header>
-	);
+	)
 
-};
+}
