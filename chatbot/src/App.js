@@ -40,10 +40,10 @@ function App() {
 				'content': message,
 				'id': uuid.v4()
 			});
+			
+			userInput.current.value = null;
+			addBotMessage(message);
 		};
-
-		userInput.current.value = null;
-		addBotMessage(message);
 
 	}
 
