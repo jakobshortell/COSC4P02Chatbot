@@ -2,12 +2,14 @@ from flask import Flask, request
 
 from scrapers.scheduler import ScrapeScheduler
 from scrapers.clubs import ClubScraper
+from scrapers.departments import DepartmentScraper
 
 app = Flask(__name__)
 
 # Instantiate scheduler and pass in instances of scrapers
 scheduler = ScrapeScheduler(scrapers={
-    'clubs': ClubScraper()
+    'clubs': ClubScraper(),
+    'departments': DepartmentScraper()
 })
 scrapers = scheduler.get_scrapers()
 
@@ -15,7 +17,6 @@ scrapers = scheduler.get_scrapers()
 @app.route('/api', methods=['POST', 'GET'])
 def main():
     '''The main enpoint for requests made to the chatbot.'''
-
     request_data = request.get_json()
     user_message = request_data['userMessage']
 
@@ -23,10 +24,14 @@ def main():
         'content': 'I am sorry. I don\'t know what you are asking.'
     }
 
+    # Print an attribute of the first element in the response as a test
     if 'club' in user_message.lower():
         clubs = scrapers['clubs'].get()
-        club_names = [clubs[i]['name'] for i in clubs]
-        response['content'] = 'Here are all the clubs at Brock:\n\n' + ', '.join(club_names)
+        response['content'] = clubs[0]['name']
+
+    elif 'department' in user_message.lower():
+        departments = scrapers['departments'].get()
+        response['content'] = departments[0]['name']
 
     return response
 
