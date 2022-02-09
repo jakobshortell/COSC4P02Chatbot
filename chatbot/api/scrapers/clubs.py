@@ -15,10 +15,12 @@ class ClubScraper:
 				CREATE TABLE IF NOT EXISTS clubs (
 					name TEXT, 
 					email TEXT, 
-					description TEXT
+					description TEXT,
+					PRIMARY KEY (name)
 				)
 				'''
 			)
+			conn.commit()
 
 	def fetch(self):
 		'''Fetches club data from Brock and stores it in the database.'''
@@ -80,27 +82,36 @@ class ClubScraper:
 
 	def get_name(self, club):
 		'''Extracts the name from a club.'''
-		return club.find('h3').text
+		try:
+			return club.find('h3', attrs={
+				'class': 'name'
+			}).text
+		except:
+			return None
 
 	def get_email(self, club):
 		'''Extracts the email from a club.'''
-		return self.decodeEmail(club.find('span')['data-cfemail'])
+		try:
+			return self.decodeEmail(club.find('span', attrs={
+				'class': '__cf_email__'
+			})['data-cfemail'])
+		except:
+			return None
 
 	def get_description(self, club):
 		'''Extracts the description from a club.'''
 		try:
-			club_description = club.find('p').text
+			return club.find('p').text
 		except AttributeError:
-			club_description = None
-
-		return club_description
+			return None
 
 	def store_clubs(self, clubs):
 		'''Adds the club to the database.'''
 		with self.db_conn as conn:
 			for index in clubs:
-				conn.execute('''
-					INSERT INTO clubs 
+				conn.execute(
+					'''
+					INSERT OR REPLACE INTO clubs 
 					VALUES (?, ?, ?)
 					''', 
 					(
@@ -109,6 +120,7 @@ class ClubScraper:
 						clubs[index]['description']
 					)
 				)
+				conn.commit()
 
 	def get_clubs(self):
 		'''Gets all the clubs from the database and returns them as a dictionary.'''
