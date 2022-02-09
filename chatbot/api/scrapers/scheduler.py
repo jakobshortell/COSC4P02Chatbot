@@ -6,6 +6,7 @@ class ScrapeScheduler:
 
 		self._scrapers = {}
 
+		# If any scrapers have been passed in, create a scheduler and add them
 		if scrapers:
 			self._scheduler = BackgroundScheduler()
 

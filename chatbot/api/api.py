@@ -5,6 +5,7 @@ from scrapers.clubs import ClubScraper
 
 app = Flask(__name__)
 
+# Instantiate scheduler and pass in instances of scrapers
 scheduler = ScrapeScheduler(scrapers={
     'clubs': ClubScraper()
 })
