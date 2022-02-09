@@ -77,16 +77,16 @@ class ClubScraper:
 		return output
 
 	def decodeEmail(self, e):
-			'''
-			Decrypts emails obfuscated by Cloudflare
+		'''
+		Decrypts emails obfuscated by Cloudflare
 
-			Author: sowa
-			Source: https://stackoverflow.com/questions/36911296/scraping-of-protected-email
-			'''
-			de = ""
-			k = int(e[:2], 16)
+		Author: sowa
+		Source: https://stackoverflow.com/questions/36911296/scraping-of-protected-email
+		'''
+		de = ""
+		k = int(e[:2], 16)
 
-			for i in range(2, len(e) - 1, 2):
-				de += chr(int(e[i:i + 2], 16) ^ k)
+		for i in range(2, len(e) - 1, 2):
+			de += chr(int(e[i:i + 2], 16) ^ k)
 
-			return de
+		return de
