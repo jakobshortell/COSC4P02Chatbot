@@ -96,7 +96,7 @@ class DepartmentScraper:
 		try:
 			return department.find('div', attrs={
 				'class': 'email'
-			}).find('a').text
+			}).find('a').text.lower()
 		except:
 			return None
 

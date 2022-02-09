@@ -94,7 +94,7 @@ class ClubScraper:
 		try:
 			return self.decodeEmail(club.find('span', attrs={
 				'class': '__cf_email__'
-			})['data-cfemail'])
+			})['data-cfemail']).lower()
 		except:
 			return None
 
