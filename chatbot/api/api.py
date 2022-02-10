@@ -3,13 +3,15 @@ from flask import Flask, request
 from scrapers.scheduler import ScrapeScheduler
 from scrapers.clubs import ClubScraper
 from scrapers.departments import DepartmentScraper
+from scrapers.importantDates import ImportantDatesScraper
 
 app = Flask(__name__)
 
 # Instantiate scheduler and pass in instances of scrapers
 scheduler = ScrapeScheduler(scrapers={
     'clubs': ClubScraper(),
-    'departments': DepartmentScraper()
+    'departments': DepartmentScraper(),
+    'dates' : ImportantDatesScraper()
 })
 scrapers = scheduler.get_scrapers()
 
@@ -32,6 +34,10 @@ def main():
     elif 'department' in user_message.lower():
         departments = scrapers['departments'].get()
         response['content'] = departments[0]['name']
+
+    elif 'dates' in user_message.lower():
+        dates = scrapers['dates'].get()
+        response['content'] = dates[1]['Occasion'] + " " + dates[1]['Date']
 
     return response
 
