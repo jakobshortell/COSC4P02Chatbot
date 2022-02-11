@@ -1,0 +1,29 @@
+/* Header Styles */
+
+.chatbotHeader {
+    width: 100vw;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    background-color: var(--brock-primary);
+}
+
+.logo {
+    height: var(--header-height);
+    width: calc(var(--header-height) * 2);
+    padding: calc(var(--header-height) * 0.3);
+    object-fit: cover;
+    object-position: 0 60%;
+}
+
+.settings {
+    height: calc(var(--header-height) / 2);
+    width: calc(var(--header-height) / 2);
+    margin-left: auto;
+    padding: calc(var(--header-height) * .3);
+}
+
+.settings:hover {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
