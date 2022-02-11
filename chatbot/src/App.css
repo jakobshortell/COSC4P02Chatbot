@@ -1,22 +1,56 @@
-
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
+:root {
+    --brock-primary: #cc0000;
+    --brock-secondary: #ececec;
+    --brock-background: #ffffff;
+    --header-height: 6vh;
+    --input-height: 6vh;
+}
+
+/* App Container */
+
 .App {
+    height: 100vh;
     display: flex;
   	flex-direction: column;
-  	align-items: center;
-    background-color: #282c34;
-    min-height: 100vh;
-  	font-size: calc(5px + 2vmin);
+}
+
+/* Header */
+
+.chatbot-header {
+    width: 100vw;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    background-color: var(--brock-primary);
 }
 
 .logo {
-    width: 420px;
-    border-radius: 5px;
+    height: var(--header-height);
+    width: calc(var(--header-height) * 2);
+    padding: calc(var(--header-height) * 0.3);
+    object-fit: cover;
+    object-position: 0 60%;
 }
+
+.settings {
+    height: calc(var(--header-height) / 2);
+    width: calc(var(--header-height) / 2);
+    margin-left: auto;
+    padding: calc(var(--header-height) * .3);
+}
+
+.settings:hover {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+/* Message Container */
 
 .message-icon {
     height: 40px;
@@ -119,43 +153,43 @@
     top: 10px;
 }
 
+/* Input */
+
 .input-container {
-    margin: 5px;
-    width: 420px;
-    height: 50px;
-    background: #cd0000;
-    text-align: center;
-    font-weight: 900;
-    color: #fff;
-    font-family: arial;
-    position:relative;
-    border-radius: 5px;
+    width: 100vw;
+    padding: calc(var(--input-height) * 0.1);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .input-field {
-    width: 300px;
-    border-radius: 4px;
-    padding: 8px;
+    height: var(--input-height);
+    width: 60vw;
+    padding: calc(var(--input-height) * 0.3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: none;
+    border: solid 1px var(--brock-secondary);
+    border-radius: 25px;
+    resize: none;
 }
 
 .send-button {
-    background-color: #7e3131;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
+    height: calc(var(--input-height) * .8);
+    width: calc(var(--input-height) * .8);
+    margin-left: calc(var(--input-height) * -2);
+    border: solid 1px var(--brock-secondary);
+    border-radius: 50%;
+    background-color: var(--brock-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.send-button:hover {
-    background-color: #555;
-    color: white;
+.send-button-image {
+    height: calc(var(--input-height) / 2);
+    width: calc(var(--input-height) / 2);;
 }
-
-
-

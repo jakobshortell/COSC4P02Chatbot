@@ -6,11 +6,13 @@ export function MessageContainer({ messages }) {
 
 	return (
 		<div className='message-container' id='scroll'>
-			{
-				messages.map((message) => {
-					return <Message key={message.id} author={message.author} content={message.content} />
-				})
-			}
+			<ul>
+				{
+					messages.map((message) => {
+						return <Message key={message.id} author={message.author} content={message.content} />
+					})
+				}
+			</ul>
 		</div>
 	)
 
