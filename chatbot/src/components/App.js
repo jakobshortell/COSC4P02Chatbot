@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
-import './App.css';
+import { useRef, useState } from 'react';
 
-import { MessageContainer } from './components/messageContainer';
-import { Header } from './components/header';
-import { Input } from './components/input';
+import AppCSS from '../css/App.module.css';
+
+import { MessageContainer } from './MessageContainer';
+import { Header } from './Header';
+import { Input } from './Input';
 
 const uuid = require('uuid');
 
@@ -87,10 +88,10 @@ function App() {
 	}
 
 	return (
-		<div className='App'>
+		<div className={ AppCSS.app }>
 			<Header />
-			<MessageContainer messages={messages} />
-			<Input userInput={userInput} onClick={addUserMessage} />
+			<MessageContainer messages={ messages } />
+			<Input userInput={ userInput } onClick={ addUserMessage } />
 		</div>
 	)
 
