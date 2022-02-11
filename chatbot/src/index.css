@@ -8,6 +8,7 @@
     --brock-primary: #cc0000;
     --brock-secondary: #ececec;
     --brock-background: #ffffff;
+    --brock-secondary-background: #f8f8f8;
     --header-height: 6vh;
     --input-height: 4vh;
 }
@@ -22,8 +23,6 @@
 
 .message-container {
     height: 100vh;
-    width: 400px;
-    background: #e0e0e0;
     text-align: center;
     clear: both;
     padding: 10px;
