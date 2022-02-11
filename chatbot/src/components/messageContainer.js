@@ -9,7 +9,7 @@ export function MessageContainer({ messages }) {
 			<ul>
 				{
 					messages.map((message) => {
-						return <Message key={message.id} author={message.author} content={message.content} />
+						return <Message key={ message.id } author={ message.author } content={ message.content } />
 					})
 				}
 			</ul>

@@ -9,8 +9,8 @@ export function Header() {
 
 	return (
 		<header className={ HeaderCSS.chatbotHeader }>
-			<img className={ HeaderCSS.logo } src={brockLogo} alt='logo' />
-			<img className={ HeaderCSS.settings } src={settingsIcon} alt='settings' />
+			<img className={ HeaderCSS.logo } src={ brockLogo } alt='logo' />
+			<img className={ HeaderCSS.settings } src={ settingsIcon } alt='settings' />
 		</header>
 	)
 
