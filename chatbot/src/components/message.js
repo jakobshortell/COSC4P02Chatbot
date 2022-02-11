@@ -7,17 +7,17 @@ export function Message({ author, content }) {
 
 	if (author === 'user') {
 		return (
-			<div className='user-message-bubble'>
+			<li className='user-message-bubble'>
 				<img src={user} className='message-icon' alt='user-icon' />
 				{content}
-			</div>
+			</li>
 		)
 	} else {
 		return (
-			<div className='bot-message-bubble'>
+			<li className='bot-message-bubble'>
 				<img src={planet} className='message-icon' alt='bot-icon' />
 				{content}
-			</div>
+			</li>
 		)
 	}
 
