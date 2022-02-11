@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Message } from './message';
+import { Message } from './Message';
 
 export function MessageContainer({ messages }) {
 
