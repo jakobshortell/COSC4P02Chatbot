@@ -28,7 +28,7 @@ function App() {
 				'id': message.id
 			}]
 		})
-		setTimeout(scroll, 200)
+		scroll()
 	}
 
 	async function addUserMessage() {
@@ -69,12 +69,10 @@ function App() {
 
 			// Create bot message
 			if (data !== {}) {
-				setMessages((previousMessages) => {
-					return [...previousMessages, {
-						'author': 'Bot',
-						'content': data.content,
-						'id': uuid.v4()
-					}]
+				addMessage({
+					'author': 'bot',
+					'content': data.content,
+					'id': uuid.v4()
 				})
 			}
 
