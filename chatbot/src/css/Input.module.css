@@ -15,7 +15,7 @@
     padding: calc(var(--input-height) * .2);
     border: none;
     border-radius: 1px;
-    background-color: var(--brock-secondary-background);
+    background-color: var(--brock-secondary);
     resize: none;
     outline: none;
 }
