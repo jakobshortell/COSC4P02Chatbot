@@ -1,8 +1,8 @@
 /* Input Styles */
 
 .inputContainer{
+    height: var(--input-height);
     width: 100vw;
-    padding: 10px;
     position: fixed;
     bottom: 0;
     display: flex;
@@ -12,9 +12,7 @@
 
 .inputField {
     width: 60vw;
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    padding: calc(var(--input-height) * .2);
     border: none;
     border-radius: 1px;
     background-color: var(--brock-secondary-background);
@@ -23,8 +21,8 @@
 }
 
 .sendButton {
-    height: calc(3rem + 2px);
-    width: calc(3rem + 2px);
+    height: calc(1.5rem + (var(--input-height) * .2) * 2);
+    width: calc(1.5rem + (var(--input-height) * .2) * 2);
     background-color: var(--brock-primary);
     border: none;
     border-radius: 1px;
