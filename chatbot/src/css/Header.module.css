@@ -11,9 +11,9 @@
 .logo {
     height: var(--header-height);
     width: calc(var(--header-height) * 2);
-    padding: calc(var(--header-height) * 0.3);
+    padding: calc(var(--header-height) * 0.2);
     object-fit: cover;
-    object-position: 0 60%;
+    object-position: 0 59%;
 }
 
 .settings {
