@@ -1,11 +1,11 @@
 /* Header Styles */
 
 .chatbotHeader {
-    width: 100vw;
     height: var(--header-height);
+    width: 100vw;
+    background-color: var(--brock-primary);
     display: flex;
     align-items: center;
-    background-color: var(--brock-primary);
 }
 
 .logo {
@@ -17,8 +17,8 @@
 }
 
 .settings {
-    height: calc(var(--header-height) / 2);
-    width: calc(var(--header-height) / 2);
+    height: calc(var(--header-height) * .4);
+    width: calc(var(--header-height) * .4);
     margin-left: auto;
     padding: calc(var(--header-height) * .3);
 }
