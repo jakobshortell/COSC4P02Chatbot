@@ -2,23 +2,35 @@ import React from 'react';
 
 import MessageCSS from '../css/Message.module.css';
 
-import planet from '../assets/planet.png';
-import user from '../assets/user.png';
+import botIcon from '../assets/brock.png';
+import userIcon from '../assets/user.png';
 
-export function Message({ author, content }) {
+export function Message({ author, content, time }) {
 
 	if (author === 'user') {
 		return (
-			<li className={ MessageCSS.userMessageBubble }>
-				<img className={ MessageCSS.messageIcon } src={ user } alt='user-icon' />
-				<span className='messageContent'>{ content }</span>
+			<li className={ MessageCSS.userMessage }>
+				<img className={ MessageCSS.userMessageIcon } src={ userIcon } alt='user-icon' />
+				<div className={ MessageCSS.messageBubble }>
+					<div>
+						<span className={ MessageCSS.userName }>You</span>
+						<span className={ MessageCSS.time }>{ time }</span>
+					</div>
+					<span className={ MessageCSS.messageContent }>{ content }</span>
+				</div>
 			</li>
 		)
 	} else {
 		return (
-			<li className={ MessageCSS.botMessageBubble }>
-				<img className={ MessageCSS.messageIcon } src={ planet } alt='bot-icon' />
-				<span className='messageContent'>{ content }</span>
+			<li className={ MessageCSS.botMessage }>
+				<img className={ MessageCSS.botMessageIcon } src={ botIcon } alt='bot-icon' />
+				<div className={ MessageCSS.messageBubble }>
+					<div>
+						<span className={ MessageCSS.botName }>Brock University</span>
+						<span className={ MessageCSS.time }>{ time }</span>
+					</div>
+					<span className={ MessageCSS.messageContent }>{ content }</span>
+				</div>
 			</li>
 		)
 	}
