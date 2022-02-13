@@ -9,27 +9,27 @@ export function Message({ author, content, time }) {
 
 	if (author === 'user') {
 		return (
-			<li className={ MessageCSS.userMessage }>
-				<img className={ MessageCSS.userMessageIcon } src={ userIcon } alt='user-icon' />
-				<div className={ MessageCSS.messageBubble }>
+			<li className={` ${MessageCSS.message} ${MessageCSS.userMessage} `}>
+				<img className={ MessageCSS.messageIcon } src={ userIcon } alt='user-icon' />
+				<div className={` ${MessageCSS.messageBubble} ${MessageCSS.userMessageBubble} `}>
 					<div>
-						<span className={ MessageCSS.userName }>You</span>
+						<span className={` ${MessageCSS.userName} ${MessageCSS.name} `}>You</span>
 						<span className={ MessageCSS.time }>{ time }</span>
 					</div>
-					<span className={ MessageCSS.messageContent }>{ content }</span>
+					<span>{ content }</span>
 				</div>
 			</li>
 		)
 	} else {
 		return (
-			<li className={ MessageCSS.botMessage }>
-				<img className={ MessageCSS.botMessageIcon } src={ botIcon } alt='bot-icon' />
-				<div className={ MessageCSS.messageBubble }>
+			<li className={` ${MessageCSS.message} ${MessageCSS.botMessage} `}>
+				<img className={ MessageCSS.messageIcon } src={ botIcon } alt='bot-icon' />
+				<div className={` ${MessageCSS.messageBubble} ${MessageCSS.botMessageBubble} `}>
 					<div>
-						<span className={ MessageCSS.botName }>Brock University</span>
+						<span className={` ${MessageCSS.botName} ${MessageCSS.name} `}>Brock University</span>
 						<span className={ MessageCSS.time }>{ time }</span>
 					</div>
-					<span className={ MessageCSS.messageContent }>{ content }</span>
+					<span>{ content }</span>
 				</div>
 			</li>
 		)
