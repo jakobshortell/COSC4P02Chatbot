@@ -1,20 +1,5 @@
 /* Global Styles */
 
-:root {
-
-    /* Aesthetics */
-    --brock-primary: #cc0000;
-    --brock-secondary: #f8f8f8;
-    --brock-font: Bliss;
-
-    /* Component Sizes */
-    --header-height: 4rem;
-    --input-height: 5rem;
-    --input-width: 60vw;
-    --icon-height: 2.5rem;
-    
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +7,26 @@
     font-size: 16px;
     font-family: var(--brock-font);
     line-height: 1.5;
+}
+
+body {
+    background-color: var(--brock-background);
+}
+
+:root {
+
+    /* Aesthetics */
+    --brock-primary: #cc0000;
+    --brock-secondary: #f8f8f8;
+    --brock-background: #ffffff;
+    --brock-font: Bliss;
+
+    /* Component Sizes */
+    --header-height: 4rem;
+    --input-height: 5rem;
+    --input-width: 60vw;
+    --icon-height: 2.5rem; /* Not used when icons have display: none */
+    
 }
 
 @font-face {
