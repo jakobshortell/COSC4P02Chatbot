@@ -10,6 +10,8 @@
     /* Component Sizes */
     --header-height: 4rem;
     --input-height: 5rem;
+    --input-width: 60vw;
+    --icon-height: 2.5rem;
     
 }
 
@@ -24,5 +26,12 @@
 
 @font-face {
     font-family: Bliss;
+    font-weight: 400;
     src: url(./fonts/BlissProRegular.otf);
+}
+
+@font-face {
+    font-family: Bliss;
+    font-weight: 700;
+    src: url(./fonts/BlissProBold.otf);
 }
