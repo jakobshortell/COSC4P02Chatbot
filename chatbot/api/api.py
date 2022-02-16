@@ -37,7 +37,7 @@ def main():
 
     elif 'dates' in user_message.lower():
         dates = scrapers['dates'].get()
-        response['content'] = dates[1]['Occasion'] + " " + dates[1]['Date']
+        response['content'] = dates[0]['session']
 
     return response
 
