@@ -22,11 +22,12 @@ def main():
     request_data = request.get_json()
     user_message = request_data['userMessage']
 
+    # Default response
     response = {
         'content': 'I am sorry. I don\'t know what you are asking.'
     }
 
-    # Print an attribute of the first element in the response as a test
+    # Output an attribute of the first element in the response as a test
     if 'club' in user_message.lower():
         clubs = scrapers['clubs'].get()
         response['content'] = clubs[0]['name']
