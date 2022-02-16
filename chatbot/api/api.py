@@ -35,7 +35,7 @@ def main():
         departments = scrapers['departments'].get()
         response['content'] = departments[0]['name']
 
-    elif 'dates' in user_message.lower():
+    elif 'date' in user_message.lower():
         dates = scrapers['dates'].get()
         response['content'] = dates[0]['session']
 
