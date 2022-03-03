@@ -3,8 +3,10 @@ from scrapers.departments import DepartmentScraper
 from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
+from scrapers.exams import ExamScraper
 
 scrapers = [
+	ExamScraper(),
 	ClubScraper(),
 	DepartmentScraper(),
 	ImportantDatesScraper(),

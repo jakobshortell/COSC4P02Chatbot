@@ -5,6 +5,7 @@ from scrapers.departments import DepartmentScraper
 from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
+from scrapers.exams import ExamScraper
 from bot import Bot
 import random
 
@@ -16,7 +17,8 @@ scrapers = {
     'departments': DepartmentScraper(),
     'dates': ImportantDatesScraper(),
     'courses': CoursesScraper(),
-    'programs': ProgramScraper()
+    'programs': ProgramScraper(),
+    'exams': ExamScraper()
 }
 
 
@@ -42,6 +44,10 @@ def main():
         response['content'] = departments[msg[0]]['name'] + ": " + departments[msg[0]]['link']
 
     elif 'dates' in msg[1]:
+        dates = scrapers['dates'].get()
+        response['content'] = dates[msg[0]]['occasion'] + " " + dates[msg[0]]['date']
+
+    elif 'exam' in msg[1]:
         dates = scrapers['dates'].get()
         response['content'] = dates[msg[0]]['occasion'] + " " + dates[msg[0]]['date']
 

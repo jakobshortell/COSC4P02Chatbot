@@ -1,7 +1,8 @@
 import sqlite3
 from requests_html import HTMLSession
 
-class CoursesScraper:
+
+class ExamScraper:
 
     def __init__(self):
         self.session = HTMLSession()
@@ -21,18 +22,16 @@ class CoursesScraper:
         with self.db_conn as conn:
             conn.execute(
                 '''
-				CREATE TABLE IF NOT EXISTS courses (
+				CREATE TABLE IF NOT EXISTS exams (
 					program_code TEXT, 
                     course_code TEXT,
-					title TEXT, 
 					duration TEXT,
+					section TEXT,
 					day TEXT,
-                    time TEXT,
-                    type TEXT,
-                    instructor TEXT,
-                    section INTEGER,
+					start TEXT,
+                    end TEXT,
                     location TEXT,
-					PRIMARY KEY (course_code, duration, type)
+					PRIMARY KEY (course_code, duration, section)
 				)
 				'''
             )
@@ -51,34 +50,32 @@ class CoursesScraper:
     def get(self):
         '''Gets courses from the chatbot database.'''
         output = {}
+        # Get all courses for each program code
         output = self.get_program_courses()
-        # If program codes is empty, fetch hasn't been run
-        # if not self.program_codes:
-        #    self.fetch()
-        #   return self.get()
-
 
         return output
 
     def fetch_program_codes(self):
-        '''Returns a list of all the program codes at Brock University.'''
-        response = self.session.get('https://brocku.ca/guides-and-timetables/timetables/?session=fw&type=ug&level=all')
+        '''Returns a list of all the program codes having exams at Brock University.'''
+        response = self.session.get('https://brocku.ca/guides-and-timetables/timetables/?session=fw&type=ex&level=all')
         response.html.render()
 
         # Get list of programs
         programs_list = response.html.find('span.code')
         program_codes = [program.text for program in programs_list]
-
+        print(program_codes)
         response.close()
         return program_codes
 
     def fetch_program_courses(self, code):
         '''Returns a dictionary containing all program courses at Brock University.'''
-        response = self.session.get(f'https://brocku.ca/guides-and-timetables/timetables/?session=FW&type=UG&level=All&program={code}')
+        response = self.session.get(
+            f'https://brocku.ca/guides-and-timetables/timetables/?session=fw&type=ex&level=all&program={code}')
         response.html.render(sleep=3, timeout=15)
 
         # Find all courses
-        course_rows = response.html.find('tr.course-row')
+        course_rows = response.html.find('tr.exam-row')
+        print(course_rows)
         courses = {}
 
         # Loop through the rows
@@ -86,13 +83,11 @@ class CoursesScraper:
             courses[index] = {
                 'program_code': code,
                 'course_code': self.fetch_course_code(row),
-                'title': self.fetch_course_title(row),
                 'duration': self.fetch_course_duration(row),
-                'day': self.fetch_course_day(row),
-                'time': self.fetch_course_time(row),
-                'type': self.fetch_course_type(row),
-                'instructor': self.fetch_course_instructor(row),
                 'section': self.fetch_course_section(row),
+                'day': self.fetch_course_day(row),
+                'start': self.fetch_course_start(row),
+                'end': self.fetch_course_end(row),
                 'location': self.fetch_course_location(row)
             }
 
@@ -106,74 +101,50 @@ class CoursesScraper:
         '''Extracts the course code from the course row.'''
         return row.find('td.course-code', first=True).text
 
-    def fetch_course_title(self, row):
-        '''Extracts the course title from the course row.'''
-        return row.find('td.title', first=True).find('a', first=True).text
-
     def fetch_course_duration(self, row):
         '''Extracts the course duration from the course row.'''
         return row.find('td.duration', first=True).text
 
     def fetch_course_day(self, row):
         '''Extracts the course day from the course row.'''
-        try:
+        return row.find('td.day', first=True).text
 
-            # Return the index of the active day
-            day_list = ""
-            days = row.find('td.days', first=True).find('tbody', first=True).find('td')
-            for index, day in enumerate(days):
-                if 'active' in day.attrs['class']:
-                    day_list = day_list + " " + self.days[index]
-            return day_list
-
-        except:
-            return " "
-
-    def fetch_course_time(self, row):
+    def fetch_course_start(self, row):
         '''Extracts the course time from the course row.'''
-        try:
-            return row.find('td.time', first=True).text
-        except:
-            return None
+        return row.find('td.start', first=True).text
 
-    def fetch_course_type(self, row):
+    def fetch_course_end(self, row):
         '''Extracts the course type from the course row.'''
-        return row.find('td.type', first=True).text
-
-    def fetch_course_instructor(self, row):
-        '''Extracts the course instructor from the course row.'''
-        return row.attrs['data-instructor']
+        return row.find('td.end', first=True).text
 
     def fetch_course_section(self, row):
         '''Extracts the course section from the course row.'''
-        return row.attrs['data-course_section']
+        return row.find('td.section', first=True).text
 
     def fetch_course_location(self, row):
         '''Extracts the course location from the course row.'''
-        return row.attrs['data-location']
+        return row.find('td.location', first=True).text
 
-    def store_courses(self, courses):
+    def store_courses(self, exams):
         '''Adds courses to the database.'''
         with self.db_conn as conn:
-            for index in courses:
+            for index in exams:
                 conn.execute(
-					'''
-					INSERT OR REPLACE INTO courses 
-					VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-					''', 
-					(
-                        courses[index]['program_code'],
-						courses[index]['course_code'],
-                        courses[index]['title'],
-                        courses[index]['duration'],
-                        courses[index]['day'],
-                        courses[index]['time'],
-                        courses[index]['type'],
-                        courses[index]['instructor'],
-                        courses[index]['section'],
-                        courses[index]['location']
-					)
-				)
+                    '''
+					INSERT OR REPLACE INTO exams 
+					VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+					''',
+                    (
+                        exams[index]['program_code'],
+                        exams[index]['course_code'],
+                        exams[index]['duration'],
+                        exams[index]['section'],
+                        exams[index]['day'],
+                        exams[index]['start'],
+                        exams[index]['end'],
+                        exams[index]['location']
+                    )
+                )
                 conn.commit()
 
     def get_program_codes(self):
@@ -182,7 +153,7 @@ class CoursesScraper:
             rows = conn.execute(
                 '''
                 SELECT DISTINCT program_code
-                FROM courses
+                FROM exams
                 '''
             ).fetchall()
 
@@ -195,12 +166,12 @@ class CoursesScraper:
         '''Gets all the courses from the database and returns them as a dictionary.'''
         output = {}
 
-        # Pull all courses from the database 
+        # Pull all courses from the database
         with self.db_conn as conn:
             rows = conn.execute(
                 '''
                 SELECT *
-                FROM courses
+                FROM exams
                 '''
             ).fetchall()
 
@@ -209,13 +180,11 @@ class CoursesScraper:
             output[index] = {
                 'program_code': row['program_code'],
                 'course_code': row['course_code'],
-                'title': row['title'],
                 'duration': row['duration'],
-                'day': row['day'],
-                'time': row['time'],
-                'type': row['type'],
-                'instructor': row['instructor'],
                 'section': row['section'],
+                'day': row['day'],
+                'start': row['start'],
+                'end': row['end'],
                 'location': row['location']
             }
 

@@ -76,8 +76,7 @@
         "get brock university map"
       ],
       "responses": [
-        "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
-        ""
+        "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University"
       ]
     },
     {
@@ -237,39 +236,39 @@
       ]
     },
     {
-      "tag": "Applied Disability Studies, Department of",
+      "tag": "Department of Applied Disability Studies",
       "patterns": [
-        "Applied Disability Studies, Department of department ",
-        "tell me about the Applied Disability Studies, Department of department "
+        "Department of Applied Disability Studies department ",
+        "tell me about the Department of Applied Disability Studies department "
       ],
       "responses": [
         13,
         "departments",
-        "Applied Disability Studies, Department of"
+        "Department of Applied Disability Studies"
       ]
     },
     {
-      "tag": "Applied Health Sciences, Faculty of",
+      "tag": "Faculty of Applied Health Sciences",
       "patterns": [
-        "Applied Health Sciences, Faculty of department ",
-        "tell me about the Applied Health Sciences, Faculty of department "
+        "Faculty of Applied Health Sciences department ",
+        "tell me about the Faculty of Applied Health Sciences department "
       ],
       "responses": [
         14,
         "departments",
-        "Applied Health Sciences, Faculty of"
+        "Faculty of Applied Health Sciences"
       ]
     },
     {
-      "tag": "Applied Linguistics, Department of ",
+      "tag": "Department of  Applied Linguistics",
       "patterns": [
-        "Applied Linguistics, Department of  department ",
-        "tell me about the Applied Linguistics, Department of  department "
+        "Department of  Applied Linguistics department ",
+        "tell me about the Department of  Applied Linguistics department "
       ],
       "responses": [
         15,
         "departments",
-        "Applied Linguistics, Department of "
+        "Department of  Applied Linguistics"
       ]
     },
     {
@@ -357,39 +356,27 @@
       ]
     },
     {
-      "tag": "Biological Sciences, Department of",
+      "tag": "Department of Biological Sciences",
       "patterns": [
-        "Biological Sciences, Department of department ",
-        "tell me about the Biological Sciences, Department of department "
+        "Department of Biological Sciences department ",
+        "tell me about the Department of Biological Sciences department "
       ],
       "responses": [
         23,
         "departments",
-        "Biological Sciences, Department of"
+        "Department of Biological Sciences"
       ]
     },
     {
-      "tag": "Biotechnology, Centre for",
+      "tag": "Centre for Biotechnology",
       "patterns": [
-        "Biotechnology, Centre for department ",
-        "tell me about the Biotechnology, Centre for department "
+        "Centre for Biotechnology department ",
+        "tell me about the Centre for Biotechnology department "
       ],
       "responses": [
         24,
         "departments",
-        "Biotechnology, Centre for"
-      ]
-    },
-    {
-      "tag": "Bone and Muscle Health, Centre for",
-      "patterns": [
-        "Bone and Muscle Health, Centre for department ",
-        "tell me about the Bone and Muscle Health, Centre for department "
-      ],
-      "responses": [
-        25,
-        "departments",
-        "Bone and Muscle Health, Centre for"
+        "Centre for Biotechnology"
       ]
     },
     {
@@ -399,7 +386,7 @@
         "tell me about the Brand Standards @ Brock department "
       ],
       "responses": [
-        26,
+        25,
         "departments",
         "Brand Standards @ Brock"
       ]
@@ -411,7 +398,7 @@
         "tell me about the Brock Card Office department "
       ],
       "responses": [
-        27,
+        26,
         "departments",
         "Brock Card Office"
       ]
@@ -423,7 +410,7 @@
         "tell me about the Brock Central department "
       ],
       "responses": [
-        28,
+        27,
         "departments",
         "Brock Central"
       ]
@@ -435,7 +422,7 @@
         "tell me about the Brock Healthy Youth Project department "
       ],
       "responses": [
-        29,
+        28,
         "departments",
         "Brock Healthy Youth Project"
       ]
@@ -447,7 +434,7 @@
         "tell me about the Brock Institute for Scientific Computing department "
       ],
       "responses": [
-        30,
+        29,
         "departments",
         "Brock Institute for Scientific Computing"
       ]
@@ -459,7 +446,7 @@
         "tell me about the Brock Lab of Intergroup Processes department "
       ],
       "responses": [
-        31,
+        30,
         "departments",
         "Brock Lab of Intergroup Processes"
       ]
@@ -471,7 +458,7 @@
         "tell me about the Brock Leaders Citizenship Society department "
       ],
       "responses": [
-        32,
+        31,
         "departments",
         "Brock Leaders Citizenship Society"
       ]
@@ -483,7 +470,7 @@
         "tell me about the Brock Learning Lab department "
       ],
       "responses": [
-        33,
+        32,
         "departments",
         "Brock Learning Lab"
       ]
@@ -495,7 +482,7 @@
         "tell me about the Brock Niagara Aquatics department "
       ],
       "responses": [
-        34,
+        33,
         "departments",
         "Brock Niagara Aquatics"
       ]
@@ -507,7 +494,7 @@
         "tell me about the Brock Sports department "
       ],
       "responses": [
-        35,
+        34,
         "departments",
         "Brock Sports"
       ]
@@ -519,7 +506,7 @@
         "tell me about the Brock Sports Performance Centre department "
       ],
       "responses": [
-        36,
+        35,
         "departments",
         "Brock Sports Performance Centre"
       ]
@@ -531,7 +518,7 @@
         "tell me about the Brock Suites department "
       ],
       "responses": [
-        37,
+        36,
         "departments",
         "Brock Suites"
       ]
@@ -543,7 +530,7 @@
         "tell me about the Brock University Retirees\u2019 Association (BURA) department "
       ],
       "responses": [
-        38,
+        37,
         "departments",
         "Brock University Retirees\u2019 Association (BURA)"
       ]
@@ -555,7 +542,7 @@
         "tell me about the Brock University Students\u2019 Union (BUSU) department "
       ],
       "responses": [
-        39,
+        38,
         "departments",
         "Brock University Students\u2019 Union (BUSU)"
       ]
@@ -567,7 +554,7 @@
         "tell me about the Brock University's United Way Campaign department "
       ],
       "responses": [
-        40,
+        39,
         "departments",
         "Brock University's United Way Campaign"
       ]
@@ -579,7 +566,7 @@
         "tell me about the Brock Well-Being Research Lab department "
       ],
       "responses": [
-        41,
+        40,
         "departments",
         "Brock Well-Being Research Lab"
       ]
@@ -591,21 +578,21 @@
         "tell me about the Brock-Niagara Centre for Health and Well-Being department "
       ],
       "responses": [
-        42,
+        41,
         "departments",
         "Brock-Niagara Centre for Health and Well-Being"
       ]
     },
     {
-      "tag": "Brock-Niagara Validation, Prototyping and Manufacturing Institute (VPMI)",
+      "tag": "Prototyping and Manufacturing Institute (VPMI) Brock-Niagara Validation",
       "patterns": [
-        "Brock-Niagara Validation, Prototyping and Manufacturing Institute (VPMI) department ",
-        "tell me about the Brock-Niagara Validation, Prototyping and Manufacturing Institute (VPMI) department "
+        "Prototyping and Manufacturing Institute (VPMI) Brock-Niagara Validation department ",
+        "tell me about the Prototyping and Manufacturing Institute (VPMI) Brock-Niagara Validation department "
       ],
       "responses": [
-        43,
+        42,
         "departments",
-        "Brock-Niagara Validation, Prototyping and Manufacturing Institute (VPMI)"
+        "Prototyping and Manufacturing Institute (VPMI) Brock-Niagara Validation"
       ]
     },
     {
@@ -615,7 +602,7 @@
         "tell me about the BrockLINC department "
       ],
       "responses": [
-        44,
+        43,
         "departments",
         "BrockLINC"
       ]
@@ -627,7 +614,7 @@
         "tell me about the BrockU 4U department "
       ],
       "responses": [
-        45,
+        44,
         "departments",
         "BrockU 4U"
       ]
@@ -639,7 +626,7 @@
         "tell me about the Campus Map department "
       ],
       "responses": [
-        46,
+        45,
         "departments",
         "Campus Map"
       ]
@@ -651,7 +638,7 @@
         "tell me about the Campus Security Services department "
       ],
       "responses": [
-        47,
+        46,
         "departments",
         "Campus Security Services"
       ]
@@ -663,7 +650,7 @@
         "tell me about the Campus Store (Bookstore) department "
       ],
       "responses": [
-        48,
+        47,
         "departments",
         "Campus Store (Bookstore)"
       ]
@@ -675,7 +662,7 @@
         "tell me about the Canada Games department "
       ],
       "responses": [
-        49,
+        48,
         "departments",
         "Canada Games"
       ]
@@ -687,21 +674,21 @@
         "tell me about the Canadian Child Interviewing Research Team department "
       ],
       "responses": [
-        50,
+        49,
         "departments",
         "Canadian Child Interviewing Research Team"
       ]
     },
     {
-      "tag": "Canadian Studies, Centre for",
+      "tag": "Centre for Canadian Studies",
       "patterns": [
-        "Canadian Studies, Centre for department ",
-        "tell me about the Canadian Studies, Centre for department "
+        "Centre for Canadian Studies department ",
+        "tell me about the Centre for Canadian Studies department "
       ],
       "responses": [
-        51,
+        50,
         "departments",
-        "Canadian Studies, Centre for"
+        "Centre for Canadian Studies"
       ]
     },
     {
@@ -711,7 +698,7 @@
         "tell me about the Cannabis on Campus department "
       ],
       "responses": [
-        52,
+        51,
         "departments",
         "Cannabis on Campus"
       ]
@@ -723,7 +710,7 @@
         "tell me about the Career Education department "
       ],
       "responses": [
-        53,
+        52,
         "departments",
         "Career Education"
       ]
@@ -735,7 +722,7 @@
         "tell me about the Careers @ Brock department "
       ],
       "responses": [
-        54,
+        53,
         "departments",
         "Careers @ Brock"
       ]
@@ -747,7 +734,7 @@
         "tell me about the CareerZone department "
       ],
       "responses": [
-        55,
+        54,
         "departments",
         "CareerZone"
       ]
@@ -759,7 +746,7 @@
         "tell me about the Caucus of Women department "
       ],
       "responses": [
-        56,
+        55,
         "departments",
         "Caucus of Women"
       ]
@@ -771,7 +758,7 @@
         "tell me about the Central Receiving and Mail Services (Shipping and Receiving) department "
       ],
       "responses": [
-        57,
+        56,
         "departments",
         "Central Receiving and Mail Services (Shipping and Receiving)"
       ]
@@ -783,7 +770,7 @@
         "tell me about the Centre for Bone and Muscle Health department "
       ],
       "responses": [
-        58,
+        57,
         "departments",
         "Centre for Bone and Muscle Health"
       ]
@@ -795,7 +782,7 @@
         "tell me about the Centre for Pedagogical Innovation department "
       ],
       "responses": [
-        59,
+        58,
         "departments",
         "Centre for Pedagogical Innovation"
       ]
@@ -807,57 +794,57 @@
         "tell me about the Centre for Sport Capacity department "
       ],
       "responses": [
-        60,
+        59,
         "departments",
         "Centre for Sport Capacity"
       ]
     },
     {
-      "tag": "Chemistry, Department of",
+      "tag": "Department of Chemistry",
       "patterns": [
-        "Chemistry, Department of department ",
-        "tell me about the Chemistry, Department of department "
+        "Department of Chemistry department ",
+        "tell me about the Department of Chemistry department "
+      ],
+      "responses": [
+        60,
+        "departments",
+        "Department of Chemistry"
+      ]
+    },
+    {
+      "tag": "Department of Child and Youth Studies",
+      "patterns": [
+        "Department of Child and Youth Studies department ",
+        "tell me about the Department of Child and Youth Studies department "
       ],
       "responses": [
         61,
         "departments",
-        "Chemistry, Department of"
+        "Department of Child and Youth Studies"
       ]
     },
     {
-      "tag": "Child and Youth Studies, Department of",
+      "tag": "Department of Classics",
       "patterns": [
-        "Child and Youth Studies, Department of department ",
-        "tell me about the Child and Youth Studies, Department of department "
+        "Department of Classics department ",
+        "tell me about the Department of Classics department "
       ],
       "responses": [
         62,
         "departments",
-        "Child and Youth Studies, Department of"
+        "Department of Classics"
       ]
     },
     {
-      "tag": "Classics, Department of",
+      "tag": "Career and Experiential Education Co-op",
       "patterns": [
-        "Classics, Department of department ",
-        "tell me about the Classics, Department of department "
+        "Career and Experiential Education Co-op department ",
+        "tell me about the Career and Experiential Education Co-op department "
       ],
       "responses": [
         63,
         "departments",
-        "Classics, Department of"
-      ]
-    },
-    {
-      "tag": "Co-op, Career and Experiential Education",
-      "patterns": [
-        "Co-op, Career and Experiential Education department ",
-        "tell me about the Co-op, Career and Experiential Education department "
-      ],
-      "responses": [
-        64,
-        "departments",
-        "Co-op, Career and Experiential Education"
+        "Career and Experiential Education Co-op"
       ]
     },
     {
@@ -867,33 +854,33 @@
         "tell me about the Cognitive & Affective Neuroscience Lab department "
       ],
       "responses": [
-        65,
+        64,
         "departments",
         "Cognitive & Affective Neuroscience Lab"
       ]
     },
     {
-      "tag": "Communication, Popular Culture and Film, Department of",
+      "tag": "Popular Culture and Film Communication",
       "patterns": [
-        "Communication, Popular Culture and Film, Department of department ",
-        "tell me about the Communication, Popular Culture and Film, Department of department "
+        "Popular Culture and Film Communication department ",
+        "tell me about the Popular Culture and Film Communication department "
+      ],
+      "responses": [
+        65,
+        "departments",
+        "Popular Culture and Film Communication"
+      ]
+    },
+    {
+      "tag": "Media Relations and Public Affairs Communications",
+      "patterns": [
+        "Media Relations and Public Affairs Communications department ",
+        "tell me about the Media Relations and Public Affairs Communications department "
       ],
       "responses": [
         66,
         "departments",
-        "Communication, Popular Culture and Film, Department of"
-      ]
-    },
-    {
-      "tag": "Communications, Media Relations and Public Affairs",
-      "patterns": [
-        "Communications, Media Relations and Public Affairs department ",
-        "tell me about the Communications, Media Relations and Public Affairs department "
-      ],
-      "responses": [
-        67,
-        "departments",
-        "Communications, Media Relations and Public Affairs"
+        "Media Relations and Public Affairs Communications"
       ]
     },
     {
@@ -903,21 +890,21 @@
         "tell me about the Community Engagement department "
       ],
       "responses": [
-        68,
+        67,
         "departments",
         "Community Engagement"
       ]
     },
     {
-      "tag": "Computer Science, Department of",
+      "tag": "Department of Computer Science",
       "patterns": [
-        "Computer Science, Department of department ",
-        "tell me about the Computer Science, Department of department "
+        "Department of Computer Science department ",
+        "tell me about the Department of Computer Science department "
       ],
       "responses": [
-        69,
+        68,
         "departments",
-        "Computer Science, Department of"
+        "Department of Computer Science"
       ]
     },
     {
@@ -927,7 +914,7 @@
         "tell me about the Conference Services department "
       ],
       "responses": [
-        70,
+        69,
         "departments",
         "Conference Services"
       ]
@@ -939,7 +926,7 @@
         "tell me about the Confucius Institute department "
       ],
       "responses": [
-        71,
+        70,
         "departments",
         "Confucius Institute"
       ]
@@ -951,7 +938,7 @@
         "tell me about the Connect with Brock Research department "
       ],
       "responses": [
-        72,
+        71,
         "departments",
         "Connect with Brock Research"
       ]
@@ -963,7 +950,7 @@
         "tell me about the Contact Brock University department "
       ],
       "responses": [
-        73,
+        72,
         "departments",
         "Contact Brock University"
       ]
@@ -975,7 +962,7 @@
         "tell me about the Cool Climate Oenology and Viticulture Institute department "
       ],
       "responses": [
-        74,
+        73,
         "departments",
         "Cool Climate Oenology and Viticulture Institute"
       ]
@@ -987,7 +974,7 @@
         "tell me about the Course Calendars department "
       ],
       "responses": [
-        75,
+        74,
         "departments",
         "Course Calendars"
       ]
@@ -999,7 +986,7 @@
         "tell me about the Critical Animal Studies department "
       ],
       "responses": [
-        76,
+        75,
         "departments",
         "Critical Animal Studies"
       ]
@@ -1011,7 +998,7 @@
         "tell me about the Dance Research Lab department "
       ],
       "responses": [
-        77,
+        76,
         "departments",
         "Dance Research Lab"
       ]
@@ -1023,21 +1010,21 @@
         "tell me about the Developmental Processes in Health and Well-Being Lab department "
       ],
       "responses": [
-        78,
+        77,
         "departments",
         "Developmental Processes in Health and Well-Being Lab"
       ]
     },
     {
-      "tag": "Digital Humanities, Centre for",
+      "tag": "Centre for Digital Humanities",
       "patterns": [
-        "Digital Humanities, Centre for department ",
-        "tell me about the Digital Humanities, Centre for department "
+        "Centre for Digital Humanities department ",
+        "tell me about the Centre for Digital Humanities department "
       ],
       "responses": [
-        79,
+        78,
         "departments",
-        "Digital Humanities, Centre for"
+        "Centre for Digital Humanities"
       ]
     },
     {
@@ -1047,7 +1034,7 @@
         "tell me about the Digital Scholarship Lab department "
       ],
       "responses": [
-        80,
+        79,
         "departments",
         "Digital Scholarship Lab"
       ]
@@ -1059,21 +1046,21 @@
         "tell me about the Dining (Hospitality) Services department "
       ],
       "responses": [
-        81,
+        80,
         "departments",
         "Dining (Hospitality) Services"
       ]
     },
     {
-      "tag": "Directory (Faculty and Staff, Services, Departments and Offices)",
+      "tag": "Services Directory (Faculty and Staff",
       "patterns": [
-        "Directory (Faculty and Staff, Services, Departments and Offices) department ",
-        "tell me about the Directory (Faculty and Staff, Services, Departments and Offices) department "
+        "Services Directory (Faculty and Staff department ",
+        "tell me about the Services Directory (Faculty and Staff department "
       ],
       "responses": [
-        82,
+        81,
         "departments",
-        "Directory (Faculty and Staff, Services, Departments and Offices)"
+        "Services Directory (Faculty and Staff"
       ]
     },
     {
@@ -1083,21 +1070,21 @@
         "tell me about the Diversities in Actor Training department "
       ],
       "responses": [
-        83,
+        82,
         "departments",
         "Diversities in Actor Training"
       ]
     },
     {
-      "tag": "Dramatic Arts, Department of",
+      "tag": "Department of Dramatic Arts",
       "patterns": [
-        "Dramatic Arts, Department of department ",
-        "tell me about the Dramatic Arts, Department of department "
+        "Department of Dramatic Arts department ",
+        "tell me about the Department of Dramatic Arts department "
       ],
       "responses": [
-        84,
+        83,
         "departments",
-        "Dramatic Arts, Department of"
+        "Department of Dramatic Arts"
       ]
     },
     {
@@ -1107,7 +1094,7 @@
         "tell me about the Dwivedi Brain and Language Lab department "
       ],
       "responses": [
-        85,
+        84,
         "departments",
         "Dwivedi Brain and Language Lab"
       ]
@@ -1119,45 +1106,45 @@
         "tell me about the Early Childhood Education department "
       ],
       "responses": [
-        86,
+        85,
         "departments",
         "Early Childhood Education"
       ]
     },
     {
-      "tag": "Earth Sciences, Department of",
+      "tag": "Department of Earth Sciences",
       "patterns": [
-        "Earth Sciences, Department of department ",
-        "tell me about the Earth Sciences, Department of department "
+        "Department of Earth Sciences department ",
+        "tell me about the Department of Earth Sciences department "
+      ],
+      "responses": [
+        86,
+        "departments",
+        "Department of Earth Sciences"
+      ]
+    },
+    {
+      "tag": "Department of Economics",
+      "patterns": [
+        "Department of Economics department ",
+        "tell me about the Department of Economics department "
       ],
       "responses": [
         87,
         "departments",
-        "Earth Sciences, Department of"
+        "Department of Economics"
       ]
     },
     {
-      "tag": "Economics, Department of",
+      "tag": "Faculty of Education",
       "patterns": [
-        "Economics, Department of department ",
-        "tell me about the Economics, Department of department "
+        "Faculty of Education department ",
+        "tell me about the Faculty of Education department "
       ],
       "responses": [
         88,
         "departments",
-        "Economics, Department of"
-      ]
-    },
-    {
-      "tag": "Education, Faculty of",
-      "patterns": [
-        "Education, Faculty of department ",
-        "tell me about the Education, Faculty of department "
-      ],
-      "responses": [
-        89,
-        "departments",
-        "Education, Faculty of"
+        "Faculty of Education"
       ]
     },
     {
@@ -1167,7 +1154,7 @@
         "tell me about the Emergency numbers department "
       ],
       "responses": [
-        90,
+        89,
         "departments",
         "Emergency numbers"
       ]
@@ -1179,21 +1166,21 @@
         "tell me about the Employee Wellness department "
       ],
       "responses": [
-        91,
+        90,
         "departments",
         "Employee Wellness"
       ]
     },
     {
-      "tag": "English Language & Literature, Department of",
+      "tag": "Department of English Language & Literature",
       "patterns": [
-        "English Language & Literature, Department of department ",
-        "tell me about the English Language & Literature, Department of department "
+        "Department of English Language & Literature department ",
+        "tell me about the Department of English Language & Literature department "
       ],
       "responses": [
-        92,
+        91,
         "departments",
-        "English Language & Literature, Department of"
+        "Department of English Language & Literature"
       ]
     },
     {
@@ -1203,7 +1190,7 @@
         "tell me about the Environmental Sustainability Research Centre department "
       ],
       "responses": [
-        93,
+        92,
         "departments",
         "Environmental Sustainability Research Centre"
       ]
@@ -1215,7 +1202,7 @@
         "tell me about the ESL Services department "
       ],
       "responses": [
-        94,
+        93,
         "departments",
         "ESL Services"
       ]
@@ -1227,7 +1214,7 @@
         "tell me about the Events @ Brock department "
       ],
       "responses": [
-        95,
+        94,
         "departments",
         "Events @ Brock"
       ]
@@ -1239,7 +1226,7 @@
         "tell me about the ExperienceBU department "
       ],
       "responses": [
-        96,
+        95,
         "departments",
         "ExperienceBU"
       ]
@@ -1251,7 +1238,7 @@
         "tell me about the Facilities Management department "
       ],
       "responses": [
-        97,
+        96,
         "departments",
         "Facilities Management"
       ]
@@ -1263,7 +1250,7 @@
         "tell me about the Faculty Association department "
       ],
       "responses": [
-        98,
+        97,
         "departments",
         "Faculty Association"
       ]
@@ -1275,7 +1262,7 @@
         "tell me about the Faith and Life Centre department "
       ],
       "responses": [
-        99,
+        98,
         "departments",
         "Faith and Life Centre"
       ]
@@ -1287,7 +1274,7 @@
         "tell me about the Financial Services at Brock department "
       ],
       "responses": [
-        100,
+        99,
         "departments",
         "Financial Services at Brock"
       ]
@@ -1299,7 +1286,7 @@
         "tell me about the Free Speech department "
       ],
       "responses": [
-        101,
+        100,
         "departments",
         "Free Speech"
       ]
@@ -1311,7 +1298,7 @@
         "tell me about the Freedom of Information and Privacy Office (FIPPA) department "
       ],
       "responses": [
-        102,
+        101,
         "departments",
         "Freedom of Information and Privacy Office (FIPPA)"
       ]
@@ -1323,21 +1310,21 @@
         "tell me about the GAME Program department "
       ],
       "responses": [
-        103,
+        102,
         "departments",
         "GAME Program"
       ]
     },
     {
-      "tag": "Geography and Tourism Studies, Department of",
+      "tag": "Department of Geography and Tourism Studies",
       "patterns": [
-        "Geography and Tourism Studies, Department of department ",
-        "tell me about the Geography and Tourism Studies, Department of department "
+        "Department of Geography and Tourism Studies department ",
+        "tell me about the Department of Geography and Tourism Studies department "
       ],
       "responses": [
-        104,
+        103,
         "departments",
-        "Geography and Tourism Studies, Department of"
+        "Department of Geography and Tourism Studies"
       ]
     },
     {
@@ -1347,7 +1334,7 @@
         "tell me about the Goodman Group department "
       ],
       "responses": [
-        105,
+        104,
         "departments",
         "Goodman Group"
       ]
@@ -1359,21 +1346,21 @@
         "tell me about the Goodman School of Business department "
       ],
       "responses": [
-        106,
+        105,
         "departments",
         "Goodman School of Business"
       ]
     },
     {
-      "tag": "Government Relations, Office of",
+      "tag": "Office of Government Relations",
       "patterns": [
-        "Government Relations, Office of department ",
-        "tell me about the Government Relations, Office of department "
+        "Office of Government Relations department ",
+        "tell me about the Office of Government Relations department "
       ],
       "responses": [
-        107,
+        106,
         "departments",
-        "Government Relations, Office of"
+        "Office of Government Relations"
       ]
     },
     {
@@ -1383,21 +1370,21 @@
         "tell me about the Graduate Students\u2019 Association department "
       ],
       "responses": [
-        108,
+        107,
         "departments",
         "Graduate Students\u2019 Association"
       ]
     },
     {
-      "tag": "Graduate Studies, Faculty of",
+      "tag": "Faculty of Graduate Studies",
       "patterns": [
-        "Graduate Studies, Faculty of department ",
-        "tell me about the Graduate Studies, Faculty of department "
+        "Faculty of Graduate Studies department ",
+        "tell me about the Faculty of Graduate Studies department "
       ],
       "responses": [
-        109,
+        108,
         "departments",
-        "Graduate Studies, Faculty of"
+        "Faculty of Graduate Studies"
       ]
     },
     {
@@ -1407,33 +1394,33 @@
         "tell me about the Growing With Brock department "
       ],
       "responses": [
-        110,
+        109,
         "departments",
         "Growing With Brock"
       ]
     },
     {
-      "tag": "Health Sciences, Department of",
+      "tag": "Department of Health Sciences",
       "patterns": [
-        "Health Sciences, Department of department ",
-        "tell me about the Health Sciences, Department of department "
+        "Department of Health Sciences department ",
+        "tell me about the Department of Health Sciences department "
+      ],
+      "responses": [
+        110,
+        "departments",
+        "Department of Health Sciences"
+      ]
+    },
+    {
+      "tag": "Department of History",
+      "patterns": [
+        "Department of History department ",
+        "tell me about the Department of History department "
       ],
       "responses": [
         111,
         "departments",
-        "Health Sciences, Department of"
-      ]
-    },
-    {
-      "tag": "History, Department of",
-      "patterns": [
-        "History, Department of department ",
-        "tell me about the History, Department of department "
-      ],
-      "responses": [
-        112,
-        "departments",
-        "History, Department of"
+        "Department of History"
       ]
     },
     {
@@ -1443,7 +1430,7 @@
         "tell me about the Homecoming department "
       ],
       "responses": [
-        113,
+        112,
         "departments",
         "Homecoming"
       ]
@@ -1455,7 +1442,7 @@
         "tell me about the Human Resources department "
       ],
       "responses": [
-        114,
+        113,
         "departments",
         "Human Resources"
       ]
@@ -1467,7 +1454,7 @@
         "tell me about the Human Rights and Equity department "
       ],
       "responses": [
-        115,
+        114,
         "departments",
         "Human Rights and Equity"
       ]
@@ -1479,21 +1466,21 @@
         "tell me about the Human Sexuality Lab department "
       ],
       "responses": [
-        116,
+        115,
         "departments",
         "Human Sexuality Lab"
       ]
     },
     {
-      "tag": "Humanities, Faculty of",
+      "tag": "Faculty of Humanities",
       "patterns": [
-        "Humanities, Faculty of department ",
-        "tell me about the Humanities, Faculty of department "
+        "Faculty of Humanities department ",
+        "tell me about the Faculty of Humanities department "
       ],
       "responses": [
-        117,
+        116,
         "departments",
-        "Humanities, Faculty of"
+        "Faculty of Humanities"
       ]
     },
     {
@@ -1503,7 +1490,7 @@
         "tell me about the Important Dates department "
       ],
       "responses": [
-        118,
+        117,
         "departments",
         "Important Dates"
       ]
@@ -1515,7 +1502,7 @@
         "tell me about the Information Technology Services (ITS) department "
       ],
       "responses": [
-        119,
+        118,
         "departments",
         "Information Technology Services (ITS)"
       ]
@@ -1527,7 +1514,7 @@
         "tell me about the Institutional Analysis department "
       ],
       "responses": [
-        120,
+        119,
         "departments",
         "Institutional Analysis"
       ]
@@ -1539,7 +1526,7 @@
         "tell me about the Instructional Resource Centre department "
       ],
       "responses": [
-        121,
+        120,
         "departments",
         "Instructional Resource Centre"
       ]
@@ -1551,7 +1538,7 @@
         "tell me about the Internal Audit department "
       ],
       "responses": [
-        122,
+        121,
         "departments",
         "Internal Audit"
       ]
@@ -1563,7 +1550,7 @@
         "tell me about the International department "
       ],
       "responses": [
-        123,
+        122,
         "departments",
         "International"
       ]
@@ -1575,7 +1562,7 @@
         "tell me about the IT Help Desk department "
       ],
       "responses": [
-        124,
+        123,
         "departments",
         "IT Help Desk"
       ]
@@ -1587,7 +1574,7 @@
         "tell me about the Joint Ventures and Collaborations department "
       ],
       "responses": [
-        125,
+        124,
         "departments",
         "Joint Ventures and Collaborations"
       ]
@@ -1599,21 +1586,21 @@
         "tell me about the Kids & Camps department "
       ],
       "responses": [
-        126,
+        125,
         "departments",
         "Kids & Camps"
       ]
     },
     {
-      "tag": "Kinesiology, Department of",
+      "tag": "Department of Kinesiology",
       "patterns": [
-        "Kinesiology, Department of department ",
-        "tell me about the Kinesiology, Department of department "
+        "Department of Kinesiology department ",
+        "tell me about the Department of Kinesiology department "
       ],
       "responses": [
-        127,
+        126,
         "departments",
-        "Kinesiology, Department of"
+        "Department of Kinesiology"
       ]
     },
     {
@@ -1623,21 +1610,21 @@
         "tell me about the Labour Relations at Brock department "
       ],
       "responses": [
-        128,
+        127,
         "departments",
         "Labour Relations at Brock"
       ]
     },
     {
-      "tag": "Labour Studies, Department of",
+      "tag": "Department of Labour Studies",
       "patterns": [
-        "Labour Studies, Department of department ",
-        "tell me about the Labour Studies, Department of department "
+        "Department of Labour Studies department ",
+        "tell me about the Department of Labour Studies department "
       ],
       "responses": [
-        129,
+        128,
         "departments",
-        "Labour Studies, Department of"
+        "Department of Labour Studies"
       ]
     },
     {
@@ -1647,7 +1634,7 @@
         "tell me about the Leadership Services department "
       ],
       "responses": [
-        130,
+        129,
         "departments",
         "Leadership Services"
       ]
@@ -1659,7 +1646,7 @@
         "tell me about the LEAP department "
       ],
       "responses": [
-        131,
+        130,
         "departments",
         "LEAP"
       ]
@@ -1671,21 +1658,21 @@
         "tell me about the Library department "
       ],
       "responses": [
-        132,
+        131,
         "departments",
         "Library"
       ]
     },
     {
-      "tag": "Lifespan Development Research, Centre for",
+      "tag": "Centre for Lifespan Development Research",
       "patterns": [
-        "Lifespan Development Research, Centre for department ",
-        "tell me about the Lifespan Development Research, Centre for department "
+        "Centre for Lifespan Development Research department ",
+        "tell me about the Centre for Lifespan Development Research department "
       ],
       "responses": [
-        133,
+        132,
         "departments",
-        "Lifespan Development Research, Centre for"
+        "Centre for Lifespan Development Research"
       ]
     },
     {
@@ -1695,7 +1682,7 @@
         "tell me about the Lung Cancer Screening and Risk Prediction department "
       ],
       "responses": [
-        134,
+        133,
         "departments",
         "Lung Cancer Screening and Risk Prediction"
       ]
@@ -1707,33 +1694,33 @@
         "tell me about the Makerspace department "
       ],
       "responses": [
-        135,
+        134,
         "departments",
         "Makerspace"
       ]
     },
     {
-      "tag": "Map, Data & GIS Library",
+      "tag": "Data & GIS Library Map",
       "patterns": [
-        "Map, Data & GIS Library department ",
-        "tell me about the Map, Data & GIS Library department "
+        "Data & GIS Library Map department ",
+        "tell me about the Data & GIS Library Map department "
+      ],
+      "responses": [
+        135,
+        "departments",
+        "Data & GIS Library Map"
+      ]
+    },
+    {
+      "tag": "Data and GIS Library Maps",
+      "patterns": [
+        "Data and GIS Library Maps department ",
+        "tell me about the Data and GIS Library Maps department "
       ],
       "responses": [
         136,
         "departments",
-        "Map, Data & GIS Library"
-      ]
-    },
-    {
-      "tag": "Maps, Data and GIS Library",
-      "patterns": [
-        "Maps, Data and GIS Library department ",
-        "tell me about the Maps, Data and GIS Library department "
-      ],
-      "responses": [
-        137,
-        "departments",
-        "Maps, Data and GIS Library"
+        "Data and GIS Library Maps"
       ]
     },
     {
@@ -1743,7 +1730,7 @@
         "tell me about the Marilyn I. Walker School of Fine and Performing Arts department "
       ],
       "responses": [
-        138,
+        137,
         "departments",
         "Marilyn I. Walker School of Fine and Performing Arts"
       ]
@@ -1755,45 +1742,45 @@
         "tell me about the Marketing and Communications department "
       ],
       "responses": [
-        139,
+        138,
         "departments",
         "Marketing and Communications"
       ]
     },
     {
-      "tag": "Marketing, International Business & Strategy, Department of",
+      "tag": "International Business & Strategy Marketing",
       "patterns": [
-        "Marketing, International Business & Strategy, Department of department ",
-        "tell me about the Marketing, International Business & Strategy, Department of department "
+        "International Business & Strategy Marketing department ",
+        "tell me about the International Business & Strategy Marketing department "
+      ],
+      "responses": [
+        139,
+        "departments",
+        "International Business & Strategy Marketing"
+      ]
+    },
+    {
+      "tag": "Faculty of Mathematics & Science",
+      "patterns": [
+        "Faculty of Mathematics & Science department ",
+        "tell me about the Faculty of Mathematics & Science department "
       ],
       "responses": [
         140,
         "departments",
-        "Marketing, International Business & Strategy, Department of"
+        "Faculty of Mathematics & Science"
       ]
     },
     {
-      "tag": "Mathematics & Science, Faculty of",
+      "tag": "Department of Mathematics",
       "patterns": [
-        "Mathematics & Science, Faculty of department ",
-        "tell me about the Mathematics & Science, Faculty of department "
+        "Department of Mathematics department ",
+        "tell me about the Department of Mathematics department "
       ],
       "responses": [
         141,
         "departments",
-        "Mathematics & Science, Faculty of"
-      ]
-    },
-    {
-      "tag": "Mathematics, Department of",
-      "patterns": [
-        "Mathematics, Department of department ",
-        "tell me about the Mathematics, Department of department "
-      ],
-      "responses": [
-        142,
-        "departments",
-        "Mathematics, Department of"
+        "Department of Mathematics"
       ]
     },
     {
@@ -1803,7 +1790,7 @@
         "tell me about the Matheson Learning Commons department "
       ],
       "responses": [
-        143,
+        142,
         "departments",
         "Matheson Learning Commons"
       ]
@@ -1815,21 +1802,21 @@
         "tell me about the Med Plus department "
       ],
       "responses": [
-        144,
+        143,
         "departments",
         "Med Plus"
       ]
     },
     {
-      "tag": "Medieval and Renaissance Studies, Centre for",
+      "tag": "Centre for Medieval and Renaissance Studies",
       "patterns": [
-        "Medieval and Renaissance Studies, Centre for department ",
-        "tell me about the Medieval and Renaissance Studies, Centre for department "
+        "Centre for Medieval and Renaissance Studies department ",
+        "tell me about the Centre for Medieval and Renaissance Studies department "
       ],
       "responses": [
-        145,
+        144,
         "departments",
-        "Medieval and Renaissance Studies, Centre for"
+        "Centre for Medieval and Renaissance Studies"
       ]
     },
     {
@@ -1839,7 +1826,7 @@
         "tell me about the Mental Health and Wellness department "
       ],
       "responses": [
-        146,
+        145,
         "departments",
         "Mental Health and Wellness"
       ]
@@ -1851,57 +1838,57 @@
         "tell me about the Mobile Apps department "
       ],
       "responses": [
-        147,
+        146,
         "departments",
         "Mobile Apps"
       ]
     },
     {
-      "tag": "Modern Languages, Literatures and Cultures, Department of",
+      "tag": "Literatures and Cultures Modern Languages",
       "patterns": [
-        "Modern Languages, Literatures and Cultures, Department of department ",
-        "tell me about the Modern Languages, Literatures and Cultures, Department of department "
+        "Literatures and Cultures Modern Languages department ",
+        "tell me about the Literatures and Cultures Modern Languages department "
+      ],
+      "responses": [
+        147,
+        "departments",
+        "Literatures and Cultures Modern Languages"
+      ]
+    },
+    {
+      "tag": "Instruction and Reading Lab Motivation",
+      "patterns": [
+        "Instruction and Reading Lab Motivation department ",
+        "tell me about the Instruction and Reading Lab Motivation department "
       ],
       "responses": [
         148,
         "departments",
-        "Modern Languages, Literatures and Cultures, Department of"
+        "Instruction and Reading Lab Motivation"
       ]
     },
     {
-      "tag": "Motivation, Instruction and Reading Lab",
+      "tag": "Department of Music",
       "patterns": [
-        "Motivation, Instruction and Reading Lab department ",
-        "tell me about the Motivation, Instruction and Reading Lab department "
+        "Department of Music department ",
+        "tell me about the Department of Music department "
       ],
       "responses": [
         149,
         "departments",
-        "Motivation, Instruction and Reading Lab"
+        "Department of Music"
       ]
     },
     {
-      "tag": "Music, Department of",
+      "tag": "Centre for Neuroscience",
       "patterns": [
-        "Music, Department of department ",
-        "tell me about the Music, Department of department "
+        "Centre for Neuroscience department ",
+        "tell me about the Centre for Neuroscience department "
       ],
       "responses": [
         150,
         "departments",
-        "Music, Department of"
-      ]
-    },
-    {
-      "tag": "Neuroscience, Centre for",
-      "patterns": [
-        "Neuroscience, Centre for department ",
-        "tell me about the Neuroscience, Centre for department "
-      ],
-      "responses": [
-        151,
-        "departments",
-        "Neuroscience, Centre for"
+        "Centre for Neuroscience"
       ]
     },
     {
@@ -1911,7 +1898,7 @@
         "tell me about the Niagara Community Observatory department "
       ],
       "responses": [
-        152,
+        151,
         "departments",
         "Niagara Community Observatory"
       ]
@@ -1923,21 +1910,21 @@
         "tell me about the Niagara Prosperity Initiative Evaluation department "
       ],
       "responses": [
-        153,
+        152,
         "departments",
         "Niagara Prosperity Initiative Evaluation"
       ]
     },
     {
-      "tag": "Nursing, Department of",
+      "tag": "Department of Nursing",
       "patterns": [
-        "Nursing, Department of department ",
-        "tell me about the Nursing, Department of department "
+        "Department of Nursing department ",
+        "tell me about the Department of Nursing department "
       ],
       "responses": [
-        154,
+        153,
         "departments",
-        "Nursing, Department of"
+        "Department of Nursing"
       ]
     },
     {
@@ -1947,7 +1934,7 @@
         "tell me about the Off-Campus living department "
       ],
       "responses": [
-        155,
+        154,
         "departments",
         "Off-Campus living"
       ]
@@ -1959,21 +1946,21 @@
         "tell me about the Parking Services department "
       ],
       "responses": [
-        156,
+        155,
         "departments",
         "Parking Services"
       ]
     },
     {
-      "tag": "Pedagogical Innovation, Centre for (CPI)",
+      "tag": "Centre for (CPI) Pedagogical Innovation",
       "patterns": [
-        "Pedagogical Innovation, Centre for (CPI) department ",
-        "tell me about the Pedagogical Innovation, Centre for (CPI) department "
+        "Centre for (CPI) Pedagogical Innovation department ",
+        "tell me about the Centre for (CPI) Pedagogical Innovation department "
       ],
       "responses": [
-        157,
+        156,
         "departments",
-        "Pedagogical Innovation, Centre for (CPI)"
+        "Centre for (CPI) Pedagogical Innovation"
       ]
     },
     {
@@ -1983,7 +1970,7 @@
         "tell me about the People Strategy department "
       ],
       "responses": [
-        158,
+        157,
         "departments",
         "People Strategy"
       ]
@@ -1995,45 +1982,45 @@
         "tell me about the Personal Counselling Services department "
       ],
       "responses": [
-        159,
+        158,
         "departments",
         "Personal Counselling Services"
       ]
     },
     {
-      "tag": "Philosophy, Department of",
+      "tag": "Department of Philosophy",
       "patterns": [
-        "Philosophy, Department of department ",
-        "tell me about the Philosophy, Department of department "
+        "Department of Philosophy department ",
+        "tell me about the Department of Philosophy department "
+      ],
+      "responses": [
+        159,
+        "departments",
+        "Department of Philosophy"
+      ]
+    },
+    {
+      "tag": "Department of Physics",
+      "patterns": [
+        "Department of Physics department ",
+        "tell me about the Department of Physics department "
       ],
       "responses": [
         160,
         "departments",
-        "Philosophy, Department of"
+        "Department of Physics"
       ]
     },
     {
-      "tag": "Physics, Department of",
+      "tag": "Department of Political Science",
       "patterns": [
-        "Physics, Department of department ",
-        "tell me about the Physics, Department of department "
+        "Department of Political Science department ",
+        "tell me about the Department of Political Science department "
       ],
       "responses": [
         161,
         "departments",
-        "Physics, Department of"
-      ]
-    },
-    {
-      "tag": "Political Science, Department of",
-      "patterns": [
-        "Political Science, Department of department ",
-        "tell me about the Political Science, Department of department "
-      ],
-      "responses": [
-        162,
-        "departments",
-        "Political Science, Department of"
+        "Department of Political Science"
       ]
     },
     {
@@ -2043,21 +2030,21 @@
         "tell me about the Posthumanism Research Institute department "
       ],
       "responses": [
-        163,
+        162,
         "departments",
         "Posthumanism Research Institute"
       ]
     },
     {
-      "tag": "President, Office of the",
+      "tag": "Office of the President",
       "patterns": [
-        "President, Office of the department ",
-        "tell me about the President, Office of the department "
+        "Office of the President department ",
+        "tell me about the Office of the President department "
       ],
       "responses": [
-        164,
+        163,
         "departments",
-        "President, Office of the"
+        "Office of the President"
       ]
     },
     {
@@ -2067,7 +2054,7 @@
         "tell me about the Printing and Digital Services department "
       ],
       "responses": [
-        165,
+        164,
         "departments",
         "Printing and Digital Services"
       ]
@@ -2079,33 +2066,33 @@
         "tell me about the Procurement Services department "
       ],
       "responses": [
-        166,
+        165,
         "departments",
         "Procurement Services"
       ]
     },
     {
-      "tag": "Provost and Vice-President, Academic, Office of the",
+      "tag": "Academic Provost and Vice-President",
       "patterns": [
-        "Provost and Vice-President, Academic, Office of the department ",
-        "tell me about the Provost and Vice-President, Academic, Office of the department "
+        "Academic Provost and Vice-President department ",
+        "tell me about the Academic Provost and Vice-President department "
+      ],
+      "responses": [
+        166,
+        "departments",
+        "Academic Provost and Vice-President"
+      ]
+    },
+    {
+      "tag": "Department of Psychology",
+      "patterns": [
+        "Department of Psychology department ",
+        "tell me about the Department of Psychology department "
       ],
       "responses": [
         167,
         "departments",
-        "Provost and Vice-President, Academic, Office of the"
-      ]
-    },
-    {
-      "tag": "Psychology, Department of",
-      "patterns": [
-        "Psychology, Department of department ",
-        "tell me about the Psychology, Department of department "
-      ],
-      "responses": [
-        168,
-        "departments",
-        "Psychology, Department of"
+        "Department of Psychology"
       ]
     },
     {
@@ -2115,7 +2102,7 @@
         "tell me about the Public transportation department "
       ],
       "responses": [
-        169,
+        168,
         "departments",
         "Public transportation"
       ]
@@ -2127,21 +2114,21 @@
         "tell me about the Recreation department "
       ],
       "responses": [
-        170,
+        169,
         "departments",
         "Recreation"
       ]
     },
     {
-      "tag": "Recreation & Leisure Studies, Department of",
+      "tag": "Department of Recreation & Leisure Studies",
       "patterns": [
-        "Recreation & Leisure Studies, Department of department ",
-        "tell me about the Recreation & Leisure Studies, Department of department "
+        "Department of Recreation & Leisure Studies department ",
+        "tell me about the Department of Recreation & Leisure Studies department "
       ],
       "responses": [
-        171,
+        170,
         "departments",
-        "Recreation & Leisure Studies, Department of"
+        "Department of Recreation & Leisure Studies"
       ]
     },
     {
@@ -2151,21 +2138,21 @@
         "tell me about the Recruitment and Liaison department "
       ],
       "responses": [
-        172,
+        171,
         "departments",
         "Recruitment and Liaison"
       ]
     },
     {
-      "tag": "Registrar, Office of the",
+      "tag": "Office of the Registrar",
       "patterns": [
-        "Registrar, Office of the department ",
-        "tell me about the Registrar, Office of the department "
+        "Office of the Registrar department ",
+        "tell me about the Office of the Registrar department "
       ],
       "responses": [
-        173,
+        172,
         "departments",
-        "Registrar, Office of the"
+        "Office of the Registrar"
       ]
     },
     {
@@ -2175,7 +2162,7 @@
         "tell me about the Registration Guides and Timetables department "
       ],
       "responses": [
-        174,
+        173,
         "departments",
         "Registration Guides and Timetables"
       ]
@@ -2187,7 +2174,7 @@
         "tell me about the Research at Brock department "
       ],
       "responses": [
-        175,
+        174,
         "departments",
         "Research at Brock"
       ]
@@ -2199,7 +2186,7 @@
         "tell me about the Residences at Brock department "
       ],
       "responses": [
-        176,
+        175,
         "departments",
         "Residences at Brock"
       ]
@@ -2211,7 +2198,7 @@
         "tell me about the Rodman Hall department "
       ],
       "responses": [
-        177,
+        176,
         "departments",
         "Rodman Hall"
       ]
@@ -2223,7 +2210,7 @@
         "tell me about the Rosalind Blauer Day Care Centre department "
       ],
       "responses": [
-        178,
+        177,
         "departments",
         "Rosalind Blauer Day Care Centre"
       ]
@@ -2235,7 +2222,7 @@
         "tell me about the Science Stores department "
       ],
       "responses": [
-        179,
+        178,
         "departments",
         "Science Stores"
       ]
@@ -2247,7 +2234,7 @@
         "tell me about the Sleep Research Lab department "
       ],
       "responses": [
-        180,
+        179,
         "departments",
         "Sleep Research Lab"
       ]
@@ -2259,7 +2246,7 @@
         "tell me about the Smart Start department "
       ],
       "responses": [
-        181,
+        180,
         "departments",
         "Smart Start"
       ]
@@ -2271,7 +2258,7 @@
         "tell me about the Social Justice and Equity Studies department "
       ],
       "responses": [
-        182,
+        181,
         "departments",
         "Social Justice and Equity Studies"
       ]
@@ -2283,7 +2270,7 @@
         "tell me about the Social Justice Lab department "
       ],
       "responses": [
-        183,
+        182,
         "departments",
         "Social Justice Lab"
       ]
@@ -2295,21 +2282,21 @@
         "tell me about the Social Justice Research Institute department "
       ],
       "responses": [
-        184,
+        183,
         "departments",
         "Social Justice Research Institute"
       ]
     },
     {
-      "tag": "Social Sciences, Faculty of",
+      "tag": "Faculty of Social Sciences",
       "patterns": [
-        "Social Sciences, Faculty of department ",
-        "tell me about the Social Sciences, Faculty of department "
+        "Faculty of Social Sciences department ",
+        "tell me about the Faculty of Social Sciences department "
       ],
       "responses": [
-        185,
+        184,
         "departments",
-        "Social Sciences, Faculty of"
+        "Faculty of Social Sciences"
       ]
     },
     {
@@ -2319,21 +2306,21 @@
         "tell me about the Social-Cognitive Development Lab department "
       ],
       "responses": [
-        186,
+        185,
         "departments",
         "Social-Cognitive Development Lab"
       ]
     },
     {
-      "tag": "Sociology, Department of",
+      "tag": "Department of Sociology",
       "patterns": [
-        "Sociology, Department of department ",
-        "tell me about the Sociology, Department of department "
+        "Department of Sociology department ",
+        "tell me about the Department of Sociology department "
       ],
       "responses": [
-        187,
+        186,
         "departments",
-        "Sociology, Department of"
+        "Department of Sociology"
       ]
     },
     {
@@ -2343,21 +2330,21 @@
         "tell me about the Solidarity Experiences Abroad (SEA) department "
       ],
       "responses": [
-        188,
+        187,
         "departments",
         "Solidarity Experiences Abroad (SEA)"
       ]
     },
     {
-      "tag": "Sport Management, Department of",
+      "tag": "Department of Sport Management",
       "patterns": [
-        "Sport Management, Department of department ",
-        "tell me about the Sport Management, Department of department "
+        "Department of Sport Management department ",
+        "tell me about the Department of Sport Management department "
       ],
       "responses": [
-        189,
+        188,
         "departments",
-        "Sport Management, Department of"
+        "Department of Sport Management"
       ]
     },
     {
@@ -2367,7 +2354,7 @@
         "tell me about the Sports Medicine department "
       ],
       "responses": [
-        190,
+        189,
         "departments",
         "Sports Medicine"
       ]
@@ -2379,7 +2366,7 @@
         "tell me about the Strategic Plan 2018-2025 department "
       ],
       "responses": [
-        191,
+        190,
         "departments",
         "Strategic Plan 2018-2025"
       ]
@@ -2391,7 +2378,7 @@
         "tell me about the Student Accessibility Services (SAS) department "
       ],
       "responses": [
-        192,
+        191,
         "departments",
         "Student Accessibility Services (SAS)"
       ]
@@ -2403,7 +2390,7 @@
         "tell me about the Student Accounts and Financial Aid (SAFA) department "
       ],
       "responses": [
-        193,
+        192,
         "departments",
         "Student Accounts and Financial Aid (SAFA)"
       ]
@@ -2415,7 +2402,7 @@
         "tell me about the Student Health Services department "
       ],
       "responses": [
-        194,
+        193,
         "departments",
         "Student Health Services"
       ]
@@ -2427,7 +2414,7 @@
         "tell me about the Student Information System Modernization department "
       ],
       "responses": [
-        195,
+        194,
         "departments",
         "Student Information System Modernization"
       ]
@@ -2439,7 +2426,7 @@
         "tell me about the Student Life and Success department "
       ],
       "responses": [
-        196,
+        195,
         "departments",
         "Student Life and Success"
       ]
@@ -2451,7 +2438,7 @@
         "tell me about the Student Services (Current Students) department "
       ],
       "responses": [
-        197,
+        196,
         "departments",
         "Student Services (Current Students)"
       ]
@@ -2463,21 +2450,21 @@
         "tell me about the Student Wellness and Accessibility Centre (SWAC) department "
       ],
       "responses": [
-        198,
+        197,
         "departments",
         "Student Wellness and Accessibility Centre (SWAC)"
       ]
     },
     {
-      "tag": "Studies in Arts and Culture, Centre for",
+      "tag": "Centre for Studies in Arts and Culture",
       "patterns": [
-        "Studies in Arts and Culture, Centre for department ",
-        "tell me about the Studies in Arts and Culture, Centre for department "
+        "Centre for Studies in Arts and Culture department ",
+        "tell me about the Centre for Studies in Arts and Culture department "
       ],
       "responses": [
-        199,
+        198,
         "departments",
-        "Studies in Arts and Culture, Centre for"
+        "Centre for Studies in Arts and Culture"
       ]
     },
     {
@@ -2487,7 +2474,7 @@
         "tell me about the Sustainability at Brock department "
       ],
       "responses": [
-        200,
+        199,
         "departments",
         "Sustainability at Brock"
       ]
@@ -2499,7 +2486,7 @@
         "tell me about the Teaching & Learning department "
       ],
       "responses": [
-        201,
+        200,
         "departments",
         "Teaching & Learning"
       ]
@@ -2511,7 +2498,7 @@
         "tell me about the Tenure and promotion department "
       ],
       "responses": [
-        202,
+        201,
         "departments",
         "Tenure and promotion"
       ]
@@ -2523,7 +2510,7 @@
         "tell me about the The Brock Student Sexual Violence Support Centre (A safer Brock) department "
       ],
       "responses": [
-        203,
+        202,
         "departments",
         "The Brock Student Sexual Violence Support Centre (A safer Brock)"
       ]
@@ -2535,7 +2522,7 @@
         "tell me about the Theory of Mind in Education Lab department "
       ],
       "responses": [
-        204,
+        203,
         "departments",
         "Theory of Mind in Education Lab"
       ]
@@ -2547,7 +2534,7 @@
         "tell me about the Thrive Week department "
       ],
       "responses": [
-        205,
+        204,
         "departments",
         "Thrive Week"
       ]
@@ -2559,7 +2546,7 @@
         "tell me about the Tom\u00e1\u0161 Hudlick\u00fd department "
       ],
       "responses": [
-        206,
+        205,
         "departments",
         "Tom\u00e1\u0161 Hudlick\u00fd"
       ]
@@ -2571,7 +2558,7 @@
         "tell me about the University Policies department "
       ],
       "responses": [
-        207,
+        206,
         "departments",
         "University Policies"
       ]
@@ -2583,57 +2570,57 @@
         "tell me about the University Secretariat department "
       ],
       "responses": [
-        208,
+        207,
         "departments",
         "University Secretariat"
       ]
     },
     {
-      "tag": "Vice-President, Administration, Office of the",
+      "tag": "Administration Vice-President",
       "patterns": [
-        "Vice-President, Administration, Office of the department ",
-        "tell me about the Vice-President, Administration, Office of the department "
+        "Administration Vice-President department ",
+        "tell me about the Administration Vice-President department "
+      ],
+      "responses": [
+        208,
+        "departments",
+        "Administration Vice-President"
+      ]
+    },
+    {
+      "tag": "Research Vice-President",
+      "patterns": [
+        "Research Vice-President department ",
+        "tell me about the Research Vice-President department "
       ],
       "responses": [
         209,
         "departments",
-        "Vice-President, Administration, Office of the"
+        "Research Vice-President"
       ]
     },
     {
-      "tag": "Vice-President, Research, Office of the",
+      "tag": "Indigenous Engagement Vice-Provost",
       "patterns": [
-        "Vice-President, Research, Office of the department ",
-        "tell me about the Vice-President, Research, Office of the department "
+        "Indigenous Engagement Vice-Provost department ",
+        "tell me about the Indigenous Engagement Vice-Provost department "
       ],
       "responses": [
         210,
         "departments",
-        "Vice-President, Research, Office of the"
+        "Indigenous Engagement Vice-Provost"
       ]
     },
     {
-      "tag": "Vice-Provost, Indigenous Engagement, Office of the",
+      "tag": "Department of Visual Arts",
       "patterns": [
-        "Vice-Provost, Indigenous Engagement, Office of the department ",
-        "tell me about the Vice-Provost, Indigenous Engagement, Office of the department "
+        "Department of Visual Arts department ",
+        "tell me about the Department of Visual Arts department "
       ],
       "responses": [
         211,
         "departments",
-        "Vice-Provost, Indigenous Engagement, Office of the"
-      ]
-    },
-    {
-      "tag": "Visual Arts, Department of",
-      "patterns": [
-        "Visual Arts, Department of department ",
-        "tell me about the Visual Arts, Department of department "
-      ],
-      "responses": [
-        212,
-        "departments",
-        "Visual Arts, Department of"
+        "Department of Visual Arts"
       ]
     },
     {
@@ -2643,7 +2630,7 @@
         "tell me about the Volk Developmental Science Lab department "
       ],
       "responses": [
-        213,
+        212,
         "departments",
         "Volk Developmental Science Lab"
       ]
@@ -2655,7 +2642,7 @@
         "tell me about the Welcome Week (O-Week) department "
       ],
       "responses": [
-        214,
+        213,
         "departments",
         "Welcome Week (O-Week)"
       ]
@@ -2667,21 +2654,21 @@
         "tell me about the Women in Leadership department "
       ],
       "responses": [
-        215,
+        214,
         "departments",
         "Women in Leadership"
       ]
     },
     {
-      "tag": "Women\u2019s and Gender Studies, Centre for",
+      "tag": "Centre for Women\u2019s and Gender Studies",
       "patterns": [
-        "Women\u2019s and Gender Studies, Centre for department ",
-        "tell me about the Women\u2019s and Gender Studies, Centre for department "
+        "Centre for Women\u2019s and Gender Studies department ",
+        "tell me about the Centre for Women\u2019s and Gender Studies department "
       ],
       "responses": [
-        216,
+        215,
         "departments",
-        "Women\u2019s and Gender Studies, Centre for"
+        "Centre for Women\u2019s and Gender Studies"
       ]
     },
     {
@@ -2691,7 +2678,7 @@
         "tell me about the WordPress @ Brock (Internal) department "
       ],
       "responses": [
-        217,
+        216,
         "departments",
         "WordPress @ Brock (Internal)"
       ]
@@ -2703,7 +2690,7 @@
         "tell me about the Workday department "
       ],
       "responses": [
-        218,
+        217,
         "departments",
         "Workday"
       ]
@@ -2715,7 +2702,7 @@
         "tell me about the Youth University department "
       ],
       "responses": [
-        219,
+        218,
         "departments",
         "Youth University"
       ]
@@ -35757,37 +35744,37 @@
     {
       "tag": "Last day to withdraw from a Summer D1 course (without academic penalty / no grade)",
       "patterns": [
-        "Last day to withdraw from a Summer D1 course (without academic penalty / no grade) important dates TBD"
+        "Last day to withdraw from a Summer D1 course (without academic penalty / no grade) important dates August 5, 2022"
       ],
       "responses": [
         73,
         "dates",
         "Last day to withdraw from a Summer D1 course (without academic penalty / no grade)",
-        "TBD"
+        "August 5, 2022"
       ]
     },
     {
       "tag": "Last day to withdraw from a Summer D2 course (without academic penalty / no grade)",
       "patterns": [
-        "Last day to withdraw from a Summer D2 course (without academic penalty / no grade) important dates TBD"
+        "Last day to withdraw from a Summer D2 course (without academic penalty / no grade) important dates July 14, 2022"
       ],
       "responses": [
         74,
         "dates",
         "Last day to withdraw from a Summer D2 course (without academic penalty / no grade)",
-        "TBD"
+        "July 14, 2022"
       ]
     },
     {
       "tag": "Last day to withdraw from a Summer D3 course (without academic penalty / no grade)",
       "patterns": [
-        "Last day to withdraw from a Summer D3 course (without academic penalty / no grade) important dates TBD"
+        "Last day to withdraw from a Summer D3 course (without academic penalty / no grade) important dates July 21, 2022"
       ],
       "responses": [
         75,
         "dates",
         "Last day to withdraw from a Summer D3 course (without academic penalty / no grade)",
-        "TBD"
+        "July 21, 2022"
       ]
     },
     {
@@ -38308,6 +38295,5346 @@
         77,
         "programs",
         "Women\u2019s and Gender Studies"
+      ]
+    },
+    {
+      "tag": "ACTG 1P02",
+      "patterns": [
+        "ACTG 1P02 exam",
+        "when is the ACTG 1P02 exam"
+      ],
+      "responses": [
+        0,
+        "exams",
+        "ACTG 1P02"
+      ]
+    },
+    {
+      "tag": "ACTG 1P02",
+      "patterns": [
+        "ACTG 1P02 exam",
+        "when is the ACTG 1P02 exam"
+      ],
+      "responses": [
+        1,
+        "exams",
+        "ACTG 1P02"
+      ]
+    },
+    {
+      "tag": "ACTG 1P91",
+      "patterns": [
+        "ACTG 1P91 exam",
+        "when is the ACTG 1P91 exam"
+      ],
+      "responses": [
+        2,
+        "exams",
+        "ACTG 1P91"
+      ]
+    },
+    {
+      "tag": "ACTG 2P12",
+      "patterns": [
+        "ACTG 2P12 exam",
+        "when is the ACTG 2P12 exam"
+      ],
+      "responses": [
+        3,
+        "exams",
+        "ACTG 2P12"
+      ]
+    },
+    {
+      "tag": "ACTG 2P12",
+      "patterns": [
+        "ACTG 2P12 exam",
+        "when is the ACTG 2P12 exam"
+      ],
+      "responses": [
+        4,
+        "exams",
+        "ACTG 2P12"
+      ]
+    },
+    {
+      "tag": "ACTG 2P21",
+      "patterns": [
+        "ACTG 2P21 exam",
+        "when is the ACTG 2P21 exam"
+      ],
+      "responses": [
+        5,
+        "exams",
+        "ACTG 2P21"
+      ]
+    },
+    {
+      "tag": "ACTG 2P21",
+      "patterns": [
+        "ACTG 2P21 exam",
+        "when is the ACTG 2P21 exam"
+      ],
+      "responses": [
+        6,
+        "exams",
+        "ACTG 2P21"
+      ]
+    },
+    {
+      "tag": "ACTG 2P21",
+      "patterns": [
+        "ACTG 2P21 exam",
+        "when is the ACTG 2P21 exam"
+      ],
+      "responses": [
+        7,
+        "exams",
+        "ACTG 2P21"
+      ]
+    },
+    {
+      "tag": "ACTG 2P31",
+      "patterns": [
+        "ACTG 2P31 exam",
+        "when is the ACTG 2P31 exam"
+      ],
+      "responses": [
+        8,
+        "exams",
+        "ACTG 2P31"
+      ]
+    },
+    {
+      "tag": "ACTG 2P32",
+      "patterns": [
+        "ACTG 2P32 exam",
+        "when is the ACTG 2P32 exam"
+      ],
+      "responses": [
+        9,
+        "exams",
+        "ACTG 2P32"
+      ]
+    },
+    {
+      "tag": "ACTG 2P32",
+      "patterns": [
+        "ACTG 2P32 exam",
+        "when is the ACTG 2P32 exam"
+      ],
+      "responses": [
+        10,
+        "exams",
+        "ACTG 2P32"
+      ]
+    },
+    {
+      "tag": "ACTG 2P32",
+      "patterns": [
+        "ACTG 2P32 exam",
+        "when is the ACTG 2P32 exam"
+      ],
+      "responses": [
+        11,
+        "exams",
+        "ACTG 2P32"
+      ]
+    },
+    {
+      "tag": "ACTG 2P51",
+      "patterns": [
+        "ACTG 2P51 exam",
+        "when is the ACTG 2P51 exam"
+      ],
+      "responses": [
+        12,
+        "exams",
+        "ACTG 2P51"
+      ]
+    },
+    {
+      "tag": "ACTG 3P11",
+      "patterns": [
+        "ACTG 3P11 exam",
+        "when is the ACTG 3P11 exam"
+      ],
+      "responses": [
+        13,
+        "exams",
+        "ACTG 3P11"
+      ]
+    },
+    {
+      "tag": "ACTG 3P11",
+      "patterns": [
+        "ACTG 3P11 exam",
+        "when is the ACTG 3P11 exam"
+      ],
+      "responses": [
+        14,
+        "exams",
+        "ACTG 3P11"
+      ]
+    },
+    {
+      "tag": "ACTG 3P23",
+      "patterns": [
+        "ACTG 3P23 exam",
+        "when is the ACTG 3P23 exam"
+      ],
+      "responses": [
+        15,
+        "exams",
+        "ACTG 3P23"
+      ]
+    },
+    {
+      "tag": "ACTG 4P11",
+      "patterns": [
+        "ACTG 4P11 exam",
+        "when is the ACTG 4P11 exam"
+      ],
+      "responses": [
+        16,
+        "exams",
+        "ACTG 4P11"
+      ]
+    },
+    {
+      "tag": "ACTG 4P12",
+      "patterns": [
+        "ACTG 4P12 exam",
+        "when is the ACTG 4P12 exam"
+      ],
+      "responses": [
+        17,
+        "exams",
+        "ACTG 4P12"
+      ]
+    },
+    {
+      "tag": "ACTG 4P12",
+      "patterns": [
+        "ACTG 4P12 exam",
+        "when is the ACTG 4P12 exam"
+      ],
+      "responses": [
+        18,
+        "exams",
+        "ACTG 4P12"
+      ]
+    },
+    {
+      "tag": "ACTG 4P34",
+      "patterns": [
+        "ACTG 4P34 exam",
+        "when is the ACTG 4P34 exam"
+      ],
+      "responses": [
+        19,
+        "exams",
+        "ACTG 4P34"
+      ]
+    },
+    {
+      "tag": "ACTG 4P34",
+      "patterns": [
+        "ACTG 4P34 exam",
+        "when is the ACTG 4P34 exam"
+      ],
+      "responses": [
+        20,
+        "exams",
+        "ACTG 4P34"
+      ]
+    },
+    {
+      "tag": "ACTG 4P41",
+      "patterns": [
+        "ACTG 4P41 exam",
+        "when is the ACTG 4P41 exam"
+      ],
+      "responses": [
+        21,
+        "exams",
+        "ACTG 4P41"
+      ]
+    },
+    {
+      "tag": "ACTG 4P42",
+      "patterns": [
+        "ACTG 4P42 exam",
+        "when is the ACTG 4P42 exam"
+      ],
+      "responses": [
+        22,
+        "exams",
+        "ACTG 4P42"
+      ]
+    },
+    {
+      "tag": "ACTG 4P62",
+      "patterns": [
+        "ACTG 4P62 exam",
+        "when is the ACTG 4P62 exam"
+      ],
+      "responses": [
+        23,
+        "exams",
+        "ACTG 4P62"
+      ]
+    },
+    {
+      "tag": "AHSC 5P98",
+      "patterns": [
+        "AHSC 5P98 exam",
+        "when is the AHSC 5P98 exam"
+      ],
+      "responses": [
+        24,
+        "exams",
+        "AHSC 5P98"
+      ]
+    },
+    {
+      "tag": "APCO 1P00",
+      "patterns": [
+        "APCO 1P00 exam",
+        "when is the APCO 1P00 exam"
+      ],
+      "responses": [
+        25,
+        "exams",
+        "APCO 1P00"
+      ]
+    },
+    {
+      "tag": "APCO 1P01",
+      "patterns": [
+        "APCO 1P01 exam",
+        "when is the APCO 1P01 exam"
+      ],
+      "responses": [
+        26,
+        "exams",
+        "APCO 1P01"
+      ]
+    },
+    {
+      "tag": "APCO 1P50",
+      "patterns": [
+        "APCO 1P50 exam",
+        "when is the APCO 1P50 exam"
+      ],
+      "responses": [
+        27,
+        "exams",
+        "APCO 1P50"
+      ]
+    },
+    {
+      "tag": "APCO 1P50",
+      "patterns": [
+        "APCO 1P50 exam",
+        "when is the APCO 1P50 exam"
+      ],
+      "responses": [
+        28,
+        "exams",
+        "APCO 1P50"
+      ]
+    },
+    {
+      "tag": "APCO 3P94",
+      "patterns": [
+        "APCO 3P94 exam",
+        "when is the APCO 3P94 exam"
+      ],
+      "responses": [
+        29,
+        "exams",
+        "APCO 3P94"
+      ]
+    },
+    {
+      "tag": "BCHM 3P01",
+      "patterns": [
+        "BCHM 3P01 exam",
+        "when is the BCHM 3P01 exam"
+      ],
+      "responses": [
+        30,
+        "exams",
+        "BCHM 3P01"
+      ]
+    },
+    {
+      "tag": "BIOL 1F25",
+      "patterns": [
+        "BIOL 1F25 exam",
+        "when is the BIOL 1F25 exam"
+      ],
+      "responses": [
+        31,
+        "exams",
+        "BIOL 1F25"
+      ]
+    },
+    {
+      "tag": "BIOL 1P24",
+      "patterns": [
+        "BIOL 1P24 exam",
+        "when is the BIOL 1P24 exam"
+      ],
+      "responses": [
+        32,
+        "exams",
+        "BIOL 1P24"
+      ]
+    },
+    {
+      "tag": "BIOL 1P27",
+      "patterns": [
+        "BIOL 1P27 exam",
+        "when is the BIOL 1P27 exam"
+      ],
+      "responses": [
+        33,
+        "exams",
+        "BIOL 1P27"
+      ]
+    },
+    {
+      "tag": "BIOL 1P92",
+      "patterns": [
+        "BIOL 1P92 exam",
+        "when is the BIOL 1P92 exam"
+      ],
+      "responses": [
+        34,
+        "exams",
+        "BIOL 1P92"
+      ]
+    },
+    {
+      "tag": "BIOL 1P92",
+      "patterns": [
+        "BIOL 1P92 exam",
+        "when is the BIOL 1P92 exam"
+      ],
+      "responses": [
+        35,
+        "exams",
+        "BIOL 1P92"
+      ]
+    },
+    {
+      "tag": "BIOL 2P03",
+      "patterns": [
+        "BIOL 2P03 exam",
+        "when is the BIOL 2P03 exam"
+      ],
+      "responses": [
+        36,
+        "exams",
+        "BIOL 2P03"
+      ]
+    },
+    {
+      "tag": "BIOL 2P05",
+      "patterns": [
+        "BIOL 2P05 exam",
+        "when is the BIOL 2P05 exam"
+      ],
+      "responses": [
+        37,
+        "exams",
+        "BIOL 2P05"
+      ]
+    },
+    {
+      "tag": "BIOL 2P92",
+      "patterns": [
+        "BIOL 2P92 exam",
+        "when is the BIOL 2P92 exam"
+      ],
+      "responses": [
+        38,
+        "exams",
+        "BIOL 2P92"
+      ]
+    },
+    {
+      "tag": "BIOL 2P96",
+      "patterns": [
+        "BIOL 2P96 exam",
+        "when is the BIOL 2P96 exam"
+      ],
+      "responses": [
+        39,
+        "exams",
+        "BIOL 2P96"
+      ]
+    },
+    {
+      "tag": "BIOL 2P97",
+      "patterns": [
+        "BIOL 2P97 exam",
+        "when is the BIOL 2P97 exam"
+      ],
+      "responses": [
+        40,
+        "exams",
+        "BIOL 2P97"
+      ]
+    },
+    {
+      "tag": "BIOL 3P50",
+      "patterns": [
+        "BIOL 3P50 exam",
+        "when is the BIOL 3P50 exam"
+      ],
+      "responses": [
+        41,
+        "exams",
+        "BIOL 3P50"
+      ]
+    },
+    {
+      "tag": "BIOL 3P91",
+      "patterns": [
+        "BIOL 3P91 exam",
+        "when is the BIOL 3P91 exam"
+      ],
+      "responses": [
+        42,
+        "exams",
+        "BIOL 3P91"
+      ]
+    },
+    {
+      "tag": "BIOL 3P98",
+      "patterns": [
+        "BIOL 3P98 exam",
+        "when is the BIOL 3P98 exam"
+      ],
+      "responses": [
+        43,
+        "exams",
+        "BIOL 3P98"
+      ]
+    },
+    {
+      "tag": "BIOL 4P53",
+      "patterns": [
+        "BIOL 4P53 exam",
+        "when is the BIOL 4P53 exam"
+      ],
+      "responses": [
+        44,
+        "exams",
+        "BIOL 4P53"
+      ]
+    },
+    {
+      "tag": "BTEC 2P09",
+      "patterns": [
+        "BTEC 2P09 exam",
+        "when is the BTEC 2P09 exam"
+      ],
+      "responses": [
+        45,
+        "exams",
+        "BTEC 2P09"
+      ]
+    },
+    {
+      "tag": "BTEC 3P50",
+      "patterns": [
+        "BTEC 3P50 exam",
+        "when is the BTEC 3P50 exam"
+      ],
+      "responses": [
+        46,
+        "exams",
+        "BTEC 3P50"
+      ]
+    },
+    {
+      "tag": "BTEC 3P93",
+      "patterns": [
+        "BTEC 3P93 exam",
+        "when is the BTEC 3P93 exam"
+      ],
+      "responses": [
+        47,
+        "exams",
+        "BTEC 3P93"
+      ]
+    },
+    {
+      "tag": "BTEC 4P26",
+      "patterns": [
+        "BTEC 4P26 exam",
+        "when is the BTEC 4P26 exam"
+      ],
+      "responses": [
+        48,
+        "exams",
+        "BTEC 4P26"
+      ]
+    },
+    {
+      "tag": "BTEC 4P27",
+      "patterns": [
+        "BTEC 4P27 exam",
+        "when is the BTEC 4P27 exam"
+      ],
+      "responses": [
+        49,
+        "exams",
+        "BTEC 4P27"
+      ]
+    },
+    {
+      "tag": "BTEC 5P25",
+      "patterns": [
+        "BTEC 5P25 exam",
+        "when is the BTEC 5P25 exam"
+      ],
+      "responses": [
+        50,
+        "exams",
+        "BTEC 5P25"
+      ]
+    },
+    {
+      "tag": "CANA 1F91",
+      "patterns": [
+        "CANA 1F91 exam",
+        "when is the CANA 1F91 exam"
+      ],
+      "responses": [
+        51,
+        "exams",
+        "CANA 1F91"
+      ]
+    },
+    {
+      "tag": "CANA 2P92",
+      "patterns": [
+        "CANA 2P92 exam",
+        "when is the CANA 2P92 exam"
+      ],
+      "responses": [
+        52,
+        "exams",
+        "CANA 2P92"
+      ]
+    },
+    {
+      "tag": "CANA 3P18",
+      "patterns": [
+        "CANA 3P18 exam",
+        "when is the CANA 3P18 exam"
+      ],
+      "responses": [
+        53,
+        "exams",
+        "CANA 3P18"
+      ]
+    },
+    {
+      "tag": "CHEM 1P91",
+      "patterns": [
+        "CHEM 1P91 exam",
+        "when is the CHEM 1P91 exam"
+      ],
+      "responses": [
+        54,
+        "exams",
+        "CHEM 1P91"
+      ]
+    },
+    {
+      "tag": "CHEM 1P92",
+      "patterns": [
+        "CHEM 1P92 exam",
+        "when is the CHEM 1P92 exam"
+      ],
+      "responses": [
+        55,
+        "exams",
+        "CHEM 1P92"
+      ]
+    },
+    {
+      "tag": "CHEM 2P12",
+      "patterns": [
+        "CHEM 2P12 exam",
+        "when is the CHEM 2P12 exam"
+      ],
+      "responses": [
+        56,
+        "exams",
+        "CHEM 2P12"
+      ]
+    },
+    {
+      "tag": "CHEM 2P21",
+      "patterns": [
+        "CHEM 2P21 exam",
+        "when is the CHEM 2P21 exam"
+      ],
+      "responses": [
+        57,
+        "exams",
+        "CHEM 2P21"
+      ]
+    },
+    {
+      "tag": "CHEM 2P32",
+      "patterns": [
+        "CHEM 2P32 exam",
+        "when is the CHEM 2P32 exam"
+      ],
+      "responses": [
+        58,
+        "exams",
+        "CHEM 2P32"
+      ]
+    },
+    {
+      "tag": "CHEM 3P21",
+      "patterns": [
+        "CHEM 3P21 exam",
+        "when is the CHEM 3P21 exam"
+      ],
+      "responses": [
+        59,
+        "exams",
+        "CHEM 3P21"
+      ]
+    },
+    {
+      "tag": "CHEM 3P31",
+      "patterns": [
+        "CHEM 3P31 exam",
+        "when is the CHEM 3P31 exam"
+      ],
+      "responses": [
+        60,
+        "exams",
+        "CHEM 3P31"
+      ]
+    },
+    {
+      "tag": "CHEM 3P53",
+      "patterns": [
+        "CHEM 3P53 exam",
+        "when is the CHEM 3P53 exam"
+      ],
+      "responses": [
+        61,
+        "exams",
+        "CHEM 3P53"
+      ]
+    },
+    {
+      "tag": "CHEM 3P93",
+      "patterns": [
+        "CHEM 3P93 exam",
+        "when is the CHEM 3P93 exam"
+      ],
+      "responses": [
+        62,
+        "exams",
+        "CHEM 3P93"
+      ]
+    },
+    {
+      "tag": "CHEM 4P26",
+      "patterns": [
+        "CHEM 4P26 exam",
+        "when is the CHEM 4P26 exam"
+      ],
+      "responses": [
+        63,
+        "exams",
+        "CHEM 4P26"
+      ]
+    },
+    {
+      "tag": "CHEM 4P27",
+      "patterns": [
+        "CHEM 4P27 exam",
+        "when is the CHEM 4P27 exam"
+      ],
+      "responses": [
+        64,
+        "exams",
+        "CHEM 4P27"
+      ]
+    },
+    {
+      "tag": "CHEM 5P25",
+      "patterns": [
+        "CHEM 5P25 exam",
+        "when is the CHEM 5P25 exam"
+      ],
+      "responses": [
+        65,
+        "exams",
+        "CHEM 5P25"
+      ]
+    },
+    {
+      "tag": "CHYS 2P52",
+      "patterns": [
+        "CHYS 2P52 exam",
+        "when is the CHYS 2P52 exam"
+      ],
+      "responses": [
+        66,
+        "exams",
+        "CHYS 2P52"
+      ]
+    },
+    {
+      "tag": "CHYS 2P52",
+      "patterns": [
+        "CHYS 2P52 exam",
+        "when is the CHYS 2P52 exam"
+      ],
+      "responses": [
+        67,
+        "exams",
+        "CHYS 2P52"
+      ]
+    },
+    {
+      "tag": "CHYS 2P99",
+      "patterns": [
+        "CHYS 2P99 exam",
+        "when is the CHYS 2P99 exam"
+      ],
+      "responses": [
+        68,
+        "exams",
+        "CHYS 2P99"
+      ]
+    },
+    {
+      "tag": "CHYS 3P09",
+      "patterns": [
+        "CHYS 3P09 exam",
+        "when is the CHYS 3P09 exam"
+      ],
+      "responses": [
+        69,
+        "exams",
+        "CHYS 3P09"
+      ]
+    },
+    {
+      "tag": "CHYS 3P15",
+      "patterns": [
+        "CHYS 3P15 exam",
+        "when is the CHYS 3P15 exam"
+      ],
+      "responses": [
+        70,
+        "exams",
+        "CHYS 3P15"
+      ]
+    },
+    {
+      "tag": "CHYS 3P97",
+      "patterns": [
+        "CHYS 3P97 exam",
+        "when is the CHYS 3P97 exam"
+      ],
+      "responses": [
+        71,
+        "exams",
+        "CHYS 3P97"
+      ]
+    },
+    {
+      "tag": "CHYS 4P09",
+      "patterns": [
+        "CHYS 4P09 exam",
+        "when is the CHYS 4P09 exam"
+      ],
+      "responses": [
+        72,
+        "exams",
+        "CHYS 4P09"
+      ]
+    },
+    {
+      "tag": "CHYS 4P56",
+      "patterns": [
+        "CHYS 4P56 exam",
+        "when is the CHYS 4P56 exam"
+      ],
+      "responses": [
+        73,
+        "exams",
+        "CHYS 4P56"
+      ]
+    },
+    {
+      "tag": "CLAS 1P94",
+      "patterns": [
+        "CLAS 1P94 exam",
+        "when is the CLAS 1P94 exam"
+      ],
+      "responses": [
+        74,
+        "exams",
+        "CLAS 1P94"
+      ]
+    },
+    {
+      "tag": "CLAS 1P97",
+      "patterns": [
+        "CLAS 1P97 exam",
+        "when is the CLAS 1P97 exam"
+      ],
+      "responses": [
+        75,
+        "exams",
+        "CLAS 1P97"
+      ]
+    },
+    {
+      "tag": "COMM 2P94",
+      "patterns": [
+        "COMM 2P94 exam",
+        "when is the COMM 2P94 exam"
+      ],
+      "responses": [
+        76,
+        "exams",
+        "COMM 2P94"
+      ]
+    },
+    {
+      "tag": "COMM 2P98",
+      "patterns": [
+        "COMM 2P98 exam",
+        "when is the COMM 2P98 exam"
+      ],
+      "responses": [
+        77,
+        "exams",
+        "COMM 2P98"
+      ]
+    },
+    {
+      "tag": "COMM 2Q98",
+      "patterns": [
+        "COMM 2Q98 exam",
+        "when is the COMM 2Q98 exam"
+      ],
+      "responses": [
+        78,
+        "exams",
+        "COMM 2Q98"
+      ]
+    },
+    {
+      "tag": "COSC 1P02",
+      "patterns": [
+        "COSC 1P02 exam",
+        "when is the COSC 1P02 exam"
+      ],
+      "responses": [
+        79,
+        "exams",
+        "COSC 1P02"
+      ]
+    },
+    {
+      "tag": "COSC 1P03",
+      "patterns": [
+        "COSC 1P03 exam",
+        "when is the COSC 1P03 exam"
+      ],
+      "responses": [
+        80,
+        "exams",
+        "COSC 1P03"
+      ]
+    },
+    {
+      "tag": "COSC 1P03",
+      "patterns": [
+        "COSC 1P03 exam",
+        "when is the COSC 1P03 exam"
+      ],
+      "responses": [
+        81,
+        "exams",
+        "COSC 1P03"
+      ]
+    },
+    {
+      "tag": "COSC 1P50",
+      "patterns": [
+        "COSC 1P50 exam",
+        "when is the COSC 1P50 exam"
+      ],
+      "responses": [
+        82,
+        "exams",
+        "COSC 1P50"
+      ]
+    },
+    {
+      "tag": "COSC 1P50",
+      "patterns": [
+        "COSC 1P50 exam",
+        "when is the COSC 1P50 exam"
+      ],
+      "responses": [
+        83,
+        "exams",
+        "COSC 1P50"
+      ]
+    },
+    {
+      "tag": "COSC 2P05",
+      "patterns": [
+        "COSC 2P05 exam",
+        "when is the COSC 2P05 exam"
+      ],
+      "responses": [
+        84,
+        "exams",
+        "COSC 2P05"
+      ]
+    },
+    {
+      "tag": "COSC 2P13",
+      "patterns": [
+        "COSC 2P13 exam",
+        "when is the COSC 2P13 exam"
+      ],
+      "responses": [
+        85,
+        "exams",
+        "COSC 2P13"
+      ]
+    },
+    {
+      "tag": "COSC 3P32",
+      "patterns": [
+        "COSC 3P32 exam",
+        "when is the COSC 3P32 exam"
+      ],
+      "responses": [
+        86,
+        "exams",
+        "COSC 3P32"
+      ]
+    },
+    {
+      "tag": "COSC 3P91",
+      "patterns": [
+        "COSC 3P91 exam",
+        "when is the COSC 3P91 exam"
+      ],
+      "responses": [
+        87,
+        "exams",
+        "COSC 3P91"
+      ]
+    },
+    {
+      "tag": "COSC 3P94",
+      "patterns": [
+        "COSC 3P94 exam",
+        "when is the COSC 3P94 exam"
+      ],
+      "responses": [
+        88,
+        "exams",
+        "COSC 3P94"
+      ]
+    },
+    {
+      "tag": "COSC 4P32",
+      "patterns": [
+        "COSC 4P32 exam",
+        "when is the COSC 4P32 exam"
+      ],
+      "responses": [
+        89,
+        "exams",
+        "COSC 4P32"
+      ]
+    },
+    {
+      "tag": "COSC 4P61",
+      "patterns": [
+        "COSC 4P61 exam",
+        "when is the COSC 4P61 exam"
+      ],
+      "responses": [
+        90,
+        "exams",
+        "COSC 4P61"
+      ]
+    },
+    {
+      "tag": "CRIM 2P62",
+      "patterns": [
+        "CRIM 2P62 exam",
+        "when is the CRIM 2P62 exam"
+      ],
+      "responses": [
+        91,
+        "exams",
+        "CRIM 2P62"
+      ]
+    },
+    {
+      "tag": "CRIM 3P01",
+      "patterns": [
+        "CRIM 3P01 exam",
+        "when is the CRIM 3P01 exam"
+      ],
+      "responses": [
+        92,
+        "exams",
+        "CRIM 3P01"
+      ]
+    },
+    {
+      "tag": "CRIM 3P02",
+      "patterns": [
+        "CRIM 3P02 exam",
+        "when is the CRIM 3P02 exam"
+      ],
+      "responses": [
+        93,
+        "exams",
+        "CRIM 3P02"
+      ]
+    },
+    {
+      "tag": "CRIM 3P45",
+      "patterns": [
+        "CRIM 3P45 exam",
+        "when is the CRIM 3P45 exam"
+      ],
+      "responses": [
+        94,
+        "exams",
+        "CRIM 3P45"
+      ]
+    },
+    {
+      "tag": "ECON 1P91",
+      "patterns": [
+        "ECON 1P91 exam",
+        "when is the ECON 1P91 exam"
+      ],
+      "responses": [
+        95,
+        "exams",
+        "ECON 1P91"
+      ]
+    },
+    {
+      "tag": "ECON 1P91",
+      "patterns": [
+        "ECON 1P91 exam",
+        "when is the ECON 1P91 exam"
+      ],
+      "responses": [
+        96,
+        "exams",
+        "ECON 1P91"
+      ]
+    },
+    {
+      "tag": "ECON 1P92",
+      "patterns": [
+        "ECON 1P92 exam",
+        "when is the ECON 1P92 exam"
+      ],
+      "responses": [
+        97,
+        "exams",
+        "ECON 1P92"
+      ]
+    },
+    {
+      "tag": "ECON 1P95",
+      "patterns": [
+        "ECON 1P95 exam",
+        "when is the ECON 1P95 exam"
+      ],
+      "responses": [
+        98,
+        "exams",
+        "ECON 1P95"
+      ]
+    },
+    {
+      "tag": "ECON 2P15",
+      "patterns": [
+        "ECON 2P15 exam",
+        "when is the ECON 2P15 exam"
+      ],
+      "responses": [
+        99,
+        "exams",
+        "ECON 2P15"
+      ]
+    },
+    {
+      "tag": "ECON 2P19",
+      "patterns": [
+        "ECON 2P19 exam",
+        "when is the ECON 2P19 exam"
+      ],
+      "responses": [
+        100,
+        "exams",
+        "ECON 2P19"
+      ]
+    },
+    {
+      "tag": "ECON 2P21",
+      "patterns": [
+        "ECON 2P21 exam",
+        "when is the ECON 2P21 exam"
+      ],
+      "responses": [
+        101,
+        "exams",
+        "ECON 2P21"
+      ]
+    },
+    {
+      "tag": "ECON 2P22",
+      "patterns": [
+        "ECON 2P22 exam",
+        "when is the ECON 2P22 exam"
+      ],
+      "responses": [
+        102,
+        "exams",
+        "ECON 2P22"
+      ]
+    },
+    {
+      "tag": "ECON 2P23",
+      "patterns": [
+        "ECON 2P23 exam",
+        "when is the ECON 2P23 exam"
+      ],
+      "responses": [
+        103,
+        "exams",
+        "ECON 2P23"
+      ]
+    },
+    {
+      "tag": "ECON 2P23",
+      "patterns": [
+        "ECON 2P23 exam",
+        "when is the ECON 2P23 exam"
+      ],
+      "responses": [
+        104,
+        "exams",
+        "ECON 2P23"
+      ]
+    },
+    {
+      "tag": "ECON 2P30",
+      "patterns": [
+        "ECON 2P30 exam",
+        "when is the ECON 2P30 exam"
+      ],
+      "responses": [
+        105,
+        "exams",
+        "ECON 2P30"
+      ]
+    },
+    {
+      "tag": "ECON 2P42",
+      "patterns": [
+        "ECON 2P42 exam",
+        "when is the ECON 2P42 exam"
+      ],
+      "responses": [
+        106,
+        "exams",
+        "ECON 2P42"
+      ]
+    },
+    {
+      "tag": "ECON 2P90",
+      "patterns": [
+        "ECON 2P90 exam",
+        "when is the ECON 2P90 exam"
+      ],
+      "responses": [
+        107,
+        "exams",
+        "ECON 2P90"
+      ]
+    },
+    {
+      "tag": "ECON 2P91",
+      "patterns": [
+        "ECON 2P91 exam",
+        "when is the ECON 2P91 exam"
+      ],
+      "responses": [
+        108,
+        "exams",
+        "ECON 2P91"
+      ]
+    },
+    {
+      "tag": "ECON 2P91",
+      "patterns": [
+        "ECON 2P91 exam",
+        "when is the ECON 2P91 exam"
+      ],
+      "responses": [
+        109,
+        "exams",
+        "ECON 2P91"
+      ]
+    },
+    {
+      "tag": "ECON 3P01",
+      "patterns": [
+        "ECON 3P01 exam",
+        "when is the ECON 3P01 exam"
+      ],
+      "responses": [
+        110,
+        "exams",
+        "ECON 3P01"
+      ]
+    },
+    {
+      "tag": "ECON 3P04",
+      "patterns": [
+        "ECON 3P04 exam",
+        "when is the ECON 3P04 exam"
+      ],
+      "responses": [
+        111,
+        "exams",
+        "ECON 3P04"
+      ]
+    },
+    {
+      "tag": "ECON 3P10",
+      "patterns": [
+        "ECON 3P10 exam",
+        "when is the ECON 3P10 exam"
+      ],
+      "responses": [
+        112,
+        "exams",
+        "ECON 3P10"
+      ]
+    },
+    {
+      "tag": "ECON 3P13",
+      "patterns": [
+        "ECON 3P13 exam",
+        "when is the ECON 3P13 exam"
+      ],
+      "responses": [
+        113,
+        "exams",
+        "ECON 3P13"
+      ]
+    },
+    {
+      "tag": "ECON 3P15",
+      "patterns": [
+        "ECON 3P15 exam",
+        "when is the ECON 3P15 exam"
+      ],
+      "responses": [
+        114,
+        "exams",
+        "ECON 3P15"
+      ]
+    },
+    {
+      "tag": "ECON 3P21",
+      "patterns": [
+        "ECON 3P21 exam",
+        "when is the ECON 3P21 exam"
+      ],
+      "responses": [
+        115,
+        "exams",
+        "ECON 3P21"
+      ]
+    },
+    {
+      "tag": "ECON 3P22",
+      "patterns": [
+        "ECON 3P22 exam",
+        "when is the ECON 3P22 exam"
+      ],
+      "responses": [
+        116,
+        "exams",
+        "ECON 3P22"
+      ]
+    },
+    {
+      "tag": "ECON 3P90",
+      "patterns": [
+        "ECON 3P90 exam",
+        "when is the ECON 3P90 exam"
+      ],
+      "responses": [
+        117,
+        "exams",
+        "ECON 3P90"
+      ]
+    },
+    {
+      "tag": "ECON 3Q91",
+      "patterns": [
+        "ECON 3Q91 exam",
+        "when is the ECON 3Q91 exam"
+      ],
+      "responses": [
+        118,
+        "exams",
+        "ECON 3Q91"
+      ]
+    },
+    {
+      "tag": "ECON 4P06",
+      "patterns": [
+        "ECON 4P06 exam",
+        "when is the ECON 4P06 exam"
+      ],
+      "responses": [
+        119,
+        "exams",
+        "ECON 4P06"
+      ]
+    },
+    {
+      "tag": "ECON 4P13",
+      "patterns": [
+        "ECON 4P13 exam",
+        "when is the ECON 4P13 exam"
+      ],
+      "responses": [
+        120,
+        "exams",
+        "ECON 4P13"
+      ]
+    },
+    {
+      "tag": "ECON 4P14",
+      "patterns": [
+        "ECON 4P14 exam",
+        "when is the ECON 4P14 exam"
+      ],
+      "responses": [
+        121,
+        "exams",
+        "ECON 4P14"
+      ]
+    },
+    {
+      "tag": "ECON 5P14",
+      "patterns": [
+        "ECON 5P14 exam",
+        "when is the ECON 5P14 exam"
+      ],
+      "responses": [
+        122,
+        "exams",
+        "ECON 5P14"
+      ]
+    },
+    {
+      "tag": "EDUC 4P70",
+      "patterns": [
+        "EDUC 4P70 exam",
+        "when is the EDUC 4P70 exam"
+      ],
+      "responses": [
+        123,
+        "exams",
+        "EDUC 4P70"
+      ]
+    },
+    {
+      "tag": "ENGL 2P70",
+      "patterns": [
+        "ENGL 2P70 exam",
+        "when is the ENGL 2P70 exam"
+      ],
+      "responses": [
+        124,
+        "exams",
+        "ENGL 2P70"
+      ]
+    },
+    {
+      "tag": "ENTR 2P51",
+      "patterns": [
+        "ENTR 2P51 exam",
+        "when is the ENTR 2P51 exam"
+      ],
+      "responses": [
+        125,
+        "exams",
+        "ENTR 2P51"
+      ]
+    },
+    {
+      "tag": "ERSC 1P02",
+      "patterns": [
+        "ERSC 1P02 exam",
+        "when is the ERSC 1P02 exam"
+      ],
+      "responses": [
+        126,
+        "exams",
+        "ERSC 1P02"
+      ]
+    },
+    {
+      "tag": "ERSC 2P03",
+      "patterns": [
+        "ERSC 2P03 exam",
+        "when is the ERSC 2P03 exam"
+      ],
+      "responses": [
+        127,
+        "exams",
+        "ERSC 2P03"
+      ]
+    },
+    {
+      "tag": "ERSC 2P08",
+      "patterns": [
+        "ERSC 2P08 exam",
+        "when is the ERSC 2P08 exam"
+      ],
+      "responses": [
+        128,
+        "exams",
+        "ERSC 2P08"
+      ]
+    },
+    {
+      "tag": "ERSC 2P24",
+      "patterns": [
+        "ERSC 2P24 exam",
+        "when is the ERSC 2P24 exam"
+      ],
+      "responses": [
+        129,
+        "exams",
+        "ERSC 2P24"
+      ]
+    },
+    {
+      "tag": "ERSC 3P08",
+      "patterns": [
+        "ERSC 3P08 exam",
+        "when is the ERSC 3P08 exam"
+      ],
+      "responses": [
+        130,
+        "exams",
+        "ERSC 3P08"
+      ]
+    },
+    {
+      "tag": "ERSC 3P12",
+      "patterns": [
+        "ERSC 3P12 exam",
+        "when is the ERSC 3P12 exam"
+      ],
+      "responses": [
+        131,
+        "exams",
+        "ERSC 3P12"
+      ]
+    },
+    {
+      "tag": "ERSC 3P90",
+      "patterns": [
+        "ERSC 3P90 exam",
+        "when is the ERSC 3P90 exam"
+      ],
+      "responses": [
+        132,
+        "exams",
+        "ERSC 3P90"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        133,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        134,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        135,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        136,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        137,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "FILM 1F94",
+      "patterns": [
+        "FILM 1F94 exam",
+        "when is the FILM 1F94 exam"
+      ],
+      "responses": [
+        138,
+        "exams",
+        "FILM 1F94"
+      ]
+    },
+    {
+      "tag": "FILM 2F98",
+      "patterns": [
+        "FILM 2F98 exam",
+        "when is the FILM 2F98 exam"
+      ],
+      "responses": [
+        139,
+        "exams",
+        "FILM 2F98"
+      ]
+    },
+    {
+      "tag": "FILM 2P91",
+      "patterns": [
+        "FILM 2P91 exam",
+        "when is the FILM 2P91 exam"
+      ],
+      "responses": [
+        140,
+        "exams",
+        "FILM 2P91"
+      ]
+    },
+    {
+      "tag": "FILM 2P94",
+      "patterns": [
+        "FILM 2P94 exam",
+        "when is the FILM 2P94 exam"
+      ],
+      "responses": [
+        141,
+        "exams",
+        "FILM 2P94"
+      ]
+    },
+    {
+      "tag": "FNCE 2P51",
+      "patterns": [
+        "FNCE 2P51 exam",
+        "when is the FNCE 2P51 exam"
+      ],
+      "responses": [
+        142,
+        "exams",
+        "FNCE 2P51"
+      ]
+    },
+    {
+      "tag": "FNCE 2P91",
+      "patterns": [
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
+      ],
+      "responses": [
+        143,
+        "exams",
+        "FNCE 2P91"
+      ]
+    },
+    {
+      "tag": "FNCE 2P91",
+      "patterns": [
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
+      ],
+      "responses": [
+        144,
+        "exams",
+        "FNCE 2P91"
+      ]
+    },
+    {
+      "tag": "FNCE 2P91",
+      "patterns": [
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
+      ],
+      "responses": [
+        145,
+        "exams",
+        "FNCE 2P91"
+      ]
+    },
+    {
+      "tag": "FNCE 2P91",
+      "patterns": [
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
+      ],
+      "responses": [
+        146,
+        "exams",
+        "FNCE 2P91"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        147,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        148,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        149,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        150,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        151,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        152,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        153,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        154,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P96",
+      "patterns": [
+        "FNCE 3P96 exam",
+        "when is the FNCE 3P96 exam"
+      ],
+      "responses": [
+        155,
+        "exams",
+        "FNCE 3P96"
+      ]
+    },
+    {
+      "tag": "FNCE 3P96",
+      "patterns": [
+        "FNCE 3P96 exam",
+        "when is the FNCE 3P96 exam"
+      ],
+      "responses": [
+        156,
+        "exams",
+        "FNCE 3P96"
+      ]
+    },
+    {
+      "tag": "FNCE 4P05",
+      "patterns": [
+        "FNCE 4P05 exam",
+        "when is the FNCE 4P05 exam"
+      ],
+      "responses": [
+        157,
+        "exams",
+        "FNCE 4P05"
+      ]
+    },
+    {
+      "tag": "FNCE 4P05",
+      "patterns": [
+        "FNCE 4P05 exam",
+        "when is the FNCE 4P05 exam"
+      ],
+      "responses": [
+        158,
+        "exams",
+        "FNCE 4P05"
+      ]
+    },
+    {
+      "tag": "FNCE 4P18",
+      "patterns": [
+        "FNCE 4P18 exam",
+        "when is the FNCE 4P18 exam"
+      ],
+      "responses": [
+        159,
+        "exams",
+        "FNCE 4P18"
+      ]
+    },
+    {
+      "tag": "FREN 1F00",
+      "patterns": [
+        "FREN 1F00 exam",
+        "when is the FREN 1F00 exam"
+      ],
+      "responses": [
+        160,
+        "exams",
+        "FREN 1F00"
+      ]
+    },
+    {
+      "tag": "FREN 1F00",
+      "patterns": [
+        "FREN 1F00 exam",
+        "when is the FREN 1F00 exam"
+      ],
+      "responses": [
+        161,
+        "exams",
+        "FREN 1F00"
+      ]
+    },
+    {
+      "tag": "FREN 1F50",
+      "patterns": [
+        "FREN 1F50 exam",
+        "when is the FREN 1F50 exam"
+      ],
+      "responses": [
+        162,
+        "exams",
+        "FREN 1F50"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        163,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        164,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        165,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        166,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        167,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        168,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        169,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 1F90",
+      "patterns": [
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
+      ],
+      "responses": [
+        170,
+        "exams",
+        "FREN 1F90"
+      ]
+    },
+    {
+      "tag": "FREN 2F00",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        171,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
+      "tag": "FREN 2F00",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        172,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
+      "tag": "FREN 2F00",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        173,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
+      "tag": "FREN 2F00",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        174,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
+      "tag": "GEOG 1F91",
+      "patterns": [
+        "GEOG 1F91 exam",
+        "when is the GEOG 1F91 exam"
+      ],
+      "responses": [
+        175,
+        "exams",
+        "GEOG 1F91"
+      ]
+    },
+    {
+      "tag": "GEOG 2P08",
+      "patterns": [
+        "GEOG 2P08 exam",
+        "when is the GEOG 2P08 exam"
+      ],
+      "responses": [
+        176,
+        "exams",
+        "GEOG 2P08"
+      ]
+    },
+    {
+      "tag": "GEOG 3P08",
+      "patterns": [
+        "GEOG 3P08 exam",
+        "when is the GEOG 3P08 exam"
+      ],
+      "responses": [
+        177,
+        "exams",
+        "GEOG 3P08"
+      ]
+    },
+    {
+      "tag": "GEOG 3P09",
+      "patterns": [
+        "GEOG 3P09 exam",
+        "when is the GEOG 3P09 exam"
+      ],
+      "responses": [
+        178,
+        "exams",
+        "GEOG 3P09"
+      ]
+    },
+    {
+      "tag": "GERM 1F00",
+      "patterns": [
+        "GERM 1F00 exam",
+        "when is the GERM 1F00 exam"
+      ],
+      "responses": [
+        179,
+        "exams",
+        "GERM 1F00"
+      ]
+    },
+    {
+      "tag": "GERM 1F90",
+      "patterns": [
+        "GERM 1F90 exam",
+        "when is the GERM 1F90 exam"
+      ],
+      "responses": [
+        180,
+        "exams",
+        "GERM 1F90"
+      ]
+    },
+    {
+      "tag": "GERM 1F90",
+      "patterns": [
+        "GERM 1F90 exam",
+        "when is the GERM 1F90 exam"
+      ],
+      "responses": [
+        181,
+        "exams",
+        "GERM 1F90"
+      ]
+    },
+    {
+      "tag": "GERM 2F00",
+      "patterns": [
+        "GERM 2F00 exam",
+        "when is the GERM 2F00 exam"
+      ],
+      "responses": [
+        182,
+        "exams",
+        "GERM 2F00"
+      ]
+    },
+    {
+      "tag": "GERM 2P95",
+      "patterns": [
+        "GERM 2P95 exam",
+        "when is the GERM 2P95 exam"
+      ],
+      "responses": [
+        183,
+        "exams",
+        "GERM 2P95"
+      ]
+    },
+    {
+      "tag": "GERM 3F99",
+      "patterns": [
+        "GERM 3F99 exam",
+        "when is the GERM 3F99 exam"
+      ],
+      "responses": [
+        184,
+        "exams",
+        "GERM 3F99"
+      ]
+    },
+    {
+      "tag": "GERO 5P92",
+      "patterns": [
+        "GERO 5P92 exam",
+        "when is the GERO 5P92 exam"
+      ],
+      "responses": [
+        185,
+        "exams",
+        "GERO 5P92"
+      ]
+    },
+    {
+      "tag": "GREE 1F00",
+      "patterns": [
+        "GREE 1F00 exam",
+        "when is the GREE 1F00 exam"
+      ],
+      "responses": [
+        186,
+        "exams",
+        "GREE 1F00"
+      ]
+    },
+    {
+      "tag": "HIST 1P91",
+      "patterns": [
+        "HIST 1P91 exam",
+        "when is the HIST 1P91 exam"
+      ],
+      "responses": [
+        187,
+        "exams",
+        "HIST 1P91"
+      ]
+    },
+    {
+      "tag": "HIST 2F00",
+      "patterns": [
+        "HIST 2F00 exam",
+        "when is the HIST 2F00 exam"
+      ],
+      "responses": [
+        188,
+        "exams",
+        "HIST 2F00"
+      ]
+    },
+    {
+      "tag": "HIST 2F20",
+      "patterns": [
+        "HIST 2F20 exam",
+        "when is the HIST 2F20 exam"
+      ],
+      "responses": [
+        189,
+        "exams",
+        "HIST 2F20"
+      ]
+    },
+    {
+      "tag": "HLSC 1F90",
+      "patterns": [
+        "HLSC 1F90 exam",
+        "when is the HLSC 1F90 exam"
+      ],
+      "responses": [
+        190,
+        "exams",
+        "HLSC 1F90"
+      ]
+    },
+    {
+      "tag": "HLSC 2P07",
+      "patterns": [
+        "HLSC 2P07 exam",
+        "when is the HLSC 2P07 exam"
+      ],
+      "responses": [
+        191,
+        "exams",
+        "HLSC 2P07"
+      ]
+    },
+    {
+      "tag": "HLSC 2P09",
+      "patterns": [
+        "HLSC 2P09 exam",
+        "when is the HLSC 2P09 exam"
+      ],
+      "responses": [
+        192,
+        "exams",
+        "HLSC 2P09"
+      ]
+    },
+    {
+      "tag": "HLSC 2P27",
+      "patterns": [
+        "HLSC 2P27 exam",
+        "when is the HLSC 2P27 exam"
+      ],
+      "responses": [
+        193,
+        "exams",
+        "HLSC 2P27"
+      ]
+    },
+    {
+      "tag": "HLSC 2P40",
+      "patterns": [
+        "HLSC 2P40 exam",
+        "when is the HLSC 2P40 exam"
+      ],
+      "responses": [
+        194,
+        "exams",
+        "HLSC 2P40"
+      ]
+    },
+    {
+      "tag": "HLSC 2P49",
+      "patterns": [
+        "HLSC 2P49 exam",
+        "when is the HLSC 2P49 exam"
+      ],
+      "responses": [
+        195,
+        "exams",
+        "HLSC 2P49"
+      ]
+    },
+    {
+      "tag": "HLSC 2P90",
+      "patterns": [
+        "HLSC 2P90 exam",
+        "when is the HLSC 2P90 exam"
+      ],
+      "responses": [
+        196,
+        "exams",
+        "HLSC 2P90"
+      ]
+    },
+    {
+      "tag": "HLSC 2P96",
+      "patterns": [
+        "HLSC 2P96 exam",
+        "when is the HLSC 2P96 exam"
+      ],
+      "responses": [
+        197,
+        "exams",
+        "HLSC 2P96"
+      ]
+    },
+    {
+      "tag": "HLSC 2P98",
+      "patterns": [
+        "HLSC 2P98 exam",
+        "when is the HLSC 2P98 exam"
+      ],
+      "responses": [
+        198,
+        "exams",
+        "HLSC 2P98"
+      ]
+    },
+    {
+      "tag": "HLSC 3P09",
+      "patterns": [
+        "HLSC 3P09 exam",
+        "when is the HLSC 3P09 exam"
+      ],
+      "responses": [
+        199,
+        "exams",
+        "HLSC 3P09"
+      ]
+    },
+    {
+      "tag": "HLSC 3P19",
+      "patterns": [
+        "HLSC 3P19 exam",
+        "when is the HLSC 3P19 exam"
+      ],
+      "responses": [
+        200,
+        "exams",
+        "HLSC 3P19"
+      ]
+    },
+    {
+      "tag": "HLSC 3P50",
+      "patterns": [
+        "HLSC 3P50 exam",
+        "when is the HLSC 3P50 exam"
+      ],
+      "responses": [
+        201,
+        "exams",
+        "HLSC 3P50"
+      ]
+    },
+    {
+      "tag": "HLSC 3P91",
+      "patterns": [
+        "HLSC 3P91 exam",
+        "when is the HLSC 3P91 exam"
+      ],
+      "responses": [
+        202,
+        "exams",
+        "HLSC 3P91"
+      ]
+    },
+    {
+      "tag": "HLSC 3P94",
+      "patterns": [
+        "HLSC 3P94 exam",
+        "when is the HLSC 3P94 exam"
+      ],
+      "responses": [
+        203,
+        "exams",
+        "HLSC 3P94"
+      ]
+    },
+    {
+      "tag": "HLSC 3P97",
+      "patterns": [
+        "HLSC 3P97 exam",
+        "when is the HLSC 3P97 exam"
+      ],
+      "responses": [
+        204,
+        "exams",
+        "HLSC 3P97"
+      ]
+    },
+    {
+      "tag": "HLSC 4P02",
+      "patterns": [
+        "HLSC 4P02 exam",
+        "when is the HLSC 4P02 exam"
+      ],
+      "responses": [
+        205,
+        "exams",
+        "HLSC 4P02"
+      ]
+    },
+    {
+      "tag": "HLSC 4P03",
+      "patterns": [
+        "HLSC 4P03 exam",
+        "when is the HLSC 4P03 exam"
+      ],
+      "responses": [
+        206,
+        "exams",
+        "HLSC 4P03"
+      ]
+    },
+    {
+      "tag": "HLSC 4P95",
+      "patterns": [
+        "HLSC 4P95 exam",
+        "when is the HLSC 4P95 exam"
+      ],
+      "responses": [
+        207,
+        "exams",
+        "HLSC 4P95"
+      ]
+    },
+    {
+      "tag": "IASC 1P00",
+      "patterns": [
+        "IASC 1P00 exam",
+        "when is the IASC 1P00 exam"
+      ],
+      "responses": [
+        208,
+        "exams",
+        "IASC 1P00"
+      ]
+    },
+    {
+      "tag": "IASC 1P01",
+      "patterns": [
+        "IASC 1P01 exam",
+        "when is the IASC 1P01 exam"
+      ],
+      "responses": [
+        209,
+        "exams",
+        "IASC 1P01"
+      ]
+    },
+    {
+      "tag": "IASC 1P50",
+      "patterns": [
+        "IASC 1P50 exam",
+        "when is the IASC 1P50 exam"
+      ],
+      "responses": [
+        210,
+        "exams",
+        "IASC 1P50"
+      ]
+    },
+    {
+      "tag": "IASC 1P50",
+      "patterns": [
+        "IASC 1P50 exam",
+        "when is the IASC 1P50 exam"
+      ],
+      "responses": [
+        211,
+        "exams",
+        "IASC 1P50"
+      ]
+    },
+    {
+      "tag": "IASC 2P70",
+      "patterns": [
+        "IASC 2P70 exam",
+        "when is the IASC 2P70 exam"
+      ],
+      "responses": [
+        212,
+        "exams",
+        "IASC 2P70"
+      ]
+    },
+    {
+      "tag": "IASC 3P94",
+      "patterns": [
+        "IASC 3P94 exam",
+        "when is the IASC 3P94 exam"
+      ],
+      "responses": [
+        213,
+        "exams",
+        "IASC 3P94"
+      ]
+    },
+    {
+      "tag": "ITAL 2P80",
+      "patterns": [
+        "ITAL 2P80 exam",
+        "when is the ITAL 2P80 exam"
+      ],
+      "responses": [
+        214,
+        "exams",
+        "ITAL 2P80"
+      ]
+    },
+    {
+      "tag": "ITAL 2P90",
+      "patterns": [
+        "ITAL 2P90 exam",
+        "when is the ITAL 2P90 exam"
+      ],
+      "responses": [
+        215,
+        "exams",
+        "ITAL 2P90"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        216,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        217,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        218,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        219,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        220,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        221,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 1P97",
+      "patterns": [
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
+      ],
+      "responses": [
+        222,
+        "exams",
+        "ITIS 1P97"
+      ]
+    },
+    {
+      "tag": "ITIS 2P91",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        223,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
+      "tag": "ITIS 2P91",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        224,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
+      "tag": "ITIS 2P91",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        225,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
+      "tag": "ITIS 2P91",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        226,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
+      "tag": "ITIS 3P91",
+      "patterns": [
+        "ITIS 3P91 exam",
+        "when is the ITIS 3P91 exam"
+      ],
+      "responses": [
+        227,
+        "exams",
+        "ITIS 3P91"
+      ]
+    },
+    {
+      "tag": "ITIS 3P98",
+      "patterns": [
+        "ITIS 3P98 exam",
+        "when is the ITIS 3P98 exam"
+      ],
+      "responses": [
+        228,
+        "exams",
+        "ITIS 3P98"
+      ]
+    },
+    {
+      "tag": "ITIS 4P26",
+      "patterns": [
+        "ITIS 4P26 exam",
+        "when is the ITIS 4P26 exam"
+      ],
+      "responses": [
+        229,
+        "exams",
+        "ITIS 4P26"
+      ]
+    },
+    {
+      "tag": "KINE 1P90",
+      "patterns": [
+        "KINE 1P90 exam",
+        "when is the KINE 1P90 exam"
+      ],
+      "responses": [
+        230,
+        "exams",
+        "KINE 1P90"
+      ]
+    },
+    {
+      "tag": "KINE 2P05",
+      "patterns": [
+        "KINE 2P05 exam",
+        "when is the KINE 2P05 exam"
+      ],
+      "responses": [
+        231,
+        "exams",
+        "KINE 2P05"
+      ]
+    },
+    {
+      "tag": "KINE 2P09",
+      "patterns": [
+        "KINE 2P09 exam",
+        "when is the KINE 2P09 exam"
+      ],
+      "responses": [
+        232,
+        "exams",
+        "KINE 2P09"
+      ]
+    },
+    {
+      "tag": "KINE 2P41",
+      "patterns": [
+        "KINE 2P41 exam",
+        "when is the KINE 2P41 exam"
+      ],
+      "responses": [
+        233,
+        "exams",
+        "KINE 2P41"
+      ]
+    },
+    {
+      "tag": "KINE 2P84",
+      "patterns": [
+        "KINE 2P84 exam",
+        "when is the KINE 2P84 exam"
+      ],
+      "responses": [
+        234,
+        "exams",
+        "KINE 2P84"
+      ]
+    },
+    {
+      "tag": "KINE 2P90",
+      "patterns": [
+        "KINE 2P90 exam",
+        "when is the KINE 2P90 exam"
+      ],
+      "responses": [
+        235,
+        "exams",
+        "KINE 2P90"
+      ]
+    },
+    {
+      "tag": "KINE 2P91",
+      "patterns": [
+        "KINE 2P91 exam",
+        "when is the KINE 2P91 exam"
+      ],
+      "responses": [
+        236,
+        "exams",
+        "KINE 2P91"
+      ]
+    },
+    {
+      "tag": "KINE 2P95",
+      "patterns": [
+        "KINE 2P95 exam",
+        "when is the KINE 2P95 exam"
+      ],
+      "responses": [
+        237,
+        "exams",
+        "KINE 2P95"
+      ]
+    },
+    {
+      "tag": "KINE 3P02",
+      "patterns": [
+        "KINE 3P02 exam",
+        "when is the KINE 3P02 exam"
+      ],
+      "responses": [
+        238,
+        "exams",
+        "KINE 3P02"
+      ]
+    },
+    {
+      "tag": "KINE 3P10",
+      "patterns": [
+        "KINE 3P10 exam",
+        "when is the KINE 3P10 exam"
+      ],
+      "responses": [
+        239,
+        "exams",
+        "KINE 3P10"
+      ]
+    },
+    {
+      "tag": "KINE 3P70",
+      "patterns": [
+        "KINE 3P70 exam",
+        "when is the KINE 3P70 exam"
+      ],
+      "responses": [
+        240,
+        "exams",
+        "KINE 3P70"
+      ]
+    },
+    {
+      "tag": "KINE 3P80",
+      "patterns": [
+        "KINE 3P80 exam",
+        "when is the KINE 3P80 exam"
+      ],
+      "responses": [
+        241,
+        "exams",
+        "KINE 3P80"
+      ]
+    },
+    {
+      "tag": "KINE 3P90",
+      "patterns": [
+        "KINE 3P90 exam",
+        "when is the KINE 3P90 exam"
+      ],
+      "responses": [
+        242,
+        "exams",
+        "KINE 3P90"
+      ]
+    },
+    {
+      "tag": "KINE 3P94",
+      "patterns": [
+        "KINE 3P94 exam",
+        "when is the KINE 3P94 exam"
+      ],
+      "responses": [
+        243,
+        "exams",
+        "KINE 3P94"
+      ]
+    },
+    {
+      "tag": "KINE 3P98",
+      "patterns": [
+        "KINE 3P98 exam",
+        "when is the KINE 3P98 exam"
+      ],
+      "responses": [
+        244,
+        "exams",
+        "KINE 3P98"
+      ]
+    },
+    {
+      "tag": "KINE 4P10",
+      "patterns": [
+        "KINE 4P10 exam",
+        "when is the KINE 4P10 exam"
+      ],
+      "responses": [
+        245,
+        "exams",
+        "KINE 4P10"
+      ]
+    },
+    {
+      "tag": "KINE 4P81",
+      "patterns": [
+        "KINE 4P81 exam",
+        "when is the KINE 4P81 exam"
+      ],
+      "responses": [
+        246,
+        "exams",
+        "KINE 4P81"
+      ]
+    },
+    {
+      "tag": "KINE 4P98",
+      "patterns": [
+        "KINE 4P98 exam",
+        "when is the KINE 4P98 exam"
+      ],
+      "responses": [
+        247,
+        "exams",
+        "KINE 4P98"
+      ]
+    },
+    {
+      "tag": "LABR 2P00",
+      "patterns": [
+        "LABR 2P00 exam",
+        "when is the LABR 2P00 exam"
+      ],
+      "responses": [
+        248,
+        "exams",
+        "LABR 2P00"
+      ]
+    },
+    {
+      "tag": "LABR 2P15",
+      "patterns": [
+        "LABR 2P15 exam",
+        "when is the LABR 2P15 exam"
+      ],
+      "responses": [
+        249,
+        "exams",
+        "LABR 2P15"
+      ]
+    },
+    {
+      "tag": "LABR 2Q98",
+      "patterns": [
+        "LABR 2Q98 exam",
+        "when is the LABR 2Q98 exam"
+      ],
+      "responses": [
+        250,
+        "exams",
+        "LABR 2Q98"
+      ]
+    },
+    {
+      "tag": "LATI 1F00",
+      "patterns": [
+        "LATI 1F00 exam",
+        "when is the LATI 1F00 exam"
+      ],
+      "responses": [
+        251,
+        "exams",
+        "LATI 1F00"
+      ]
+    },
+    {
+      "tag": "LING 1P01",
+      "patterns": [
+        "LING 1P01 exam",
+        "when is the LING 1P01 exam"
+      ],
+      "responses": [
+        252,
+        "exams",
+        "LING 1P01"
+      ]
+    },
+    {
+      "tag": "LING 1P93",
+      "patterns": [
+        "LING 1P93 exam",
+        "when is the LING 1P93 exam"
+      ],
+      "responses": [
+        253,
+        "exams",
+        "LING 1P93"
+      ]
+    },
+    {
+      "tag": "LING 2P91",
+      "patterns": [
+        "LING 2P91 exam",
+        "when is the LING 2P91 exam"
+      ],
+      "responses": [
+        254,
+        "exams",
+        "LING 2P91"
+      ]
+    },
+    {
+      "tag": "LING 2P99",
+      "patterns": [
+        "LING 2P99 exam",
+        "when is the LING 2P99 exam"
+      ],
+      "responses": [
+        255,
+        "exams",
+        "LING 2P99"
+      ]
+    },
+    {
+      "tag": "LING 3P71",
+      "patterns": [
+        "LING 3P71 exam",
+        "when is the LING 3P71 exam"
+      ],
+      "responses": [
+        256,
+        "exams",
+        "LING 3P71"
+      ]
+    },
+    {
+      "tag": "LING 3P90",
+      "patterns": [
+        "LING 3P90 exam",
+        "when is the LING 3P90 exam"
+      ],
+      "responses": [
+        257,
+        "exams",
+        "LING 3P90"
+      ]
+    },
+    {
+      "tag": "MACC 5P21",
+      "patterns": [
+        "MACC 5P21 exam",
+        "when is the MACC 5P21 exam"
+      ],
+      "responses": [
+        258,
+        "exams",
+        "MACC 5P21"
+      ]
+    },
+    {
+      "tag": "MACC 5P21",
+      "patterns": [
+        "MACC 5P21 exam",
+        "when is the MACC 5P21 exam"
+      ],
+      "responses": [
+        259,
+        "exams",
+        "MACC 5P21"
+      ]
+    },
+    {
+      "tag": "MACC 5P41",
+      "patterns": [
+        "MACC 5P41 exam",
+        "when is the MACC 5P41 exam"
+      ],
+      "responses": [
+        260,
+        "exams",
+        "MACC 5P41"
+      ]
+    },
+    {
+      "tag": "MACC 5P41",
+      "patterns": [
+        "MACC 5P41 exam",
+        "when is the MACC 5P41 exam"
+      ],
+      "responses": [
+        261,
+        "exams",
+        "MACC 5P41"
+      ]
+    },
+    {
+      "tag": "MACC 5P71",
+      "patterns": [
+        "MACC 5P71 exam",
+        "when is the MACC 5P71 exam"
+      ],
+      "responses": [
+        262,
+        "exams",
+        "MACC 5P71"
+      ]
+    },
+    {
+      "tag": "MACC 5P71",
+      "patterns": [
+        "MACC 5P71 exam",
+        "when is the MACC 5P71 exam"
+      ],
+      "responses": [
+        263,
+        "exams",
+        "MACC 5P71"
+      ]
+    },
+    {
+      "tag": "MACC 5P91",
+      "patterns": [
+        "MACC 5P91 exam",
+        "when is the MACC 5P91 exam"
+      ],
+      "responses": [
+        264,
+        "exams",
+        "MACC 5P91"
+      ]
+    },
+    {
+      "tag": "MACC 5P91",
+      "patterns": [
+        "MACC 5P91 exam",
+        "when is the MACC 5P91 exam"
+      ],
+      "responses": [
+        265,
+        "exams",
+        "MACC 5P91"
+      ]
+    },
+    {
+      "tag": "MACC 5P99",
+      "patterns": [
+        "MACC 5P99 exam",
+        "when is the MACC 5P99 exam"
+      ],
+      "responses": [
+        266,
+        "exams",
+        "MACC 5P99"
+      ]
+    },
+    {
+      "tag": "MACC 5P99",
+      "patterns": [
+        "MACC 5P99 exam",
+        "when is the MACC 5P99 exam"
+      ],
+      "responses": [
+        267,
+        "exams",
+        "MACC 5P99"
+      ]
+    },
+    {
+      "tag": "MARS 1F90",
+      "patterns": [
+        "MARS 1F90 exam",
+        "when is the MARS 1F90 exam"
+      ],
+      "responses": [
+        268,
+        "exams",
+        "MARS 1F90"
+      ]
+    },
+    {
+      "tag": "MATH 1F92",
+      "patterns": [
+        "MATH 1F92 exam",
+        "when is the MATH 1F92 exam"
+      ],
+      "responses": [
+        269,
+        "exams",
+        "MATH 1F92"
+      ]
+    },
+    {
+      "tag": "MATH 1P02",
+      "patterns": [
+        "MATH 1P02 exam",
+        "when is the MATH 1P02 exam"
+      ],
+      "responses": [
+        270,
+        "exams",
+        "MATH 1P02"
+      ]
+    },
+    {
+      "tag": "MATH 1P05",
+      "patterns": [
+        "MATH 1P05 exam",
+        "when is the MATH 1P05 exam"
+      ],
+      "responses": [
+        271,
+        "exams",
+        "MATH 1P05"
+      ]
+    },
+    {
+      "tag": "MATH 1P06",
+      "patterns": [
+        "MATH 1P06 exam",
+        "when is the MATH 1P06 exam"
+      ],
+      "responses": [
+        272,
+        "exams",
+        "MATH 1P06"
+      ]
+    },
+    {
+      "tag": "MATH 1P20",
+      "patterns": [
+        "MATH 1P20 exam",
+        "when is the MATH 1P20 exam"
+      ],
+      "responses": [
+        273,
+        "exams",
+        "MATH 1P20"
+      ]
+    },
+    {
+      "tag": "MATH 1P40",
+      "patterns": [
+        "MATH 1P40 exam",
+        "when is the MATH 1P40 exam"
+      ],
+      "responses": [
+        274,
+        "exams",
+        "MATH 1P40"
+      ]
+    },
+    {
+      "tag": "MATH 1P67",
+      "patterns": [
+        "MATH 1P67 exam",
+        "when is the MATH 1P67 exam"
+      ],
+      "responses": [
+        275,
+        "exams",
+        "MATH 1P67"
+      ]
+    },
+    {
+      "tag": "MATH 1P97",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        276,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
+      "tag": "MATH 1P97",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        277,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
+      "tag": "MATH 1P97",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        278,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
+      "tag": "MATH 1P97",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        279,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
+      "tag": "MATH 1P98",
+      "patterns": [
+        "MATH 1P98 exam",
+        "when is the MATH 1P98 exam"
+      ],
+      "responses": [
+        280,
+        "exams",
+        "MATH 1P98"
+      ]
+    },
+    {
+      "tag": "MATH 2P08",
+      "patterns": [
+        "MATH 2P08 exam",
+        "when is the MATH 2P08 exam"
+      ],
+      "responses": [
+        281,
+        "exams",
+        "MATH 2P08"
+      ]
+    },
+    {
+      "tag": "MATH 2P13",
+      "patterns": [
+        "MATH 2P13 exam",
+        "when is the MATH 2P13 exam"
+      ],
+      "responses": [
+        282,
+        "exams",
+        "MATH 2P13"
+      ]
+    },
+    {
+      "tag": "MATH 2P75",
+      "patterns": [
+        "MATH 2P75 exam",
+        "when is the MATH 2P75 exam"
+      ],
+      "responses": [
+        283,
+        "exams",
+        "MATH 2P75"
+      ]
+    },
+    {
+      "tag": "MATH 2P82",
+      "patterns": [
+        "MATH 2P82 exam",
+        "when is the MATH 2P82 exam"
+      ],
+      "responses": [
+        284,
+        "exams",
+        "MATH 2P82"
+      ]
+    },
+    {
+      "tag": "MATH 2P94",
+      "patterns": [
+        "MATH 2P94 exam",
+        "when is the MATH 2P94 exam"
+      ],
+      "responses": [
+        285,
+        "exams",
+        "MATH 2P94"
+      ]
+    },
+    {
+      "tag": "MATH 2P98",
+      "patterns": [
+        "MATH 2P98 exam",
+        "when is the MATH 2P98 exam"
+      ],
+      "responses": [
+        286,
+        "exams",
+        "MATH 2P98"
+      ]
+    },
+    {
+      "tag": "MATH 3P06",
+      "patterns": [
+        "MATH 3P06 exam",
+        "when is the MATH 3P06 exam"
+      ],
+      "responses": [
+        287,
+        "exams",
+        "MATH 3P06"
+      ]
+    },
+    {
+      "tag": "MATH 3P09",
+      "patterns": [
+        "MATH 3P09 exam",
+        "when is the MATH 3P09 exam"
+      ],
+      "responses": [
+        288,
+        "exams",
+        "MATH 3P09"
+      ]
+    },
+    {
+      "tag": "MATH 3P13",
+      "patterns": [
+        "MATH 3P13 exam",
+        "when is the MATH 3P13 exam"
+      ],
+      "responses": [
+        289,
+        "exams",
+        "MATH 3P13"
+      ]
+    },
+    {
+      "tag": "MATH 3P41",
+      "patterns": [
+        "MATH 3P41 exam",
+        "when is the MATH 3P41 exam"
+      ],
+      "responses": [
+        290,
+        "exams",
+        "MATH 3P41"
+      ]
+    },
+    {
+      "tag": "MATH 3P85",
+      "patterns": [
+        "MATH 3P85 exam",
+        "when is the MATH 3P85 exam"
+      ],
+      "responses": [
+        291,
+        "exams",
+        "MATH 3P85"
+      ]
+    },
+    {
+      "tag": "MATH 3P95",
+      "patterns": [
+        "MATH 3P95 exam",
+        "when is the MATH 3P95 exam"
+      ],
+      "responses": [
+        292,
+        "exams",
+        "MATH 3P95"
+      ]
+    },
+    {
+      "tag": "MATH 4P61",
+      "patterns": [
+        "MATH 4P61 exam",
+        "when is the MATH 4P61 exam"
+      ],
+      "responses": [
+        293,
+        "exams",
+        "MATH 4P61"
+      ]
+    },
+    {
+      "tag": "MATH 4P84",
+      "patterns": [
+        "MATH 4P84 exam",
+        "when is the MATH 4P84 exam"
+      ],
+      "responses": [
+        294,
+        "exams",
+        "MATH 4P84"
+      ]
+    },
+    {
+      "tag": "MBAB 5P06",
+      "patterns": [
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
+      ],
+      "responses": [
+        295,
+        "exams",
+        "MBAB 5P06"
+      ]
+    },
+    {
+      "tag": "MBAB 5P06",
+      "patterns": [
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
+      ],
+      "responses": [
+        296,
+        "exams",
+        "MBAB 5P06"
+      ]
+    },
+    {
+      "tag": "MBAB 5P06",
+      "patterns": [
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
+      ],
+      "responses": [
+        297,
+        "exams",
+        "MBAB 5P06"
+      ]
+    },
+    {
+      "tag": "MBAB 5P06",
+      "patterns": [
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
+      ],
+      "responses": [
+        298,
+        "exams",
+        "MBAB 5P06"
+      ]
+    },
+    {
+      "tag": "MBAB 5P06",
+      "patterns": [
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
+      ],
+      "responses": [
+        299,
+        "exams",
+        "MBAB 5P06"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        300,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        301,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        302,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        303,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        304,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P07",
+      "patterns": [
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
+      ],
+      "responses": [
+        305,
+        "exams",
+        "MBAB 5P07"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        306,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        307,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        308,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        309,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        310,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P08",
+      "patterns": [
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
+      ],
+      "responses": [
+        311,
+        "exams",
+        "MBAB 5P08"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        312,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        313,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        314,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        315,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        316,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        317,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P14",
+      "patterns": [
+        "MBAB 5P14 exam",
+        "when is the MBAB 5P14 exam"
+      ],
+      "responses": [
+        318,
+        "exams",
+        "MBAB 5P14"
+      ]
+    },
+    {
+      "tag": "MBAB 5P19",
+      "patterns": [
+        "MBAB 5P19 exam",
+        "when is the MBAB 5P19 exam"
+      ],
+      "responses": [
+        319,
+        "exams",
+        "MBAB 5P19"
+      ]
+    },
+    {
+      "tag": "MBAB 5P34",
+      "patterns": [
+        "MBAB 5P34 exam",
+        "when is the MBAB 5P34 exam"
+      ],
+      "responses": [
+        320,
+        "exams",
+        "MBAB 5P34"
+      ]
+    },
+    {
+      "tag": "MBAB 5P36",
+      "patterns": [
+        "MBAB 5P36 exam",
+        "when is the MBAB 5P36 exam"
+      ],
+      "responses": [
+        321,
+        "exams",
+        "MBAB 5P36"
+      ]
+    },
+    {
+      "tag": "MBAB 5P37",
+      "patterns": [
+        "MBAB 5P37 exam",
+        "when is the MBAB 5P37 exam"
+      ],
+      "responses": [
+        322,
+        "exams",
+        "MBAB 5P37"
+      ]
+    },
+    {
+      "tag": "MBAB 5P45",
+      "patterns": [
+        "MBAB 5P45 exam",
+        "when is the MBAB 5P45 exam"
+      ],
+      "responses": [
+        323,
+        "exams",
+        "MBAB 5P45"
+      ]
+    },
+    {
+      "tag": "MBAB 5P47",
+      "patterns": [
+        "MBAB 5P47 exam",
+        "when is the MBAB 5P47 exam"
+      ],
+      "responses": [
+        324,
+        "exams",
+        "MBAB 5P47"
+      ]
+    },
+    {
+      "tag": "MBAB 5P67",
+      "patterns": [
+        "MBAB 5P67 exam",
+        "when is the MBAB 5P67 exam"
+      ],
+      "responses": [
+        325,
+        "exams",
+        "MBAB 5P67"
+      ]
+    },
+    {
+      "tag": "MBAB 5P73",
+      "patterns": [
+        "MBAB 5P73 exam",
+        "when is the MBAB 5P73 exam"
+      ],
+      "responses": [
+        326,
+        "exams",
+        "MBAB 5P73"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        327,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        328,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        329,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        330,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        331,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        332,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        333,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        334,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        335,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        336,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        337,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 3P98",
+      "patterns": [
+        "MGMT 3P98 exam",
+        "when is the MGMT 3P98 exam"
+      ],
+      "responses": [
+        338,
+        "exams",
+        "MGMT 3P98"
+      ]
+    },
+    {
+      "tag": "MGMT 3P98",
+      "patterns": [
+        "MGMT 3P98 exam",
+        "when is the MGMT 3P98 exam"
+      ],
+      "responses": [
+        339,
+        "exams",
+        "MGMT 3P98"
+      ]
+    },
+    {
+      "tag": "MKTG 2P91",
+      "patterns": [
+        "MKTG 2P91 exam",
+        "when is the MKTG 2P91 exam"
+      ],
+      "responses": [
+        340,
+        "exams",
+        "MKTG 2P91"
+      ]
+    },
+    {
+      "tag": "MKTG 2P91",
+      "patterns": [
+        "MKTG 2P91 exam",
+        "when is the MKTG 2P91 exam"
+      ],
+      "responses": [
+        341,
+        "exams",
+        "MKTG 2P91"
+      ]
+    },
+    {
+      "tag": "MPAC 5P02",
+      "patterns": [
+        "MPAC 5P02 exam",
+        "when is the MPAC 5P02 exam"
+      ],
+      "responses": [
+        342,
+        "exams",
+        "MPAC 5P02"
+      ]
+    },
+    {
+      "tag": "MPAC 5P09",
+      "patterns": [
+        "MPAC 5P09 exam",
+        "when is the MPAC 5P09 exam"
+      ],
+      "responses": [
+        343,
+        "exams",
+        "MPAC 5P09"
+      ]
+    },
+    {
+      "tag": "MPAC 5P30",
+      "patterns": [
+        "MPAC 5P30 exam",
+        "when is the MPAC 5P30 exam"
+      ],
+      "responses": [
+        344,
+        "exams",
+        "MPAC 5P30"
+      ]
+    },
+    {
+      "tag": "MPAC 5P31",
+      "patterns": [
+        "MPAC 5P31 exam",
+        "when is the MPAC 5P31 exam"
+      ],
+      "responses": [
+        345,
+        "exams",
+        "MPAC 5P31"
+      ]
+    },
+    {
+      "tag": "MPAC 5P38",
+      "patterns": [
+        "MPAC 5P38 exam",
+        "when is the MPAC 5P38 exam"
+      ],
+      "responses": [
+        346,
+        "exams",
+        "MPAC 5P38"
+      ]
+    },
+    {
+      "tag": "MPHA 5P03",
+      "patterns": [
+        "MPHA 5P03 exam",
+        "when is the MPHA 5P03 exam"
+      ],
+      "responses": [
+        347,
+        "exams",
+        "MPHA 5P03"
+      ]
+    },
+    {
+      "tag": "MPHA 5P05",
+      "patterns": [
+        "MPHA 5P05 exam",
+        "when is the MPHA 5P05 exam"
+      ],
+      "responses": [
+        348,
+        "exams",
+        "MPHA 5P05"
+      ]
+    },
+    {
+      "tag": "MPHA 5P17",
+      "patterns": [
+        "MPHA 5P17 exam",
+        "when is the MPHA 5P17 exam"
+      ],
+      "responses": [
+        349,
+        "exams",
+        "MPHA 5P17"
+      ]
+    },
+    {
+      "tag": "MUSI 1P01",
+      "patterns": [
+        "MUSI 1P01 exam",
+        "when is the MUSI 1P01 exam"
+      ],
+      "responses": [
+        350,
+        "exams",
+        "MUSI 1P01"
+      ]
+    },
+    {
+      "tag": "MUSI 1P55",
+      "patterns": [
+        "MUSI 1P55 exam",
+        "when is the MUSI 1P55 exam"
+      ],
+      "responses": [
+        351,
+        "exams",
+        "MUSI 1P55"
+      ]
+    },
+    {
+      "tag": "MUSI 2Y05",
+      "patterns": [
+        "MUSI 2Y05 exam",
+        "when is the MUSI 2Y05 exam"
+      ],
+      "responses": [
+        352,
+        "exams",
+        "MUSI 2Y05"
+      ]
+    },
+    {
+      "tag": "MUSI 2Y06",
+      "patterns": [
+        "MUSI 2Y06 exam",
+        "when is the MUSI 2Y06 exam"
+      ],
+      "responses": [
+        353,
+        "exams",
+        "MUSI 2Y06"
+      ]
+    },
+    {
+      "tag": "MUSI 3Y05",
+      "patterns": [
+        "MUSI 3Y05 exam",
+        "when is the MUSI 3Y05 exam"
+      ],
+      "responses": [
+        354,
+        "exams",
+        "MUSI 3Y05"
+      ]
+    },
+    {
+      "tag": "MUSI 3Y06",
+      "patterns": [
+        "MUSI 3Y06 exam",
+        "when is the MUSI 3Y06 exam"
+      ],
+      "responses": [
+        355,
+        "exams",
+        "MUSI 3Y06"
+      ]
+    },
+    {
+      "tag": "NEUR 2P37",
+      "patterns": [
+        "NEUR 2P37 exam",
+        "when is the NEUR 2P37 exam"
+      ],
+      "responses": [
+        356,
+        "exams",
+        "NEUR 2P37"
+      ]
+    },
+    {
+      "tag": "NEUR 3P06",
+      "patterns": [
+        "NEUR 3P06 exam",
+        "when is the NEUR 3P06 exam"
+      ],
+      "responses": [
+        357,
+        "exams",
+        "NEUR 3P06"
+      ]
+    },
+    {
+      "tag": "NEUR 3P67",
+      "patterns": [
+        "NEUR 3P67 exam",
+        "when is the NEUR 3P67 exam"
+      ],
+      "responses": [
+        358,
+        "exams",
+        "NEUR 3P67"
+      ]
+    },
+    {
+      "tag": "NUSC 1F18",
+      "patterns": [
+        "NUSC 1F18 exam",
+        "when is the NUSC 1F18 exam"
+      ],
+      "responses": [
+        359,
+        "exams",
+        "NUSC 1F18"
+      ]
+    },
+    {
+      "tag": "NUSC 1F18",
+      "patterns": [
+        "NUSC 1F18 exam",
+        "when is the NUSC 1F18 exam"
+      ],
+      "responses": [
+        360,
+        "exams",
+        "NUSC 1F18"
+      ]
+    },
+    {
+      "tag": "NUSC 1P30",
+      "patterns": [
+        "NUSC 1P30 exam",
+        "when is the NUSC 1P30 exam"
+      ],
+      "responses": [
+        361,
+        "exams",
+        "NUSC 1P30"
+      ]
+    },
+    {
+      "tag": "NUSC 2P70",
+      "patterns": [
+        "NUSC 2P70 exam",
+        "when is the NUSC 2P70 exam"
+      ],
+      "responses": [
+        362,
+        "exams",
+        "NUSC 2P70"
+      ]
+    },
+    {
+      "tag": "NUSC 3P12",
+      "patterns": [
+        "NUSC 3P12 exam",
+        "when is the NUSC 3P12 exam"
+      ],
+      "responses": [
+        363,
+        "exams",
+        "NUSC 3P12"
+      ]
+    },
+    {
+      "tag": "NUSC 3P14",
+      "patterns": [
+        "NUSC 3P14 exam",
+        "when is the NUSC 3P14 exam"
+      ],
+      "responses": [
+        364,
+        "exams",
+        "NUSC 3P14"
+      ]
+    },
+    {
+      "tag": "NUSC 3P50",
+      "patterns": [
+        "NUSC 3P50 exam",
+        "when is the NUSC 3P50 exam"
+      ],
+      "responses": [
+        365,
+        "exams",
+        "NUSC 3P50"
+      ]
+    },
+    {
+      "tag": "OBHR 2P51",
+      "patterns": [
+        "OBHR 2P51 exam",
+        "when is the OBHR 2P51 exam"
+      ],
+      "responses": [
+        366,
+        "exams",
+        "OBHR 2P51"
+      ]
+    },
+    {
+      "tag": "OBHR 4P94",
+      "patterns": [
+        "OBHR 4P94 exam",
+        "when is the OBHR 4P94 exam"
+      ],
+      "responses": [
+        367,
+        "exams",
+        "OBHR 4P94"
+      ]
+    },
+    {
+      "tag": "OEVI 1P20",
+      "patterns": [
+        "OEVI 1P20 exam",
+        "when is the OEVI 1P20 exam"
+      ],
+      "responses": [
+        368,
+        "exams",
+        "OEVI 1P20"
+      ]
+    },
+    {
+      "tag": "OEVI 2P45",
+      "patterns": [
+        "OEVI 2P45 exam",
+        "when is the OEVI 2P45 exam"
+      ],
+      "responses": [
+        369,
+        "exams",
+        "OEVI 2P45"
+      ]
+    },
+    {
+      "tag": "OEVI 3P98",
+      "patterns": [
+        "OEVI 3P98 exam",
+        "when is the OEVI 3P98 exam"
+      ],
+      "responses": [
+        370,
+        "exams",
+        "OEVI 3P98"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        371,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        372,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        373,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        374,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        375,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        376,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 3P93",
+      "patterns": [
+        "OPER 3P93 exam",
+        "when is the OPER 3P93 exam"
+      ],
+      "responses": [
+        377,
+        "exams",
+        "OPER 3P93"
+      ]
+    },
+    {
+      "tag": "OPER 4P26",
+      "patterns": [
+        "OPER 4P26 exam",
+        "when is the OPER 4P26 exam"
+      ],
+      "responses": [
+        378,
+        "exams",
+        "OPER 4P26"
+      ]
+    },
+    {
+      "tag": "PCUL 1P01",
+      "patterns": [
+        "PCUL 1P01 exam",
+        "when is the PCUL 1P01 exam"
+      ],
+      "responses": [
+        379,
+        "exams",
+        "PCUL 1P01"
+      ]
+    },
+    {
+      "tag": "PCUL 2P94",
+      "patterns": [
+        "PCUL 2P94 exam",
+        "when is the PCUL 2P94 exam"
+      ],
+      "responses": [
+        380,
+        "exams",
+        "PCUL 2P94"
+      ]
+    },
+    {
+      "tag": "PCUL 2P98",
+      "patterns": [
+        "PCUL 2P98 exam",
+        "when is the PCUL 2P98 exam"
+      ],
+      "responses": [
+        381,
+        "exams",
+        "PCUL 2P98"
+      ]
+    },
+    {
+      "tag": "PHIL 1F90",
+      "patterns": [
+        "PHIL 1F90 exam",
+        "when is the PHIL 1F90 exam"
+      ],
+      "responses": [
+        382,
+        "exams",
+        "PHIL 1F90"
+      ]
+    },
+    {
+      "tag": "PHYS 1P21",
+      "patterns": [
+        "PHYS 1P21 exam",
+        "when is the PHYS 1P21 exam"
+      ],
+      "responses": [
+        383,
+        "exams",
+        "PHYS 1P21"
+      ]
+    },
+    {
+      "tag": "PHYS 1P22",
+      "patterns": [
+        "PHYS 1P22 exam",
+        "when is the PHYS 1P22 exam"
+      ],
+      "responses": [
+        384,
+        "exams",
+        "PHYS 1P22"
+      ]
+    },
+    {
+      "tag": "PHYS 1P91",
+      "patterns": [
+        "PHYS 1P91 exam",
+        "when is the PHYS 1P91 exam"
+      ],
+      "responses": [
+        385,
+        "exams",
+        "PHYS 1P91"
+      ]
+    },
+    {
+      "tag": "PHYS 1P92",
+      "patterns": [
+        "PHYS 1P92 exam",
+        "when is the PHYS 1P92 exam"
+      ],
+      "responses": [
+        386,
+        "exams",
+        "PHYS 1P92"
+      ]
+    },
+    {
+      "tag": "PHYS 1P94",
+      "patterns": [
+        "PHYS 1P94 exam",
+        "when is the PHYS 1P94 exam"
+      ],
+      "responses": [
+        387,
+        "exams",
+        "PHYS 1P94"
+      ]
+    },
+    {
+      "tag": "PHYS 2P02",
+      "patterns": [
+        "PHYS 2P02 exam",
+        "when is the PHYS 2P02 exam"
+      ],
+      "responses": [
+        388,
+        "exams",
+        "PHYS 2P02"
+      ]
+    },
+    {
+      "tag": "PHYS 2P30",
+      "patterns": [
+        "PHYS 2P30 exam",
+        "when is the PHYS 2P30 exam"
+      ],
+      "responses": [
+        389,
+        "exams",
+        "PHYS 2P30"
+      ]
+    },
+    {
+      "tag": "PHYS 2P51",
+      "patterns": [
+        "PHYS 2P51 exam",
+        "when is the PHYS 2P51 exam"
+      ],
+      "responses": [
+        390,
+        "exams",
+        "PHYS 2P51"
+      ]
+    },
+    {
+      "tag": "PHYS 3P36",
+      "patterns": [
+        "PHYS 3P36 exam",
+        "when is the PHYS 3P36 exam"
+      ],
+      "responses": [
+        391,
+        "exams",
+        "PHYS 3P36"
+      ]
+    },
+    {
+      "tag": "PHYS 3P41",
+      "patterns": [
+        "PHYS 3P41 exam",
+        "when is the PHYS 3P41 exam"
+      ],
+      "responses": [
+        392,
+        "exams",
+        "PHYS 3P41"
+      ]
+    },
+    {
+      "tag": "PHYS 3P95",
+      "patterns": [
+        "PHYS 3P95 exam",
+        "when is the PHYS 3P95 exam"
+      ],
+      "responses": [
+        393,
+        "exams",
+        "PHYS 3P95"
+      ]
+    },
+    {
+      "tag": "PHYS 5P11",
+      "patterns": [
+        "PHYS 5P11 exam",
+        "when is the PHYS 5P11 exam"
+      ],
+      "responses": [
+        394,
+        "exams",
+        "PHYS 5P11"
+      ]
+    },
+    {
+      "tag": "POLI 1P98",
+      "patterns": [
+        "POLI 1P98 exam",
+        "when is the POLI 1P98 exam"
+      ],
+      "responses": [
+        395,
+        "exams",
+        "POLI 1P98"
+      ]
+    },
+    {
+      "tag": "POLI 2F20",
+      "patterns": [
+        "POLI 2F20 exam",
+        "when is the POLI 2F20 exam"
+      ],
+      "responses": [
+        396,
+        "exams",
+        "POLI 2F20"
+      ]
+    },
+    {
+      "tag": "POLI 2P32",
+      "patterns": [
+        "POLI 2P32 exam",
+        "when is the POLI 2P32 exam"
+      ],
+      "responses": [
+        397,
+        "exams",
+        "POLI 2P32"
+      ]
+    },
+    {
+      "tag": "POLI 2P92",
+      "patterns": [
+        "POLI 2P92 exam",
+        "when is the POLI 2P92 exam"
+      ],
+      "responses": [
+        398,
+        "exams",
+        "POLI 2P92"
+      ]
+    },
+    {
+      "tag": "POLI 2Q98",
+      "patterns": [
+        "POLI 2Q98 exam",
+        "when is the POLI 2Q98 exam"
+      ],
+      "responses": [
+        399,
+        "exams",
+        "POLI 2Q98"
+      ]
+    },
+    {
+      "tag": "POLI 3P18",
+      "patterns": [
+        "POLI 3P18 exam",
+        "when is the POLI 3P18 exam"
+      ],
+      "responses": [
+        400,
+        "exams",
+        "POLI 3P18"
+      ]
+    },
+    {
+      "tag": "POLI 3P21",
+      "patterns": [
+        "POLI 3P21 exam",
+        "when is the POLI 3P21 exam"
+      ],
+      "responses": [
+        401,
+        "exams",
+        "POLI 3P21"
+      ]
+    },
+    {
+      "tag": "POLI 3P43",
+      "patterns": [
+        "POLI 3P43 exam",
+        "when is the POLI 3P43 exam"
+      ],
+      "responses": [
+        402,
+        "exams",
+        "POLI 3P43"
+      ]
+    },
+    {
+      "tag": "POLI 3P71",
+      "patterns": [
+        "POLI 3P71 exam",
+        "when is the POLI 3P71 exam"
+      ],
+      "responses": [
+        403,
+        "exams",
+        "POLI 3P71"
+      ]
+    },
+    {
+      "tag": "POLI 3P92",
+      "patterns": [
+        "POLI 3P92 exam",
+        "when is the POLI 3P92 exam"
+      ],
+      "responses": [
+        404,
+        "exams",
+        "POLI 3P92"
+      ]
+    },
+    {
+      "tag": "PSYC 2F23",
+      "patterns": [
+        "PSYC 2F23 exam",
+        "when is the PSYC 2F23 exam"
+      ],
+      "responses": [
+        405,
+        "exams",
+        "PSYC 2F23"
+      ]
+    },
+    {
+      "tag": "PSYC 2F23",
+      "patterns": [
+        "PSYC 2F23 exam",
+        "when is the PSYC 2F23 exam"
+      ],
+      "responses": [
+        406,
+        "exams",
+        "PSYC 2F23"
+      ]
+    },
+    {
+      "tag": "PSYC 2P20",
+      "patterns": [
+        "PSYC 2P20 exam",
+        "when is the PSYC 2P20 exam"
+      ],
+      "responses": [
+        407,
+        "exams",
+        "PSYC 2P20"
+      ]
+    },
+    {
+      "tag": "PSYC 2P30",
+      "patterns": [
+        "PSYC 2P30 exam",
+        "when is the PSYC 2P30 exam"
+      ],
+      "responses": [
+        408,
+        "exams",
+        "PSYC 2P30"
+      ]
+    },
+    {
+      "tag": "PSYC 2P37",
+      "patterns": [
+        "PSYC 2P37 exam",
+        "when is the PSYC 2P37 exam"
+      ],
+      "responses": [
+        409,
+        "exams",
+        "PSYC 2P37"
+      ]
+    },
+    {
+      "tag": "PSYC 2P49",
+      "patterns": [
+        "PSYC 2P49 exam",
+        "when is the PSYC 2P49 exam"
+      ],
+      "responses": [
+        410,
+        "exams",
+        "PSYC 2P49"
+      ]
+    },
+    {
+      "tag": "PSYC 2P92",
+      "patterns": [
+        "PSYC 2P92 exam",
+        "when is the PSYC 2P92 exam"
+      ],
+      "responses": [
+        411,
+        "exams",
+        "PSYC 2P92"
+      ]
+    },
+    {
+      "tag": "PSYC 2P95",
+      "patterns": [
+        "PSYC 2P95 exam",
+        "when is the PSYC 2P95 exam"
+      ],
+      "responses": [
+        412,
+        "exams",
+        "PSYC 2P95"
+      ]
+    },
+    {
+      "tag": "PSYC 3P06",
+      "patterns": [
+        "PSYC 3P06 exam",
+        "when is the PSYC 3P06 exam"
+      ],
+      "responses": [
+        413,
+        "exams",
+        "PSYC 3P06"
+      ]
+    },
+    {
+      "tag": "PSYC 3P20",
+      "patterns": [
+        "PSYC 3P20 exam",
+        "when is the PSYC 3P20 exam"
+      ],
+      "responses": [
+        414,
+        "exams",
+        "PSYC 3P20"
+      ]
+    },
+    {
+      "tag": "PSYC 3P22",
+      "patterns": [
+        "PSYC 3P22 exam",
+        "when is the PSYC 3P22 exam"
+      ],
+      "responses": [
+        415,
+        "exams",
+        "PSYC 3P22"
+      ]
+    },
+    {
+      "tag": "PSYC 3P32",
+      "patterns": [
+        "PSYC 3P32 exam",
+        "when is the PSYC 3P32 exam"
+      ],
+      "responses": [
+        416,
+        "exams",
+        "PSYC 3P32"
+      ]
+    },
+    {
+      "tag": "PSYC 3P38",
+      "patterns": [
+        "PSYC 3P38 exam",
+        "when is the PSYC 3P38 exam"
+      ],
+      "responses": [
+        417,
+        "exams",
+        "PSYC 3P38"
+      ]
+    },
+    {
+      "tag": "PSYC 3P67",
+      "patterns": [
+        "PSYC 3P67 exam",
+        "when is the PSYC 3P67 exam"
+      ],
+      "responses": [
+        418,
+        "exams",
+        "PSYC 3P67"
+      ]
+    },
+    {
+      "tag": "PSYC 3P75",
+      "patterns": [
+        "PSYC 3P75 exam",
+        "when is the PSYC 3P75 exam"
+      ],
+      "responses": [
+        419,
+        "exams",
+        "PSYC 3P75"
+      ]
+    },
+    {
+      "tag": "PSYC 4P27",
+      "patterns": [
+        "PSYC 4P27 exam",
+        "when is the PSYC 4P27 exam"
+      ],
+      "responses": [
+        420,
+        "exams",
+        "PSYC 4P27"
+      ]
+    },
+    {
+      "tag": "PSYC 4P56",
+      "patterns": [
+        "PSYC 4P56 exam",
+        "when is the PSYC 4P56 exam"
+      ],
+      "responses": [
+        421,
+        "exams",
+        "PSYC 4P56"
+      ]
+    },
+    {
+      "tag": "RECL 2P80",
+      "patterns": [
+        "RECL 2P80 exam",
+        "when is the RECL 2P80 exam"
+      ],
+      "responses": [
+        422,
+        "exams",
+        "RECL 2P80"
+      ]
+    },
+    {
+      "tag": "RECL 3P70",
+      "patterns": [
+        "RECL 3P70 exam",
+        "when is the RECL 3P70 exam"
+      ],
+      "responses": [
+        423,
+        "exams",
+        "RECL 3P70"
+      ]
+    },
+    {
+      "tag": "RECL 3Q07",
+      "patterns": [
+        "RECL 3Q07 exam",
+        "when is the RECL 3Q07 exam"
+      ],
+      "responses": [
+        424,
+        "exams",
+        "RECL 3Q07"
+      ]
+    },
+    {
+      "tag": "SCIE 1P51",
+      "patterns": [
+        "SCIE 1P51 exam",
+        "when is the SCIE 1P51 exam"
+      ],
+      "responses": [
+        425,
+        "exams",
+        "SCIE 1P51"
+      ]
+    },
+    {
+      "tag": "SCIE 1P51",
+      "patterns": [
+        "SCIE 1P51 exam",
+        "when is the SCIE 1P51 exam"
+      ],
+      "responses": [
+        426,
+        "exams",
+        "SCIE 1P51"
+      ]
+    },
+    {
+      "tag": "SOCI 2P62",
+      "patterns": [
+        "SOCI 2P62 exam",
+        "when is the SOCI 2P62 exam"
+      ],
+      "responses": [
+        427,
+        "exams",
+        "SOCI 2P62"
+      ]
+    },
+    {
+      "tag": "SOCI 2P85",
+      "patterns": [
+        "SOCI 2P85 exam",
+        "when is the SOCI 2P85 exam"
+      ],
+      "responses": [
+        428,
+        "exams",
+        "SOCI 2P85"
+      ]
+    },
+    {
+      "tag": "SOCI 2P98",
+      "patterns": [
+        "SOCI 2P98 exam",
+        "when is the SOCI 2P98 exam"
+      ],
+      "responses": [
+        429,
+        "exams",
+        "SOCI 2P98"
+      ]
+    },
+    {
+      "tag": "SOCI 3P01",
+      "patterns": [
+        "SOCI 3P01 exam",
+        "when is the SOCI 3P01 exam"
+      ],
+      "responses": [
+        430,
+        "exams",
+        "SOCI 3P01"
+      ]
+    },
+    {
+      "tag": "SOCI 3P02",
+      "patterns": [
+        "SOCI 3P02 exam",
+        "when is the SOCI 3P02 exam"
+      ],
+      "responses": [
+        431,
+        "exams",
+        "SOCI 3P02"
+      ]
+    },
+    {
+      "tag": "SOCI 3P45",
+      "patterns": [
+        "SOCI 3P45 exam",
+        "when is the SOCI 3P45 exam"
+      ],
+      "responses": [
+        432,
+        "exams",
+        "SOCI 3P45"
+      ]
+    },
+    {
+      "tag": "SPMA 2P27",
+      "patterns": [
+        "SPMA 2P27 exam",
+        "when is the SPMA 2P27 exam"
+      ],
+      "responses": [
+        433,
+        "exams",
+        "SPMA 2P27"
+      ]
+    },
+    {
+      "tag": "SPMA 3P21",
+      "patterns": [
+        "SPMA 3P21 exam",
+        "when is the SPMA 3P21 exam"
+      ],
+      "responses": [
+        434,
+        "exams",
+        "SPMA 3P21"
+      ]
+    },
+    {
+      "tag": "SPMA 4P86",
+      "patterns": [
+        "SPMA 4P86 exam",
+        "when is the SPMA 4P86 exam"
+      ],
+      "responses": [
+        435,
+        "exams",
+        "SPMA 4P86"
+      ]
+    },
+    {
+      "tag": "STAC 2P80",
+      "patterns": [
+        "STAC 2P80 exam",
+        "when is the STAC 2P80 exam"
+      ],
+      "responses": [
+        436,
+        "exams",
+        "STAC 2P80"
+      ]
+    },
+    {
+      "tag": "STAT 1F92",
+      "patterns": [
+        "STAT 1F92 exam",
+        "when is the STAT 1F92 exam"
+      ],
+      "responses": [
+        437,
+        "exams",
+        "STAT 1F92"
+      ]
+    },
+    {
+      "tag": "STAT 1P98",
+      "patterns": [
+        "STAT 1P98 exam",
+        "when is the STAT 1P98 exam"
+      ],
+      "responses": [
+        438,
+        "exams",
+        "STAT 1P98"
+      ]
+    },
+    {
+      "tag": "STAT 2P82",
+      "patterns": [
+        "STAT 2P82 exam",
+        "when is the STAT 2P82 exam"
+      ],
+      "responses": [
+        439,
+        "exams",
+        "STAT 2P82"
+      ]
+    },
+    {
+      "tag": "STAT 2P98",
+      "patterns": [
+        "STAT 2P98 exam",
+        "when is the STAT 2P98 exam"
+      ],
+      "responses": [
+        440,
+        "exams",
+        "STAT 2P98"
+      ]
+    },
+    {
+      "tag": "STAT 3P85",
+      "patterns": [
+        "STAT 3P85 exam",
+        "when is the STAT 3P85 exam"
+      ],
+      "responses": [
+        441,
+        "exams",
+        "STAT 3P85"
+      ]
+    },
+    {
+      "tag": "STAT 4P84",
+      "patterns": [
+        "STAT 4P84 exam",
+        "when is the STAT 4P84 exam"
+      ],
+      "responses": [
+        442,
+        "exams",
+        "STAT 4P84"
+      ]
+    },
+    {
+      "tag": "WGST 3P45",
+      "patterns": [
+        "WGST 3P45 exam",
+        "when is the WGST 3P45 exam"
+      ],
+      "responses": [
+        443,
+        "exams",
+        "WGST 3P45"
+      ]
+    },
+    {
+      "tag": "WGST 3P71",
+      "patterns": [
+        "WGST 3P71 exam",
+        "when is the WGST 3P71 exam"
+      ],
+      "responses": [
+        444,
+        "exams",
+        "WGST 3P71"
       ]
     }
   ]

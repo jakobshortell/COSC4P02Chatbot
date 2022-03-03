@@ -4,12 +4,14 @@ from scrapers.departments import DepartmentScraper
 from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
+from scrapers.exams import ExamScraper
 
 dates = ImportantDatesScraper().get()
 departments = DepartmentScraper().get()
 clubs = ClubScraper().get()
 courses = CoursesScraper().get()
 programs = ProgramScraper().get()
+exams = ExamScraper().get()
 
 cnt = 1
 tagTemp = ""
@@ -183,3 +185,19 @@ with open('intents.json', 'r+') as f:
         intent['intents'].append(new)
     f.seek(0)
     json.dump(intent, f, indent=2)
+
+    for i in exams:
+        tag = exams[i]['course_code']
+        pattern = exams[i]['course_code'] + " exam", "when is the " + exams[i]['course_code'] + " exam"
+        response = i, 'exams', exams[i]['course_code']
+        new = {
+            "tag": tag,
+            "patterns":
+                pattern,
+            "responses":
+                response
+        }
+        intent['intents'].append(new)
+    f.seek(0)
+    json.dump(intent, f, indent=2)
+

@@ -66,9 +66,14 @@ class DepartmentScraper:
     def get_name(self, department):
         '''Extracts the name from a department.'''
         try:
-            return department.find('h2', attrs={
+            n = department.find('h2', attrs={
                 'class': 'name'
             }).text
+            if ', ' in n:
+                name = n.split(', ')
+                return name[1] + " " + name[0]
+            else:
+                return n
         except:
             return None
 
