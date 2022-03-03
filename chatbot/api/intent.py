@@ -43,7 +43,7 @@ intent = {
                 "farewell"
             ],
             "responses": [
-                "",
+                "Bye, hope to talk to you again soon.",
                 "",
                 ""
             ]
@@ -56,7 +56,8 @@ intent = {
                 "upcoming events at brock"
             ],
             "responses": [
-                "Get the latest Brock University News at https://brocku.ca/brock-news/"
+                "Get the latest Brock University News at https://brocku.ca/brock-news/",
+                ""
             ]
         },
         {
@@ -67,7 +68,8 @@ intent = {
                 "important dates"
             ],
             "responses": [
-                "Click the link to get a list of important dates at Brock University: https://brocku.ca/important-dates/"
+                "Click the link to get a list of important dates at Brock University: https://brocku.ca/important-dates/",
+                ""
             ]
         },
         {
@@ -78,7 +80,8 @@ intent = {
                 "fall winter important dates"
             ],
             "responses": [
-                "Click the link to get a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter"
+                "Click the link to get a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter",
+                ""
             ]
         },
         {
