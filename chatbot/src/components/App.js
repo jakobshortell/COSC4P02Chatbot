@@ -2,9 +2,15 @@ import { useRef, useState } from 'react';
 
 import AppCSS from '../css/App.module.css';
 
+import ModalCSS from '/Users/marmikbhatt/Desktop/COSC4P02Chatbot/chatbot/src/css/Modal.module.css';
+import botIcon from '../assets/brock.png';
+
 import { MessageContainer } from './MessageContainer';
 import { Header } from './Header';
 import { Input } from './Input';
+
+
+
 
 const uuid = require('uuid');
 
@@ -57,6 +63,13 @@ function App() {
 		})
 		scroll()
 	}
+
+   async function ModalClear(){
+	  var ModalContainer = document.getElementById("modalContainer");
+	  ModalContainer.style = "display:none";
+
+
+   }
 
 	async function addUserMessage() {
 
@@ -115,6 +128,21 @@ function App() {
 	return (
 		<div className={ AppCSS.app }>
 			<Header />
+			<div id="modalContainer" className={ModalCSS.ModalContainer}>
+			 <div className ={ModalCSS.ModalDiv}>
+				 <img src ={ botIcon }></img>
+             <h1>Welcome to the Brock University Chatbot</h1>
+			 <h2>What can this bot do?</h2>
+			 <ul>
+			 <li>Get information on Clubs &amp; Events</li>
+			 <li>Get information on specific BU courses &amp; programs</li>
+			 <li>Ask the chatbot about important dates</li>
+			 <li>Have fun little conversations!</li>
+			 </ul>
+			 <p id="legaleze">*All information is scraped through the Brock University Website</p>
+              <input type="button" value="I Understand"  onClick={ ModalClear }/>
+              </div>
+			  </div>
 			<MessageContainer messages={ messages } />
 			<Input userInput={ userInput } onClick={ addUserMessage } />
 		</div>
