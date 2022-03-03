@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 
 import AppCSS from '../css/App.module.css';
 
-import ModalCSS from '/Users/marmikbhatt/Desktop/COSC4P02Chatbot/chatbot/src/css/Modal.module.css';
+import ModalCSS from '../css/Modal.module.css';
 import botIcon from '../assets/brock.png';
 
 import { MessageContainer } from './MessageContainer';
@@ -67,8 +67,6 @@ function App() {
    async function ModalClear(){
 	  var ModalContainer = document.getElementById("modalContainer");
 	  ModalContainer.style = "display:none";
-
-
    }
 
 	async function addUserMessage() {
@@ -130,7 +128,7 @@ function App() {
 			<Header />
 			<div id="modalContainer" className={ModalCSS.ModalContainer}>
 			 <div className ={ModalCSS.ModalDiv}>
-				 <img src ={ botIcon }></img>
+				 <img src ={ botIcon } alt='logo'></img>
              <h1>Welcome to the Brock University Chatbot</h1>
 			 <h2>What can this bot do?</h2>
 			 <ul>
