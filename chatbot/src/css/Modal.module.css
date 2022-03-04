@@ -30,8 +30,13 @@ align-items: center;
  background-color: var(--brock-primary);
  color: white;
  font-weight: bold;
+ cursor: pointer;
 
 }
+.ModalDiv input:hover {
+  background-color: black;
+}
+
 
 .ModalDiv h1{
  font-size: 24px;
