@@ -76,7 +76,8 @@
         "get brock university map"
       ],
       "responses": [
-        "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University"
+        "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
+        ""
       ]
     },
     {
