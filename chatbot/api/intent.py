@@ -122,7 +122,7 @@ with open('intents.json', 'r+') as f:
     json.dump(intent, f)
 
     for i in departments:
-        tag = departments[i]['name']
+        tag = departments[i]['name'] + " departments"
         pattern = departments[i]['name'] + " department ", "tell me about the " + departments[i]['name'] + " department "
         response = i, 'departments', departments[i]['name']
         new = {
@@ -135,6 +135,7 @@ with open('intents.json', 'r+') as f:
         intent['intents'].append(new)
         f.seek(0)
         json.dump(intent, f, indent=2)
+
     tagTemp = courses[0]['course_code']
     for i in range(1, len(courses)):
         tag = courses[i]['course_code']
@@ -145,7 +146,7 @@ with open('intents.json', 'r+') as f:
             pattern = courses[i-1]['course_code'] + " course", courses[i-1]['title'] + " course", "tell me about " + courses[i-1]['course_code'] + " course"
             response = i-1, 'courses', courses[i-1]['course_code'], cnt
             new = {
-                "tag": tag,
+                "tag": tag + " courses",
                 "patterns":
                     pattern,
                 "responses":
@@ -158,7 +159,7 @@ with open('intents.json', 'r+') as f:
             json.dump(intent, f, indent=2)
 
     for i in dates:
-        tag = dates[i]['occasion']
+        tag = dates[i]['occasion'] + " dates"
         pattern = dates[i]['occasion'] + " important dates " + dates[i]['date']
         response = i, 'dates', dates[i]['occasion'], dates[i]['date']
         new = {
@@ -174,7 +175,7 @@ with open('intents.json', 'r+') as f:
         json.dump(intent, f, indent=2)
 
     for i in clubs:
-        tag = clubs[i]['name']
+        tag = clubs[i]['name'] + " clubs"
         pattern = clubs[i]['name'] + " club", "tell me about the " + clubs[i]['name'] + " club"
         response = i, 'clubs', clubs[i]['name']
         new = {
@@ -189,7 +190,7 @@ with open('intents.json', 'r+') as f:
     json.dump(intent, f, indent=2)
 
     for i in programs:
-        tag = programs[i]['name']
+        tag = programs[i]['name'] + " programs"
         pattern = programs[i]['name'] + " program", "tell me about the " + programs[i]['name'] + " program"
         response = i, 'programs', programs[i]['name']
         new = {
@@ -204,7 +205,7 @@ with open('intents.json', 'r+') as f:
     json.dump(intent, f, indent=2)
 
     for i in exams:
-        tag = exams[i]['course_code']
+        tag = exams[i]['course_code'] + " exams"
         pattern = exams[i]['course_code'] + " exam", "when is the " + exams[i]['course_code'] + " exam"
         response = i, 'exams', exams[i]['course_code']
         new = {
