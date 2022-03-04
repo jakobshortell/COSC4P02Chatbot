@@ -50,6 +50,22 @@ intent = {
                 ""
             ]
         },
+{
+            "tag": "thankyou",
+            "patterns": [
+                "thanks",
+                "thank you",
+                "thx",
+                "i appreciate that ",
+                "good response",
+                "good bot"
+            ],
+            "responses": [
+                "No problem, is there anything else you need?",
+                "",
+                ""
+            ]
+        },
         {
             "tag": "news",
             "patterns": [
@@ -94,7 +110,8 @@ intent = {
                 "get brock university map"
             ],
             "responses": [
-                "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University"
+                "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
+                ""
             ]
         },
     ]

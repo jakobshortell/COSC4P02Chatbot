@@ -48,8 +48,8 @@ def main():
         response['content'] = dates[msg[0]]['occasion'] + " " + dates[msg[0]]['date']
 
     elif 'exam' in msg[1]:
-        dates = scrapers['dates'].get()
-        response['content'] = dates[msg[0]]['occasion'] + " " + dates[msg[0]]['date']
+        exams = scrapers['exams'].get()
+        response['content'] = exams[msg[0]]['course_code'] + " " + exams[msg[0]]['duration'] + " " + exams[msg[0]]['day'] + " " + exams[msg[0]]['start'] + " " + exams[msg[0]]['end'] + " " + exams[msg[0]]['location']
 
     elif 'programs' in msg[1]:
         programs = scrapers['programs'].get()
