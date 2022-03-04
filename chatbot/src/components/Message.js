@@ -29,7 +29,7 @@ export function Message({ author, content, time }) {
 						<span className={` ${MessageCSS.botName} ${MessageCSS.name} `}>Brock University</span>
 						<span className={ MessageCSS.time }>{ time }</span>
 					</div>
-					<span><Linkify properties={{style: {color: 'red', fontWeight: 'bold'}}}>{ content }</Linkify></span>
+					<span><Linkify properties={{target: '_blank'}}>{ content }</Linkify></span>
 				</div>
 			</li>
 		)
