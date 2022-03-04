@@ -11,6 +11,7 @@
 
 .botMessage {
     justify-content: flex-start;
+    white-space: pre-wrap;
 }
 
 .messageIcon {
@@ -51,3 +52,12 @@
     margin-left: .5rem;
     opacity: .75;
 }
+a {
+    color: var(--brock-primary);
+    text-underline-offset: 4px;
+    display: flex;
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+

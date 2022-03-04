@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Linkify from 'react-linkify';
 import MessageCSS from '../css/Message.module.css';
 
 import botIcon from '../assets/brock.png';
@@ -29,7 +29,7 @@ export function Message({ author, content, time }) {
 						<span className={` ${MessageCSS.botName} ${MessageCSS.name} `}>Brock University</span>
 						<span className={ MessageCSS.time }>{ time }</span>
 					</div>
-					<span>{ content }</span>
+					<span><Linkify properties={{style: {color: 'red', fontWeight: 'bold'}}}>{ content }</Linkify></span>
 				</div>
 			</li>
 		)

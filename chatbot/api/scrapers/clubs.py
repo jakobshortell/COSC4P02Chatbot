@@ -25,7 +25,6 @@ class ClubScraper:
 	def fetch(self):
 		'''Fetches club data from Brock and stores it in the database.'''
 		self.browser.open('https://www.brockbusu.ca/involvement/clubs/directory/')
-
 		# Get all clubs and read them into the database
 		clubs_list = self.browser.page.find_all('li', attrs={
 			'class': 'filterable-item'
@@ -106,7 +105,7 @@ class ClubScraper:
 			return None
 
 	def store_clubs(self, clubs):
-		'''Adds the club to the database.'''
+		'''Adds the clubs to the database.'''
 		with self.db_conn as conn:
 			for index in clubs:
 				conn.execute(
