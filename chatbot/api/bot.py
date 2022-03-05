@@ -42,11 +42,11 @@ class Bot:
 
         results = model.predict([naturalWords(msg, words)])[0]
         results_index = numpy.argmax(results)
-        tag_list = labels[results_index]
+        tag_index = labels[results_index]
 
         if results[results_index] > 0.1:
             for tag in data["intents"]:
-                if tag['tag'] == tag_list:
+                if tag['tag'] == tag_index:
                     response = tag['responses']
         else:
             response = 'I am sorry. I don\'t know  what you are asking.'

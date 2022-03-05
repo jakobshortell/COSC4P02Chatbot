@@ -12,8 +12,8 @@
       ],
       "responses": [
         "Hi there, how can I help?",
-        "",
-        ""
+        "Hello, there, how can I help you today?",
+        "Good to see you, do you have any question?"
       ]
     },
     {
@@ -28,8 +28,8 @@
       ],
       "responses": [
         "Bye, hope to talk to you again soon.",
-        "",
-        ""
+        "Good bye, its been great talking to you",
+        "Glad I could help, Bye!"
       ]
     },
     {
@@ -44,8 +44,21 @@
       ],
       "responses": [
         "No problem, is there anything else you need?",
-        "",
-        ""
+        "Glad I could help!",
+        "It's nice to feel useful once in awhile ;)"
+      ]
+    },
+    {
+      "tag": "restaurant_list",
+      "patterns": [
+        "what restaurants are available at brock",
+        "I'm Hungry",
+        "What is good to eat at brock",
+        "What food offerings are available at brock"
+      ],
+      "responses": [
+        "Here is a list of restaurants available at Brock:",
+        "restaurant_list"
       ]
     },
     {
@@ -56,8 +69,8 @@
         "upcoming events at brock"
       ],
       "responses": [
-        "Get the latest Brock University News at https://brocku.ca/brock-news/",
-        ""
+        "Get the latest Brock University News at: https://brocku.ca/brock-news/",
+        "Here is the latest news at Brock University: https://brocku.ca/brock-news/"
       ]
     },
     {
@@ -69,7 +82,7 @@
       ],
       "responses": [
         "Click the link to get a list of important dates at Brock University: https://brocku.ca/important-dates/",
-        ""
+        "Here is a list of important dates at Brock University: https://brocku.ca/important-dates/"
       ]
     },
     {
@@ -81,7 +94,7 @@
       ],
       "responses": [
         "Click the link to get a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter",
-        ""
+        "Here is a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter"
       ]
     },
     {
@@ -93,7 +106,7 @@
       ],
       "responses": [
         "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
-        ""
+        "Here is directions to Brock University: https://www.google.com/maps?q=Brock+University"
       ]
     },
     {
@@ -38339,13 +38352,37 @@
       ]
     },
     {
+      "tag": "ACTG 1P02 exams",
+      "patterns": [
+        "ACTG 1P02 exam",
+        "when is the ACTG 1P02 exam"
+      ],
+      "responses": [
+        2,
+        "exams",
+        "ACTG 1P02"
+      ]
+    },
+    {
+      "tag": "ACTG 1P02 exams",
+      "patterns": [
+        "ACTG 1P02 exam",
+        "when is the ACTG 1P02 exam"
+      ],
+      "responses": [
+        3,
+        "exams",
+        "ACTG 1P02"
+      ]
+    },
+    {
       "tag": "ACTG 1P91 exams",
       "patterns": [
         "ACTG 1P91 exam",
         "when is the ACTG 1P91 exam"
       ],
       "responses": [
-        2,
+        4,
         "exams",
         "ACTG 1P91"
       ]
@@ -38357,7 +38394,7 @@
         "when is the ACTG 2P12 exam"
       ],
       "responses": [
-        3,
+        5,
         "exams",
         "ACTG 2P12"
       ]
@@ -38369,33 +38406,9 @@
         "when is the ACTG 2P12 exam"
       ],
       "responses": [
-        4,
-        "exams",
-        "ACTG 2P12"
-      ]
-    },
-    {
-      "tag": "ACTG 2P21 exams",
-      "patterns": [
-        "ACTG 2P21 exam",
-        "when is the ACTG 2P21 exam"
-      ],
-      "responses": [
-        5,
-        "exams",
-        "ACTG 2P21"
-      ]
-    },
-    {
-      "tag": "ACTG 2P21 exams",
-      "patterns": [
-        "ACTG 2P21 exam",
-        "when is the ACTG 2P21 exam"
-      ],
-      "responses": [
         6,
         "exams",
-        "ACTG 2P21"
+        "ACTG 2P12"
       ]
     },
     {
@@ -38411,39 +38424,39 @@
       ]
     },
     {
+      "tag": "ACTG 2P21 exams",
+      "patterns": [
+        "ACTG 2P21 exam",
+        "when is the ACTG 2P21 exam"
+      ],
+      "responses": [
+        8,
+        "exams",
+        "ACTG 2P21"
+      ]
+    },
+    {
+      "tag": "ACTG 2P21 exams",
+      "patterns": [
+        "ACTG 2P21 exam",
+        "when is the ACTG 2P21 exam"
+      ],
+      "responses": [
+        9,
+        "exams",
+        "ACTG 2P21"
+      ]
+    },
+    {
       "tag": "ACTG 2P31 exams",
       "patterns": [
         "ACTG 2P31 exam",
         "when is the ACTG 2P31 exam"
       ],
       "responses": [
-        8,
-        "exams",
-        "ACTG 2P31"
-      ]
-    },
-    {
-      "tag": "ACTG 2P32 exams",
-      "patterns": [
-        "ACTG 2P32 exam",
-        "when is the ACTG 2P32 exam"
-      ],
-      "responses": [
-        9,
-        "exams",
-        "ACTG 2P32"
-      ]
-    },
-    {
-      "tag": "ACTG 2P32 exams",
-      "patterns": [
-        "ACTG 2P32 exam",
-        "when is the ACTG 2P32 exam"
-      ],
-      "responses": [
         10,
         "exams",
-        "ACTG 2P32"
+        "ACTG 2P31"
       ]
     },
     {
@@ -38459,13 +38472,37 @@
       ]
     },
     {
+      "tag": "ACTG 2P32 exams",
+      "patterns": [
+        "ACTG 2P32 exam",
+        "when is the ACTG 2P32 exam"
+      ],
+      "responses": [
+        12,
+        "exams",
+        "ACTG 2P32"
+      ]
+    },
+    {
+      "tag": "ACTG 2P32 exams",
+      "patterns": [
+        "ACTG 2P32 exam",
+        "when is the ACTG 2P32 exam"
+      ],
+      "responses": [
+        13,
+        "exams",
+        "ACTG 2P32"
+      ]
+    },
+    {
       "tag": "ACTG 2P51 exams",
       "patterns": [
         "ACTG 2P51 exam",
         "when is the ACTG 2P51 exam"
       ],
       "responses": [
-        12,
+        14,
         "exams",
         "ACTG 2P51"
       ]
@@ -38477,7 +38514,7 @@
         "when is the ACTG 3P11 exam"
       ],
       "responses": [
-        13,
+        15,
         "exams",
         "ACTG 3P11"
       ]
@@ -38489,7 +38526,7 @@
         "when is the ACTG 3P11 exam"
       ],
       "responses": [
-        14,
+        16,
         "exams",
         "ACTG 3P11"
       ]
@@ -38501,7 +38538,7 @@
         "when is the ACTG 3P23 exam"
       ],
       "responses": [
-        15,
+        17,
         "exams",
         "ACTG 3P23"
       ]
@@ -38513,7 +38550,7 @@
         "when is the ACTG 4P11 exam"
       ],
       "responses": [
-        16,
+        18,
         "exams",
         "ACTG 4P11"
       ]
@@ -38525,7 +38562,7 @@
         "when is the ACTG 4P12 exam"
       ],
       "responses": [
-        17,
+        19,
         "exams",
         "ACTG 4P12"
       ]
@@ -38537,7 +38574,7 @@
         "when is the ACTG 4P12 exam"
       ],
       "responses": [
-        18,
+        20,
         "exams",
         "ACTG 4P12"
       ]
@@ -38549,7 +38586,7 @@
         "when is the ACTG 4P34 exam"
       ],
       "responses": [
-        19,
+        21,
         "exams",
         "ACTG 4P34"
       ]
@@ -38561,7 +38598,7 @@
         "when is the ACTG 4P34 exam"
       ],
       "responses": [
-        20,
+        22,
         "exams",
         "ACTG 4P34"
       ]
@@ -38573,7 +38610,7 @@
         "when is the ACTG 4P41 exam"
       ],
       "responses": [
-        21,
+        23,
         "exams",
         "ACTG 4P41"
       ]
@@ -38585,7 +38622,7 @@
         "when is the ACTG 4P42 exam"
       ],
       "responses": [
-        22,
+        24,
         "exams",
         "ACTG 4P42"
       ]
@@ -38597,7 +38634,7 @@
         "when is the ACTG 4P62 exam"
       ],
       "responses": [
-        23,
+        25,
         "exams",
         "ACTG 4P62"
       ]
@@ -38609,7 +38646,7 @@
         "when is the AHSC 5P98 exam"
       ],
       "responses": [
-        24,
+        26,
         "exams",
         "AHSC 5P98"
       ]
@@ -38621,7 +38658,7 @@
         "when is the APCO 1P00 exam"
       ],
       "responses": [
-        25,
+        27,
         "exams",
         "APCO 1P00"
       ]
@@ -38633,7 +38670,7 @@
         "when is the APCO 1P01 exam"
       ],
       "responses": [
-        26,
+        28,
         "exams",
         "APCO 1P01"
       ]
@@ -38645,7 +38682,7 @@
         "when is the APCO 1P50 exam"
       ],
       "responses": [
-        27,
+        29,
         "exams",
         "APCO 1P50"
       ]
@@ -38657,7 +38694,7 @@
         "when is the APCO 1P50 exam"
       ],
       "responses": [
-        28,
+        30,
         "exams",
         "APCO 1P50"
       ]
@@ -38669,7 +38706,7 @@
         "when is the APCO 3P94 exam"
       ],
       "responses": [
-        29,
+        31,
         "exams",
         "APCO 3P94"
       ]
@@ -38681,7 +38718,7 @@
         "when is the BCHM 3P01 exam"
       ],
       "responses": [
-        30,
+        32,
         "exams",
         "BCHM 3P01"
       ]
@@ -38693,7 +38730,7 @@
         "when is the BIOL 1F25 exam"
       ],
       "responses": [
-        31,
+        33,
         "exams",
         "BIOL 1F25"
       ]
@@ -38705,7 +38742,7 @@
         "when is the BIOL 1P24 exam"
       ],
       "responses": [
-        32,
+        34,
         "exams",
         "BIOL 1P24"
       ]
@@ -38717,7 +38754,7 @@
         "when is the BIOL 1P27 exam"
       ],
       "responses": [
-        33,
+        35,
         "exams",
         "BIOL 1P27"
       ]
@@ -38729,7 +38766,7 @@
         "when is the BIOL 1P92 exam"
       ],
       "responses": [
-        34,
+        36,
         "exams",
         "BIOL 1P92"
       ]
@@ -38741,7 +38778,7 @@
         "when is the BIOL 1P92 exam"
       ],
       "responses": [
-        35,
+        37,
         "exams",
         "BIOL 1P92"
       ]
@@ -38753,7 +38790,7 @@
         "when is the BIOL 2P03 exam"
       ],
       "responses": [
-        36,
+        38,
         "exams",
         "BIOL 2P03"
       ]
@@ -38765,7 +38802,7 @@
         "when is the BIOL 2P05 exam"
       ],
       "responses": [
-        37,
+        39,
         "exams",
         "BIOL 2P05"
       ]
@@ -38777,7 +38814,7 @@
         "when is the BIOL 2P92 exam"
       ],
       "responses": [
-        38,
+        40,
         "exams",
         "BIOL 2P92"
       ]
@@ -38789,7 +38826,7 @@
         "when is the BIOL 2P96 exam"
       ],
       "responses": [
-        39,
+        41,
         "exams",
         "BIOL 2P96"
       ]
@@ -38801,7 +38838,7 @@
         "when is the BIOL 2P97 exam"
       ],
       "responses": [
-        40,
+        42,
         "exams",
         "BIOL 2P97"
       ]
@@ -38813,7 +38850,7 @@
         "when is the BIOL 3P50 exam"
       ],
       "responses": [
-        41,
+        43,
         "exams",
         "BIOL 3P50"
       ]
@@ -38825,7 +38862,7 @@
         "when is the BIOL 3P91 exam"
       ],
       "responses": [
-        42,
+        44,
         "exams",
         "BIOL 3P91"
       ]
@@ -38837,7 +38874,7 @@
         "when is the BIOL 3P98 exam"
       ],
       "responses": [
-        43,
+        45,
         "exams",
         "BIOL 3P98"
       ]
@@ -38849,7 +38886,7 @@
         "when is the BIOL 4P53 exam"
       ],
       "responses": [
-        44,
+        46,
         "exams",
         "BIOL 4P53"
       ]
@@ -38861,7 +38898,7 @@
         "when is the BTEC 2P09 exam"
       ],
       "responses": [
-        45,
+        47,
         "exams",
         "BTEC 2P09"
       ]
@@ -38873,7 +38910,7 @@
         "when is the BTEC 3P50 exam"
       ],
       "responses": [
-        46,
+        48,
         "exams",
         "BTEC 3P50"
       ]
@@ -38885,7 +38922,7 @@
         "when is the BTEC 3P93 exam"
       ],
       "responses": [
-        47,
+        49,
         "exams",
         "BTEC 3P93"
       ]
@@ -38897,7 +38934,7 @@
         "when is the BTEC 4P26 exam"
       ],
       "responses": [
-        48,
+        50,
         "exams",
         "BTEC 4P26"
       ]
@@ -38909,7 +38946,7 @@
         "when is the BTEC 4P27 exam"
       ],
       "responses": [
-        49,
+        51,
         "exams",
         "BTEC 4P27"
       ]
@@ -38921,7 +38958,7 @@
         "when is the BTEC 5P25 exam"
       ],
       "responses": [
-        50,
+        52,
         "exams",
         "BTEC 5P25"
       ]
@@ -38933,7 +38970,7 @@
         "when is the CANA 1F91 exam"
       ],
       "responses": [
-        51,
+        53,
         "exams",
         "CANA 1F91"
       ]
@@ -38945,7 +38982,7 @@
         "when is the CANA 2P92 exam"
       ],
       "responses": [
-        52,
+        54,
         "exams",
         "CANA 2P92"
       ]
@@ -38957,7 +38994,7 @@
         "when is the CANA 3P18 exam"
       ],
       "responses": [
-        53,
+        55,
         "exams",
         "CANA 3P18"
       ]
@@ -38969,7 +39006,7 @@
         "when is the CHEM 1P91 exam"
       ],
       "responses": [
-        54,
+        56,
         "exams",
         "CHEM 1P91"
       ]
@@ -38981,7 +39018,7 @@
         "when is the CHEM 1P92 exam"
       ],
       "responses": [
-        55,
+        57,
         "exams",
         "CHEM 1P92"
       ]
@@ -38993,7 +39030,7 @@
         "when is the CHEM 2P12 exam"
       ],
       "responses": [
-        56,
+        58,
         "exams",
         "CHEM 2P12"
       ]
@@ -39005,7 +39042,7 @@
         "when is the CHEM 2P21 exam"
       ],
       "responses": [
-        57,
+        59,
         "exams",
         "CHEM 2P21"
       ]
@@ -39017,7 +39054,7 @@
         "when is the CHEM 2P32 exam"
       ],
       "responses": [
-        58,
+        60,
         "exams",
         "CHEM 2P32"
       ]
@@ -39029,7 +39066,7 @@
         "when is the CHEM 3P21 exam"
       ],
       "responses": [
-        59,
+        61,
         "exams",
         "CHEM 3P21"
       ]
@@ -39041,7 +39078,7 @@
         "when is the CHEM 3P31 exam"
       ],
       "responses": [
-        60,
+        62,
         "exams",
         "CHEM 3P31"
       ]
@@ -39053,7 +39090,7 @@
         "when is the CHEM 3P53 exam"
       ],
       "responses": [
-        61,
+        63,
         "exams",
         "CHEM 3P53"
       ]
@@ -39065,7 +39102,7 @@
         "when is the CHEM 3P93 exam"
       ],
       "responses": [
-        62,
+        64,
         "exams",
         "CHEM 3P93"
       ]
@@ -39077,7 +39114,7 @@
         "when is the CHEM 4P26 exam"
       ],
       "responses": [
-        63,
+        65,
         "exams",
         "CHEM 4P26"
       ]
@@ -39089,7 +39126,7 @@
         "when is the CHEM 4P27 exam"
       ],
       "responses": [
-        64,
+        66,
         "exams",
         "CHEM 4P27"
       ]
@@ -39101,7 +39138,7 @@
         "when is the CHEM 5P25 exam"
       ],
       "responses": [
-        65,
+        67,
         "exams",
         "CHEM 5P25"
       ]
@@ -39113,7 +39150,7 @@
         "when is the CHYS 2P52 exam"
       ],
       "responses": [
-        66,
+        68,
         "exams",
         "CHYS 2P52"
       ]
@@ -39125,7 +39162,7 @@
         "when is the CHYS 2P52 exam"
       ],
       "responses": [
-        67,
+        69,
         "exams",
         "CHYS 2P52"
       ]
@@ -39137,7 +39174,7 @@
         "when is the CHYS 2P99 exam"
       ],
       "responses": [
-        68,
+        70,
         "exams",
         "CHYS 2P99"
       ]
@@ -39149,7 +39186,7 @@
         "when is the CHYS 3P09 exam"
       ],
       "responses": [
-        69,
+        71,
         "exams",
         "CHYS 3P09"
       ]
@@ -39161,7 +39198,7 @@
         "when is the CHYS 3P15 exam"
       ],
       "responses": [
-        70,
+        72,
         "exams",
         "CHYS 3P15"
       ]
@@ -39173,7 +39210,7 @@
         "when is the CHYS 3P97 exam"
       ],
       "responses": [
-        71,
+        73,
         "exams",
         "CHYS 3P97"
       ]
@@ -39185,7 +39222,7 @@
         "when is the CHYS 4P09 exam"
       ],
       "responses": [
-        72,
+        74,
         "exams",
         "CHYS 4P09"
       ]
@@ -39197,7 +39234,7 @@
         "when is the CHYS 4P56 exam"
       ],
       "responses": [
-        73,
+        75,
         "exams",
         "CHYS 4P56"
       ]
@@ -39209,7 +39246,7 @@
         "when is the CLAS 1P94 exam"
       ],
       "responses": [
-        74,
+        76,
         "exams",
         "CLAS 1P94"
       ]
@@ -39221,7 +39258,7 @@
         "when is the CLAS 1P97 exam"
       ],
       "responses": [
-        75,
+        77,
         "exams",
         "CLAS 1P97"
       ]
@@ -39233,7 +39270,7 @@
         "when is the COMM 2P94 exam"
       ],
       "responses": [
-        76,
+        78,
         "exams",
         "COMM 2P94"
       ]
@@ -39245,7 +39282,7 @@
         "when is the COMM 2P98 exam"
       ],
       "responses": [
-        77,
+        79,
         "exams",
         "COMM 2P98"
       ]
@@ -39257,7 +39294,7 @@
         "when is the COMM 2Q98 exam"
       ],
       "responses": [
-        78,
+        80,
         "exams",
         "COMM 2Q98"
       ]
@@ -39269,7 +39306,7 @@
         "when is the COSC 1P02 exam"
       ],
       "responses": [
-        79,
+        81,
         "exams",
         "COSC 1P02"
       ]
@@ -39281,7 +39318,7 @@
         "when is the COSC 1P03 exam"
       ],
       "responses": [
-        80,
+        82,
         "exams",
         "COSC 1P03"
       ]
@@ -39293,7 +39330,7 @@
         "when is the COSC 1P03 exam"
       ],
       "responses": [
-        81,
+        83,
         "exams",
         "COSC 1P03"
       ]
@@ -39305,7 +39342,7 @@
         "when is the COSC 1P50 exam"
       ],
       "responses": [
-        82,
+        84,
         "exams",
         "COSC 1P50"
       ]
@@ -39317,7 +39354,7 @@
         "when is the COSC 1P50 exam"
       ],
       "responses": [
-        83,
+        85,
         "exams",
         "COSC 1P50"
       ]
@@ -39329,7 +39366,7 @@
         "when is the COSC 2P05 exam"
       ],
       "responses": [
-        84,
+        86,
         "exams",
         "COSC 2P05"
       ]
@@ -39341,7 +39378,7 @@
         "when is the COSC 2P13 exam"
       ],
       "responses": [
-        85,
+        87,
         "exams",
         "COSC 2P13"
       ]
@@ -39353,7 +39390,7 @@
         "when is the COSC 3P32 exam"
       ],
       "responses": [
-        86,
+        88,
         "exams",
         "COSC 3P32"
       ]
@@ -39365,7 +39402,7 @@
         "when is the COSC 3P91 exam"
       ],
       "responses": [
-        87,
+        89,
         "exams",
         "COSC 3P91"
       ]
@@ -39377,7 +39414,7 @@
         "when is the COSC 3P94 exam"
       ],
       "responses": [
-        88,
+        90,
         "exams",
         "COSC 3P94"
       ]
@@ -39389,7 +39426,7 @@
         "when is the COSC 4P32 exam"
       ],
       "responses": [
-        89,
+        91,
         "exams",
         "COSC 4P32"
       ]
@@ -39401,7 +39438,7 @@
         "when is the COSC 4P61 exam"
       ],
       "responses": [
-        90,
+        92,
         "exams",
         "COSC 4P61"
       ]
@@ -39413,7 +39450,7 @@
         "when is the CRIM 2P62 exam"
       ],
       "responses": [
-        91,
+        93,
         "exams",
         "CRIM 2P62"
       ]
@@ -39425,7 +39462,7 @@
         "when is the CRIM 3P01 exam"
       ],
       "responses": [
-        92,
+        94,
         "exams",
         "CRIM 3P01"
       ]
@@ -39437,7 +39474,7 @@
         "when is the CRIM 3P02 exam"
       ],
       "responses": [
-        93,
+        95,
         "exams",
         "CRIM 3P02"
       ]
@@ -39449,7 +39486,7 @@
         "when is the CRIM 3P45 exam"
       ],
       "responses": [
-        94,
+        96,
         "exams",
         "CRIM 3P45"
       ]
@@ -39461,7 +39498,7 @@
         "when is the ECON 1P91 exam"
       ],
       "responses": [
-        95,
+        97,
         "exams",
         "ECON 1P91"
       ]
@@ -39473,7 +39510,7 @@
         "when is the ECON 1P91 exam"
       ],
       "responses": [
-        96,
+        98,
         "exams",
         "ECON 1P91"
       ]
@@ -39485,7 +39522,7 @@
         "when is the ECON 1P92 exam"
       ],
       "responses": [
-        97,
+        99,
         "exams",
         "ECON 1P92"
       ]
@@ -39497,7 +39534,7 @@
         "when is the ECON 1P95 exam"
       ],
       "responses": [
-        98,
+        100,
         "exams",
         "ECON 1P95"
       ]
@@ -39509,7 +39546,7 @@
         "when is the ECON 2P15 exam"
       ],
       "responses": [
-        99,
+        101,
         "exams",
         "ECON 2P15"
       ]
@@ -39521,7 +39558,7 @@
         "when is the ECON 2P19 exam"
       ],
       "responses": [
-        100,
+        102,
         "exams",
         "ECON 2P19"
       ]
@@ -39533,7 +39570,7 @@
         "when is the ECON 2P21 exam"
       ],
       "responses": [
-        101,
+        103,
         "exams",
         "ECON 2P21"
       ]
@@ -39545,7 +39582,7 @@
         "when is the ECON 2P22 exam"
       ],
       "responses": [
-        102,
+        104,
         "exams",
         "ECON 2P22"
       ]
@@ -39557,7 +39594,7 @@
         "when is the ECON 2P23 exam"
       ],
       "responses": [
-        103,
+        105,
         "exams",
         "ECON 2P23"
       ]
@@ -39569,7 +39606,7 @@
         "when is the ECON 2P23 exam"
       ],
       "responses": [
-        104,
+        106,
         "exams",
         "ECON 2P23"
       ]
@@ -39581,7 +39618,7 @@
         "when is the ECON 2P30 exam"
       ],
       "responses": [
-        105,
+        107,
         "exams",
         "ECON 2P30"
       ]
@@ -39593,7 +39630,7 @@
         "when is the ECON 2P42 exam"
       ],
       "responses": [
-        106,
+        108,
         "exams",
         "ECON 2P42"
       ]
@@ -39605,7 +39642,7 @@
         "when is the ECON 2P90 exam"
       ],
       "responses": [
-        107,
+        109,
         "exams",
         "ECON 2P90"
       ]
@@ -39617,7 +39654,7 @@
         "when is the ECON 2P91 exam"
       ],
       "responses": [
-        108,
+        110,
         "exams",
         "ECON 2P91"
       ]
@@ -39629,7 +39666,7 @@
         "when is the ECON 2P91 exam"
       ],
       "responses": [
-        109,
+        111,
         "exams",
         "ECON 2P91"
       ]
@@ -39641,7 +39678,7 @@
         "when is the ECON 3P01 exam"
       ],
       "responses": [
-        110,
+        112,
         "exams",
         "ECON 3P01"
       ]
@@ -39653,7 +39690,7 @@
         "when is the ECON 3P04 exam"
       ],
       "responses": [
-        111,
+        113,
         "exams",
         "ECON 3P04"
       ]
@@ -39665,7 +39702,7 @@
         "when is the ECON 3P10 exam"
       ],
       "responses": [
-        112,
+        114,
         "exams",
         "ECON 3P10"
       ]
@@ -39677,7 +39714,7 @@
         "when is the ECON 3P13 exam"
       ],
       "responses": [
-        113,
+        115,
         "exams",
         "ECON 3P13"
       ]
@@ -39689,7 +39726,7 @@
         "when is the ECON 3P15 exam"
       ],
       "responses": [
-        114,
+        116,
         "exams",
         "ECON 3P15"
       ]
@@ -39701,7 +39738,7 @@
         "when is the ECON 3P21 exam"
       ],
       "responses": [
-        115,
+        117,
         "exams",
         "ECON 3P21"
       ]
@@ -39713,7 +39750,7 @@
         "when is the ECON 3P22 exam"
       ],
       "responses": [
-        116,
+        118,
         "exams",
         "ECON 3P22"
       ]
@@ -39725,7 +39762,7 @@
         "when is the ECON 3P90 exam"
       ],
       "responses": [
-        117,
+        119,
         "exams",
         "ECON 3P90"
       ]
@@ -39737,7 +39774,7 @@
         "when is the ECON 3Q91 exam"
       ],
       "responses": [
-        118,
+        120,
         "exams",
         "ECON 3Q91"
       ]
@@ -39749,7 +39786,7 @@
         "when is the ECON 4P06 exam"
       ],
       "responses": [
-        119,
+        121,
         "exams",
         "ECON 4P06"
       ]
@@ -39761,7 +39798,7 @@
         "when is the ECON 4P13 exam"
       ],
       "responses": [
-        120,
+        122,
         "exams",
         "ECON 4P13"
       ]
@@ -39773,7 +39810,7 @@
         "when is the ECON 4P14 exam"
       ],
       "responses": [
-        121,
+        123,
         "exams",
         "ECON 4P14"
       ]
@@ -39785,7 +39822,7 @@
         "when is the ECON 5P14 exam"
       ],
       "responses": [
-        122,
+        124,
         "exams",
         "ECON 5P14"
       ]
@@ -39797,7 +39834,7 @@
         "when is the EDUC 4P70 exam"
       ],
       "responses": [
-        123,
+        125,
         "exams",
         "EDUC 4P70"
       ]
@@ -39809,7 +39846,7 @@
         "when is the ENGL 2P70 exam"
       ],
       "responses": [
-        124,
+        126,
         "exams",
         "ENGL 2P70"
       ]
@@ -39821,7 +39858,7 @@
         "when is the ENTR 2P51 exam"
       ],
       "responses": [
-        125,
+        127,
         "exams",
         "ENTR 2P51"
       ]
@@ -39833,7 +39870,7 @@
         "when is the ERSC 1P02 exam"
       ],
       "responses": [
-        126,
+        128,
         "exams",
         "ERSC 1P02"
       ]
@@ -39845,7 +39882,7 @@
         "when is the ERSC 2P03 exam"
       ],
       "responses": [
-        127,
+        129,
         "exams",
         "ERSC 2P03"
       ]
@@ -39857,7 +39894,7 @@
         "when is the ERSC 2P08 exam"
       ],
       "responses": [
-        128,
+        130,
         "exams",
         "ERSC 2P08"
       ]
@@ -39869,7 +39906,7 @@
         "when is the ERSC 2P24 exam"
       ],
       "responses": [
-        129,
+        131,
         "exams",
         "ERSC 2P24"
       ]
@@ -39881,7 +39918,7 @@
         "when is the ERSC 3P08 exam"
       ],
       "responses": [
-        130,
+        132,
         "exams",
         "ERSC 3P08"
       ]
@@ -39893,7 +39930,7 @@
         "when is the ERSC 3P12 exam"
       ],
       "responses": [
-        131,
+        133,
         "exams",
         "ERSC 3P12"
       ]
@@ -39905,33 +39942,9 @@
         "when is the ERSC 3P90 exam"
       ],
       "responses": [
-        132,
-        "exams",
-        "ERSC 3P90"
-      ]
-    },
-    {
-      "tag": "ETHC 3P82 exams",
-      "patterns": [
-        "ETHC 3P82 exam",
-        "when is the ETHC 3P82 exam"
-      ],
-      "responses": [
-        133,
-        "exams",
-        "ETHC 3P82"
-      ]
-    },
-    {
-      "tag": "ETHC 3P82 exams",
-      "patterns": [
-        "ETHC 3P82 exam",
-        "when is the ETHC 3P82 exam"
-      ],
-      "responses": [
         134,
         "exams",
-        "ETHC 3P82"
+        "ERSC 3P90"
       ]
     },
     {
@@ -39971,13 +39984,37 @@
       ]
     },
     {
+      "tag": "ETHC 3P82 exams",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        138,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
+      "tag": "ETHC 3P82 exams",
+      "patterns": [
+        "ETHC 3P82 exam",
+        "when is the ETHC 3P82 exam"
+      ],
+      "responses": [
+        139,
+        "exams",
+        "ETHC 3P82"
+      ]
+    },
+    {
       "tag": "FILM 1F94 exams",
       "patterns": [
         "FILM 1F94 exam",
         "when is the FILM 1F94 exam"
       ],
       "responses": [
-        138,
+        140,
         "exams",
         "FILM 1F94"
       ]
@@ -39989,7 +40026,7 @@
         "when is the FILM 2F98 exam"
       ],
       "responses": [
-        139,
+        141,
         "exams",
         "FILM 2F98"
       ]
@@ -40001,7 +40038,7 @@
         "when is the FILM 2P91 exam"
       ],
       "responses": [
-        140,
+        142,
         "exams",
         "FILM 2P91"
       ]
@@ -40013,7 +40050,7 @@
         "when is the FILM 2P94 exam"
       ],
       "responses": [
-        141,
+        143,
         "exams",
         "FILM 2P94"
       ]
@@ -40025,33 +40062,9 @@
         "when is the FNCE 2P51 exam"
       ],
       "responses": [
-        142,
-        "exams",
-        "FNCE 2P51"
-      ]
-    },
-    {
-      "tag": "FNCE 2P91 exams",
-      "patterns": [
-        "FNCE 2P91 exam",
-        "when is the FNCE 2P91 exam"
-      ],
-      "responses": [
-        143,
-        "exams",
-        "FNCE 2P91"
-      ]
-    },
-    {
-      "tag": "FNCE 2P91 exams",
-      "patterns": [
-        "FNCE 2P91 exam",
-        "when is the FNCE 2P91 exam"
-      ],
-      "responses": [
         144,
         "exams",
-        "FNCE 2P91"
+        "FNCE 2P51"
       ]
     },
     {
@@ -40079,27 +40092,27 @@
       ]
     },
     {
-      "tag": "FNCE 3P93 exams",
+      "tag": "FNCE 2P91 exams",
       "patterns": [
-        "FNCE 3P93 exam",
-        "when is the FNCE 3P93 exam"
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
       ],
       "responses": [
         147,
         "exams",
-        "FNCE 3P93"
+        "FNCE 2P91"
       ]
     },
     {
-      "tag": "FNCE 3P93 exams",
+      "tag": "FNCE 2P91 exams",
       "patterns": [
-        "FNCE 3P93 exam",
-        "when is the FNCE 3P93 exam"
+        "FNCE 2P91 exam",
+        "when is the FNCE 2P91 exam"
       ],
       "responses": [
         148,
         "exams",
-        "FNCE 3P93"
+        "FNCE 2P91"
       ]
     },
     {
@@ -40175,13 +40188,37 @@
       ]
     },
     {
+      "tag": "FNCE 3P93 exams",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        155,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
+      "tag": "FNCE 3P93 exams",
+      "patterns": [
+        "FNCE 3P93 exam",
+        "when is the FNCE 3P93 exam"
+      ],
+      "responses": [
+        156,
+        "exams",
+        "FNCE 3P93"
+      ]
+    },
+    {
       "tag": "FNCE 3P96 exams",
       "patterns": [
         "FNCE 3P96 exam",
         "when is the FNCE 3P96 exam"
       ],
       "responses": [
-        155,
+        157,
         "exams",
         "FNCE 3P96"
       ]
@@ -40193,7 +40230,7 @@
         "when is the FNCE 3P96 exam"
       ],
       "responses": [
-        156,
+        158,
         "exams",
         "FNCE 3P96"
       ]
@@ -40205,7 +40242,7 @@
         "when is the FNCE 4P05 exam"
       ],
       "responses": [
-        157,
+        159,
         "exams",
         "FNCE 4P05"
       ]
@@ -40217,7 +40254,7 @@
         "when is the FNCE 4P05 exam"
       ],
       "responses": [
-        158,
+        160,
         "exams",
         "FNCE 4P05"
       ]
@@ -40229,7 +40266,7 @@
         "when is the FNCE 4P18 exam"
       ],
       "responses": [
-        159,
+        161,
         "exams",
         "FNCE 4P18"
       ]
@@ -40241,7 +40278,7 @@
         "when is the FREN 1F00 exam"
       ],
       "responses": [
-        160,
+        162,
         "exams",
         "FREN 1F00"
       ]
@@ -40253,7 +40290,7 @@
         "when is the FREN 1F00 exam"
       ],
       "responses": [
-        161,
+        163,
         "exams",
         "FREN 1F00"
       ]
@@ -40265,33 +40302,9 @@
         "when is the FREN 1F50 exam"
       ],
       "responses": [
-        162,
-        "exams",
-        "FREN 1F50"
-      ]
-    },
-    {
-      "tag": "FREN 1F90 exams",
-      "patterns": [
-        "FREN 1F90 exam",
-        "when is the FREN 1F90 exam"
-      ],
-      "responses": [
-        163,
-        "exams",
-        "FREN 1F90"
-      ]
-    },
-    {
-      "tag": "FREN 1F90 exams",
-      "patterns": [
-        "FREN 1F90 exam",
-        "when is the FREN 1F90 exam"
-      ],
-      "responses": [
         164,
         "exams",
-        "FREN 1F90"
+        "FREN 1F50"
       ]
     },
     {
@@ -40367,27 +40380,27 @@
       ]
     },
     {
-      "tag": "FREN 2F00 exams",
+      "tag": "FREN 1F90 exams",
       "patterns": [
-        "FREN 2F00 exam",
-        "when is the FREN 2F00 exam"
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
       ],
       "responses": [
         171,
         "exams",
-        "FREN 2F00"
+        "FREN 1F90"
       ]
     },
     {
-      "tag": "FREN 2F00 exams",
+      "tag": "FREN 1F90 exams",
       "patterns": [
-        "FREN 2F00 exam",
-        "when is the FREN 2F00 exam"
+        "FREN 1F90 exam",
+        "when is the FREN 1F90 exam"
       ],
       "responses": [
         172,
         "exams",
-        "FREN 2F00"
+        "FREN 1F90"
       ]
     },
     {
@@ -40415,13 +40428,37 @@
       ]
     },
     {
+      "tag": "FREN 2F00 exams",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        175,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
+      "tag": "FREN 2F00 exams",
+      "patterns": [
+        "FREN 2F00 exam",
+        "when is the FREN 2F00 exam"
+      ],
+      "responses": [
+        176,
+        "exams",
+        "FREN 2F00"
+      ]
+    },
+    {
       "tag": "GEOG 1F91 exams",
       "patterns": [
         "GEOG 1F91 exam",
         "when is the GEOG 1F91 exam"
       ],
       "responses": [
-        175,
+        177,
         "exams",
         "GEOG 1F91"
       ]
@@ -40433,7 +40470,7 @@
         "when is the GEOG 2P08 exam"
       ],
       "responses": [
-        176,
+        178,
         "exams",
         "GEOG 2P08"
       ]
@@ -40445,7 +40482,7 @@
         "when is the GEOG 3P08 exam"
       ],
       "responses": [
-        177,
+        179,
         "exams",
         "GEOG 3P08"
       ]
@@ -40457,7 +40494,7 @@
         "when is the GEOG 3P09 exam"
       ],
       "responses": [
-        178,
+        180,
         "exams",
         "GEOG 3P09"
       ]
@@ -40469,7 +40506,7 @@
         "when is the GERM 1F00 exam"
       ],
       "responses": [
-        179,
+        181,
         "exams",
         "GERM 1F00"
       ]
@@ -40481,7 +40518,7 @@
         "when is the GERM 1F90 exam"
       ],
       "responses": [
-        180,
+        182,
         "exams",
         "GERM 1F90"
       ]
@@ -40493,7 +40530,7 @@
         "when is the GERM 1F90 exam"
       ],
       "responses": [
-        181,
+        183,
         "exams",
         "GERM 1F90"
       ]
@@ -40505,7 +40542,7 @@
         "when is the GERM 2F00 exam"
       ],
       "responses": [
-        182,
+        184,
         "exams",
         "GERM 2F00"
       ]
@@ -40517,7 +40554,7 @@
         "when is the GERM 2P95 exam"
       ],
       "responses": [
-        183,
+        185,
         "exams",
         "GERM 2P95"
       ]
@@ -40529,7 +40566,7 @@
         "when is the GERM 3F99 exam"
       ],
       "responses": [
-        184,
+        186,
         "exams",
         "GERM 3F99"
       ]
@@ -40541,7 +40578,7 @@
         "when is the GERO 5P92 exam"
       ],
       "responses": [
-        185,
+        187,
         "exams",
         "GERO 5P92"
       ]
@@ -40553,7 +40590,7 @@
         "when is the GREE 1F00 exam"
       ],
       "responses": [
-        186,
+        188,
         "exams",
         "GREE 1F00"
       ]
@@ -40565,7 +40602,7 @@
         "when is the HIST 1P91 exam"
       ],
       "responses": [
-        187,
+        189,
         "exams",
         "HIST 1P91"
       ]
@@ -40577,7 +40614,7 @@
         "when is the HIST 2F00 exam"
       ],
       "responses": [
-        188,
+        190,
         "exams",
         "HIST 2F00"
       ]
@@ -40589,7 +40626,7 @@
         "when is the HIST 2F20 exam"
       ],
       "responses": [
-        189,
+        191,
         "exams",
         "HIST 2F20"
       ]
@@ -40601,7 +40638,7 @@
         "when is the HLSC 1F90 exam"
       ],
       "responses": [
-        190,
+        192,
         "exams",
         "HLSC 1F90"
       ]
@@ -40613,7 +40650,7 @@
         "when is the HLSC 2P07 exam"
       ],
       "responses": [
-        191,
+        193,
         "exams",
         "HLSC 2P07"
       ]
@@ -40625,7 +40662,7 @@
         "when is the HLSC 2P09 exam"
       ],
       "responses": [
-        192,
+        194,
         "exams",
         "HLSC 2P09"
       ]
@@ -40637,7 +40674,7 @@
         "when is the HLSC 2P27 exam"
       ],
       "responses": [
-        193,
+        195,
         "exams",
         "HLSC 2P27"
       ]
@@ -40649,7 +40686,7 @@
         "when is the HLSC 2P40 exam"
       ],
       "responses": [
-        194,
+        196,
         "exams",
         "HLSC 2P40"
       ]
@@ -40661,7 +40698,7 @@
         "when is the HLSC 2P49 exam"
       ],
       "responses": [
-        195,
+        197,
         "exams",
         "HLSC 2P49"
       ]
@@ -40673,7 +40710,7 @@
         "when is the HLSC 2P90 exam"
       ],
       "responses": [
-        196,
+        198,
         "exams",
         "HLSC 2P90"
       ]
@@ -40685,7 +40722,7 @@
         "when is the HLSC 2P96 exam"
       ],
       "responses": [
-        197,
+        199,
         "exams",
         "HLSC 2P96"
       ]
@@ -40697,7 +40734,7 @@
         "when is the HLSC 2P98 exam"
       ],
       "responses": [
-        198,
+        200,
         "exams",
         "HLSC 2P98"
       ]
@@ -40709,7 +40746,7 @@
         "when is the HLSC 3P09 exam"
       ],
       "responses": [
-        199,
+        201,
         "exams",
         "HLSC 3P09"
       ]
@@ -40721,7 +40758,7 @@
         "when is the HLSC 3P19 exam"
       ],
       "responses": [
-        200,
+        202,
         "exams",
         "HLSC 3P19"
       ]
@@ -40733,7 +40770,7 @@
         "when is the HLSC 3P50 exam"
       ],
       "responses": [
-        201,
+        203,
         "exams",
         "HLSC 3P50"
       ]
@@ -40745,7 +40782,7 @@
         "when is the HLSC 3P91 exam"
       ],
       "responses": [
-        202,
+        204,
         "exams",
         "HLSC 3P91"
       ]
@@ -40757,7 +40794,7 @@
         "when is the HLSC 3P94 exam"
       ],
       "responses": [
-        203,
+        205,
         "exams",
         "HLSC 3P94"
       ]
@@ -40769,7 +40806,7 @@
         "when is the HLSC 3P97 exam"
       ],
       "responses": [
-        204,
+        206,
         "exams",
         "HLSC 3P97"
       ]
@@ -40781,7 +40818,7 @@
         "when is the HLSC 4P02 exam"
       ],
       "responses": [
-        205,
+        207,
         "exams",
         "HLSC 4P02"
       ]
@@ -40793,7 +40830,7 @@
         "when is the HLSC 4P03 exam"
       ],
       "responses": [
-        206,
+        208,
         "exams",
         "HLSC 4P03"
       ]
@@ -40805,7 +40842,7 @@
         "when is the HLSC 4P95 exam"
       ],
       "responses": [
-        207,
+        209,
         "exams",
         "HLSC 4P95"
       ]
@@ -40817,7 +40854,7 @@
         "when is the IASC 1P00 exam"
       ],
       "responses": [
-        208,
+        210,
         "exams",
         "IASC 1P00"
       ]
@@ -40829,7 +40866,7 @@
         "when is the IASC 1P01 exam"
       ],
       "responses": [
-        209,
+        211,
         "exams",
         "IASC 1P01"
       ]
@@ -40841,7 +40878,7 @@
         "when is the IASC 1P50 exam"
       ],
       "responses": [
-        210,
+        212,
         "exams",
         "IASC 1P50"
       ]
@@ -40853,7 +40890,7 @@
         "when is the IASC 1P50 exam"
       ],
       "responses": [
-        211,
+        213,
         "exams",
         "IASC 1P50"
       ]
@@ -40865,7 +40902,7 @@
         "when is the IASC 2P70 exam"
       ],
       "responses": [
-        212,
+        214,
         "exams",
         "IASC 2P70"
       ]
@@ -40877,7 +40914,7 @@
         "when is the IASC 3P94 exam"
       ],
       "responses": [
-        213,
+        215,
         "exams",
         "IASC 3P94"
       ]
@@ -40889,7 +40926,7 @@
         "when is the ITAL 2P80 exam"
       ],
       "responses": [
-        214,
+        216,
         "exams",
         "ITAL 2P80"
       ]
@@ -40901,33 +40938,9 @@
         "when is the ITAL 2P90 exam"
       ],
       "responses": [
-        215,
-        "exams",
-        "ITAL 2P90"
-      ]
-    },
-    {
-      "tag": "ITIS 1P97 exams",
-      "patterns": [
-        "ITIS 1P97 exam",
-        "when is the ITIS 1P97 exam"
-      ],
-      "responses": [
-        216,
-        "exams",
-        "ITIS 1P97"
-      ]
-    },
-    {
-      "tag": "ITIS 1P97 exams",
-      "patterns": [
-        "ITIS 1P97 exam",
-        "when is the ITIS 1P97 exam"
-      ],
-      "responses": [
         217,
         "exams",
-        "ITIS 1P97"
+        "ITAL 2P90"
       ]
     },
     {
@@ -40991,27 +41004,27 @@
       ]
     },
     {
-      "tag": "ITIS 2P91 exams",
+      "tag": "ITIS 1P97 exams",
       "patterns": [
-        "ITIS 2P91 exam",
-        "when is the ITIS 2P91 exam"
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
       ],
       "responses": [
         223,
         "exams",
-        "ITIS 2P91"
+        "ITIS 1P97"
       ]
     },
     {
-      "tag": "ITIS 2P91 exams",
+      "tag": "ITIS 1P97 exams",
       "patterns": [
-        "ITIS 2P91 exam",
-        "when is the ITIS 2P91 exam"
+        "ITIS 1P97 exam",
+        "when is the ITIS 1P97 exam"
       ],
       "responses": [
         224,
         "exams",
-        "ITIS 2P91"
+        "ITIS 1P97"
       ]
     },
     {
@@ -41039,13 +41052,37 @@
       ]
     },
     {
+      "tag": "ITIS 2P91 exams",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        227,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
+      "tag": "ITIS 2P91 exams",
+      "patterns": [
+        "ITIS 2P91 exam",
+        "when is the ITIS 2P91 exam"
+      ],
+      "responses": [
+        228,
+        "exams",
+        "ITIS 2P91"
+      ]
+    },
+    {
       "tag": "ITIS 3P91 exams",
       "patterns": [
         "ITIS 3P91 exam",
         "when is the ITIS 3P91 exam"
       ],
       "responses": [
-        227,
+        229,
         "exams",
         "ITIS 3P91"
       ]
@@ -41057,7 +41094,7 @@
         "when is the ITIS 3P98 exam"
       ],
       "responses": [
-        228,
+        230,
         "exams",
         "ITIS 3P98"
       ]
@@ -41069,7 +41106,7 @@
         "when is the ITIS 4P26 exam"
       ],
       "responses": [
-        229,
+        231,
         "exams",
         "ITIS 4P26"
       ]
@@ -41081,7 +41118,7 @@
         "when is the KINE 1P90 exam"
       ],
       "responses": [
-        230,
+        232,
         "exams",
         "KINE 1P90"
       ]
@@ -41093,7 +41130,7 @@
         "when is the KINE 2P05 exam"
       ],
       "responses": [
-        231,
+        233,
         "exams",
         "KINE 2P05"
       ]
@@ -41105,7 +41142,7 @@
         "when is the KINE 2P09 exam"
       ],
       "responses": [
-        232,
+        234,
         "exams",
         "KINE 2P09"
       ]
@@ -41117,7 +41154,7 @@
         "when is the KINE 2P41 exam"
       ],
       "responses": [
-        233,
+        235,
         "exams",
         "KINE 2P41"
       ]
@@ -41129,7 +41166,7 @@
         "when is the KINE 2P84 exam"
       ],
       "responses": [
-        234,
+        236,
         "exams",
         "KINE 2P84"
       ]
@@ -41141,7 +41178,7 @@
         "when is the KINE 2P90 exam"
       ],
       "responses": [
-        235,
+        237,
         "exams",
         "KINE 2P90"
       ]
@@ -41153,7 +41190,7 @@
         "when is the KINE 2P91 exam"
       ],
       "responses": [
-        236,
+        238,
         "exams",
         "KINE 2P91"
       ]
@@ -41165,7 +41202,7 @@
         "when is the KINE 2P95 exam"
       ],
       "responses": [
-        237,
+        239,
         "exams",
         "KINE 2P95"
       ]
@@ -41177,7 +41214,7 @@
         "when is the KINE 3P02 exam"
       ],
       "responses": [
-        238,
+        240,
         "exams",
         "KINE 3P02"
       ]
@@ -41189,7 +41226,7 @@
         "when is the KINE 3P10 exam"
       ],
       "responses": [
-        239,
+        241,
         "exams",
         "KINE 3P10"
       ]
@@ -41201,7 +41238,7 @@
         "when is the KINE 3P70 exam"
       ],
       "responses": [
-        240,
+        242,
         "exams",
         "KINE 3P70"
       ]
@@ -41213,7 +41250,7 @@
         "when is the KINE 3P80 exam"
       ],
       "responses": [
-        241,
+        243,
         "exams",
         "KINE 3P80"
       ]
@@ -41225,7 +41262,7 @@
         "when is the KINE 3P90 exam"
       ],
       "responses": [
-        242,
+        244,
         "exams",
         "KINE 3P90"
       ]
@@ -41237,7 +41274,7 @@
         "when is the KINE 3P94 exam"
       ],
       "responses": [
-        243,
+        245,
         "exams",
         "KINE 3P94"
       ]
@@ -41249,7 +41286,7 @@
         "when is the KINE 3P98 exam"
       ],
       "responses": [
-        244,
+        246,
         "exams",
         "KINE 3P98"
       ]
@@ -41261,7 +41298,7 @@
         "when is the KINE 4P10 exam"
       ],
       "responses": [
-        245,
+        247,
         "exams",
         "KINE 4P10"
       ]
@@ -41273,7 +41310,7 @@
         "when is the KINE 4P81 exam"
       ],
       "responses": [
-        246,
+        248,
         "exams",
         "KINE 4P81"
       ]
@@ -41285,7 +41322,7 @@
         "when is the KINE 4P98 exam"
       ],
       "responses": [
-        247,
+        249,
         "exams",
         "KINE 4P98"
       ]
@@ -41297,7 +41334,7 @@
         "when is the LABR 2P00 exam"
       ],
       "responses": [
-        248,
+        250,
         "exams",
         "LABR 2P00"
       ]
@@ -41309,7 +41346,7 @@
         "when is the LABR 2P15 exam"
       ],
       "responses": [
-        249,
+        251,
         "exams",
         "LABR 2P15"
       ]
@@ -41321,7 +41358,7 @@
         "when is the LABR 2Q98 exam"
       ],
       "responses": [
-        250,
+        252,
         "exams",
         "LABR 2Q98"
       ]
@@ -41333,7 +41370,7 @@
         "when is the LATI 1F00 exam"
       ],
       "responses": [
-        251,
+        253,
         "exams",
         "LATI 1F00"
       ]
@@ -41345,7 +41382,7 @@
         "when is the LING 1P01 exam"
       ],
       "responses": [
-        252,
+        254,
         "exams",
         "LING 1P01"
       ]
@@ -41357,7 +41394,7 @@
         "when is the LING 1P93 exam"
       ],
       "responses": [
-        253,
+        255,
         "exams",
         "LING 1P93"
       ]
@@ -41369,7 +41406,7 @@
         "when is the LING 2P91 exam"
       ],
       "responses": [
-        254,
+        256,
         "exams",
         "LING 2P91"
       ]
@@ -41381,7 +41418,7 @@
         "when is the LING 2P99 exam"
       ],
       "responses": [
-        255,
+        257,
         "exams",
         "LING 2P99"
       ]
@@ -41393,7 +41430,7 @@
         "when is the LING 3P71 exam"
       ],
       "responses": [
-        256,
+        258,
         "exams",
         "LING 3P71"
       ]
@@ -41405,7 +41442,7 @@
         "when is the LING 3P90 exam"
       ],
       "responses": [
-        257,
+        259,
         "exams",
         "LING 3P90"
       ]
@@ -41417,7 +41454,7 @@
         "when is the MACC 5P21 exam"
       ],
       "responses": [
-        258,
+        260,
         "exams",
         "MACC 5P21"
       ]
@@ -41429,7 +41466,7 @@
         "when is the MACC 5P21 exam"
       ],
       "responses": [
-        259,
+        261,
         "exams",
         "MACC 5P21"
       ]
@@ -41441,7 +41478,7 @@
         "when is the MACC 5P41 exam"
       ],
       "responses": [
-        260,
+        262,
         "exams",
         "MACC 5P41"
       ]
@@ -41453,7 +41490,7 @@
         "when is the MACC 5P41 exam"
       ],
       "responses": [
-        261,
+        263,
         "exams",
         "MACC 5P41"
       ]
@@ -41465,7 +41502,7 @@
         "when is the MACC 5P71 exam"
       ],
       "responses": [
-        262,
+        264,
         "exams",
         "MACC 5P71"
       ]
@@ -41477,7 +41514,7 @@
         "when is the MACC 5P71 exam"
       ],
       "responses": [
-        263,
+        265,
         "exams",
         "MACC 5P71"
       ]
@@ -41489,7 +41526,7 @@
         "when is the MACC 5P91 exam"
       ],
       "responses": [
-        264,
+        266,
         "exams",
         "MACC 5P91"
       ]
@@ -41501,7 +41538,7 @@
         "when is the MACC 5P91 exam"
       ],
       "responses": [
-        265,
+        267,
         "exams",
         "MACC 5P91"
       ]
@@ -41513,7 +41550,7 @@
         "when is the MACC 5P99 exam"
       ],
       "responses": [
-        266,
+        268,
         "exams",
         "MACC 5P99"
       ]
@@ -41525,7 +41562,7 @@
         "when is the MACC 5P99 exam"
       ],
       "responses": [
-        267,
+        269,
         "exams",
         "MACC 5P99"
       ]
@@ -41537,7 +41574,7 @@
         "when is the MARS 1F90 exam"
       ],
       "responses": [
-        268,
+        270,
         "exams",
         "MARS 1F90"
       ]
@@ -41549,7 +41586,7 @@
         "when is the MATH 1F92 exam"
       ],
       "responses": [
-        269,
+        271,
         "exams",
         "MATH 1F92"
       ]
@@ -41561,7 +41598,7 @@
         "when is the MATH 1P02 exam"
       ],
       "responses": [
-        270,
+        272,
         "exams",
         "MATH 1P02"
       ]
@@ -41573,7 +41610,7 @@
         "when is the MATH 1P05 exam"
       ],
       "responses": [
-        271,
+        273,
         "exams",
         "MATH 1P05"
       ]
@@ -41585,7 +41622,7 @@
         "when is the MATH 1P06 exam"
       ],
       "responses": [
-        272,
+        274,
         "exams",
         "MATH 1P06"
       ]
@@ -41597,7 +41634,7 @@
         "when is the MATH 1P20 exam"
       ],
       "responses": [
-        273,
+        275,
         "exams",
         "MATH 1P20"
       ]
@@ -41609,7 +41646,7 @@
         "when is the MATH 1P40 exam"
       ],
       "responses": [
-        274,
+        276,
         "exams",
         "MATH 1P40"
       ]
@@ -41621,33 +41658,9 @@
         "when is the MATH 1P67 exam"
       ],
       "responses": [
-        275,
-        "exams",
-        "MATH 1P67"
-      ]
-    },
-    {
-      "tag": "MATH 1P97 exams",
-      "patterns": [
-        "MATH 1P97 exam",
-        "when is the MATH 1P97 exam"
-      ],
-      "responses": [
-        276,
-        "exams",
-        "MATH 1P97"
-      ]
-    },
-    {
-      "tag": "MATH 1P97 exams",
-      "patterns": [
-        "MATH 1P97 exam",
-        "when is the MATH 1P97 exam"
-      ],
-      "responses": [
         277,
         "exams",
-        "MATH 1P97"
+        "MATH 1P67"
       ]
     },
     {
@@ -41675,13 +41688,37 @@
       ]
     },
     {
+      "tag": "MATH 1P97 exams",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        280,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
+      "tag": "MATH 1P97 exams",
+      "patterns": [
+        "MATH 1P97 exam",
+        "when is the MATH 1P97 exam"
+      ],
+      "responses": [
+        281,
+        "exams",
+        "MATH 1P97"
+      ]
+    },
+    {
       "tag": "MATH 1P98 exams",
       "patterns": [
         "MATH 1P98 exam",
         "when is the MATH 1P98 exam"
       ],
       "responses": [
-        280,
+        282,
         "exams",
         "MATH 1P98"
       ]
@@ -41693,7 +41730,7 @@
         "when is the MATH 2P08 exam"
       ],
       "responses": [
-        281,
+        283,
         "exams",
         "MATH 2P08"
       ]
@@ -41705,7 +41742,7 @@
         "when is the MATH 2P13 exam"
       ],
       "responses": [
-        282,
+        284,
         "exams",
         "MATH 2P13"
       ]
@@ -41717,7 +41754,7 @@
         "when is the MATH 2P75 exam"
       ],
       "responses": [
-        283,
+        285,
         "exams",
         "MATH 2P75"
       ]
@@ -41729,7 +41766,7 @@
         "when is the MATH 2P82 exam"
       ],
       "responses": [
-        284,
+        286,
         "exams",
         "MATH 2P82"
       ]
@@ -41741,7 +41778,7 @@
         "when is the MATH 2P94 exam"
       ],
       "responses": [
-        285,
+        287,
         "exams",
         "MATH 2P94"
       ]
@@ -41753,7 +41790,7 @@
         "when is the MATH 2P98 exam"
       ],
       "responses": [
-        286,
+        288,
         "exams",
         "MATH 2P98"
       ]
@@ -41765,7 +41802,7 @@
         "when is the MATH 3P06 exam"
       ],
       "responses": [
-        287,
+        289,
         "exams",
         "MATH 3P06"
       ]
@@ -41777,7 +41814,7 @@
         "when is the MATH 3P09 exam"
       ],
       "responses": [
-        288,
+        290,
         "exams",
         "MATH 3P09"
       ]
@@ -41789,7 +41826,7 @@
         "when is the MATH 3P13 exam"
       ],
       "responses": [
-        289,
+        291,
         "exams",
         "MATH 3P13"
       ]
@@ -41801,7 +41838,7 @@
         "when is the MATH 3P41 exam"
       ],
       "responses": [
-        290,
+        292,
         "exams",
         "MATH 3P41"
       ]
@@ -41813,7 +41850,7 @@
         "when is the MATH 3P85 exam"
       ],
       "responses": [
-        291,
+        293,
         "exams",
         "MATH 3P85"
       ]
@@ -41825,7 +41862,7 @@
         "when is the MATH 3P95 exam"
       ],
       "responses": [
-        292,
+        294,
         "exams",
         "MATH 3P95"
       ]
@@ -41837,7 +41874,7 @@
         "when is the MATH 4P61 exam"
       ],
       "responses": [
-        293,
+        295,
         "exams",
         "MATH 4P61"
       ]
@@ -41849,33 +41886,9 @@
         "when is the MATH 4P84 exam"
       ],
       "responses": [
-        294,
-        "exams",
-        "MATH 4P84"
-      ]
-    },
-    {
-      "tag": "MBAB 5P06 exams",
-      "patterns": [
-        "MBAB 5P06 exam",
-        "when is the MBAB 5P06 exam"
-      ],
-      "responses": [
-        295,
-        "exams",
-        "MBAB 5P06"
-      ]
-    },
-    {
-      "tag": "MBAB 5P06 exams",
-      "patterns": [
-        "MBAB 5P06 exam",
-        "when is the MBAB 5P06 exam"
-      ],
-      "responses": [
         296,
         "exams",
-        "MBAB 5P06"
+        "MATH 4P84"
       ]
     },
     {
@@ -41915,27 +41928,27 @@
       ]
     },
     {
-      "tag": "MBAB 5P07 exams",
+      "tag": "MBAB 5P06 exams",
       "patterns": [
-        "MBAB 5P07 exam",
-        "when is the MBAB 5P07 exam"
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
       ],
       "responses": [
         300,
         "exams",
-        "MBAB 5P07"
+        "MBAB 5P06"
       ]
     },
     {
-      "tag": "MBAB 5P07 exams",
+      "tag": "MBAB 5P06 exams",
       "patterns": [
-        "MBAB 5P07 exam",
-        "when is the MBAB 5P07 exam"
+        "MBAB 5P06 exam",
+        "when is the MBAB 5P06 exam"
       ],
       "responses": [
         301,
         "exams",
-        "MBAB 5P07"
+        "MBAB 5P06"
       ]
     },
     {
@@ -41987,27 +42000,27 @@
       ]
     },
     {
-      "tag": "MBAB 5P08 exams",
+      "tag": "MBAB 5P07 exams",
       "patterns": [
-        "MBAB 5P08 exam",
-        "when is the MBAB 5P08 exam"
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
       ],
       "responses": [
         306,
         "exams",
-        "MBAB 5P08"
+        "MBAB 5P07"
       ]
     },
     {
-      "tag": "MBAB 5P08 exams",
+      "tag": "MBAB 5P07 exams",
       "patterns": [
-        "MBAB 5P08 exam",
-        "when is the MBAB 5P08 exam"
+        "MBAB 5P07 exam",
+        "when is the MBAB 5P07 exam"
       ],
       "responses": [
         307,
         "exams",
-        "MBAB 5P08"
+        "MBAB 5P07"
       ]
     },
     {
@@ -42059,27 +42072,27 @@
       ]
     },
     {
-      "tag": "MBAB 5P09 exams",
+      "tag": "MBAB 5P08 exams",
       "patterns": [
-        "MBAB 5P09 exam",
-        "when is the MBAB 5P09 exam"
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
       ],
       "responses": [
         312,
         "exams",
-        "MBAB 5P09"
+        "MBAB 5P08"
       ]
     },
     {
-      "tag": "MBAB 5P09 exams",
+      "tag": "MBAB 5P08 exams",
       "patterns": [
-        "MBAB 5P09 exam",
-        "when is the MBAB 5P09 exam"
+        "MBAB 5P08 exam",
+        "when is the MBAB 5P08 exam"
       ],
       "responses": [
         313,
         "exams",
-        "MBAB 5P09"
+        "MBAB 5P08"
       ]
     },
     {
@@ -42131,13 +42144,37 @@
       ]
     },
     {
+      "tag": "MBAB 5P09 exams",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        318,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
+      "tag": "MBAB 5P09 exams",
+      "patterns": [
+        "MBAB 5P09 exam",
+        "when is the MBAB 5P09 exam"
+      ],
+      "responses": [
+        319,
+        "exams",
+        "MBAB 5P09"
+      ]
+    },
+    {
       "tag": "MBAB 5P14 exams",
       "patterns": [
         "MBAB 5P14 exam",
         "when is the MBAB 5P14 exam"
       ],
       "responses": [
-        318,
+        320,
         "exams",
         "MBAB 5P14"
       ]
@@ -42149,7 +42186,7 @@
         "when is the MBAB 5P19 exam"
       ],
       "responses": [
-        319,
+        321,
         "exams",
         "MBAB 5P19"
       ]
@@ -42161,7 +42198,7 @@
         "when is the MBAB 5P34 exam"
       ],
       "responses": [
-        320,
+        322,
         "exams",
         "MBAB 5P34"
       ]
@@ -42173,7 +42210,7 @@
         "when is the MBAB 5P36 exam"
       ],
       "responses": [
-        321,
+        323,
         "exams",
         "MBAB 5P36"
       ]
@@ -42185,7 +42222,7 @@
         "when is the MBAB 5P37 exam"
       ],
       "responses": [
-        322,
+        324,
         "exams",
         "MBAB 5P37"
       ]
@@ -42197,7 +42234,7 @@
         "when is the MBAB 5P45 exam"
       ],
       "responses": [
-        323,
+        325,
         "exams",
         "MBAB 5P45"
       ]
@@ -42209,7 +42246,7 @@
         "when is the MBAB 5P47 exam"
       ],
       "responses": [
-        324,
+        326,
         "exams",
         "MBAB 5P47"
       ]
@@ -42221,7 +42258,7 @@
         "when is the MBAB 5P67 exam"
       ],
       "responses": [
-        325,
+        327,
         "exams",
         "MBAB 5P67"
       ]
@@ -42233,33 +42270,9 @@
         "when is the MBAB 5P73 exam"
       ],
       "responses": [
-        326,
-        "exams",
-        "MBAB 5P73"
-      ]
-    },
-    {
-      "tag": "MGMT 1P96 exams",
-      "patterns": [
-        "MGMT 1P96 exam",
-        "when is the MGMT 1P96 exam"
-      ],
-      "responses": [
-        327,
-        "exams",
-        "MGMT 1P96"
-      ]
-    },
-    {
-      "tag": "MGMT 1P96 exams",
-      "patterns": [
-        "MGMT 1P96 exam",
-        "when is the MGMT 1P96 exam"
-      ],
-      "responses": [
         328,
         "exams",
-        "MGMT 1P96"
+        "MBAB 5P73"
       ]
     },
     {
@@ -42371,13 +42384,37 @@
       ]
     },
     {
+      "tag": "MGMT 1P96 exams",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        338,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
+      "tag": "MGMT 1P96 exams",
+      "patterns": [
+        "MGMT 1P96 exam",
+        "when is the MGMT 1P96 exam"
+      ],
+      "responses": [
+        339,
+        "exams",
+        "MGMT 1P96"
+      ]
+    },
+    {
       "tag": "MGMT 3P98 exams",
       "patterns": [
         "MGMT 3P98 exam",
         "when is the MGMT 3P98 exam"
       ],
       "responses": [
-        338,
+        340,
         "exams",
         "MGMT 3P98"
       ]
@@ -42389,7 +42426,7 @@
         "when is the MGMT 3P98 exam"
       ],
       "responses": [
-        339,
+        341,
         "exams",
         "MGMT 3P98"
       ]
@@ -42401,7 +42438,7 @@
         "when is the MKTG 2P91 exam"
       ],
       "responses": [
-        340,
+        342,
         "exams",
         "MKTG 2P91"
       ]
@@ -42413,7 +42450,7 @@
         "when is the MKTG 2P91 exam"
       ],
       "responses": [
-        341,
+        343,
         "exams",
         "MKTG 2P91"
       ]
@@ -42425,7 +42462,7 @@
         "when is the MPAC 5P02 exam"
       ],
       "responses": [
-        342,
+        344,
         "exams",
         "MPAC 5P02"
       ]
@@ -42437,7 +42474,7 @@
         "when is the MPAC 5P09 exam"
       ],
       "responses": [
-        343,
+        345,
         "exams",
         "MPAC 5P09"
       ]
@@ -42449,7 +42486,7 @@
         "when is the MPAC 5P30 exam"
       ],
       "responses": [
-        344,
+        346,
         "exams",
         "MPAC 5P30"
       ]
@@ -42461,7 +42498,7 @@
         "when is the MPAC 5P31 exam"
       ],
       "responses": [
-        345,
+        347,
         "exams",
         "MPAC 5P31"
       ]
@@ -42473,7 +42510,7 @@
         "when is the MPAC 5P38 exam"
       ],
       "responses": [
-        346,
+        348,
         "exams",
         "MPAC 5P38"
       ]
@@ -42485,7 +42522,7 @@
         "when is the MPHA 5P03 exam"
       ],
       "responses": [
-        347,
+        349,
         "exams",
         "MPHA 5P03"
       ]
@@ -42497,7 +42534,7 @@
         "when is the MPHA 5P05 exam"
       ],
       "responses": [
-        348,
+        350,
         "exams",
         "MPHA 5P05"
       ]
@@ -42509,7 +42546,7 @@
         "when is the MPHA 5P17 exam"
       ],
       "responses": [
-        349,
+        351,
         "exams",
         "MPHA 5P17"
       ]
@@ -42521,7 +42558,7 @@
         "when is the MUSI 1P01 exam"
       ],
       "responses": [
-        350,
+        352,
         "exams",
         "MUSI 1P01"
       ]
@@ -42533,7 +42570,7 @@
         "when is the MUSI 1P55 exam"
       ],
       "responses": [
-        351,
+        353,
         "exams",
         "MUSI 1P55"
       ]
@@ -42545,7 +42582,7 @@
         "when is the MUSI 2Y05 exam"
       ],
       "responses": [
-        352,
+        354,
         "exams",
         "MUSI 2Y05"
       ]
@@ -42557,7 +42594,7 @@
         "when is the MUSI 2Y06 exam"
       ],
       "responses": [
-        353,
+        355,
         "exams",
         "MUSI 2Y06"
       ]
@@ -42569,7 +42606,7 @@
         "when is the MUSI 3Y05 exam"
       ],
       "responses": [
-        354,
+        356,
         "exams",
         "MUSI 3Y05"
       ]
@@ -42581,7 +42618,7 @@
         "when is the MUSI 3Y06 exam"
       ],
       "responses": [
-        355,
+        357,
         "exams",
         "MUSI 3Y06"
       ]
@@ -42593,7 +42630,7 @@
         "when is the NEUR 2P37 exam"
       ],
       "responses": [
-        356,
+        358,
         "exams",
         "NEUR 2P37"
       ]
@@ -42605,7 +42642,7 @@
         "when is the NEUR 3P06 exam"
       ],
       "responses": [
-        357,
+        359,
         "exams",
         "NEUR 3P06"
       ]
@@ -42617,7 +42654,7 @@
         "when is the NEUR 3P67 exam"
       ],
       "responses": [
-        358,
+        360,
         "exams",
         "NEUR 3P67"
       ]
@@ -42629,7 +42666,7 @@
         "when is the NUSC 1F18 exam"
       ],
       "responses": [
-        359,
+        361,
         "exams",
         "NUSC 1F18"
       ]
@@ -42641,7 +42678,7 @@
         "when is the NUSC 1F18 exam"
       ],
       "responses": [
-        360,
+        362,
         "exams",
         "NUSC 1F18"
       ]
@@ -42653,7 +42690,7 @@
         "when is the NUSC 1P30 exam"
       ],
       "responses": [
-        361,
+        363,
         "exams",
         "NUSC 1P30"
       ]
@@ -42665,7 +42702,7 @@
         "when is the NUSC 2P70 exam"
       ],
       "responses": [
-        362,
+        364,
         "exams",
         "NUSC 2P70"
       ]
@@ -42677,7 +42714,7 @@
         "when is the NUSC 3P12 exam"
       ],
       "responses": [
-        363,
+        365,
         "exams",
         "NUSC 3P12"
       ]
@@ -42689,7 +42726,7 @@
         "when is the NUSC 3P14 exam"
       ],
       "responses": [
-        364,
+        366,
         "exams",
         "NUSC 3P14"
       ]
@@ -42701,7 +42738,7 @@
         "when is the NUSC 3P50 exam"
       ],
       "responses": [
-        365,
+        367,
         "exams",
         "NUSC 3P50"
       ]
@@ -42713,7 +42750,7 @@
         "when is the OBHR 2P51 exam"
       ],
       "responses": [
-        366,
+        368,
         "exams",
         "OBHR 2P51"
       ]
@@ -42725,7 +42762,7 @@
         "when is the OBHR 4P94 exam"
       ],
       "responses": [
-        367,
+        369,
         "exams",
         "OBHR 4P94"
       ]
@@ -42737,7 +42774,7 @@
         "when is the OEVI 1P20 exam"
       ],
       "responses": [
-        368,
+        370,
         "exams",
         "OEVI 1P20"
       ]
@@ -42749,7 +42786,7 @@
         "when is the OEVI 2P45 exam"
       ],
       "responses": [
-        369,
+        371,
         "exams",
         "OEVI 2P45"
       ]
@@ -42761,33 +42798,9 @@
         "when is the OEVI 3P98 exam"
       ],
       "responses": [
-        370,
-        "exams",
-        "OEVI 3P98"
-      ]
-    },
-    {
-      "tag": "OPER 2P91 exams",
-      "patterns": [
-        "OPER 2P91 exam",
-        "when is the OPER 2P91 exam"
-      ],
-      "responses": [
-        371,
-        "exams",
-        "OPER 2P91"
-      ]
-    },
-    {
-      "tag": "OPER 2P91 exams",
-      "patterns": [
-        "OPER 2P91 exam",
-        "when is the OPER 2P91 exam"
-      ],
-      "responses": [
         372,
         "exams",
-        "OPER 2P91"
+        "OEVI 3P98"
       ]
     },
     {
@@ -42839,13 +42852,37 @@
       ]
     },
     {
+      "tag": "OPER 2P91 exams",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        377,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
+      "tag": "OPER 2P91 exams",
+      "patterns": [
+        "OPER 2P91 exam",
+        "when is the OPER 2P91 exam"
+      ],
+      "responses": [
+        378,
+        "exams",
+        "OPER 2P91"
+      ]
+    },
+    {
       "tag": "OPER 3P93 exams",
       "patterns": [
         "OPER 3P93 exam",
         "when is the OPER 3P93 exam"
       ],
       "responses": [
-        377,
+        379,
         "exams",
         "OPER 3P93"
       ]
@@ -42857,7 +42894,7 @@
         "when is the OPER 4P26 exam"
       ],
       "responses": [
-        378,
+        380,
         "exams",
         "OPER 4P26"
       ]
@@ -42869,7 +42906,7 @@
         "when is the PCUL 1P01 exam"
       ],
       "responses": [
-        379,
+        381,
         "exams",
         "PCUL 1P01"
       ]
@@ -42881,7 +42918,7 @@
         "when is the PCUL 2P94 exam"
       ],
       "responses": [
-        380,
+        382,
         "exams",
         "PCUL 2P94"
       ]
@@ -42893,7 +42930,7 @@
         "when is the PCUL 2P98 exam"
       ],
       "responses": [
-        381,
+        383,
         "exams",
         "PCUL 2P98"
       ]
@@ -42905,7 +42942,7 @@
         "when is the PHIL 1F90 exam"
       ],
       "responses": [
-        382,
+        384,
         "exams",
         "PHIL 1F90"
       ]
@@ -42917,7 +42954,7 @@
         "when is the PHYS 1P21 exam"
       ],
       "responses": [
-        383,
+        385,
         "exams",
         "PHYS 1P21"
       ]
@@ -42929,7 +42966,7 @@
         "when is the PHYS 1P22 exam"
       ],
       "responses": [
-        384,
+        386,
         "exams",
         "PHYS 1P22"
       ]
@@ -42941,7 +42978,7 @@
         "when is the PHYS 1P91 exam"
       ],
       "responses": [
-        385,
+        387,
         "exams",
         "PHYS 1P91"
       ]
@@ -42953,7 +42990,7 @@
         "when is the PHYS 1P92 exam"
       ],
       "responses": [
-        386,
+        388,
         "exams",
         "PHYS 1P92"
       ]
@@ -42965,7 +43002,7 @@
         "when is the PHYS 1P94 exam"
       ],
       "responses": [
-        387,
+        389,
         "exams",
         "PHYS 1P94"
       ]
@@ -42977,7 +43014,7 @@
         "when is the PHYS 2P02 exam"
       ],
       "responses": [
-        388,
+        390,
         "exams",
         "PHYS 2P02"
       ]
@@ -42989,7 +43026,7 @@
         "when is the PHYS 2P30 exam"
       ],
       "responses": [
-        389,
+        391,
         "exams",
         "PHYS 2P30"
       ]
@@ -43001,7 +43038,7 @@
         "when is the PHYS 2P51 exam"
       ],
       "responses": [
-        390,
+        392,
         "exams",
         "PHYS 2P51"
       ]
@@ -43013,7 +43050,7 @@
         "when is the PHYS 3P36 exam"
       ],
       "responses": [
-        391,
+        393,
         "exams",
         "PHYS 3P36"
       ]
@@ -43025,7 +43062,7 @@
         "when is the PHYS 3P41 exam"
       ],
       "responses": [
-        392,
+        394,
         "exams",
         "PHYS 3P41"
       ]
@@ -43037,7 +43074,7 @@
         "when is the PHYS 3P95 exam"
       ],
       "responses": [
-        393,
+        395,
         "exams",
         "PHYS 3P95"
       ]
@@ -43049,7 +43086,7 @@
         "when is the PHYS 5P11 exam"
       ],
       "responses": [
-        394,
+        396,
         "exams",
         "PHYS 5P11"
       ]
@@ -43061,7 +43098,7 @@
         "when is the POLI 1P98 exam"
       ],
       "responses": [
-        395,
+        397,
         "exams",
         "POLI 1P98"
       ]
@@ -43073,7 +43110,7 @@
         "when is the POLI 2F20 exam"
       ],
       "responses": [
-        396,
+        398,
         "exams",
         "POLI 2F20"
       ]
@@ -43085,7 +43122,7 @@
         "when is the POLI 2P32 exam"
       ],
       "responses": [
-        397,
+        399,
         "exams",
         "POLI 2P32"
       ]
@@ -43097,7 +43134,7 @@
         "when is the POLI 2P92 exam"
       ],
       "responses": [
-        398,
+        400,
         "exams",
         "POLI 2P92"
       ]
@@ -43109,7 +43146,7 @@
         "when is the POLI 2Q98 exam"
       ],
       "responses": [
-        399,
+        401,
         "exams",
         "POLI 2Q98"
       ]
@@ -43121,7 +43158,7 @@
         "when is the POLI 3P18 exam"
       ],
       "responses": [
-        400,
+        402,
         "exams",
         "POLI 3P18"
       ]
@@ -43133,7 +43170,7 @@
         "when is the POLI 3P21 exam"
       ],
       "responses": [
-        401,
+        403,
         "exams",
         "POLI 3P21"
       ]
@@ -43145,7 +43182,7 @@
         "when is the POLI 3P43 exam"
       ],
       "responses": [
-        402,
+        404,
         "exams",
         "POLI 3P43"
       ]
@@ -43157,7 +43194,7 @@
         "when is the POLI 3P71 exam"
       ],
       "responses": [
-        403,
+        405,
         "exams",
         "POLI 3P71"
       ]
@@ -43169,7 +43206,7 @@
         "when is the POLI 3P92 exam"
       ],
       "responses": [
-        404,
+        406,
         "exams",
         "POLI 3P92"
       ]
@@ -43181,7 +43218,7 @@
         "when is the PSYC 2F23 exam"
       ],
       "responses": [
-        405,
+        407,
         "exams",
         "PSYC 2F23"
       ]
@@ -43193,7 +43230,7 @@
         "when is the PSYC 2F23 exam"
       ],
       "responses": [
-        406,
+        408,
         "exams",
         "PSYC 2F23"
       ]
@@ -43205,7 +43242,7 @@
         "when is the PSYC 2P20 exam"
       ],
       "responses": [
-        407,
+        409,
         "exams",
         "PSYC 2P20"
       ]
@@ -43217,7 +43254,7 @@
         "when is the PSYC 2P30 exam"
       ],
       "responses": [
-        408,
+        410,
         "exams",
         "PSYC 2P30"
       ]
@@ -43229,7 +43266,7 @@
         "when is the PSYC 2P37 exam"
       ],
       "responses": [
-        409,
+        411,
         "exams",
         "PSYC 2P37"
       ]
@@ -43241,7 +43278,7 @@
         "when is the PSYC 2P49 exam"
       ],
       "responses": [
-        410,
+        412,
         "exams",
         "PSYC 2P49"
       ]
@@ -43253,7 +43290,7 @@
         "when is the PSYC 2P92 exam"
       ],
       "responses": [
-        411,
+        413,
         "exams",
         "PSYC 2P92"
       ]
@@ -43265,7 +43302,7 @@
         "when is the PSYC 2P95 exam"
       ],
       "responses": [
-        412,
+        414,
         "exams",
         "PSYC 2P95"
       ]
@@ -43277,7 +43314,7 @@
         "when is the PSYC 3P06 exam"
       ],
       "responses": [
-        413,
+        415,
         "exams",
         "PSYC 3P06"
       ]
@@ -43289,7 +43326,7 @@
         "when is the PSYC 3P20 exam"
       ],
       "responses": [
-        414,
+        416,
         "exams",
         "PSYC 3P20"
       ]
@@ -43301,7 +43338,7 @@
         "when is the PSYC 3P22 exam"
       ],
       "responses": [
-        415,
+        417,
         "exams",
         "PSYC 3P22"
       ]
@@ -43313,7 +43350,7 @@
         "when is the PSYC 3P32 exam"
       ],
       "responses": [
-        416,
+        418,
         "exams",
         "PSYC 3P32"
       ]
@@ -43325,7 +43362,7 @@
         "when is the PSYC 3P38 exam"
       ],
       "responses": [
-        417,
+        419,
         "exams",
         "PSYC 3P38"
       ]
@@ -43337,7 +43374,7 @@
         "when is the PSYC 3P67 exam"
       ],
       "responses": [
-        418,
+        420,
         "exams",
         "PSYC 3P67"
       ]
@@ -43349,7 +43386,7 @@
         "when is the PSYC 3P75 exam"
       ],
       "responses": [
-        419,
+        421,
         "exams",
         "PSYC 3P75"
       ]
@@ -43361,7 +43398,7 @@
         "when is the PSYC 4P27 exam"
       ],
       "responses": [
-        420,
+        422,
         "exams",
         "PSYC 4P27"
       ]
@@ -43373,7 +43410,7 @@
         "when is the PSYC 4P56 exam"
       ],
       "responses": [
-        421,
+        423,
         "exams",
         "PSYC 4P56"
       ]
@@ -43385,7 +43422,7 @@
         "when is the RECL 2P80 exam"
       ],
       "responses": [
-        422,
+        424,
         "exams",
         "RECL 2P80"
       ]
@@ -43397,7 +43434,7 @@
         "when is the RECL 3P70 exam"
       ],
       "responses": [
-        423,
+        425,
         "exams",
         "RECL 3P70"
       ]
@@ -43409,7 +43446,7 @@
         "when is the RECL 3Q07 exam"
       ],
       "responses": [
-        424,
+        426,
         "exams",
         "RECL 3Q07"
       ]
@@ -43421,7 +43458,7 @@
         "when is the SCIE 1P51 exam"
       ],
       "responses": [
-        425,
+        427,
         "exams",
         "SCIE 1P51"
       ]
@@ -43433,7 +43470,7 @@
         "when is the SCIE 1P51 exam"
       ],
       "responses": [
-        426,
+        428,
         "exams",
         "SCIE 1P51"
       ]
@@ -43445,7 +43482,7 @@
         "when is the SOCI 2P62 exam"
       ],
       "responses": [
-        427,
+        429,
         "exams",
         "SOCI 2P62"
       ]
@@ -43457,7 +43494,7 @@
         "when is the SOCI 2P85 exam"
       ],
       "responses": [
-        428,
+        430,
         "exams",
         "SOCI 2P85"
       ]
@@ -43469,7 +43506,7 @@
         "when is the SOCI 2P98 exam"
       ],
       "responses": [
-        429,
+        431,
         "exams",
         "SOCI 2P98"
       ]
@@ -43481,7 +43518,7 @@
         "when is the SOCI 3P01 exam"
       ],
       "responses": [
-        430,
+        432,
         "exams",
         "SOCI 3P01"
       ]
@@ -43493,7 +43530,7 @@
         "when is the SOCI 3P02 exam"
       ],
       "responses": [
-        431,
+        433,
         "exams",
         "SOCI 3P02"
       ]
@@ -43505,7 +43542,7 @@
         "when is the SOCI 3P45 exam"
       ],
       "responses": [
-        432,
+        434,
         "exams",
         "SOCI 3P45"
       ]
@@ -43517,7 +43554,7 @@
         "when is the SPMA 2P27 exam"
       ],
       "responses": [
-        433,
+        435,
         "exams",
         "SPMA 2P27"
       ]
@@ -43529,7 +43566,7 @@
         "when is the SPMA 3P21 exam"
       ],
       "responses": [
-        434,
+        436,
         "exams",
         "SPMA 3P21"
       ]
@@ -43541,7 +43578,7 @@
         "when is the SPMA 4P86 exam"
       ],
       "responses": [
-        435,
+        437,
         "exams",
         "SPMA 4P86"
       ]
@@ -43553,7 +43590,7 @@
         "when is the STAC 2P80 exam"
       ],
       "responses": [
-        436,
+        438,
         "exams",
         "STAC 2P80"
       ]
@@ -43565,7 +43602,7 @@
         "when is the STAT 1F92 exam"
       ],
       "responses": [
-        437,
+        439,
         "exams",
         "STAT 1F92"
       ]
@@ -43577,7 +43614,7 @@
         "when is the STAT 1P98 exam"
       ],
       "responses": [
-        438,
+        440,
         "exams",
         "STAT 1P98"
       ]
@@ -43589,7 +43626,7 @@
         "when is the STAT 2P82 exam"
       ],
       "responses": [
-        439,
+        441,
         "exams",
         "STAT 2P82"
       ]
@@ -43601,7 +43638,7 @@
         "when is the STAT 2P98 exam"
       ],
       "responses": [
-        440,
+        442,
         "exams",
         "STAT 2P98"
       ]
@@ -43613,7 +43650,7 @@
         "when is the STAT 3P85 exam"
       ],
       "responses": [
-        441,
+        443,
         "exams",
         "STAT 3P85"
       ]
@@ -43625,7 +43662,7 @@
         "when is the STAT 4P84 exam"
       ],
       "responses": [
-        442,
+        444,
         "exams",
         "STAT 4P84"
       ]
@@ -43637,7 +43674,7 @@
         "when is the WGST 3P45 exam"
       ],
       "responses": [
-        443,
+        445,
         "exams",
         "WGST 3P45"
       ]
@@ -43649,9 +43686,69 @@
         "when is the WGST 3P71 exam"
       ],
       "responses": [
-        444,
+        446,
         "exams",
         "WGST 3P71"
+      ]
+    },
+    {
+      "tag": "Hungry Badger restaurant",
+      "patterns": [
+        "Hungry Badger restaurant",
+        "when is Hungry Badger open"
+      ],
+      "responses": [
+        0,
+        "restaurant",
+        "Hungry Badger"
+      ]
+    },
+    {
+      "tag": "Fresh Food Company DeCew and Lowenberger Residence Dining Halls (currently open to Residence All-Access Meal Plan Holders only) restaurant",
+      "patterns": [
+        "Fresh Food Company DeCew and Lowenberger Residence Dining Halls (currently open to Residence All-Access Meal Plan Holders only) restaurant",
+        "when is Fresh Food Company DeCew and Lowenberger Residence Dining Halls (currently open to Residence All-Access Meal Plan Holders only) open"
+      ],
+      "responses": [
+        1,
+        "restaurants",
+        "Fresh Food Company DeCew and Lowenberger Residence Dining Halls (currently open to Residence All-Access Meal Plan Holders only)"
+      ]
+    },
+    {
+      "tag": "Tim Hortons Tower restaurant",
+      "patterns": [
+        "Tim Hortons Tower restaurant",
+        "when is Tim Hortons Tower open"
+      ],
+      "responses": [
+        2,
+        "restaurants",
+        "Tim Hortons Tower"
+      ]
+    },
+    {
+      "tag": "Starbucks restaurant",
+      "patterns": [
+        "Starbucks restaurant",
+        "when is Starbucks open"
+      ],
+      "responses": [
+        3,
+        "restaurants",
+        "Starbucks"
+      ]
+    },
+    {
+      "tag": "Nobu\u2019s Noodles- FALL 2021- Currently Closed restaurant",
+      "patterns": [
+        "Nobu\u2019s Noodles- FALL 2021- Currently Closed restaurant",
+        "when is Nobu\u2019s Noodles- FALL 2021- Currently Closed open"
+      ],
+      "responses": [
+        4,
+        "restaurants",
+        "Nobu\u2019s Noodles- FALL 2021- Currently Closed"
       ]
     }
   ]

@@ -1,6 +1,6 @@
 import mechanicalsoup
 import sqlite3
-
+from bs4 import BeautifulSoup, Comment
 
 class DepartmentScraper:
 
@@ -18,6 +18,8 @@ class DepartmentScraper:
 					link TEXT, 
 					extension TEXT,
 					email TEXT,
+					social TEXT,
+					description TEXT,
 					PRIMARY KEY (name)
 				)
 				'''
@@ -28,6 +30,7 @@ class DepartmentScraper:
         '''Fetches department data from Brock and stores it in the database.'''
         self.browser.open('https://brocku.ca/directory/a-z/')
         departments_list = self.browser.page.find_all('div', attrs={'class': 'item'})
+
         return self.read_departments(departments_list)
 
     def get(self):
@@ -40,7 +43,7 @@ class DepartmentScraper:
         if not departments:
             self.fetch()
             return self.get_departments()
-            
+
         return departments
 
     def read_departments(self, departments_list):
@@ -53,7 +56,9 @@ class DepartmentScraper:
                 'name': self.get_name(department),
                 'link': self.get_link(department),
                 'extension': self.get_extension(department),
-                'email': self.get_email(department)
+                'email': self.get_email(department),
+                'social': self.get_social(department),
+                'description': self.get_description(department)
             }
 
             output[index] = entry
@@ -75,7 +80,7 @@ class DepartmentScraper:
             else:
                 return n
         except:
-            return None
+            return "N/A"
 
     def get_link(self, department):
         '''Extracts the link from a department.'''
@@ -84,16 +89,42 @@ class DepartmentScraper:
                 'class': 'link'
             }).find('a')['href']
         except:
-            return None
+            return "N/A"
+
+    def get_social(self, department):
+        '''Extracts the social from a department.'''
+        try:
+            return department.find('div', attrs={
+                'class': 'social'
+            }).find('a')['href']
+        except:
+            return "N/A"
+
+    def get_description(self, department):
+        '''Extracts the social from a department.'''
+        try:
+            soup = BeautifulSoup(str(department), 'lxml')
+            comments = str(soup.findAll(text=lambda text: isinstance(text, Comment)))
+            i = comments.find('<p>') + 3
+            comments = comments[i : : ]
+            i = comments.find('</p>')
+            comments = comments[ :i: ]
+            return comments
+        except:
+            return "N/A"
 
     def get_extension(self, department):
         '''Extracts the phone extension from a department.'''
         try:
-            return department.find('div', attrs={
+            phone = department.find('div', attrs={
                 'class': 'phone'
             }).find('small').text
+            if "x" in phone:
+                return "(905) 688-5550 " + phone
+            else:
+                return phone
         except:
-            return None
+            return "(905) 688-5550"
 
     def get_email(self, department):
         '''Extracts the email from a department.'''
@@ -102,7 +133,7 @@ class DepartmentScraper:
                 'class': 'email'
             }).find('a').text.lower()
         except:
-            return None
+            return "N/A"
 
     def store_departments(self, departments):
         '''Adds the clubs to the database.'''
@@ -111,13 +142,15 @@ class DepartmentScraper:
                 conn.execute(
                     '''
 					INSERT OR REPLACE INTO departments
-					VALUES (?, ?, ?, ?)
+					VALUES (?, ?, ?, ?, ?, ?)
 					''',
                     (
                         departments[index]['name'],
                         departments[index]['link'],
                         departments[index]['extension'],
-                        departments[index]['email']
+                        departments[index]['email'],
+                        departments[index]['social'],
+                        departments[index]['description']
                     )
                 )
                 conn.commit()
@@ -141,7 +174,9 @@ class DepartmentScraper:
                 'name': row['name'],
                 'link': row['link'],
                 'extension': row['extension'],
-                'email': row['email']
+                'email': row['email'],
+                'social': row['social'],
+                'description': row['description']
             }
 
         return output

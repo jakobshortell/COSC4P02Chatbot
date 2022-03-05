@@ -68,7 +68,7 @@ class ProgramScraper:
         try:
             return program.find('span').text
         except:
-            return None
+            return "N/A"
 
     def get_description(self, program):
         '''Extracts the name from a program.'''
@@ -77,7 +77,7 @@ class ProgramScraper:
                 'class': 'entry-content'
             }).text
         except:
-            return None
+            return "N/A"
 
     def get_prerequisites(self, program):
         '''Extracts the name from a program.'''
@@ -86,7 +86,7 @@ class ProgramScraper:
                 'class': 'col mid'
             }).text
         except:
-            return None
+            return "N/A"
 
     def store_programs(self, programs):
         '''Adds the programs to the database.'''

@@ -117,7 +117,6 @@ class CoursesScraper:
     def fetch_course_day(self, row):
         '''Extracts the course day from the course row.'''
         try:
-
             # Return the index of the active day
             day_list = ""
             days = row.find('td.days', first=True).find('tbody', first=True).find('td')
@@ -127,14 +126,14 @@ class CoursesScraper:
             return day_list
 
         except:
-            return " "
+            return "N/A"
 
     def fetch_course_time(self, row):
         '''Extracts the course time from the course row.'''
         try:
             return row.find('td.time', first=True).text
         except:
-            return None
+            return "N/A"
 
     def fetch_course_type(self, row):
         '''Extracts the course type from the course row.'''

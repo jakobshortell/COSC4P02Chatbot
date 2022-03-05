@@ -4,6 +4,7 @@ from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
+from scrapers.restaurant import RestaurantScraper
 
 scrapers = [
 	ExamScraper(),
@@ -11,6 +12,7 @@ scrapers = [
 	DepartmentScraper(),
 	ImportantDatesScraper(),
 	CoursesScraper(),
+	RestaurantScraper(),
 	ProgramScraper()
 ]
 

@@ -63,7 +63,6 @@ class ExamScraper:
         # Get list of programs
         programs_list = response.html.find('span.code')
         program_codes = [program.text for program in programs_list]
-        print(program_codes)
         response.close()
         return program_codes
 
@@ -75,7 +74,6 @@ class ExamScraper:
 
         # Find all courses
         course_rows = response.html.find('tr.exam-row')
-        print(course_rows)
         courses = {}
 
         # Loop through the rows

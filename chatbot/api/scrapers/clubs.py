@@ -86,7 +86,7 @@ class ClubScraper:
 				'class': 'name'
 			}).text
 		except:
-			return None
+			return "N/A"
 
 	def get_email(self, club):
 		'''Extracts the email from a club.'''
@@ -95,14 +95,14 @@ class ClubScraper:
 				'class': '__cf_email__'
 			})['data-cfemail']).lower()
 		except:
-			return None
+			return "N/A"
 
 	def get_description(self, club):
 		'''Extracts the description from a club.'''
 		try:
 			return club.find('p').text
 		except AttributeError:
-			return None
+			return "N/A"
 
 	def store_clubs(self, clubs):
 		'''Adds the clubs to the database.'''

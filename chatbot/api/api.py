@@ -6,6 +6,7 @@ from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
+from scrapers.restaurant import RestaurantScraper
 from bot import Bot
 import random
 
@@ -18,7 +19,8 @@ scrapers = {
     'dates': ImportantDatesScraper(),
     'courses': CoursesScraper(),
     'programs': ProgramScraper(),
-    'exams': ExamScraper()
+    'exams': ExamScraper(),
+    'restaurant': RestaurantScraper()
 }
 
 
@@ -37,15 +39,26 @@ def main():
     # Output an attribute of the first element in the response as a test
     if 'club' in msg[1]:
         clubs = scrapers['clubs'].get()
-        response['content'] = clubs[msg[0]]['name'] + ": " + clubs[msg[0]]['description']
+        response['content'] = clubs[msg[0]]['name'] + ":\n" + clubs[msg[0]]['description'] + "\nEmail: " + clubs[msg[0]]['email']
 
     elif 'department' in msg[1]:
         departments = scrapers['departments'].get()
-        response['content'] = departments[msg[0]]['name'] + ": " + departments[msg[0]]['link']
+        response['content'] = departments[msg[0]]['name'] + ":\n" + departments[msg[0]]['description'] + "\nLink:\t" + departments[msg[0]]['link'] + "\nSocial:\t" + departments[msg[0]]['social'] + "\nEmail:\t" + departments[msg[0]]['email'] + "\nPhone:\t" + departments[msg[0]]['extension']
 
     elif 'dates' in msg[1]:
         dates = scrapers['dates'].get()
         response['content'] = dates[msg[0]]['occasion'] + " " + dates[msg[0]]['date']
+
+    elif 'restaurants' in msg[1]:
+        restaurant = scrapers['restaurant'].get()
+        response['content'] = restaurant[msg[0]]['name'] + " " + restaurant[msg[0]]['description'] + " " + restaurant[msg[0]]['hour']
+
+    elif 'restaurant_list' in msg[1]:
+        restaurant = scrapers['restaurant'].get()
+        msg_temp = ''
+        for index in restaurant:
+            msg_temp = msg_temp + "\n" + restaurant[index]['name']
+        response['content'] = msg[0] + msg_temp + "\nIs there one you would like more information on?"
 
     elif 'exam' in msg[1]:
         exams = scrapers['exams'].get()
@@ -64,8 +77,8 @@ def main():
         response['content'] = courses[msg[0]]['course_code'] + " " + courses[msg[0]]['title'] + msg_temp
 
     else:
-        #response['content'] = random.choice(msg)
-        response['content'] = msg
+        response['content'] = random.choice(msg)
+
 
     return response
 

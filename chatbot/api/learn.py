@@ -66,7 +66,7 @@ net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
-model.fit(training, output, n_epoch=35000, batch_size=512, show_metric=True)
+model.fit(training, output, n_epoch=35000, batch_size=2048, show_metric=True)
 model.save("model.h5")
 
 
