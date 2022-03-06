@@ -50,13 +50,12 @@ class CoursesScraper:
 
     def get(self):
         '''Gets courses from the chatbot database.'''
-        output = {}
         output = self.get_program_courses()
-        # If program codes is empty, fetch hasn't been run
-        # if not self.program_codes:
-        #    self.fetch()
-        #   return self.get()
 
+        # If program codes is empty, fetch hasn't been run
+        if not output:
+            self.fetch()
+            return self.get()
 
         return output
 
