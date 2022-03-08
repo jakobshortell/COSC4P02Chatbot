@@ -7,6 +7,8 @@ import tflearn
 import tensorflow as tf
 import json
 import pickle
+import gzip
+
 
 
 def naturalWords(s, words):
@@ -27,12 +29,12 @@ class Bot:
         with open("intents.json") as file:
             data = json.load(file)
 
-        with open("data.pickle", "rb") as f:
+        with gzip.open('data', 'rb') as f:
             words, labels, training, output = pickle.load(f)
         tf.compat.v1.reset_default_graph()
         net = tflearn.input_data(shape=[None, len(training[0])])
-        net = tflearn.fully_connected(net, 64)
-        net = tflearn.fully_connected(net, 64)
+        net = tflearn.fully_connected(net, 32)
+        net = tflearn.fully_connected(net, 32)
         net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
         net = tflearn.regression(net)
 
@@ -44,10 +46,19 @@ class Bot:
         results_index = numpy.argmax(results)
         tag_index = labels[results_index]
 
-        if results[results_index] > 0.1:
+        if results[results_index] > 0.4:
             for tag in data["intents"]:
                 if tag['tag'] == tag_index:
                     response = tag['responses']
+
+                    msg = {
+                            "table_name": response[0],
+                            "index": response[1],
+                            "associated_indexes": response[2],
+                            "messages": resonse[3]
+                        }
+
         else:
             response = 'I am sorry. I don\'t know  what you are asking.'
+
         return response
