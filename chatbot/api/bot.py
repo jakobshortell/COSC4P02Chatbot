@@ -50,15 +50,17 @@ class Bot:
             for tag in data["intents"]:
                 if tag['tag'] == tag_index:
                     response = tag['responses']
-
                     msg = {
                             "table_name": response[0],
                             "index": response[1],
                             "associated_indexes": response[2],
-                            "messages": resonse[3]
+                            "messages": response[3]
                         }
-
         else:
-            response = 'I am sorry. I don\'t know  what you are asking.'
-
-        return response
+            msg = {
+                "table_name": "",
+                "index": "",
+                "associated_indexes": "",
+                "messages": "I am sorry. I don\'t know  what you are asking."
+            }
+        return msg

@@ -1,13 +1,13 @@
 import json
 from scrapers.clubs import ClubScraper
 from scrapers.departments import DepartmentScraper
-from scrapers.important_dates import ImportantDatesScraper
+#from scrapers.important_dates import ImportantDatesScraper
 from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
 
-dates = ImportantDatesScraper().get()
+#dates = ImportantDatesScraper().get()
 departments = DepartmentScraper().get()
 clubs = ClubScraper().get()
 courses = CoursesScraper().get()
@@ -31,9 +31,10 @@ intent = {
                 "Good day"
             ],
             "responses": [
-                "Hi there, how can I help?",
+                "", "", "",
+                ["Hi there, how can I help?",
                 "Hello, there, how can I help you today?",
-                "Good to see you, do you have any question?"
+                "Good to see you, do you have any question?"]
             ]
         },
         {
@@ -47,9 +48,10 @@ intent = {
                 "farewell"
             ],
             "responses": [
-                "Bye, hope to talk to you again soon.",
+                "", "", "",
+                ["Bye, hope to talk to you again soon.",
                 "Good bye, its been great talking to you",
-                "Glad I could help, Bye!"
+                "Glad I could help, Bye!"]
             ]
         },
         {
@@ -63,9 +65,10 @@ intent = {
                 "good bot"
             ],
             "responses": [
-                "No problem, is there anything else you need?",
+                "", "", "",
+                ["No problem, is there anything else you need?",
                 "Glad I could help!",
-                "It's nice to feel useful once in awhile ;)"
+                "It's nice to feel useful once in awhile ;)"]
             ]
         },
         {
@@ -77,8 +80,8 @@ intent = {
                 "What food offerings are available at brock"
             ],
             "responses": [
-                "Here is a list of restaurants available at Brock:",
-                "restaurant_list"
+                "restaurant_list", "", "",
+                "Here is a list of restaurants available at Brock:"
             ]
         },
 
@@ -90,8 +93,9 @@ intent = {
                 "upcoming events at brock"
             ],
             "responses": [
-                "Get the latest Brock University News at: https://brocku.ca/brock-news/",
-                "Here is the latest news at Brock University: https://brocku.ca/brock-news/"
+                "", "", "",
+                ["Get the latest Brock University News at: https://brocku.ca/brock-news/",
+                "Here is the latest news at Brock University: https://brocku.ca/brock-news/"]
             ]
         },
         {
@@ -102,8 +106,9 @@ intent = {
                 "important dates"
             ],
             "responses": [
-                "Click the link to get a list of important dates at Brock University: https://brocku.ca/important-dates/",
-                "Here is a list of important dates at Brock University: https://brocku.ca/important-dates/"
+                "", "", "",
+                ["Click the link to get a list of important dates at Brock University: https://brocku.ca/important-dates/",
+                "Here is a list of important dates at Brock University: https://brocku.ca/important-dates/"]
             ]
         },
         {
@@ -114,8 +119,9 @@ intent = {
                 "fall winter important dates"
             ],
             "responses": [
-                "Click the link to get a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter",
-                "Here is a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter"
+                "", "", "",
+                ["Click the link to get a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter",
+                "Here is a list of fall/winter important dates at Brock University: https://brocku.ca/important-dates/#fall-winter"]
             ]
         },
         {
@@ -126,8 +132,9 @@ intent = {
                 "get brock university map"
             ],
             "responses": [
-                "Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
-                "Here is directions to Brock University: https://www.google.com/maps?q=Brock+University"
+                "", "", "",
+                ["Click the link for directions to Brock University: https://www.google.com/maps?q=Brock+University",
+                "Here is directions to Brock University: https://www.google.com/maps?q=Brock+University"]
             ]
         },
     ]
@@ -141,7 +148,7 @@ with open('intents.json', 'r+') as f:
         tag = departments[i]['name'] + " departments"
         pattern = departments[i]['name'] + " department ", "can you tell me about the " + departments[i][
             'name'] + " department ", "can you get information on the " + departments[i]['name'] + " department"
-        response = 'departments', i
+        response = 'departments', i, "", ""
         new = {
             "tag": tag,
             "patterns":
@@ -153,7 +160,7 @@ with open('intents.json', 'r+') as f:
         tag = departments[i]['name'] + " club"
         pattern = departments[i]['name'] + " club", "can you tell me about the " + departments[i][
             'name'] + " club", "can you get information on the " + departments[i]['name'] + " club"
-        response = "The " + departments[i]['name'] + " is not a listed club."
+        response = "", "", "", departments[i]['name'] + " is not a listed club."
         new = {
             "tag": tag,
             "patterns":
@@ -176,7 +183,7 @@ with open('intents.json', 'r+') as f:
                       courses[i - 1]['course_code'] + " course", "can you get information on the " +\
                       courses[i]['title'] + " course", "can you get information on the " + courses[i]['course_code']\
                       + " program"
-            response = 'courses', i, cnt
+            response = 'courses', i, cnt, ""
             new = {
                 "tag": tag + " courses",
                 "patterns":
@@ -196,7 +203,7 @@ with open('intents.json', 'r+') as f:
         tag = clubs[i]['name'] + " clubs"
         pattern = clubs[i]['name'] + " club", "can you tell me about the " + clubs[i]['name'] + " club", \
                   "can you get information on the " + clubs[i]['name'] + " club"
-        response = 'clubs', i
+        response = 'clubs', i, "", ""
         new = {
             "tag": tag,
             "patterns":
@@ -212,7 +219,7 @@ with open('intents.json', 'r+') as f:
         tag = programs[i]['name'] + " programs"
         pattern = programs[i]['name'] + " program", "can you tell me about the " + programs[i]['name'] + " program", \
                   "can you get information on the " + programs[i]['name'] + " program"
-        response = 'programs', i
+        response = 'programs', i, "", ""
         new = {
             "tag": tag,
             "patterns":
@@ -224,7 +231,7 @@ with open('intents.json', 'r+') as f:
         tag = programs[i]['name'] + " club"
         pattern = programs[i]['name'] + " club", "can you tell me about the " + programs[i]['name'] + " club", \
                   "can you get information on the " + programs[i]['name'] + " club"
-        response = "The " + programs[i]['name'] + " is not a listed club."
+        response = "", "", "", programs[i]['name'] + " is not a listed club."
         new = {
             "tag": tag,
             "patterns":
@@ -240,7 +247,7 @@ with open('intents.json', 'r+') as f:
         tag = exams[i]['course_code'] + " exams"
         pattern = exams[i]['course_code'] + " exam", "can you when is the " + exams[i]['course_code'] + " exam",\
                   "can you tell me where is the " + exams[i]['course_code'] + "exam"
-        response = 'exams', i
+        response = 'exams', i, "", ""
         new = {
             "tag": tag,
             "patterns":
@@ -256,7 +263,7 @@ with open('intents.json', 'r+') as f:
         tag = restaurant[i]['name'] + " restaurant"
         pattern = restaurant[i]['name'] + " restaurant", "when is " + restaurant[i]['name'] + " open",\
                   "can you get information on " + restaurant[i]['name'] + " restaurant"
-        response = 'restaurants', i
+        response = 'restaurants', i, "", ""
         new = {
             "tag": tag,
             "patterns":
