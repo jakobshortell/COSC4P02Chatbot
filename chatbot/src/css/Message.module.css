@@ -52,6 +52,7 @@
     margin-left: .5rem;
     opacity: .75;
 }
+
 a {
     color: var(--brock-primary);
     text-underline-offset: 4px;
@@ -59,5 +60,5 @@ a {
     width: 180px;
     white-space: nowrap;
     overflow: hidden;
-  }
+}
 
