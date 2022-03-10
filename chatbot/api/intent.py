@@ -183,7 +183,7 @@ with open('intents.json', 'r+') as f:
                       courses[i - 1]['course_code'] + " course", "can you get information on the " +\
                       courses[i]['title'] + " course", "can you get information on the " + courses[i]['course_code']\
                       + " program"
-            response = 'courses', i, cnt, None, None
+            response = 'courses', i, cnt, None
             new = {
                 "tag": tag + " courses",
                 "patterns":
