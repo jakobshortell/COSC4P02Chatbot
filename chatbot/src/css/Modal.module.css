@@ -1,67 +1,59 @@
 /* Modal Styles */
 
-.ModalContainer {
-position:fixed;
-display: flex;
-z-index: 9999;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:rgba(0, 0, 0, 0.7);
-justify-content: center;
-align-items: center;
+.shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background:rgba(0, 0, 0, 0.7);
 }
 
-.ModalDiv {
- position: fixed;
- background:white ;
- border-radius: 5px;
- 
- padding: 25px;
- text-align: center;
+.modal {
+    max-width: 80%;
+    padding: 25px;
+    position: fixed;
+    text-align: center;
+    background: white;
 }
 
-.ModalDiv input[type=button]{
- -webkit-appearance: none;
- border: none;
- padding:4px 8px;
- margin-top: 10px;
- background-color: var(--brock-primary);
- color: white;
- font-weight: bold;
- cursor: pointer;
-
-}
-.ModalDiv input:hover {
-  background-color: black;
+.modalIcon {
+    width: 80px;
 }
 
-
-.ModalDiv h1{
- font-size: 24px;
-
+.title {
+    font-size: 1.5rem;
 }
 
-.ModalDiv ul li{
-  font-size: medium;
+.intro {
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
-.ModalDiv input:active{
-  transform: translateY(4px);
-  transition: all 500ms ease;
+.info {
+    margin: 1rem;
 }
 
-.ModalDiv h2{
-  font-size: 22px;
-}
-.ModalDiv p{
-  font-size: small;
-  color: rgb(141, 138, 138);
-  font-style: italic;
+.modal p {
+    padding-bottom: 1rem;
+    font-size: small;
+    font-style: italic;
+    color: rgb(141, 138, 138);
 }
 
-.ModalDiv img{
-  width: 80px;
-   
-   }
+.modal input {
+    padding: 6px 18px;
+    -webkit-appearance: none;
+    border: none;
+    background-color: var(--brock-primary);
+    color: white;
+    cursor: pointer;
+}
+
+.modal input:hover {
+    background-color: black;
+}
