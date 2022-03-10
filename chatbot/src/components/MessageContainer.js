@@ -1,10 +1,12 @@
 import React from 'react';
 
+// Styling
 import MessageContainerCSS from '../css/MessageContainer.module.css';
 
-import { Message } from './Message';
+// Components
+import Message from './Message';
 
-export function MessageContainer({ messages }) {
+const MessageContainer = ({ messages }) => {
 
 	return (
 		<div className={ MessageContainerCSS.messageContainer }>
@@ -19,3 +21,5 @@ export function MessageContainer({ messages }) {
 	)
 
 }
+
+export default MessageContainer;

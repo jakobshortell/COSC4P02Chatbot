@@ -1,11 +1,13 @@
 import React from 'react';
 
+// Styling
 import HeaderCSS from '../css/Header.module.css';
 
+// Assets
 import brockLogo from '../assets/brocklogo.jpeg';
 import settingsIcon from '../assets/setting.png';
 
-export function Header() {
+const Header = () => {
 
 	return (
 		<header className={ HeaderCSS.chatbotHeader }>
@@ -17,3 +19,5 @@ export function Header() {
 	)
 
 }
+
+export default Header;

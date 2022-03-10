@@ -1,10 +1,12 @@
 import React from 'react';
 
+// Styling
 import InputCSS from '../css/Input.module.css';
 
+// Assets
 import sendIcon from '../assets/send.png';
 
-export function Input({ userInput, onClick }) {
+const Input = ({ userInput, onClick }) => {
 
 	return (
 		<div className={ InputCSS.inputContainer }>
@@ -16,3 +18,5 @@ export function Input({ userInput, onClick }) {
 	)
 
 }
+
+export default Input;

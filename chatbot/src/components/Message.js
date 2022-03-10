@@ -1,11 +1,14 @@
 import React from 'react';
 import Linkify from 'react-linkify';
+
+// Styling
 import MessageCSS from '../css/Message.module.css';
 
+// Assets
 import botIcon from '../assets/brock.png';
 import userIcon from '../assets/user.png';
 
-export function Message({ author, content, time }) {
+const Message = ({ author, content, time }) => {
 
 	if (author === 'user') {
 		return (
@@ -36,3 +39,5 @@ export function Message({ author, content, time }) {
 	}
 
 }
+
+export default Message;
