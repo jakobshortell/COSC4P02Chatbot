@@ -6,6 +6,7 @@ from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
+from scrapers.course_details import CoursesDetailsScraper
 
 #dates = ImportantDatesScraper().get()
 departments = DepartmentScraper().get()
@@ -14,6 +15,7 @@ courses = CoursesScraper().get()
 programs = ProgramScraper().get()
 exams = ExamScraper().get()
 restaurant = RestaurantScraper().get()
+details = CoursesDetailsScraper().get()
 
 cnt = 1
 tagTemp = ""
@@ -72,12 +74,29 @@ intent = {
             ]
         },
         {
+            "tag": "do not know",
+            "patterns": [
+                "tell me something",
+                "tell me something i do not know",
+                "tell me something interesting",
+                "give me a random fact"
+            ],
+            "responses": [
+                None, None, None,
+                ["Did you know that Bamboo is not wood, it is actually a type of grass.",
+                 "Did you know that Homers the Odyssey was the first written book",
+                 "Did you know that population of Australia is 25.7 million",
+                 "Did you know that sweet potatoes in New Zealand are called Kumara"]
+            ]
+        },
+        {
             "tag": "restaurant_list",
             "patterns": [
                 "what restaurants are available at brock",
                 "I'm Hungry",
                 "What is good to eat at brock",
-                "What food offerings are available at brock"
+                "What food offerings are available at brock",
+                "can you tell restaurants at brock"
             ],
             "responses": [
                 "restaurant_list", None, None,
@@ -179,11 +198,11 @@ with open('intents.json', 'r+') as f:
             cnt = cnt + 1
         if tag != tagTemp:
             tag = courses[i - 1]['course_code']
-            pattern = courses[i - 1]['course_code'] + " course", courses[i - 1]['title'] + " course", "can you tell me about " + \
-                      courses[i - 1]['course_code'] + " course", "can you get information on the " +\
-                      courses[i]['title'] + " course", "can you get information on the " + courses[i]['course_code']\
-                      + " program"
-            response = 'courses', i, cnt, None
+            pattern = courses[i - 1]['course_code'] + " course time schedule", courses[i - 1]['title'] + " course time schedule", "can you tell me when is the " + \
+                      courses[i - 1]['course_code'] + " course", "can you get a time table for the " +\
+                      courses[i-1]['title'] + " course", "can you get a time table for the " + courses[i-1]['course_code']\
+                      + " course"
+            response = 'courses', i-1, cnt, None
             new = {
                 "tag": tag + " courses",
                 "patterns":
@@ -274,3 +293,21 @@ with open('intents.json', 'r+') as f:
         intent['intents'].append(new)
     f.seek(0)
     json.dump(intent, f, indent=2)
+
+    for i in details:
+        tag = details[i]['course_code'] + " details"
+        pattern = details[i]['course_code'] + " details", "can you tell me about " + details[i]['course_code'] + " course",\
+                  "can you get information on " + details[i]['course_code'] + " course", "can you tell me about "\
+                  + details[i]['course_name'] + " course", "can you get information on " + details[i]['course_name'] + " course"
+        response = 'course_details', i, None, None
+        new = {
+            "tag": tag,
+            "patterns":
+                pattern,
+            "responses":
+                response
+        }
+        intent['intents'].append(new)
+    f.seek(0)
+    json.dump(intent, f, indent=2)
+
