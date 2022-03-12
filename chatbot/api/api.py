@@ -8,6 +8,8 @@ from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
+from scrapers.buildings import BuildingScraper
+from scrapers.weather import WeatherScraper
 from bot import process_message
 
 app = Flask(__name__)
@@ -20,8 +22,11 @@ scrapers = {
     'courses': CoursesScraper(),
     'programs': ProgramScraper(),
     'exams': ExamScraper(),
-    'restaurant': RestaurantScraper()
+    'restaurant': RestaurantScraper(),
+    'buildings': BuildingScraper(),
+    'weather': WeatherScraper()
 }
+
 
 @app.route('/api', methods=['POST', 'GET'])
 def main():
@@ -39,15 +44,23 @@ def main():
     # Output an attribute of the first element in the response as a test
 
     data = scrapers[table_name].get()
-    
+
     if 'clubs' == table_name:
         response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nEmail: " + data[index]['email']
 
     elif 'department' in table_name:
-        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index]['link'] + "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + data[index]['extension']
+        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index][
+            'link'] + "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
+                              data[index]['extension']
 
     elif 'dates' in table_name:
         response['content'] = data[index]['occasion'] + " " + data[index]['date']
+
+    elif 'weather' in table_name:
+        response['content'] = data
+
+    elif 'buildings' in table_name:
+        response['content'] = data[index]['code'] + "code stands for " + data[index]['name'] + "\nClick the link to learn more: " + data[index]['link']
 
     elif 'restaurants' in table_name:
         response['content'] = data[index]['name'] + " " + data[index]['description'] + " " + data[index]['hour']
@@ -59,16 +72,18 @@ def main():
         response['content'] = index + msg_temp + "\nIs there one you would like more information on?"
 
     elif 'exam' in table_name:
-        response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index]['day'] + " " + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
+        response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index][
+            'day'] + " " + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
 
     elif 'programs' in table_name:
-        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
+        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index][
+            'prerequisites']
 
     elif 'courses' in table_name:
         msg_temp = ''
-        # for i in range(msg[3]):
-        #     x = index - i
-        #     msg_temp = msg_temp + "\n" + courses[x]['duration'] + " " + courses[x]['day'] + " " + courses[x]['time'] + " " + courses[x]['type'] + " " + courses[x]['instructor']
+        for i in range(associated_indexes):
+            x = index - i
+            msg_temp = msg_temp + "\n" + data[x]['duration'] + " " + data[x]['day'] + " " + data[x]['time'] + " " + data[x]['type'] + " " + data[x]['instructor']
         response['content'] = data[index]['course_code'] + " " + data[index]['title'] + msg_temp
 
     else:

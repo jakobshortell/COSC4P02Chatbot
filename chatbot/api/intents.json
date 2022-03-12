@@ -64,6 +64,24 @@
       ]
     },
     {
+      "tag": "weather",
+      "patterns": [
+        "weather",
+        "can you get the weather at brock university",
+        "what is the weather like at brock",
+        "weather St. Catharines",
+        "is it snowing",
+        "is it raining",
+        "is it sunny"
+      ],
+      "responses": [
+        "weather",
+        null,
+        null,
+        null
+      ]
+    },
+    {
       "tag": "do not know",
       "patterns": [
         "tell me something",
@@ -113,6 +131,21 @@
         [
           "Get the latest Brock University News at: https://brocku.ca/brock-news/",
           "Here is the latest news at Brock University: https://brocku.ca/brock-news/"
+        ]
+      ]
+    },
+    {
+      "tag": "maps",
+      "patterns": [
+        "map of brock university",
+        "show me an interactive map of brock university"
+      ],
+      "responses": [
+        null,
+        null,
+        null,
+        [
+          "Click this link for an Interactive Map of Brock University: \nhttps://brocku.ca/blogs/campus-map/\n                 Click this link for a downloadable Map of Brock University: \nhttps://brocku.ca/facilities-management/wp-content/uploads/sites/84/2-BROCK-UNIVERSITY-CAMPUS-MAPS.pdf"
         ]
       ]
     },
@@ -112647,6 +112680,1042 @@
       "responses": [
         "course_details",
         3712,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "AL building",
+      "patterns": [
+        "AL buildings",
+        "what building is AL",
+        "what does AL stand for"
+      ],
+      "responses": [
+        "buildings",
+        0,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "BAR-A building",
+      "patterns": [
+        "BAR-A buildings",
+        "what building is BAR-A",
+        "what does BAR-A stand for"
+      ],
+      "responses": [
+        "buildings",
+        1,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "BAR-B building",
+      "patterns": [
+        "BAR-B buildings",
+        "what building is BAR-B",
+        "what does BAR-B stand for"
+      ],
+      "responses": [
+        "buildings",
+        2,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "CAR building",
+      "patterns": [
+        "CAR buildings",
+        "what building is CAR",
+        "what does CAR stand for"
+      ],
+      "responses": [
+        "buildings",
+        3,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "CJD building",
+      "patterns": [
+        "CJD buildings",
+        "what building is CJD",
+        "what does CJD stand for"
+      ],
+      "responses": [
+        "buildings",
+        4,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "CLS building",
+      "patterns": [
+        "CLS buildings",
+        "what building is CLS",
+        "what does CLS stand for"
+      ],
+      "responses": [
+        "buildings",
+        5,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "CRN building",
+      "patterns": [
+        "CRN buildings",
+        "what building is CRN",
+        "what does CRN stand for"
+      ],
+      "responses": [
+        "buildings",
+        6,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "CUB building",
+      "patterns": [
+        "CUB buildings",
+        "what building is CUB",
+        "what does CUB stand for"
+      ],
+      "responses": [
+        "buildings",
+        7,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "DEC building",
+      "patterns": [
+        "DEC buildings",
+        "what building is DEC",
+        "what does DEC stand for"
+      ],
+      "responses": [
+        "buildings",
+        8,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "DNLD building",
+      "patterns": [
+        "DNLD buildings",
+        "what building is DNLD",
+        "what does DNLD stand for"
+      ],
+      "responses": [
+        "buildings",
+        9,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "EA building",
+      "patterns": [
+        "EA buildings",
+        "what building is EA",
+        "what does EA stand for"
+      ],
+      "responses": [
+        "buildings",
+        10,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "EA-1 building",
+      "patterns": [
+        "EA-1 buildings",
+        "what building is EA-1",
+        "what does EA-1 stand for"
+      ],
+      "responses": [
+        "buildings",
+        11,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "EA-2 building",
+      "patterns": [
+        "EA-2 buildings",
+        "what building is EA-2",
+        "what does EA-2 stand for"
+      ],
+      "responses": [
+        "buildings",
+        12,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "EA-3 building",
+      "patterns": [
+        "EA-3 buildings",
+        "what building is EA-3",
+        "what does EA-3 stand for"
+      ],
+      "responses": [
+        "buildings",
+        13,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "ERP building",
+      "patterns": [
+        "ERP buildings",
+        "what building is ERP",
+        "what does ERP stand for"
+      ],
+      "responses": [
+        "buildings",
+        14,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "GH building",
+      "patterns": [
+        "GH buildings",
+        "what building is GH",
+        "what does GH stand for"
+      ],
+      "responses": [
+        "buildings",
+        15,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "GLN-A building",
+      "patterns": [
+        "GLN-A buildings",
+        "what building is GLN-A",
+        "what does GLN-A stand for"
+      ],
+      "responses": [
+        "buildings",
+        16,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "GLN-B building",
+      "patterns": [
+        "GLN-B buildings",
+        "what building is GLN-B",
+        "what does GLN-B stand for"
+      ],
+      "responses": [
+        "buildings",
+        17,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "GSB building",
+      "patterns": [
+        "GSB buildings",
+        "what building is GSB",
+        "what does GSB stand for"
+      ],
+      "responses": [
+        "buildings",
+        18,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "HAM building",
+      "patterns": [
+        "HAM buildings",
+        "what building is HAM",
+        "what does HAM stand for"
+      ],
+      "responses": [
+        "buildings",
+        19,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "HH building",
+      "patterns": [
+        "HH buildings",
+        "what building is HH",
+        "what does HH stand for"
+      ],
+      "responses": [
+        "buildings",
+        20,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "HPP building",
+      "patterns": [
+        "HPP buildings",
+        "what building is HPP",
+        "what does HPP stand for"
+      ],
+      "responses": [
+        "buildings",
+        21,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "HRTN building",
+      "patterns": [
+        "HRTN buildings",
+        "what building is HRTN",
+        "what does HRTN stand for"
+      ],
+      "responses": [
+        "buildings",
+        22,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "HS building",
+      "patterns": [
+        "HS buildings",
+        "what building is HS",
+        "what does HS stand for"
+      ],
+      "responses": [
+        "buildings",
+        23,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "IH building",
+      "patterns": [
+        "IH buildings",
+        "what building is IH",
+        "what does IH stand for"
+      ],
+      "responses": [
+        "buildings",
+        24,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "KC building",
+      "patterns": [
+        "KC buildings",
+        "what building is KC",
+        "what does KC stand for"
+      ],
+      "responses": [
+        "buildings",
+        25,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "LOW building",
+      "patterns": [
+        "LOW buildings",
+        "what building is LOW",
+        "what does LOW stand for"
+      ],
+      "responses": [
+        "buildings",
+        26,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MC building",
+      "patterns": [
+        "MC buildings",
+        "what building is MC",
+        "what does MC stand for"
+      ],
+      "responses": [
+        "buildings",
+        27,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCA building",
+      "patterns": [
+        "MCA buildings",
+        "what building is MCA",
+        "what does MCA stand for"
+      ],
+      "responses": [
+        "buildings",
+        28,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCB building",
+      "patterns": [
+        "MCB buildings",
+        "what building is MCB",
+        "what does MCB stand for"
+      ],
+      "responses": [
+        "buildings",
+        29,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCC building",
+      "patterns": [
+        "MCC buildings",
+        "what building is MCC",
+        "what does MCC stand for"
+      ],
+      "responses": [
+        "buildings",
+        30,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCD building",
+      "patterns": [
+        "MCD buildings",
+        "what building is MCD",
+        "what does MCD stand for"
+      ],
+      "responses": [
+        "buildings",
+        31,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCE building",
+      "patterns": [
+        "MCE buildings",
+        "what building is MCE",
+        "what does MCE stand for"
+      ],
+      "responses": [
+        "buildings",
+        32,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCF building",
+      "patterns": [
+        "MCF buildings",
+        "what building is MCF",
+        "what does MCF stand for"
+      ],
+      "responses": [
+        "buildings",
+        33,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCG building",
+      "patterns": [
+        "MCG buildings",
+        "what building is MCG",
+        "what does MCG stand for"
+      ],
+      "responses": [
+        "buildings",
+        34,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCH building",
+      "patterns": [
+        "MCH buildings",
+        "what building is MCH",
+        "what does MCH stand for"
+      ],
+      "responses": [
+        "buildings",
+        35,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MCJ building",
+      "patterns": [
+        "MCJ buildings",
+        "what building is MCJ",
+        "what does MCJ stand for"
+      ],
+      "responses": [
+        "buildings",
+        36,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MW building",
+      "patterns": [
+        "MW buildings",
+        "what building is MW",
+        "what does MW stand for"
+      ],
+      "responses": [
+        "buildings",
+        37,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "MWS building",
+      "patterns": [
+        "MWS buildings",
+        "what building is MWS",
+        "what does MWS stand for"
+      ],
+      "responses": [
+        "buildings",
+        38,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "PAC building",
+      "patterns": [
+        "PAC buildings",
+        "what building is PAC",
+        "what does PAC stand for"
+      ],
+      "responses": [
+        "buildings",
+        39,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "PACCRH building",
+      "patterns": [
+        "PACCRH buildings",
+        "what building is PACCRH",
+        "what does PACCRH stand for"
+      ],
+      "responses": [
+        "buildings",
+        40,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "PACFS building",
+      "patterns": [
+        "PACFS buildings",
+        "what building is PACFS",
+        "what does PACFS stand for"
+      ],
+      "responses": [
+        "buildings",
+        41,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "PLZ building",
+      "patterns": [
+        "PLZ buildings",
+        "what building is PLZ",
+        "what does PLZ stand for"
+      ],
+      "responses": [
+        "buildings",
+        42,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV building",
+      "patterns": [
+        "QV buildings",
+        "what building is QV",
+        "what does QV stand for"
+      ],
+      "responses": [
+        "buildings",
+        43,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 1 building",
+      "patterns": [
+        "QV - 1 buildings",
+        "what building is QV - 1",
+        "what does QV - 1 stand for"
+      ],
+      "responses": [
+        "buildings",
+        44,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 2 building",
+      "patterns": [
+        "QV - 2 buildings",
+        "what building is QV - 2",
+        "what does QV - 2 stand for"
+      ],
+      "responses": [
+        "buildings",
+        45,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 3 building",
+      "patterns": [
+        "QV - 3 buildings",
+        "what building is QV - 3",
+        "what does QV - 3 stand for"
+      ],
+      "responses": [
+        "buildings",
+        46,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 4 building",
+      "patterns": [
+        "QV - 4 buildings",
+        "what building is QV - 4",
+        "what does QV - 4 stand for"
+      ],
+      "responses": [
+        "buildings",
+        47,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 5 building",
+      "patterns": [
+        "QV - 5 buildings",
+        "what building is QV - 5",
+        "what does QV - 5 stand for"
+      ],
+      "responses": [
+        "buildings",
+        48,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "QV - 6 building",
+      "patterns": [
+        "QV - 6 buildings",
+        "what building is QV - 6",
+        "what does QV - 6 stand for"
+      ],
+      "responses": [
+        "buildings",
+        49,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "RBC building",
+      "patterns": [
+        "RBC buildings",
+        "what building is RBC",
+        "what does RBC stand for"
+      ],
+      "responses": [
+        "buildings",
+        50,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "RFP building",
+      "patterns": [
+        "RFP buildings",
+        "what building is RFP",
+        "what does RFP stand for"
+      ],
+      "responses": [
+        "buildings",
+        51,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "RH building",
+      "patterns": [
+        "RH buildings",
+        "what building is RH",
+        "what does RH stand for"
+      ],
+      "responses": [
+        "buildings",
+        52,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SBH building",
+      "patterns": [
+        "SBH buildings",
+        "what building is SBH",
+        "what does SBH stand for"
+      ],
+      "responses": [
+        "buildings",
+        53,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SC building",
+      "patterns": [
+        "SC buildings",
+        "what building is SC",
+        "what does SC stand for"
+      ],
+      "responses": [
+        "buildings",
+        54,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SER building",
+      "patterns": [
+        "SER buildings",
+        "what building is SER",
+        "what does SER stand for"
+      ],
+      "responses": [
+        "buildings",
+        55,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SH building",
+      "patterns": [
+        "SH buildings",
+        "what building is SH",
+        "what does SH stand for"
+      ],
+      "responses": [
+        "buildings",
+        56,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SPLC building",
+      "patterns": [
+        "SPLC buildings",
+        "what building is SPLC",
+        "what does SPLC stand for"
+      ],
+      "responses": [
+        "buildings",
+        57,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "SPWY building",
+      "patterns": [
+        "SPWY buildings",
+        "what building is SPWY",
+        "what does SPWY stand for"
+      ],
+      "responses": [
+        "buildings",
+        58,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "ST building",
+      "patterns": [
+        "ST buildings",
+        "what building is ST",
+        "what does ST stand for"
+      ],
+      "responses": [
+        "buildings",
+        59,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "STH building",
+      "patterns": [
+        "STH buildings",
+        "what building is STH",
+        "what does STH stand for"
+      ],
+      "responses": [
+        "buildings",
+        60,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "TA building",
+      "patterns": [
+        "TA buildings",
+        "what building is TA",
+        "what does TA stand for"
+      ],
+      "responses": [
+        "buildings",
+        61,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "TH building",
+      "patterns": [
+        "TH buildings",
+        "what building is TH",
+        "what does TH stand for"
+      ],
+      "responses": [
+        "buildings",
+        62,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "TRL building",
+      "patterns": [
+        "TRL buildings",
+        "what building is TRL",
+        "what does TRL stand for"
+      ],
+      "responses": [
+        "buildings",
+        63,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "VAL building",
+      "patterns": [
+        "VAL buildings",
+        "what building is VAL",
+        "what does VAL stand for"
+      ],
+      "responses": [
+        "buildings",
+        64,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "VIL-A building",
+      "patterns": [
+        "VIL-A buildings",
+        "what building is VIL-A",
+        "what does VIL-A stand for"
+      ],
+      "responses": [
+        "buildings",
+        65,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "VIL-B building",
+      "patterns": [
+        "VIL-B buildings",
+        "what building is VIL-B",
+        "what does VIL-B stand for"
+      ],
+      "responses": [
+        "buildings",
+        66,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "VIL-C building",
+      "patterns": [
+        "VIL-C buildings",
+        "what building is VIL-C",
+        "what does VIL-C stand for"
+      ],
+      "responses": [
+        "buildings",
+        67,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WC building",
+      "patterns": [
+        "WC buildings",
+        "what building is WC",
+        "what does WC stand for"
+      ],
+      "responses": [
+        "buildings",
+        68,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WC-A building",
+      "patterns": [
+        "WC-A buildings",
+        "what building is WC-A",
+        "what does WC-A stand for"
+      ],
+      "responses": [
+        "buildings",
+        69,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WC-B building",
+      "patterns": [
+        "WC-B buildings",
+        "what building is WC-B",
+        "what does WC-B stand for"
+      ],
+      "responses": [
+        "buildings",
+        70,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WC-C building",
+      "patterns": [
+        "WC-C buildings",
+        "what building is WC-C",
+        "what does WC-C stand for"
+      ],
+      "responses": [
+        "buildings",
+        71,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WC-D building",
+      "patterns": [
+        "WC-D buildings",
+        "what building is WC-D",
+        "what does WC-D stand for"
+      ],
+      "responses": [
+        "buildings",
+        72,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "WH building",
+      "patterns": [
+        "WH buildings",
+        "what building is WH",
+        "what does WH stand for"
+      ],
+      "responses": [
+        "buildings",
+        73,
         null,
         null
       ]

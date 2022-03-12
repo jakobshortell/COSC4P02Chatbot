@@ -7,6 +7,7 @@ from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
 from scrapers.course_details import CoursesDetailsScraper
+from scrapers.buildings import BuildingScraper
 
 #dates = ImportantDatesScraper().get()
 departments = DepartmentScraper().get()
@@ -16,6 +17,7 @@ programs = ProgramScraper().get()
 exams = ExamScraper().get()
 restaurant = RestaurantScraper().get()
 details = CoursesDetailsScraper().get()
+buildings = BuildingScraper().get()
 
 cnt = 1
 tagTemp = ""
@@ -74,6 +76,21 @@ intent = {
             ]
         },
         {
+            "tag": "weather",
+            "patterns": [
+                "weather",
+                "can you get the weather at brock university",
+                "what is the weather like at brock",
+                "weather St. Catharines",
+                "is it snowing",
+                "is it raining",
+                "is it sunny"
+            ],
+            "responses": [
+                "weather", None, None, None
+            ]
+        },
+        {
             "tag": "do not know",
             "patterns": [
                 "tell me something",
@@ -103,7 +120,6 @@ intent = {
                 "Here is a list of restaurants available at Brock:"
             ]
         },
-
         {
             "tag": "news",
             "patterns": [
@@ -115,6 +131,18 @@ intent = {
                 None, None, None,
                 ["Get the latest Brock University News at: https://brocku.ca/brock-news/",
                 "Here is the latest news at Brock University: https://brocku.ca/brock-news/"]
+            ]
+        },
+        {
+            "tag": "maps",
+            "patterns": [
+                "map of brock university",
+                "show me an interactive map of brock university"
+            ],
+            "responses": [
+                None, None, None,
+                ["Click this link for an Interactive Map of Brock University: \nhttps://brocku.ca/blogs/campus-map/\n \
+                Click this link for a downloadable Map of Brock University: \nhttps://brocku.ca/facilities-management/wp-content/uploads/sites/84/2-BROCK-UNIVERSITY-CAMPUS-MAPS.pdf"]
             ]
         },
         {
@@ -311,3 +339,17 @@ with open('intents.json', 'r+') as f:
     f.seek(0)
     json.dump(intent, f, indent=2)
 
+    for i in buildings:
+        tag = buildings[i]['code'] + " building"
+        pattern = buildings[i]['code'] + " buildings", "what building is " + buildings[i]['code'], "what does " + buildings[i]['code'] + " stand for"
+        response = 'buildings', i, None, None
+        new = {
+            "tag": tag,
+            "patterns":
+                pattern,
+            "responses":
+                response
+        }
+        intent['intents'].append(new)
+    f.seek(0)
+    json.dump(intent, f, indent=2)
