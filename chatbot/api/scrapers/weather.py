@@ -23,11 +23,7 @@ class WeatherScraper:
 							str(current_humidity) + "%" +
 				"\n\tDescription: " +
 							str(weather_description))
-			print(response)
 			return response
 		else:
 			response = "Weather unavailable"
 			return response
-
-s = WeatherScraper()
-s.get()
