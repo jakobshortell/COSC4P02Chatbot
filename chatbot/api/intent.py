@@ -101,7 +101,6 @@ intent = {
             "responses": [
                 None, None, None,
                 ["Did you know that Bamboo is not wood, it is actually a type of grass.",
-                 "Did you know that Homers the Odyssey was the first written book",
                  "Did you know that population of Australia is 25.7 million",
                  "Did you know that sweet potatoes in New Zealand are called Kumara"]
             ]
@@ -141,8 +140,7 @@ intent = {
             ],
             "responses": [
                 None, None, None,
-                ["Click this link for an Interactive Map of Brock University: \nhttps://brocku.ca/blogs/campus-map/\n \
-                Click this link for a downloadable Map of Brock University: \nhttps://brocku.ca/facilities-management/wp-content/uploads/sites/84/2-BROCK-UNIVERSITY-CAMPUS-MAPS.pdf"]
+                ["Click this link for an Interactive Map of Brock University: https://brocku.ca/blogs/campus-map/\nClick this link for a downloadable Map of Brock University: https://brocku.ca/facilities-management/wp-content/uploads/sites/84/2-BROCK-UNIVERSITY-CAMPUS-MAPS.pdf"]
             ]
         },
         {

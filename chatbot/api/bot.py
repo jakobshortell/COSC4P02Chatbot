@@ -8,7 +8,7 @@ import gzip
 
 from nltk.stem.lancaster import LancasterStemmer
 
-nltk.download('punkt')
+#nltk.download('punkt')
 
 stemmer = LancasterStemmer()
 
