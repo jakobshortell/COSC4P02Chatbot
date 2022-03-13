@@ -4,6 +4,7 @@ import MessageCSS from '../css/Message.module.css';
 import { SecureLink } from "react-secure-link";
 import botIcon from '../assets/brock.png';
 import userIcon from '../assets/user.png';
+import linkIcon from '../assets/linkRed.png';
 
 export function Message({ author, content, time }) {
 
@@ -31,7 +32,10 @@ export function Message({ author, content, time }) {
 					</div>
 						<span><Linkify
        						componentDecorator={(
-          					decoratedHref: string, decoratedText: string, key: Key) => (<SecureLink href={decoratedHref} key={key}>{decoratedText}</SecureLink>)}>{content}</Linkify></span>
+          					decoratedHref: string, key: Key) => (<SecureLink href={decoratedHref} key={key}>
+								  {decoratedHref}<img className={MessageCSS.link} src={linkIcon} alt='Link'/></SecureLink>)}>
+								  {content}
+								</Linkify></span>
 					</div>
 			</li>
 		)

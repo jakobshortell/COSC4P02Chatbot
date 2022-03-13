@@ -127,9 +127,7 @@ intent = {
                 "upcoming events at brock"
             ],
             "responses": [
-                None, None, None,
-                ["Get the latest Brock University News at: https://brocku.ca/brock-news/",
-                "Here is the latest news at Brock University: https://brocku.ca/brock-news/"]
+                "news", None, None, None
             ]
         },
         {

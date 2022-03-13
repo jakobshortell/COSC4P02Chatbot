@@ -11,6 +11,7 @@ from scrapers.restaurant import RestaurantScraper
 from scrapers.buildings import BuildingScraper
 from scrapers.weather import WeatherScraper
 from scrapers.course_details import CoursesDetailsScraper
+from scrapers.brock_news import newsScraper
 from bot import process_message
 
 app = Flask(__name__)
@@ -26,7 +27,8 @@ scrapers = {
     'restaurant': RestaurantScraper(),
     'buildings': BuildingScraper(),
     'weather': WeatherScraper(),
-    'course_details': CoursesDetailsScraper()
+    'course_details': CoursesDetailsScraper(),
+    'news': newsScraper()
 }
 
 
@@ -59,6 +61,9 @@ def main():
         response['content'] = data[index]['occasion'] + " " + data[index]['date']
 
     elif 'weather' == table_name:
+        response['content'] = data
+
+    elif 'news' == table_name:
         response['content'] = data
 
     elif 'course_details' == table_name:
