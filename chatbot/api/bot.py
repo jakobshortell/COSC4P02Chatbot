@@ -11,6 +11,12 @@ from nltk.stem.lancaster import LancasterStemmer
 #nltk.download('punkt')
 
 stemmer = LancasterStemmer()
+with open("intents.json") as file:
+    data = json.load(file)
+
+with gzip.open('data', 'rb') as f:
+    words, labels, training, output = pickle.load(f)
+
 
 def naturalWords(s, words):
     bag = [0 for _ in range(len(words))]
@@ -26,11 +32,7 @@ def naturalWords(s, words):
 
 
 def process_message(message):
-    with open("intents.json") as file:
-        data = json.load(file)
 
-    with gzip.open('data', 'rb') as f:
-        words, labels, training, output = pickle.load(f)
 
     tf.compat.v1.reset_default_graph()
 
