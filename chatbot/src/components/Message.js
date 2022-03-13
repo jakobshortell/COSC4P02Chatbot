@@ -1,7 +1,7 @@
 import React from 'react';
 import Linkify from 'react-linkify';
 import MessageCSS from '../css/Message.module.css';
-
+import { SecureLink } from "react-secure-link";
 import botIcon from '../assets/brock.png';
 import userIcon from '../assets/user.png';
 
@@ -29,8 +29,10 @@ export function Message({ author, content, time }) {
 						<span className={` ${MessageCSS.botName} ${MessageCSS.name} `}>Brock University</span>
 						<span className={ MessageCSS.time }>{ time }</span>
 					</div>
-					<span><Linkify properties={{target: '_blank'}}>{ content }</Linkify></span>
-				</div>
+						<span><Linkify
+       						componentDecorator={(
+          					decoratedHref: string, decoratedText: string, key: Key) => (<SecureLink href={decoratedHref} key={key}>{decoratedText}</SecureLink>)}>{content}</Linkify></span>
+					</div>
 			</li>
 		)
 	}
