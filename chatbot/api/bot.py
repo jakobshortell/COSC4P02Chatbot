@@ -54,10 +54,10 @@ def process_message(message):
             if tag['tag'] == tag_index:
                 table_name, index, associated_indexes, messages = tag['responses']
                 msg = {
-                        "table_name": None if table_name == '' else table_name,
-                        "index": None if index == '' else index,
-                        "associated_indexes": None if associated_indexes == '' else associated_indexes,
-                        "messages": None if messages == '' else messages
+                        "table_name": None or table_name,
+                        "index": None or index,
+                        "associated_indexes": None or associated_indexes,
+                        "messages": None or messages
                     }
     else:
         msg = {
