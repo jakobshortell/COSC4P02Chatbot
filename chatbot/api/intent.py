@@ -53,9 +53,51 @@ intent = {
             ],
             "responses": [
                 None, None, None,
-                ["Bye, hope to talk to you again soon.",
-                "Good bye, its been great talking to you",
+                ["Bye, hope to talk to you again soon!",
+                "Good bye, its been great talking to you!",
                 "Glad I could help, Bye!"]
+            ]
+        },
+        {
+            "tag": "who are you",
+            "patterns": [
+                "who are you",
+                "tell me about yourself",
+                "what are you"
+            ],
+            "responses": [
+                None, None, None,
+                ["I'm a bot!",
+                 "I'm a series of 1's and 0's.",
+                 "I'm just a computer program and have no self awareness."]
+            ]
+        },
+        {
+            "tag": "who made you",
+            "patterns": [
+                "who made you",
+                "who are your creators",
+                "who developed you"
+            ],
+            "responses": [
+                None, None, None,
+                ["I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara",
+                 "Some people, I think?",
+                 "No one cares."]
+            ]
+        },
+        {
+            "tag": "easteregg",
+            "patterns": [
+                "easteregg",
+                "easter egg"
+            ],
+            "responses": [
+                None, None, None,
+                [
+                    "This is an Easter-egg!",
+                    "Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag",
+                    "Click this link: https://i.pinimg.com/474x/63/19/6c/63196c900cfc344875d32a637ef17adc.jpg"]
             ]
         },
         {
@@ -63,6 +105,7 @@ intent = {
             "patterns": [
                 "thanks",
                 "thank you",
+                "thankyou",
                 "thx",
                 "i appreciate that ",
                 "good response",
