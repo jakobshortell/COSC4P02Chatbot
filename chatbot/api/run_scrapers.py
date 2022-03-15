@@ -7,6 +7,7 @@ from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
 from scrapers.course_details import CoursesDetailsScraper
 from scrapers.buildings import BuildingScraper
+from scrapers.union import UnionScraper
 
 
 scrapers = [
@@ -18,7 +19,8 @@ scrapers = [
 	RestaurantScraper(),
 	ProgramScraper(),
 	CoursesDetailsScraper(),
-	BuildingScraper()
+	BuildingScraper(),
+	UnionScraper()
 ]
 
 def run_scrapers():

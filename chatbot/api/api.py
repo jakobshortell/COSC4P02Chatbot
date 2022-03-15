@@ -24,7 +24,8 @@ scrapers = {
     'courses': CoursesScraper(),
     'programs': ProgramScraper(),
     'exams': ExamScraper(),
-    'restaurant': RestaurantScraper(),
+    'restaurants': RestaurantScraper(),
+    'restaurant_list': RestaurantScraper(),
     'buildings': BuildingScraper(),
     'weather': WeatherScraper(),
     'course_details': CoursesDetailsScraper(),
@@ -67,19 +68,19 @@ def main():
         response['content'] = data
 
     elif 'course_details' == table_name:
-        response['content'] = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['course_description']
+        response['content'] = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
 
     elif 'buildings' == table_name:
         response['content'] = data[index]['code'] + " code stands for " + data[index]['name'] + "\nClick the link to learn more: " + data[index]['link']
 
     elif 'restaurants' == table_name:
-        response['content'] = data[index]['name'] + " " + data[index]['description'] + " " + data[index]['hour']
+        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
 
     elif 'restaurant_list' == table_name:
         msg_temp = ''
         for index in data:
             msg_temp = msg_temp + "\n" + data[index]['name']
-        response['content'] = index + msg_temp + "\nIs there one you would like more information on?"
+        response['content'] = messages + msg_temp + "\nIs there one you would like more information on?"
 
     elif 'exams' == table_name:
         response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index]['day'] + " " + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']

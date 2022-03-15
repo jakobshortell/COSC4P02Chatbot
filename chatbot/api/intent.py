@@ -77,13 +77,15 @@ intent = {
             "patterns": [
                 "who made you",
                 "who are your creators",
-                "who developed you"
+                "who developed you",
+                "where do you come from"
             ],
             "responses": [
                 None, None, None,
                 ["I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara",
                  "Some people, I think?",
-                 "No one cares."]
+                 "No one cares.",
+                 "Why do you care?"]
             ]
         },
         {
@@ -94,10 +96,9 @@ intent = {
             ],
             "responses": [
                 None, None, None,
-                [
-                    "This is an Easter-egg!",
-                    "Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag",
-                    "Click this link: https://i.pinimg.com/474x/63/19/6c/63196c900cfc344875d32a637ef17adc.jpg"]
+                ["This is an Easter-egg!",
+                 "Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag",
+                 "Click this link: https://i.pinimg.com/474x/63/19/6c/63196c900cfc344875d32a637ef17adc.jpg"]
             ]
         },
         {
@@ -167,7 +168,8 @@ intent = {
             "patterns": [
                 "brock university news",
                 "What is the latest news",
-                "upcoming events at brock"
+                "upcoming events at brock",
+                "whats up at brock"
             ],
             "responses": [
                 "news", None, None, None
@@ -177,7 +179,10 @@ intent = {
             "tag": "maps",
             "patterns": [
                 "map of brock university",
-                "show me an interactive map of brock university"
+                "show me an interactive map of brock university",
+                "get a map of brock university",
+                "map of brock",
+                "show me the layout of brock"
             ],
             "responses": [
                 None, None, None,
@@ -215,7 +220,8 @@ intent = {
             "patterns": [
                 "directions to brock university",
                 "Where is brock university",
-                "get brock university map"
+                "directions to brock",
+                "travel to brock"
             ],
             "responses": [
                 None, None, None,
@@ -268,7 +274,7 @@ with open('intents.json', 'r+') as f:
             pattern = courses[i - 1]['course_code'] + " course time schedule", courses[i - 1]['title'] + " course time schedule", "can you tell me when is the " + \
                       courses[i - 1]['course_code'] + " course", "can you get a time table for the " +\
                       courses[i-1]['title'] + " course", "can you get a time table for the " + courses[i-1]['course_code']\
-                      + " course"
+                      + " course", "where is " + courses[i - 1]['course_code'], courses[i - 1]['course_code'] + "location"
             response = 'courses', i-1, cnt, None
             new = {
                 "tag": tag + " courses",
