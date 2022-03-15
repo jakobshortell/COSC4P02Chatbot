@@ -137,5 +137,3 @@ class UnionScraper:
                 conn.commit()
 
 
-s = UnionScraper()
-s.fetch()
