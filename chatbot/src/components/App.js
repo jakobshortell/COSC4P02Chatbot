@@ -12,7 +12,8 @@ import Input from "./Input";
 const uuid = require("uuid");
 
 const App = () => {
-	const userInput = useRef();
+	const inputRef = useRef();
+	const modalRef = useRef();
 	const [messages, setMessages] = useState([
 		{
 			author: "bot",
@@ -60,7 +61,7 @@ const App = () => {
 	}
 
 	async function addUserMessage() {
-		const message = userInput.current.value;
+		const message = inputRef.current.value;
 
 		if (message !== "") {
 			addMessage({
@@ -69,7 +70,7 @@ const App = () => {
 				id: uuid.v4(),
 			});
 
-			userInput.current.value = null;
+			inputRef.current.value = null;
 			addBotMessage(message);
 		}
 	}
@@ -109,10 +110,10 @@ const App = () => {
 
 	return (
 		<div className={AppCSS.app}>
-			<Header />
-			<Modal />
+			<Header modal={modalRef} />
+			<Modal modal={modalRef} />
 			<MessageContainer messages={messages} />
-			<Input userInput={userInput} sendMessage={addUserMessage} />
+			<Input input={inputRef} sendMessage={addUserMessage} />
 		</div>
 	);
 };
