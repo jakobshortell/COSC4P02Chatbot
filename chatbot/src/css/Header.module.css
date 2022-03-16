@@ -4,24 +4,53 @@
 	height: var(--header-height);
 	width: 100vw;
 	background-color: var(--brock-primary);
+	position: relative;
 	display: flex;
 	align-items: center;
+}
+
+.logoContainer {
+	padding-left: calc(var(--header-height) * 0.2);
 }
 
 .logo {
 	height: var(--header-height);
 	width: calc(var(--header-height) * 2);
-	padding-left: calc(var(--header-height) * 0.2);
 	object-fit: cover;
 	object-position: 0 55%;
 }
 
 .list {
+	width: calc(100vw - (var(--header-height) * 2));
+	display: flex;
+	justify-content: flex-end;
+}
+
+.listItem {
 	height: var(--header-height);
-	margin-left: auto;
+	width: var(--header-height);
 	display: flex;
 	align-items: center;
-	padding: 0 1rem;
+	justify-content: center;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdownMenu {
+	display: none;
+	position: absolute;
+	top: var(--header-height);
+}
+
+.dropdownMenu li {
+	height: calc(var(--header-height) / 2);
+	width: calc(var(--header-height) * 10);
+	padding: 1rem;
+	background-color: var(--brock-primary);
+	display: flex;
+	align-items: center;
 }
 
 .icon {
