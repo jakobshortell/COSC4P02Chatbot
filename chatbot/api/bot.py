@@ -5,7 +5,9 @@ import tensorflow as tf
 import json
 import pickle
 import gzip
-
+import enchant
+from enchant.checker import SpellChecker
+from textblob import TextBlob
 from nltk.stem.lancaster import LancasterStemmer
 
 #nltk.download('punkt')
@@ -30,9 +32,19 @@ def naturalWords(s, words):
 
     return numpy.array(bag)
 
+def spell_check(message):
+    dic = enchant.DictWithPWL("en_US", "customWords.txt")
+    chkr = SpellChecker(dic)
+    chkr.set_text(message)
+    for err in chkr:
+        corr = TextBlob(err.word)
+        message = message.replace(err.word, str(corr.correct()))
+    print(message)
+    return message
 
 def process_message(message):
 
+    message = spell_check(message)
 
     tf.compat.v1.reset_default_graph()
 
