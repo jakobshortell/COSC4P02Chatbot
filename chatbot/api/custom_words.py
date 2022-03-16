@@ -44,7 +44,7 @@ for i in restaurant:
     f.write(words + '\n')
 
 for i in buildings:
-    words = buildings[i]['name'].lower()
+    words = buildings[i]['code'].lower()
     words = words.replace(' ', '\n')
     f.write(words + '\n')
 
