@@ -42,3 +42,4 @@ export function Message({ author, content, time }) {
 	}
 
 }
+export default Message;
