@@ -12,6 +12,19 @@ const Input = ({ input, sendMessage }) => {
 		input.current.value = "";
 	};
 
+	const disableNewLine = (event) => {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+		}
+	};
+
+	const sendMessageOnEnter = (event) => {
+		if (event.keyCode === 13) {
+			event.preventDefault();
+			sendMessage();
+		}
+	};
+
 	return (
 		<div className={InputCSS.inputContainer}>
 			<textarea
@@ -21,6 +34,8 @@ const Input = ({ input, sendMessage }) => {
 				ref={input}
 				rows="1"
 				placeholder="Type your question here"
+				onKeyDown={disableNewLine}
+				onKeyUp={sendMessageOnEnter}
 			/>
 			<button
 				className={InputCSS.clearButton}
