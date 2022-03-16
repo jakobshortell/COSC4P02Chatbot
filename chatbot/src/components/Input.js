@@ -7,9 +7,9 @@ import InputCSS from "../css/Input.module.css";
 import clearIcon from "../assets/clear.png";
 import sendIcon from "../assets/send.png";
 
-const Input = ({ userInput, sendMessage }) => {
+const Input = ({ input, sendMessage }) => {
 	const clearMessage = () => {
-		userInput.current.value = "";
+		input.current.value = "";
 	};
 
 	return (
@@ -18,7 +18,7 @@ const Input = ({ userInput, sendMessage }) => {
 				id="inputfield"
 				className={InputCSS.inputField}
 				type="text"
-				ref={userInput}
+				ref={input}
 				rows="1"
 				placeholder="Type your question here"
 			/>
