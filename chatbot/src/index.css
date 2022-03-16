@@ -1,42 +1,41 @@
 /* Global Styles */
 
 * {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 16px;
-    font-family: var(--brock-font);
-    line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: var(--brock-font);
+	line-height: 1.5;
+	list-style-type: none;
 }
 
 body {
-    background-color: var(--brock-background);
+	background-color: var(--brock-background);
+	overflow: hidden;
 }
 
 :root {
+	/* Aesthetics */
+	--brock-primary: #cc0000;
+	--brock-secondary: #f8f8f8;
+	--brock-background: #ffffff;
+	--brock-font: Bliss;
 
-    /* Aesthetics */
-    --brock-primary: #cc0000;
-    --brock-secondary: #f8f8f8;
-    --brock-background: #ffffff;
-    --brock-font: Bliss;
-
-    /* Component Sizes */
-    --header-height: 4rem;
-    --input-height: 5rem;
-    --input-width: 60vw;
-    --icon-height: 2.5rem; /* Not used when icons have display: none */
-    
+	/* Component Sizes */
+	--header-height: 4rem;
+	--input-height: 5rem;
+	--input-width: 60vw;
+	--icon-height: 2.5rem; /* Not used when icons have display: none */
 }
 
 @font-face {
-    font-family: Bliss;
-    font-weight: 400;
-    src: url(./fonts/BlissProRegular.otf);
+	font-family: Bliss;
+	font-weight: 400;
+	src: url(./fonts/BlissProRegular.otf);
 }
 
 @font-face {
-    font-family: Bliss;
-    font-weight: 700;
-    src: url(./fonts/BlissProBold.otf);
+	font-family: Bliss;
+	font-weight: 700;
+	src: url(./fonts/BlissProBold.otf);
 }
