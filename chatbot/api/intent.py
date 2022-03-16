@@ -1,4 +1,5 @@
 import json
+import custom_words
 from scrapers.clubs import ClubScraper
 from scrapers.departments import DepartmentScraper
 #from scrapers.important_dates import ImportantDatesScraper
