@@ -53,7 +53,7 @@ const App = () => {
 					author: message.author,
 					content: message.content,
 					timestamp: getTime(),
-					id: message.id,
+					id: uuid.v4(),
 				},
 			];
 		});
@@ -67,7 +67,6 @@ const App = () => {
 			addMessage({
 				author: "user",
 				content: message,
-				id: uuid.v4(),
 			});
 
 			inputRef.current.value = null;
@@ -97,7 +96,6 @@ const App = () => {
 					addMessage({
 						author: "bot",
 						content: data.content,
-						id: uuid.v4(),
 					});
 				}
 			});
