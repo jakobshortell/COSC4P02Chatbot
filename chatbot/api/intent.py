@@ -339,7 +339,7 @@ with open('intents.json', 'r+') as f:
     for i in exams:
         tag = exams[i]['course_code'] + " exams"
         pattern = exams[i]['course_code'] + " exam", "can you when is the " + exams[i]['course_code'] + " exam",\
-                  "can you tell me where is the " + exams[i]['course_code'] + "exam"
+                  "can you tell me where is the " + exams[i]['course_code'] + " exam"
         response = 'exams', i, None, None
         new = {
             "tag": tag,
