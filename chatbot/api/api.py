@@ -47,7 +47,6 @@ def main():
     response = {
         'content': 'Error, something went wrong.'
     }
-    print(response)
     bot_response = process_message(user_message)
     table_name, index, associated_indexes, messages = bot_response.values()
     # Output an attribute of the first element in the response as a test
