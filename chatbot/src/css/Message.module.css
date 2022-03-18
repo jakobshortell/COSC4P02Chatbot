@@ -1,64 +1,68 @@
 /* Message Styles */
 
 .message {
-    margin: 1rem;
-    display: flex;
+	margin: 1rem;
+	display: flex;
 }
 
 .userMessage {
-    justify-content: flex-end;
+	justify-content: flex-end;
 }
 
 .botMessage {
-    justify-content: flex-start;
-    white-space: pre-wrap;
+	justify-content: flex-start;
+	white-space: pre-wrap;
 }
 
 .messageIcon {
-    display: none;
-    height: var(--icon-height);
+	display: none;
+	height: var(--icon-height);
 }
 
 .messageBubble {
-    max-width: 70%;
-    padding: 1rem;
-    background-color: var(--brock-secondary);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+	max-width: 70%;
+	padding: 1rem;
+	background-color: var(--brock-secondary);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
 }
 
 .userMessageBubble {
-    border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .botMessageBubble {
-    border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
 }
 
 .name {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .userName {
-    color: darkgray;
+	color: darkgray;
 }
 
 .botName {
-    color: var(--brock-primary);
+	color: var(--brock-primary);
 }
 
 .time {
-    margin-left: .5rem;
-    opacity: .75;
+	margin-left: 0.5rem;
+	opacity: 0.75;
+}
+
+.link {
+	height: 15px;
+	width: 15px;
+	padding-left: 5px;
 }
 
 a {
-    color: var(--brock-primary);
-    text-underline-offset: 4px;
-    display: flex;
-    width: 180px;
-    white-space: nowrap;
-    overflow: hidden;
+	color: var(--brock-primary);
+	text-underline-offset: 4px;
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
 }
-

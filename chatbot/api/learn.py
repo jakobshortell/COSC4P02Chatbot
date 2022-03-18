@@ -6,7 +6,7 @@ import tflearn
 import tensorflow as tf
 import json
 import pickle
-
+import gzip
 
 with open("intents.json") as file:
     data = json.load(file)
@@ -52,21 +52,19 @@ for x, doc in enumerate(docs_x):
 
 training = numpy.array(training)
 output = numpy.array(output)
-
-with open("data.pickle", "wb") as f:
-    f.truncate(0)
+with gzip.open('data', 'wb') as f:
     pickle.dump((words, labels, training, output), f)
 
 tf.compat.v1.reset_default_graph()
 
 net = tflearn.input_data(shape=[None, len(training[0])])
-net = tflearn.fully_connected(net, 64)
-net = tflearn.fully_connected(net, 64)
+net = tflearn.fully_connected(net, 32)
+net = tflearn.fully_connected(net, 32)
 net = tflearn.fully_connected(net, len(output[0]), activation="softmax")
 net = tflearn.regression(net)
 model = tflearn.DNN(net)
 
-model.fit(training, output, n_epoch=35000, batch_size=2048, show_metric=True)
+model.fit(training, output, n_epoch=1000, batch_size=4096, show_metric=True)
 model.save("model.h5")
 
 
