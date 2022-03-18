@@ -30,7 +30,6 @@ class DepartmentScraper:
         '''Fetches department data from Brock and stores it in the database.'''
         self.browser.open('https://brocku.ca/directory/a-z/')
         departments_list = self.browser.page.find_all('div', attrs={'class': 'item'})
-
         return self.read_departments(departments_list)
 
     def get(self):
@@ -180,3 +179,4 @@ class DepartmentScraper:
             }
 
         return output
+

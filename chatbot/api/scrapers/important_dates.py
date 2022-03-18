@@ -28,10 +28,10 @@ class ImportantDatesScraper:
 
     def fetch(self):
         '''Fetches important dates from Brock and stores it in the database.'''
-        tables_list = pd.read_html('https://brocku.ca/important-dates')
+        tables_list = pd.read_html('https://brocku.ca/important-dates/all/')
 
         # Only store fall/winter, spring, and summer tables
-        self.store_tables(tables_list[:3])
+        self.store_tables(tables_list)
 
         return self.get()
 
@@ -52,7 +52,7 @@ class ImportantDatesScraper:
         '''Reads the contents of each table and stores it in the database.'''
 
         # Combine tables into a data frame
-        column_names = ['Occasion', 'Session', 'Stakeholder/Type', 'Date']
+        column_names = ['Occasion', 'Term', 'Stakeholder/Type', 'Date']
         frames = [pd.DataFrame(table, columns=column_names) for table in tables]
         frame = pd.concat(frames)
 
@@ -77,7 +77,7 @@ class ImportantDatesScraper:
         for index, row in enumerate(rows):
             output[index] = {
                 'occasion': row['Occasion'],
-                'session': row['Session'],
+                'term': row['Term'],
                 'stakeholder/type': row['Stakeholder/Type'],
                 'date': row['Date']
             }

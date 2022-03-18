@@ -1,5 +1,6 @@
-from flask import Flask, request
+import random
 
+from flask import Flask, request
 from scrapers.clubs import ClubScraper
 from scrapers.departments import DepartmentScraper
 from scrapers.important_dates import ImportantDatesScraper
@@ -7,8 +8,13 @@ from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
-from bot import Bot
-import random
+from scrapers.buildings import BuildingScraper
+from scrapers.weather import WeatherScraper
+from scrapers.course_details import CoursesDetailsScraper
+from scrapers.brock_news import brockNewsScraper
+from scrapers.events import eventScraper
+from scrapers.news import newsScraper
+from bot import process_message
 
 app = Flask(__name__)
 
@@ -20,65 +26,87 @@ scrapers = {
     'courses': CoursesScraper(),
     'programs': ProgramScraper(),
     'exams': ExamScraper(),
-    'restaurant': RestaurantScraper()
+    'restaurants': RestaurantScraper(),
+    'restaurant_list': RestaurantScraper(),
+    'buildings': BuildingScraper(),
+    'weather': WeatherScraper(),
+    'course_details': CoursesDetailsScraper(),
+    'brock_news': brockNewsScraper(),
+    'news': newsScraper(),
+    'events': eventScraper()
 }
-
 
 
 @app.route('/api', methods=['POST', 'GET'])
 def main():
     '''The main enpoint for requests made to the chatbot.'''
     request_data = request.get_json()
-    user_message = request_data['userMessage']
+    user_message = request_data['userMessage'].lower()
 
     # Default response
     response = {
         'content': 'Error, something went wrong.'
     }
-    msg = Bot.chat(user_message.lower())
+    print(response)
+    bot_response = process_message(user_message)
+    table_name, index, associated_indexes, messages = bot_response.values()
     # Output an attribute of the first element in the response as a test
-    if 'club' in msg[0]:
-        clubs = scrapers['clubs'].get()
-        response['content'] = clubs[msg[1]]['name'] + ":\n" + clubs[msg[1]]['description'] + "\nEmail: " + clubs[msg[1]]['email']
+    if (table_name is not None ):
+        data = scrapers[table_name].get()
 
-    elif 'department' in msg[0]:
-        departments = scrapers['departments'].get()
-        response['content'] = departments[msg[1]]['name'] + ":\n" + departments[msg[1]]['description'] + "\nLink:\t" + departments[msg[1]]['link'] + "\nSocial:\t" + departments[msg[1]]['social'] + "\nEmail:\t" + departments[msg[1]]['email'] + "\nPhone:\t" + departments[msg[1]]['extension']
+    if 'clubs' == table_name:
+        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nEmail: " + data[index]['email']
 
-    elif 'dates' in msg[0]:
-        dates = scrapers['dates'].get()
-        response['content'] = dates[msg[1]]['occasion'] + " " + dates[msg[1]]['date']
+    elif 'departments' == table_name:
+        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index][
+            'link'] + "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
+                              data[index]['extension']
 
-    elif 'restaurants' in msg[0]:
-        restaurant = scrapers['restaurant'].get()
-        response['content'] = restaurant[msg[1]]['name'] + " " + restaurant[msg[1]]['description'] + " " + restaurant[msg[1]]['hour']
+    elif 'dates' == table_name:
+        response['content'] = data[index]['occasion'] + " " + data[index]['date']
 
-    elif 'restaurant_list' in msg[0]:
-        restaurant = scrapers['restaurant'].get()
+    elif 'weather' == table_name:
+        response['content'] = data
+
+    elif 'events' == table_name:
+        response['content'] = data
+
+    elif 'brock_news' == table_name:
+        response['content'] = data
+
+    elif 'news' == table_name:
+        response['content'] = data
+
+    elif 'course_details' == table_name:
+        response['content'] = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
+
+    elif 'buildings' == table_name:
+        response['content'] = data[index]['code'] + " code stands for " + data[index]['name'] + "\nClick the link to learn more: " + data[index]['link']
+
+    elif 'restaurants' == table_name:
+        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
+
+    elif 'restaurant_list' == table_name:
         msg_temp = ''
-        for index in restaurant:
-            msg_temp = msg_temp + "\n" + restaurant[index]['name']
-        response['content'] = msg[1] + msg_temp + "\nIs there one you would like more information on?"
+        for index in data:
+            msg_temp = msg_temp + "\n" + data[index]['name']
+        response['content'] = messages + msg_temp + "\nIs there one you would like more information on?"
 
-    elif 'exam' in msg[0]:
-        exams = scrapers['exams'].get()
-        response['content'] = exams[msg[1]]['course_code'] + " " + exams[msg[1]]['duration'] + " " + exams[msg[1]]['day'] + " " + exams[msg[1]]['start'] + " " + exams[msg[1]]['end'] + " " + exams[msg[1]]['location']
+    elif 'exams' == table_name:
+        response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index]['day'] + " " + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
 
-    elif 'programs' in msg[0]:
-        programs = scrapers['programs'].get()
-        response['content'] = programs[msg[1]]['name'] + "\n" + programs[msg[1]]['description'] + "\n" + programs[msg[1]]['prerequisites']
+    elif 'programs' == table_name:
+        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
 
-    elif 'courses' in msg[0]:
-        courses = CoursesScraper().get()
+    elif 'courses' == table_name:
         msg_temp = ''
-        for i in range(msg[3]):
-            x = msg[1] - i
-            msg_temp = msg_temp + "\n" + courses[x]['duration'] + " " + courses[x]['day'] + " " + courses[x]['time'] + " " + courses[x]['type'] + " " + courses[x]['instructor']
-        response['content'] = courses[msg[1]]['course_code'] + " " + courses[msg[1]]['title'] + msg_temp
+        for i in range(associated_indexes):
+            x = index - i
+            msg_temp = msg_temp + "\n" + data[x]['duration'] + " " + data[x]['day'] + " " + data[x]['time'] + " " + data[x]['type'] + " " + data[x]['instructor']
+        response['content'] = data[index]['course_code'] + " " + data[index]['title'] + msg_temp
 
     else:
-        response['content'] = msg
-
+        response['content'] = random.choice(messages)
 
     return response
 
