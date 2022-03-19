@@ -1,59 +1,59 @@
 /* Modal Styles */
 
 .shadow {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 9999;
-	background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    background:rgba(0, 0, 0, 0.7);
 }
 
 .modal {
-	max-width: 80%;
-	padding: 25px;
-	position: fixed;
-	text-align: center;
-	background: white;
+    max-width: 80%;
+    padding: 25px;
+    position: fixed;
+    text-align: center;
+    background: white;
 }
 
 .modalIcon {
-	width: 80px;
+    width: 80px;
 }
 
 .title {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .intro {
-	font-size: 1.2rem;
-	font-weight: 400;
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .info {
-	margin: 1rem;
+    margin: 1rem;
 }
 
 .modal p {
-	padding-bottom: 1rem;
-	font-size: small;
-	font-style: italic;
-	color: rgb(141, 138, 138);
+    padding-bottom: 1rem;
+    font-size: small;
+    font-style: italic;
+    color: rgb(141, 138, 138);
 }
 
 .modal input {
-	padding: 6px 18px;
-	-webkit-appearance: none;
-	border: none;
-	background-color: var(--brock-primary);
-	color: white;
-	cursor: pointer;
+    padding: 6px 18px;
+    -webkit-appearance: none;
+    border: none;
+    background-color: var(--brock-primary);
+    color: white;
+    cursor: pointer;
 }
 
 .modal input:hover {
-	background-color: black;
+    background-color: black;
 }
