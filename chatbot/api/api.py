@@ -14,6 +14,7 @@ from scrapers.course_details import CoursesDetailsScraper
 from scrapers.brock_news import brockNewsScraper
 from scrapers.events import eventScraper
 from scrapers.news import newsScraper
+from scrapers.transportation import TransportationScraper
 from bot import process_message
 
 app = Flask(__name__)
@@ -33,7 +34,8 @@ scrapers = {
     'course_details': CoursesDetailsScraper(),
     'brock_news': brockNewsScraper(),
     'news': newsScraper(),
-    'events': eventScraper()
+    'events': eventScraper(),
+    'transportation': TransportationScraper()
 }
 
 
@@ -63,6 +65,9 @@ def main():
 
     elif 'dates' == table_name:
         response['content'] = data[index]['occasion'] + " " + data[index]['date']
+
+    elif 'transportation' == table_name:
+        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\nClick here for a " + data[index]['name'] + " map: " + data[index]['link']
 
     elif 'weather' == table_name:
         response['content'] = data

@@ -31,6 +31,7 @@ def naturalWords(s, words):
     for st in s_words:
         for i, w in enumerate(words):
             if w == st:
+                print(w)
                 bag[i] = 1
 
     return numpy.array(bag)
@@ -43,7 +44,6 @@ def spell_check(message):
         message = message.replace(err.word, str(corr.correct()))
     print(message)
     return message
-
 
 
 def process_message(message):

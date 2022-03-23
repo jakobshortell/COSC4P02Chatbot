@@ -75,10 +75,10 @@ sports
 performance
 suites
 university
-retirees
+retirees’
 association
 (bura)
-students
+students’
 union
 (busu)
 university's
@@ -356,8 +356,8 @@ theory
 mind
 thrive
 week
-tom
-hudlick
+tomáš
+hudlický
 policies
 secretariat
 administration
@@ -366,7 +366,7 @@ vice-provost
 volk
 welcome
 (o-week)
-womens
+women’s
 gender
 wordpress
 (internal)
@@ -626,7 +626,7 @@ biophysics
 double
 degree
 teacher
-
+–
 intermediate/senior
 (grades
 7-12)
@@ -648,7 +648,7 @@ interactive
 italian
 accelerate
 into
-masters
+master’s
 statistics
 physical
 consecutive
@@ -671,7 +671,7 @@ tim
 hortons
 tower
 starbucks
-nobus
+nobu’s
 noodles-
 fall
 2021-
@@ -683,10 +683,10 @@ booster
 juice
 burrito
 boyz
-harveys
+harvey’s
 subway
 greens
-isaacs
+isaac’s
 al
 bar-a
 bar-b
@@ -760,3 +760,9 @@ wc-b
 wc-c
 wc-d
 wh
+st.
+catharines/thorold
+regional
+transit
+welland
+falls

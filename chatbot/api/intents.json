@@ -288,6 +288,62 @@
       ]
     },
     {
+      "tag": "St. Catharines/Thorold departments",
+      "patterns": [
+        "St. Catharines/Thorold transit ",
+        "can you tell me about the St. Catharines/Thorold transit ",
+        "can you get information on the St. Catharines/Thorold transit"
+      ],
+      "responses": [
+        "transportation",
+        0,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "Niagara Regional Transit departments",
+      "patterns": [
+        "Niagara Regional Transit transit ",
+        "can you tell me about the Niagara Regional Transit transit ",
+        "can you get information on the Niagara Regional Transit transit"
+      ],
+      "responses": [
+        "transportation",
+        1,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "Welland departments",
+      "patterns": [
+        "Welland transit ",
+        "can you tell me about the Welland transit ",
+        "can you get information on the Welland transit"
+      ],
+      "responses": [
+        "transportation",
+        2,
+        null,
+        null
+      ]
+    },
+    {
+      "tag": "Niagara Falls departments",
+      "patterns": [
+        "Niagara Falls transit ",
+        "can you tell me about the Niagara Falls transit ",
+        "can you get information on the Niagara Falls transit"
+      ],
+      "responses": [
+        "transportation",
+        3,
+        null,
+        null
+      ]
+    },
+    {
       "tag": "A-Z Learning Services departments",
       "patterns": [
         "A-Z Learning Services department ",

@@ -7,6 +7,7 @@ from scrapers.courses import CoursesScraper
 from scrapers.programs import ProgramScraper
 from scrapers.restaurant import RestaurantScraper
 from scrapers.buildings import BuildingScraper
+from scrapers.transportation import TransportationScraper
 
 departments = DepartmentScraper().get()
 clubs = ClubScraper().get()
@@ -14,9 +15,9 @@ courses = CoursesScraper().get()
 programs = ProgramScraper().get()
 restaurant = RestaurantScraper().get()
 buildings = BuildingScraper().get()
+transportation = TransportationScraper().get()
 
-
-f = open("temp.txt", "w")
+f = open("temp.txt", "w", encoding='utf-8')
 
 for i in departments:
     words = departments[i]['name'].lower()
@@ -48,6 +49,11 @@ for i in buildings:
     words = words.replace(' ', '\n')
     f.write(words + '\n')
 
+for i in transportation:
+    words = transportation[i]['name'].lower()
+    words = words.replace(' ', '\n')
+    f.write(words + '\n')
+
 f.close()
 
 line_hash = set()
@@ -55,13 +61,11 @@ line_hash = set()
 f = open("customWords.txt", "w")
 
 for line in open("temp.txt", "r"):
-  hash_value = hashlib.md5(line.rstrip().encode('utf-8')).hexdigest()
-  if hash_value not in line_hash:
-    f.write(line)
-    line_hash.add(hash_value)
+    hash_value = hashlib.md5(line.rstrip().encode('utf-8')).hexdigest()
+    if hash_value not in line_hash:
+        f.write(line)
+        line_hash.add(hash_value)
 
 f.close()
 
 os.remove("temp.txt")
-
-

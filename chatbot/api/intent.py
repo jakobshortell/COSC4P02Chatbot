@@ -9,6 +9,7 @@ from scrapers.exams import ExamScraper
 from scrapers.restaurant import RestaurantScraper
 from scrapers.course_details import CoursesDetailsScraper
 from scrapers.buildings import BuildingScraper
+from scrapers.transportation import TransportationScraper
 
 #dates = ImportantDatesScraper().get()
 departments = DepartmentScraper().get()
@@ -19,6 +20,7 @@ exams = ExamScraper().get()
 restaurant = RestaurantScraper().get()
 details = CoursesDetailsScraper().get()
 buildings = BuildingScraper().get()
+transportation = TransportationScraper().get()
 
 cnt = 1
 tagTemp = ""
@@ -260,6 +262,21 @@ with open('intents.json', 'r+') as f:
     f.truncate(0)
     f.seek(0)
     json.dump(intent, f)
+
+    for i in transportation:
+        tag = transportation[i]['name'] + " departments"
+        pattern = transportation[i]['name'] + " transit ", "can you tell me about the " + transportation[i][
+            'name'] + " transit ", "can you get information on the " + transportation[i]['name'] + " transit"
+        response = 'transportation', i, None, None
+        new = {
+            "tag": tag,
+            "patterns":
+                pattern,
+            "responses":
+                response
+        }
+        intent['intents'].append(new)
+
 
     for i in departments:
         tag = departments[i]['name'] + " departments"
