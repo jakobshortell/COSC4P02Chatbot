@@ -11,7 +11,7 @@ from textblob import TextBlob
 from nltk.stem.lancaster import LancasterStemmer
 
 
-#nltk.download('punkt')
+# nltk.download('punkt')
 
 stemmer = LancasterStemmer()
 with open("intents.json") as file:
@@ -23,6 +23,7 @@ with gzip.open('data', 'rb') as f:
 dic = enchant.DictWithPWL("en_US", "customWords.txt")
 chkr = SpellChecker(dic)
 
+
 def naturalWords(s, words):
     bag = [0 for _ in range(len(words))]
     s_words = nltk.word_tokenize(s)
@@ -31,10 +32,10 @@ def naturalWords(s, words):
     for st in s_words:
         for i, w in enumerate(words):
             if w == st:
-                print(w)
                 bag[i] = 1
 
     return numpy.array(bag)
+
 
 def spell_check(message):
 
@@ -42,7 +43,6 @@ def spell_check(message):
     for err in chkr:
         corr = TextBlob(err.word)
         message = message.replace(err.word, str(corr.correct()))
-    print(message)
     return message
 
 
@@ -70,11 +70,11 @@ def process_message(message):
             if tag['tag'] == tag_index:
                 table_name, index, associated_indexes, messages = tag['responses']
                 msg = {
-                        "table_name": None or table_name,
-                        "index": None or index,
-                        "associated_indexes": None or associated_indexes,
-                        "messages": None or messages
-                    }
+                    "table_name": None or table_name,
+                    "index": None or index,
+                    "associated_indexes": None or associated_indexes,
+                    "messages": None or messages
+                }
     else:
         msg = {
             "table_name": None,
