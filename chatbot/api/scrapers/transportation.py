@@ -43,15 +43,6 @@ class TransportationScraper:
 
         return self.read_transportation(names_list, desc_list, links_list)
 
-    # def fetch(self):
-    # 	'''Fetches transportation data from Brock and stores it in the database.'''
-    # 	self.browser.open('https://www.brockbusu.ca/services/transit/')
-    # 	# Get all transportation and read them into the database
-    # 	transportation_list = self.browser.page.find_all('div', attrs={
-    # 		'class': 'x-column x-sm x-1-1'
-    # 	})
-    # 	return self.read_transportation(transportation_list)
-
     def get(self):
         '''Gets transportation from the chatbot database.'''
 
@@ -65,26 +56,6 @@ class TransportationScraper:
 
         return transportation
 
-    # def read_transportation(self, transportation_list):
-    # 	'''Extracts data from the list of transportation.'''
-    # 	output = {}
-
-    # 	for index, transportation in enumerate(transportation_list):
-
-    # 		# Pull transportation information
-    # 		entry = {
-    # 			'name': self.get_name(transportation),
-    # 			'description': self.get_description(transportation)
-    # 		}
-
-    # 		output[index] = entry
-
-    # 	# Store info in the database
-    # 	self.store_transportation(output)
-
-    # 	return output
-
-    # def read_transportation(self, transportation_list):
     def read_transportation(self, name_list, desc_list, link_list):
         '''Extracts data from the list of transportation.'''
         output = {}
@@ -109,15 +80,6 @@ class TransportationScraper:
             }
             output[i] = entry
 
-        # # Pull transportation information
-        # entry = {
-        # 	'name': self.get_name(transportation),
-        # 	'description': self.get_description(transportation)
-        # }
-
-        # output[index] = entry
-
-        # Store info in the database
         self.store_transportation(output)
 
         return output
@@ -139,12 +101,6 @@ class TransportationScraper:
                 except:
                     return "N/A"
 
-            # if(d.name == 'div'):
-            # 	content = d.find('div', attr={'class': 'x-tab-pane active'}).contents
-            # 	for c in content:
-            # 		detail = c.find('div', attr={'class':'x-column x-sm x-3-4'}).text
-            # 		# return detail
-            # second ~ fourth items
         except AttributeError:
             return "N/A"
 

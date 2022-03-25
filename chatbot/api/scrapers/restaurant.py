@@ -29,9 +29,7 @@ class RestaurantScraper:
         restaurants_list = self.browser.page.find_all('div', attrs={
             'class': 'wpb_wrapper'
         })
-        # restaurants_list = self.browser.page.find_all('div', attrs={
-        # 	'class': 'wpb_text_column'
-        # })
+        
         return self.read_restaurants(restaurants_list)
 
     def get(self):
@@ -133,29 +131,6 @@ class RestaurantScraper:
 
         except:
             return "N/A"
-
-        # paragraphs = ""
-        # data = restaurant.find('div', attrs={'class': 'wpb_wrapper'}).contents
-
-        # for d in data :
-        # 	try :
-        # 		if (d.name == 'p') :
-        # 			paragraphs += d.text + '\n'
-        # 	except:
-        # 		ignore_errors
-
-        # return paragraphs
-
-    # except:
-    # 	try :
-    # 		paragraphs = ""
-    # 		ps = restaurant.contents
-
-    # 		for p in ps :
-    # 			if (p.name == 'p') :
-    # 				paragraphs += p.text + '\n'
-
-    # 		return paragraphs
 
     def get_hour(self, restaurant, i):
 
