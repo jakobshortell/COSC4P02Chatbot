@@ -51,23 +51,28 @@ def main():
     }
     bot_response = process_message(user_message)
     table_name, index, associated_indexes, messages = bot_response.values()
+
     # Output an attribute of the first element in the response as a test
-    if (table_name is not None ):
+    if (table_name is not None):
         data = scrapers[table_name].get()
 
     if 'clubs' == table_name:
-        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nEmail: " + data[index]['email']
+        response['content'] = data[index]['name'] + ":\n" + \
+            data[index]['description'] + "\nEmail: " + data[index]['email']
 
     elif 'departments' == table_name:
         response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index][
             'link'] + "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
-                              data[index]['extension']
+            data[index]['extension']
 
     elif 'dates' == table_name:
-        response['content'] = data[index]['occasion'] + " " + data[index]['date']
+        response['content'] = data[index]['occasion'] + \
+            " " + data[index]['date']
 
     elif 'transportation' == table_name:
-        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\nClick here for a " + data[index]['name'] + " map: " + data[index]['link']
+        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + \
+            "\nClick here for a " + \
+            data[index]['name'] + " map: " + data[index]['link']
 
     elif 'weather' == table_name:
         response['content'] = data
@@ -82,32 +87,45 @@ def main():
         response['content'] = data
 
     elif 'course_details' == table_name:
-        response['content'] = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
+        response['content'] = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + \
+            "\nRestrictions: " + data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + \
+            "\n" + data[index]['corequisite'] + "\n" + \
+            data[index]['notes'] + "\n" + data[index]['replace_grade']
 
     elif 'buildings' == table_name:
-        response['content'] = data[index]['code'] + " code stands for " + data[index]['name'] + "\nClick the link to learn more: " + data[index]['link']
+        response['content'] = data[index]['code'] + " code stands for " + \
+            data[index]['name'] + "\nClick the link to learn more: " + \
+            data[index]['link']
 
     elif 'restaurants' == table_name:
-        response['content'] = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
+        response['content'] = data[index]['name'] + ":\n" + \
+            data[index]['description'] + "\n" + data[index]['hour']
 
     elif 'restaurant_list' == table_name:
         msg_temp = ''
         for index in data:
             msg_temp = msg_temp + "\n" + data[index]['name']
-        response['content'] = messages + msg_temp + "\nIs there one you would like more information on?"
+        response['content'] = messages + msg_temp + \
+            "\nIs there one you would like more information on?"
 
     elif 'exams' == table_name:
-        response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index]['day'] + " " + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
+        response['content'] = data[index]['course_code'] + " " + data[index]['duration'] + " " + \
+            data[index]['day'] + " " + data[index]['start'] + " " + \
+            data[index]['end'] + " " + data[index]['location']
 
     elif 'programs' == table_name:
-        response['content'] = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
+        response['content'] = data[index]['name'] + "\n" + \
+            data[index]['description'] + "\n" + data[index]['prerequisites']
 
     elif 'courses' == table_name:
         msg_temp = ''
         for i in range(associated_indexes):
             x = index - i
-            msg_temp = msg_temp + "\n" + data[x]['duration'] + " " + data[x]['day'] + " " + data[x]['time'] + " " + data[x]['type'] + " " + data[x]['instructor']
-        response['content'] = data[index]['course_code'] + " " + data[index]['title'] + msg_temp
+            msg_temp = msg_temp + "\n" + data[x]['duration'] + " " + data[x]['day'] + \
+                " " + data[x]['time'] + " " + \
+                data[x]['type'] + " " + data[x]['instructor']
+        response['content'] = data[index]['course_code'] + \
+            " " + data[index]['title'] + msg_temp
 
     else:
         response['content'] = random.choice(messages)
