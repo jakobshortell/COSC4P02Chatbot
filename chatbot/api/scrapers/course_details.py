@@ -36,7 +36,6 @@ class CoursesDetailsScraper:
         """Fetches course details from Brock and stores it in the database."""
         output = {}
         program_links = self.fetch_programs()
-        print(program_links)
         # Visit all the program links that were found
         for link in program_links:
             output[link.text] = self.fetch_course_details(link)
@@ -89,7 +88,6 @@ class CoursesDetailsScraper:
         '''Extracts course details from a given page in the brock calendar'''
         output = {}
         self.browser.follow_link(page_link)
-        print("Cur URL: ", self.browser.url)
         # Get the text version of the site
         course_details = self.browser.page.get_text()
         # Turn the raw text into something that can be used
@@ -98,7 +96,8 @@ class CoursesDetailsScraper:
             # Since we don't know what data this course actually has, so we need to find it
             # We know that indexes 0 and 1 always will hold course code and name, so they don't need to be evaluated
 
-            code_and_description = self.get_alt_course_code_and_desc(course[2:4])
+            code_and_description = self.get_alt_course_code_and_desc(
+                course[2:4])
             details = self.fetch_details(course[3:])
             entry = {
                 'course_code': course[0],
@@ -191,7 +190,8 @@ class CoursesDetailsScraper:
             prerequisite = re.search('Prerequisite\(s\): ', index)
             corequisite = re.search('Corequisite\(s\): ', index)
             notes = re.search('Note: ', index)
-            replace_grade = re.search('Completion of this course will replace previous', index)
+            replace_grade = re.search(
+                'Completion of this course will replace previous', index)
             if hours is not None:
                 details[0] = index[:-1]
             elif restriction is not None:
@@ -212,7 +212,6 @@ class CoursesDetailsScraper:
         start_index = 0
         self.browser.open('https://brocku.ca/webcal/undergrad/')
         all_page_links = self.browser.links()
-        print("link text", all_page_links)
         for index, link in enumerate(all_page_links):
             # The list of programs is in between "Life at Brock" and "Undeclared Arts and Undeclared Science"
             # Find the index of each and return the list of program URLs to visit
@@ -229,4 +228,3 @@ class CoursesDetailsScraper:
             if found_count == 2:
                 return course_details[index:]
         return course_details
-
