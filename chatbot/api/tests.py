@@ -8,11 +8,100 @@ class GeneralTests(unittest.TestCase):
 
     def test_greeting(self):
         '''Saying a greeting to the chatbot.'''
-        pass
+        self.assertEqual(
+            process_message('Hello'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Hi there, how can I help?',
+                    'Hello, there, how can I help you today?',
+                    'Good to see you, do you have any question?'
+                ]
+            }
+        )
+        self.assertEqual(
+            process_message('Hey there!'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Hi there, how can I help?',
+                    'Hello, there, how can I help you today?',
+                    'Good to see you, do you have any question?'
+                ]
+            }
+        )
+        self.assertEqual(
+            process_message('Hi'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Hi there, how can I help?',
+                    'Hello, there, how can I help you today?',
+                    'Good to see you, do you have any question?'
+                ]
+            }
+        )
 
     def test_farewell(self):
         '''Saying goodbye to the chatbot.'''
-        pass
+        self.assertEqual(
+            process_message('Bye'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Bye, hope to talk to you again soon!',
+                    'Good bye, its been great talking to you!',
+                    'Glad I could help, Bye!'
+                ]
+            }
+        )
+        self.assertEqual(
+            process_message('Goodbye'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Bye, hope to talk to you again soon!',
+                    'Good bye, its been great talking to you!',
+                    'Glad I could help, Bye!'
+                ]
+            }
+        )
+
+    def test_misc(self):
+        '''Saying any miscellaneous questions unrelated to the scraped data.'''
+        self.assertEqual(
+            process_message('Who made you?'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara'
+                ]
+            }
+        )
+        self.assertEqual(
+            process_message('Easter egg'),
+            {
+                'associated_indexes': None,
+                'index': None,
+                'messages': [
+                    'This is an Easter-egg!',
+                    'Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag'
+                ],
+                'table_name': None
+            }
+        )
 
 
 class BrockBuildingCodeTests(unittest.TestCase):
