@@ -93,13 +93,13 @@ class GeneralTests(unittest.TestCase):
         self.assertEqual(
             process_message('Easter egg'),
             {
-                'associated_indexes': None,
+                'table_name': None,
                 'index': None,
+                'associated_indexes': None,
                 'messages': [
                     'This is an Easter-egg!',
                     'Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag'
-                ],
-                'table_name': None
+                ]
             }
         )
 
@@ -107,9 +107,48 @@ class GeneralTests(unittest.TestCase):
 class BrockBuildingCodeTests(unittest.TestCase):
     '''Tests regarding the request for building codes Brock University.'''
 
+    def test_building_name(self):
+        '''Requesting a building name.'''
+        self.assertEqual(
+            process_message('What is the name of the building with code WH?'),
+            {
+                'table_name': 'buildings',
+                'index': 73,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
+        self.assertEqual(
+            process_message('Which building has code MCJ?'),
+            {
+                'table_name': 'buildings',
+                'index': 36,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
+
     def test_building_code(self):
         '''Requesting a building code.'''
-        pass
+        self.assertEqual(
+            process_message('What is the building code of Welch Hall?'),
+            {
+                'table_name': 'buildings',
+                'index': 73,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
+        self.assertEqual(
+            process_message(
+                'Can you tell me the building code of Mackenzie Chown J Block?'),
+            {
+                'table_name': 'buildings',
+                'index': 36,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
 
 
 class BrockClubTests(unittest.TestCase):
@@ -127,6 +166,16 @@ class BrockClubTests(unittest.TestCase):
                 'messages': None
             }
         )
+        self.assertEqual(
+            process_message(
+                'What is the email for the chess club?'),
+            {
+                'table_name': 'clubs',
+                'index': 21,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
 
     def test_club_description(self):
         '''Requesting the description of a club.'''
@@ -137,6 +186,31 @@ class BrockClubTests(unittest.TestCase):
                 'index': 1,
                 'associated_indexes': None,
                 'messages': None
+            }
+        )
+        self.assertEqual(
+            process_message(
+                'What is the chess club about?'),
+            {
+                'table_name': 'clubs',
+                'index': 21,
+                'associated_indexes': None,
+                'messages': None
+            }
+        )
+
+    def test_unknown_club(self):
+        '''Requesting club info that the bot doesn't have.'''
+        self.assertEqual(
+            process_message(
+                'Can you tell me about the computer science club?'),
+            {
+                'table_name': 'clubs',
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'I don\'t have any information about that club sorry.'
+                ]
             }
         )
 
