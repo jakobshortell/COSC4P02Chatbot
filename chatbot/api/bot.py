@@ -13,11 +13,20 @@ from nltk.stem.lancaster import LancasterStemmer
 
 # nltk.download('punkt')
 
+language = 'en'
+
 stemmer = LancasterStemmer()
+<<<<<<< Updated upstream
 with open("intents.json") as file:
     data = json.load(file)
 
 with gzip.open('data', 'rb') as f:
+=======
+with open("intents_" + language + "/intents.json") as file:
+    data = json.load(file)
+
+with gzip.open('model_' + language + '/data', 'rb') as f:
+>>>>>>> Stashed changes
     words, labels, training, output = pickle.load(f)
 
 dic = enchant.DictWithPWL("en_US", "customWords.txt")
@@ -59,7 +68,11 @@ def process_message(message):
     net = tflearn.regression(net)
 
     model = tflearn.DNN(net)
+<<<<<<< Updated upstream
     model.load('model.h5')
+=======
+    model.load('model_' + language + '/model.h5')
+>>>>>>> Stashed changes
 
     results = model.predict([naturalWords(message, words)])[0]
     results_index = numpy.argmax(results)
