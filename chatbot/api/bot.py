@@ -22,7 +22,7 @@ with open("intents_" + language + "/intents.json") as file:
 with gzip.open('model_' + language + '/data', 'rb') as f:
     words, labels, training, output = pickle.load(f)
 
-dic = enchant.DictWithPWL("en_US", "intents/customWords.txt")
+dic = enchant.DictWithPWL("en_US", "intents_en/customWords.txt")
 chkr = SpellChecker(dic)
 
 
