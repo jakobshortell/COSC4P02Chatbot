@@ -39,7 +39,7 @@ scrapers = {
     'contacts': ContactScraper()
 }
 def club(data, index, attributes):
-    if (attributes == 'contact'):
+    if attributes == 'contact':
         msg = data[index]['name'] + ":\nEmail: " + data[index]['email']
     else:
         msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nEmail: " + data[index]['email']
@@ -67,20 +67,28 @@ def transport(data, index):
           data[index]['name'] + " map: " + data[index]['link']
     return msg
 
-def details(data, index):
-    msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + \
-          "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + \
-          data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + \
-          "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
+def details(data, index, attributes):
+    if attributes == 'prerequisites':
+        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nPrerequisites: " + \
+              data[index]['prerequisite']
+    else:
+        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + \
+              "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + \
+              data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + \
+              "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
     return msg
 
-def building(data, index):
-    msg = data[index]['code'] + " code stands for " + data[index]['name'] + "\nClick the link to learn more: " + \
-          data[index]['link']
+def building(data, index, attributes):
+    if attributes == 'code':
+        msg = "The code for " + data[index]['name'] + " is " + data[index]['code'] + "\nClick the link to learn more: "\
+              + data[index]['link']
+    else:
+        msg = data[index]['code'] + " code stands for " + data[index]['name'] + "\nClick the link to learn more: " + \
+              data[index]['link']
     return  msg
 
 def restaurant(data, index):
-    if (index is not None):
+    if index is not None:
         msg = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
     else:
         msg = 'Here is a list of restaurants available at Brock:'
@@ -141,10 +149,10 @@ def main():
         response['content'] = transport(data, index)
 
     elif 'course_details' == table_name:
-        response['content'] = details(data, index)
+        response['content'] = details(data, index, attributes)
 
     elif 'buildings' == table_name:
-        response['content'] = building(data, index)
+        response['content'] = building(data, index, attributes)
 
     elif 'restaurants' == table_name:
         response['content'] = restaurant(data, index)

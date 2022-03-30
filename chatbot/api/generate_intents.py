@@ -1,16 +1,16 @@
 import json
 import custom_words
-from intents.intent_misc import IntentMisc
-from intents.intent_clubs import IntentClub
-from intents.intent_departments import IntentDepartment
-from intents.intent_courses import IntentCourse
-from intents.intent_programs import IntentProgram
-from intents.intent_exam import IntentExam
-from intents.intent_restaurants import IntentRestaurant
-from intents.intent_course_details import IntentCoursesDetails
-from intents.intent_buildings import IntentBuilding
-from intents.intent_transportation import IntentTransportation
-from intents.intent_contacts import IntentContact
+from intents_en.intent_misc import IntentMisc
+from intents_en.intent_clubs import IntentClub
+from intents_en.intent_departments import IntentDepartment
+from intents_en.intent_courses import IntentCourse
+from intents_en.intent_programs import IntentProgram
+from intents_en.intent_exam import IntentExam
+from intents_en.intent_restaurants import IntentRestaurant
+from intents_en.intent_course_details import IntentCoursesDetails
+from intents_en.intent_buildings import IntentBuilding
+from intents_en.intent_transportation import IntentTransportation
+from intents_en.intent_contacts import IntentContact
 
 intents = [
     IntentMisc(),
