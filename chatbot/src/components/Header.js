@@ -7,6 +7,7 @@ import HeaderCSS from "../css/Header.module.css";
 import brockLogo from "../assets/brocklogo.jpeg";
 import settingsIcon from "../assets/setting.png";
 import helpIcon from "../assets/help.png";
+import copyIcon from "../assets/copy.png";
 
 const Header = ({ modal }) => {
 	const settingsMenu = useRef();
@@ -23,6 +24,23 @@ const Header = ({ modal }) => {
 			menu.style.display = "none";
 		}
 	};
+	const saveLogs = () => {
+		const lines = new Array();
+		let messages = document.querySelectorAll('[class*="Message_messageBubble"]');
+		messages.forEach(function(message){
+			let messagecontent = message.querySelectorAll("span");
+			lines.push(messagecontent[0].innerHTML.concat(" (", messagecontent[1].innerHTML.concat("): ", messagecontent[2].innerHTML)));
+			
+		});
+		let toCopy = lines.join('\n');
+		alert("Chatlog copied to clipboard");
+		var copy = document.createElement("textarea");
+		document.body.appendChild(copy);
+		copy.value = toCopy;
+		copy.select();
+		document.execCommand("copy");
+		document.body.removeChild(copy);
+	};
 
 	return (
 		<header className={HeaderCSS.chatbotHeader}>
@@ -35,14 +53,26 @@ const Header = ({ modal }) => {
 				<li className={HeaderCSS.listItem}>
 					<img
 						className={`${HeaderCSS.icon} ${HeaderCSS.help}`}
+						title="Help"
 						src={helpIcon}
 						alt="help"
 						onClick={displayModal}
 					/>
 				</li>
+				<li className={HeaderCSS.listItem}>
+					<img 
+						className={`${HeaderCSS.icon} ${HeaderCSS.copy}`}
+						title="Copy Chatlog to Clipboard"
+						src={copyIcon}
+						alt="Copy Chatlog"
+						onClick={saveLogs}
+					/>
+					
+				</li>
 				<li className={`${HeaderCSS.listItem} ${HeaderCSS.dropdown}`}>
 					<img
 						className={`${HeaderCSS.icon} ${HeaderCSS.settings}`}
+						title="Settings"
 						src={settingsIcon}
 						alt="settings"
 						onClick={toggleSettings}
@@ -56,8 +86,10 @@ const Header = ({ modal }) => {
 							<input type="checkbox" />
 							<span>same lol</span>
 						</li>
+						
 					</ul>
 				</li>
+				
 			</ul>
 		</header>
 	);

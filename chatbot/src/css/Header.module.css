@@ -67,6 +67,15 @@
 	animation: wobble 0.3s linear;
 }
 
+.copy {
+	height: calc(var(--header-height) * 0.4);
+	width: calc(var(--header-height) * 0.4);
+	padding: calc(var(--header-height) * 0.15);
+}
+.copy:hover {
+	animation: bounce 0.3s linear;
+}
+
 .settings {
 	height: calc(var(--header-height) * 0.4);
 	width: calc(var(--header-height) * 0.4);
@@ -87,5 +96,16 @@
 	}
 	100% {
 		-webkit-transform: rotate(-20deg);
+	}
+}
+@keyframes bounce {
+	40% {
+		-webkit-transform: scale(1.2);
+	}
+	70% {
+		-webkit-transform: scale(0.8);
+	}
+	100% {
+		-webkit-transform: scale(1);
 	}
 }

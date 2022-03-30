@@ -28,6 +28,7 @@
     flex-direction: column;
 }
 
+
 .userMessageBubble {
     border-bottom-right-radius: 0;
 }
@@ -53,12 +54,18 @@
     opacity: .75;
 }
 
+.link {
+    height: 15px;
+    width: 15px;
+    padding-left: 5px;
+
+}
+
 a {
     color: var(--brock-primary);
     text-underline-offset: 4px;
-    display: flex;
-    width: 180px;
-    white-space: nowrap;
+    width: 50px;
+    white-space:pre-wrap;
     overflow: hidden;
-}
+  }
 
