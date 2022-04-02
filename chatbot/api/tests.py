@@ -18,7 +18,8 @@ class GeneralTests(unittest.TestCase):
                     'Hi there, how can I help?',
                     'Hello, there, how can I help you today?',
                     'Good to see you, do you have any question?'
-                ]
+                ],
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -31,7 +32,8 @@ class GeneralTests(unittest.TestCase):
                     'Hi there, how can I help?',
                     'Hello, there, how can I help you today?',
                     'Good to see you, do you have any question?'
-                ]
+                ],
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -44,7 +46,8 @@ class GeneralTests(unittest.TestCase):
                     'Hi there, how can I help?',
                     'Hello, there, how can I help you today?',
                     'Good to see you, do you have any question?'
-                ]
+                ],
+                'attributes': None
             }
         )
 
@@ -60,7 +63,8 @@ class GeneralTests(unittest.TestCase):
                     'Bye, hope to talk to you again soon!',
                     'Good bye, its been great talking to you!',
                     'Glad I could help, Bye!'
-                ]
+                ],
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -73,7 +77,8 @@ class GeneralTests(unittest.TestCase):
                     'Bye, hope to talk to you again soon!',
                     'Good bye, its been great talking to you!',
                     'Glad I could help, Bye!'
-                ]
+                ],
+                'attributes': None
             }
         )
 
@@ -87,7 +92,8 @@ class GeneralTests(unittest.TestCase):
                 'associated_indexes': None,
                 'messages': [
                     'I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara'
-                ]
+                ],
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -99,7 +105,8 @@ class GeneralTests(unittest.TestCase):
                 'messages': [
                     'This is an Easter-egg!',
                     'Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag'
-                ]
+                ],
+                'attributes': None
             }
         )
 
@@ -115,7 +122,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
                 'table_name': 'buildings',
                 'index': 73,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -124,7 +132,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
                 'table_name': 'buildings',
                 'index': 36,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': None
             }
         )
 
@@ -136,7 +145,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
                 'table_name': 'buildings',
                 'index': 73,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': 'code'
             }
         )
         self.assertEqual(
@@ -146,7 +156,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
                 'table_name': 'buildings',
                 'index': 36,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': 'code'
             }
         )
 
@@ -163,7 +174,8 @@ class BrockClubTests(unittest.TestCase):
                 'table_name': 'clubs',
                 'index': 1,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': 'contact'
             }
         )
         self.assertEqual(
@@ -173,7 +185,8 @@ class BrockClubTests(unittest.TestCase):
                 'table_name': 'clubs',
                 'index': 21,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': 'contact'
             }
         )
 
@@ -185,7 +198,8 @@ class BrockClubTests(unittest.TestCase):
                 'table_name': 'clubs',
                 'index': 1,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': None
             }
         )
         self.assertEqual(
@@ -195,7 +209,8 @@ class BrockClubTests(unittest.TestCase):
                 'table_name': 'clubs',
                 'index': 21,
                 'associated_indexes': None,
-                'messages': None
+                'messages': None,
+                'attributes': None
             }
         )
 
@@ -205,12 +220,13 @@ class BrockClubTests(unittest.TestCase):
             process_message(
                 'Can you tell me about the computer science club?'),
             {
-                'table_name': 'clubs',
+                'table_name': None,
                 'index': None,
                 'associated_indexes': None,
                 'messages': [
                     'I don\'t have any information about that club sorry.'
-                ]
+                ],
+                'attributes': None
             }
         )
 
