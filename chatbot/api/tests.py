@@ -224,7 +224,7 @@ class BrockClubTests(unittest.TestCase):
                 'index': None,
                 'associated_indexes': None,
                 'messages': [
-                    'I don\'t have any information about that club sorry.'
+                    'Computer Science is not a listed club.'
                 ],
                 'attributes': None
             }
