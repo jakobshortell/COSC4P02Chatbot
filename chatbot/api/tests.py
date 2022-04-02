@@ -117,7 +117,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_name(self):
         '''Requesting a building name.'''
         self.assertEqual(
-            process_message('What is the name of the building with code WH?', 'en'),
+            process_message('what building is WH', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 73,
@@ -127,7 +127,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Which building has code MCJ?', 'en'),
+            process_message('what building is MCJ', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -140,10 +140,10 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_code(self):
         '''Requesting a building code.'''
         self.assertEqual(
-            process_message('What is the building code of Welch Hall?', 'en'),
+            process_message('what is the building code for Mackenzie Chown Block J', 'en'),
             {
                 'table_name': 'buildings',
-                'index': 73,
+                'index': 36,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': 'code'
@@ -204,7 +204,7 @@ class BrockClubTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'What is the chess club about?'),
+                'What is the chess club about?', 'en'),
             {
                 'table_name': 'clubs',
                 'index': 22,
