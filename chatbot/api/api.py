@@ -53,9 +53,13 @@ def contact(data, index):
     return msg
 
 def department(data, index):
-    msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
-          "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
-          data[index]['extension']
+    if attributes == 'contact':
+        msg = data[index]['name'] + ":\n" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
+              + data[index]['extension']
+    else:
+        msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
+              "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
+              data[index]['extension']
     return msg
 
 def date(data, index):
@@ -121,12 +125,12 @@ def main():
     '''The main enpoint for requests made to the chatbot.'''
     request_data = request.get_json()
     user_message = request_data['userMessage'].lower()
-    #language = request_data['language']
+    language = request_data['language']
     # Default response
     response = {
         'content': 'Error, something went wrong.'
     }
-    bot_response = process_message(user_message)
+    bot_response = process_message(user_message, language)
     table_name, index, associated_indexes, messages, attributes = bot_response.values()
 
     # Output an attribute of the first element in the response as a test

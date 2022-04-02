@@ -14,6 +14,7 @@ const uuid = require("uuid");
 const App = () => {
 	const inputRef = useRef();
 	const modalRef = useRef();
+	const languageRef = useRef();
 	const [messages, setMessages] = useState([
 		{
 			author: "bot",
@@ -53,7 +54,7 @@ const App = () => {
 					author: message.author,
 					content: message.content,
 					timestamp: getTime(),
-					id: message.id,
+					id: uuid.v4(),
 				},
 			];
 		});
@@ -67,7 +68,6 @@ const App = () => {
 			addMessage({
 				author: "user",
 				content: message,
-				id: uuid.v4(),
 			});
 
 			inputRef.current.value = null;
@@ -81,6 +81,7 @@ const App = () => {
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({
 				userMessage: userMessage,
+				language: languageRef.current.value,
 			}),
 		})
 			.then((response) => {
@@ -97,7 +98,6 @@ const App = () => {
 					addMessage({
 						author: "bot",
 						content: data.content,
-						id: uuid.v4(),
 					});
 				}
 			});
@@ -110,7 +110,7 @@ const App = () => {
 
 	return (
 		<div className={AppCSS.app}>
-			<Header modal={modalRef} />
+			<Header modal={modalRef} language={languageRef} />
 			<Modal modal={modalRef} />
 			<MessageContainer messages={messages} />
 			<Input input={inputRef} sendMessage={addUserMessage} />

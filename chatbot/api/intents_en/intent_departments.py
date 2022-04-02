@@ -34,4 +34,20 @@ class IntentDepartment:
             }
             write['intents'].append(intent)
 
+        for i in departments:
+            tag = departments[i]['name'] + " department contact"
+            pattern = departments[i]['name'] + " department contact", "can you tell me the phone number for the " + \
+                      departments[i]['name'] + " department",  "can you tell me the email for the " + \
+                      departments[i]['name'] + " department", "contact information for " + departments[i]['name']\
+                      + " department"
+            response = 'departments', i, None, None, 'contact'
+            intent = {
+                "tag": tag,
+                "patterns":
+                    pattern,
+                "responses":
+                    response
+            }
+            write['intents'].append(intent)
+
         return write

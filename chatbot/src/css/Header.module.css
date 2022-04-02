@@ -46,11 +46,21 @@
 
 .dropdownMenu li {
 	height: calc(var(--header-height) / 2);
-	width: calc(var(--header-height) * 10);
+	width: calc(var(--header-height) * 5);
 	padding: 1rem;
 	background-color: var(--brock-primary);
 	display: flex;
 	align-items: center;
+}
+
+.languageLabel {
+	font-size: 1.25rem;
+	color: var(--brock-background);
+}
+
+.languageSelector {
+	margin-left: 2.5rem;
+	border: none;
 }
 
 .icon {
@@ -72,6 +82,7 @@
 	width: calc(var(--header-height) * 0.4);
 	padding: calc(var(--header-height) * 0.15);
 }
+
 .copy:hover {
 	animation: bounce 0.3s linear;
 }

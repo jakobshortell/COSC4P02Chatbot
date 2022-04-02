@@ -236,10 +236,30 @@ class BrockCourseTests(unittest.TestCase):
 
     def test_course_description(self):
         '''Requesting the description of a course.'''
+        self.assertEqual(
+            process_message('can you tell me about COSC 4P02 course'),
+            {
+                'table_name': 'course_details',
+                'index': 789,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
     def test_course_prerequisites(self):
         '''Requesting the prerequisites of a course.'''
+        self.assertEqual(
+            process_message('can you tell me about the prerequisites for COSC 4P02 course'),
+            {
+                'table_name': 'course_details',
+                'index': 789,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'prerequisites'
+            }
+        )
         pass
 
 
@@ -248,14 +268,44 @@ class BrockDepartmentTests(unittest.TestCase):
 
     def test_department_phone(self):
         '''Requesting the phone number of a department.'''
+        self.assertEqual(
+            process_message('can you tell me the phone number for the Critical Animal Studies department'),
+            {
+                'table_name': 'departments',
+                'index': 75,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'contact'
+            }
+        )
         pass
 
     def test_department_email(self):
         '''Requesting the email of a department.'''
+        self.assertEqual(
+            process_message('can you tell me the email for the Critical Animal Studies department'),
+            {
+                'table_name': 'departments',
+                'index': 75,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'contact'
+            }
+        )
         pass
 
     def test_department_description(self):
         '''Requesting the description of a department.'''
+        self.assertEqual(
+            process_message('can you get information on the Department of Computer Science'),
+            {
+                'table_name': 'departments',
+                'index': 68,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
 

@@ -48,8 +48,8 @@ def spell_check(message):
     return message
 
 
-def process_message(message):
-
+def process_message(message, lang):
+    language = lang
     message = spell_check(message)
 
     tf.compat.v1.reset_default_graph()
