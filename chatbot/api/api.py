@@ -52,9 +52,9 @@ def contact(data, index):
           "\n\tLocation: " + data[index]['location']
     return msg
 
-def department(data, index):
+def department(data, index, attributes):
     if attributes == 'contact':
-        msg = data[index]['name'] + ":\n" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
+        msg = data[index]['name'] + ":\nLink:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
               + data[index]['extension']
     else:
         msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
@@ -106,7 +106,7 @@ def exam(data, index):
           + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
     return  msg
 
-def program(data, index):
+def program(data, index, attributes):
     msg = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
     return msg
 
@@ -144,7 +144,7 @@ def main():
         response['content'] = contact(data, index)
 
     elif 'departments' == table_name:
-        response['content'] = department(data, index)
+        response['content'] = department(data, index, attributes)
 
     elif 'dates' == table_name:
         response['content'] = date(data, index)
@@ -165,7 +165,7 @@ def main():
         response['content'] = exam(data, index)
 
     elif 'programs' == table_name:
-        response['content'] = program(data, index)
+        response['content'] = program(data, index, attributes)
 
     elif 'courses' == table_name:
         response['content'] = course(data, index, associated_indexes)
