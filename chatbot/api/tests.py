@@ -9,7 +9,7 @@ class GeneralTests(unittest.TestCase):
     def test_greeting(self):
         '''Saying a greeting to the chatbot.'''
         self.assertEqual(
-            process_message('Hello'),
+            process_message('Hello', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -23,7 +23,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Hey there!'),
+            process_message('Hey there!', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -37,7 +37,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Hi'),
+            process_message('Hi', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -54,7 +54,7 @@ class GeneralTests(unittest.TestCase):
     def test_farewell(self):
         '''Saying goodbye to the chatbot.'''
         self.assertEqual(
-            process_message('Bye'),
+            process_message('Bye', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -68,7 +68,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Goodbye'),
+            process_message('Goodbye', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -85,7 +85,7 @@ class GeneralTests(unittest.TestCase):
     def test_misc(self):
         '''Saying any miscellaneous questions unrelated to the scraped data.'''
         self.assertEqual(
-            process_message('Who made you?'),
+            process_message('Who made you?', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -97,7 +97,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Easter egg'),
+            process_message('Easter egg', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -117,7 +117,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_name(self):
         '''Requesting a building name.'''
         self.assertEqual(
-            process_message('What is the name of the building with code WH?'),
+            process_message('What is the name of the building with code WH?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 73,
@@ -127,7 +127,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Which building has code MCJ?'),
+            process_message('Which building has code MCJ?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -140,7 +140,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_code(self):
         '''Requesting a building code.'''
         self.assertEqual(
-            process_message('What is the building code of Welch Hall?'),
+            process_message('What is the building code of Welch Hall?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 73,
@@ -151,7 +151,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'Can you tell me the building code of Mackenzie Chown J Block?'),
+                'Can you tell me the building code of Mackenzie Chown J Block?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -169,7 +169,7 @@ class BrockClubTests(unittest.TestCase):
         '''Requesting the contact email of a club.'''
         self.assertEqual(
             process_message(
-                'Can you give me the contact email for the american sign language club?'),
+                'Can you give me the contact email for the american sign language club?', 'en'),
             {
                 'table_name': 'clubs',
                 'index': 1,
@@ -180,10 +180,10 @@ class BrockClubTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'What is the email for the chess club?'),
+                'What is the email for the chess club?', 'en'),
             {
                 'table_name': 'clubs',
-                'index': 21,
+                'index': 22,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': 'contact'
@@ -193,7 +193,7 @@ class BrockClubTests(unittest.TestCase):
     def test_club_description(self):
         '''Requesting the description of a club.'''
         self.assertEqual(
-            process_message('Tell me about the american sign language club.'),
+            process_message('Tell me about the american sign language club.', 'en'),
             {
                 'table_name': 'clubs',
                 'index': 1,
@@ -207,7 +207,7 @@ class BrockClubTests(unittest.TestCase):
                 'What is the chess club about?'),
             {
                 'table_name': 'clubs',
-                'index': 21,
+                'index': 22,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
@@ -218,7 +218,7 @@ class BrockClubTests(unittest.TestCase):
         '''Requesting club info that the bot doesn't have.'''
         self.assertEqual(
             process_message(
-                'Can you tell me about the computer science club?'),
+                'Can you tell me about the computer science club?', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -237,7 +237,7 @@ class BrockCourseTests(unittest.TestCase):
     def test_course_description(self):
         '''Requesting the description of a course.'''
         self.assertEqual(
-            process_message('can you tell me about COSC 4P02 course'),
+            process_message('can you tell me about COSC 4P02 course', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -251,7 +251,7 @@ class BrockCourseTests(unittest.TestCase):
     def test_course_prerequisites(self):
         '''Requesting the prerequisites of a course.'''
         self.assertEqual(
-            process_message('can you tell me about the prerequisites for COSC 4P02 course'),
+            process_message('can you tell me about the prerequisites for COSC 4P02 course', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -269,7 +269,7 @@ class BrockDepartmentTests(unittest.TestCase):
     def test_department_phone(self):
         '''Requesting the phone number of a department.'''
         self.assertEqual(
-            process_message('can you tell me the phone number for the Critical Animal Studies department'),
+            process_message('can you tell me the phone number for the Critical Animal Studies department', 'en'),
             {
                 'table_name': 'departments',
                 'index': 75,
@@ -283,7 +283,7 @@ class BrockDepartmentTests(unittest.TestCase):
     def test_department_email(self):
         '''Requesting the email of a department.'''
         self.assertEqual(
-            process_message('can you tell me the email for the Critical Animal Studies department'),
+            process_message('can you tell me the email for the Critical Animal Studies department', 'en'),
             {
                 'table_name': 'departments',
                 'index': 75,
@@ -297,7 +297,7 @@ class BrockDepartmentTests(unittest.TestCase):
     def test_department_description(self):
         '''Requesting the description of a department.'''
         self.assertEqual(
-            process_message('can you get information on the Department of Computer Science'),
+            process_message('can you get information on the Department of Computer Science', 'en'),
             {
                 'table_name': 'departments',
                 'index': 68,
