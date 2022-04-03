@@ -20,8 +20,8 @@ class IntentRestaurant:
             write['intents'].append(intent)
 
         for i in restaurant:
-            tag = restaurant[i]['name'] + " restaurant"
-            pattern = restaurant[i]['name'] + " restaurant", "when is " + restaurant[i]['name'] + " open", \
+            tag = restaurant[i]['name'] + " restaurant hours"
+            pattern = restaurant[i]['name'] + " restaurant hours", "when is " + restaurant[i]['name'] + " open", \
                       "hours for " + restaurant[i]['name'] + " restaurant", "when does " + restaurant[i]['name'] + \
                       " restaurant close"
             response = 'restaurants', i, None, None, 'hours'
