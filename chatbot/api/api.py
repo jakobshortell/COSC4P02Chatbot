@@ -91,9 +91,12 @@ def building(data, index, attributes):
               data[index]['link']
     return  msg
 
-def restaurant(data, index):
+def restaurant(data, index, attributes):
     if index is not None:
-        msg = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
+        if attributes == 'hours':
+            msg = data[index]['name'] + ":\n" + data[index]['hour']
+        else:
+            msg = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
     else:
         msg = 'Here is a list of restaurants available at Brock:'
         for index in data:
@@ -107,7 +110,10 @@ def exam(data, index):
     return  msg
 
 def program(data, index, attributes):
-    msg = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
+    if attributes == 'prerequisites':
+        msg = data[index]['name'] + data[index]['prerequisites']
+    else:
+        msg = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
     return msg
 
 def course(data, index, associated_indexes):
@@ -159,7 +165,7 @@ def main():
         response['content'] = building(data, index, attributes)
 
     elif 'restaurants' == table_name:
-        response['content'] = restaurant(data, index)
+        response['content'] = restaurant(data, index, attributes)
 
     elif 'exams' == table_name:
         response['content'] = exam(data, index)

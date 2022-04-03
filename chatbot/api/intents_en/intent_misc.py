@@ -142,7 +142,7 @@ class IntentMisc:
         }
         write['intents'].append(intent)
         intent = {
-            "tag": "restaurant_list",
+            "tag": "restaurants",
             "patterns": [
                 "what restaurants are available at brock",
                 "I'm Hungry",
@@ -151,7 +151,7 @@ class IntentMisc:
                 "can you tell restaurants at brock"
             ],
             "responses": [
-                "restaurant_list", None, None, None, None
+                "restaurants", None, None, None, None
             ]
         }
         write['intents'].append(intent)

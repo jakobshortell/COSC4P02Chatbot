@@ -32,4 +32,19 @@ class IntentProgram:
             }
             write['intents'].append(intent)
 
+        for i in programs:
+            tag = programs[i]['name'] + " program prerequisites"
+            pattern = programs[i]['name'] + " program prerequisites", "can you tell me about the prerequisites for the "\
+                      + programs[i]['name'] + " program", "can you get information on the prerequisites for "\
+                      + programs[i]['name'] + " program"
+            response = 'programs', i, None, None, 'prerequisites'
+            intent = {
+                "tag": tag,
+                "patterns":
+                    pattern,
+                "responses":
+                    response
+            }
+            write['intents'].append(intent)
+
         return write

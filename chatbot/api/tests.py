@@ -314,6 +314,16 @@ class BrockExamsTests(unittest.TestCase):
 
     def test_exam_info(self):
         '''Requesting the information about a courses exam.'''
+        self.assertEqual(
+            process_message('can you when is the ACTG 1P02 exam', 'en'),
+            {
+                'table_name': 'exams',
+                'index': 3,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
 
@@ -351,10 +361,30 @@ class BrockProgramsTests(unittest.TestCase):
 
     def test_program_description(self):
         '''Requests a description of a program.'''
+        self.assertEqual(
+            process_message('can you tell me about the Engineering Science program', 'en'),
+            {
+                'table_name': 'programs',
+                'index': 31,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
     def test_program_prerequisites(self):
         '''Requests the prerequisites of a program.'''
+        self.assertEqual(
+            process_message('can you tell me about the prerequisites for the Engineering Science program', 'en'),
+            {
+                'table_name': 'programs',
+                'index': 31,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'prerequisites'
+            }
+        )
         pass
 
 
@@ -363,14 +393,44 @@ class BrockRestaurantsTests(unittest.TestCase):
 
     def test_restaurant_list(self):
         '''Requests a list of dining options.'''
+        self.assertEqual(
+            process_message('what restaurants are available at brock', 'en'),
+            {
+                'table_name': 'restaurants',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
     def test_restaurant_description(self):
         '''Requests a description of a specific restaurant.'''
+        self.assertEqual(
+            process_message('can you get information on Burrito Boyz restaurant', 'en'),
+            {
+                'table_name': 'restaurants',
+                'index': 7,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
     def test_restaurant_hours(self):
         '''Requests the hours of a specific restaurant.'''
+        self.assertEqual(
+            process_message('when is Burrito Boyz restaurant open', 'en'),
+            {
+                'table_name': 'restaurants',
+                'index': 7,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'hours'
+            }
+        )
         pass
 
 
@@ -379,6 +439,16 @@ class BrockTransportationTests(unittest.TestCase):
 
     def test_specific_transportation(self):
         '''Requesting transportation information in a specific area.'''
+        self.assertEqual(
+            process_message('can you tell me about Welland transit', 'en'),
+            {
+                'table_name': 'transportation',
+                'index': 2,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
         pass
 
 
