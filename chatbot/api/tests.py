@@ -408,7 +408,7 @@ class BrockRestaurantsTests(unittest.TestCase):
     def test_restaurant_description(self):
         '''Requests a description of a specific restaurant.'''
         self.assertEqual(
-            process_message('can you get information on Burrito Boyz restaurant', 'en'),
+            process_message('tell me about Burrito Boyz restaurant', 'en'),
             {
                 'table_name': 'restaurants',
                 'index': 7,
