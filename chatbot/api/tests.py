@@ -451,6 +451,25 @@ class BrockTransportationTests(unittest.TestCase):
         )
         pass
 
+class BrockNewsTests(unittest.TestCase):
+    '''
+    Tests regarding the request for news at Brock University.
+
+    NOTE: Mock data will be required as function pulls dynamic data
+    '''
+    def test_brock_news(self):
+        self.assertEqual(
+            process_message('What is the latest news at brock', 'en'),
+            {
+                'table_name': 'brock_news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+        pass
+
 
 class NiagaraEventsTests(unittest.TestCase):
     '''
@@ -458,7 +477,18 @@ class NiagaraEventsTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
-    pass
+    def test_niagara_events(self):
+        self.assertEqual(
+            process_message('events in the niagara region', 'en'),
+            {
+                'table_name': 'events',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+        pass
 
 
 class NiagaraNewsTests(unittest.TestCase):
@@ -467,7 +497,18 @@ class NiagaraNewsTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
-    pass
+    def test_niagara_news(self):
+        self.assertEqual(
+            process_message('What is the latest news', 'en'),
+            {
+                'table_name': 'news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+        pass
 
 
 class NiagaraWeatherTests(unittest.TestCase):
@@ -476,7 +517,18 @@ class NiagaraWeatherTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
-    pass
+    def test_niagara_weather(self):
+        self.assertEqual(
+            process_message('what is the weather like at brock', 'en'),
+            {
+                'table_name': 'weather',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+        pass
 
 
 if __name__ == '__main__':
