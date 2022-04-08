@@ -117,7 +117,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_name(self):
         '''Requesting a building name.'''
         self.assertEqual(
-            process_message('what building is WH', 'en'),
+            process_message('What building is WH?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 73,
@@ -127,7 +127,7 @@ class BrockBuildingCodeTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('what building is MCJ', 'en'),
+            process_message('What is the building name of MCJ?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -140,7 +140,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
     def test_building_code(self):
         '''Requesting a building code.'''
         self.assertEqual(
-            process_message('what is the building code for Mackenzie Chown Block J', 'en'),
+            process_message(
+                'What is the building code for Mackenzie Chown Block J?', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -151,7 +152,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'Can you tell me the building code of Mackenzie Chown J Block?', 'en'),
+                'Can you tell me the building code of Mackenzie Chown J Block?',
+                'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -169,7 +171,8 @@ class BrockClubTests(unittest.TestCase):
         '''Requesting the contact email of a club.'''
         self.assertEqual(
             process_message(
-                'Can you give me the contact email for the american sign language club?', 'en'),
+                'Can you give me the contact email for the american sign language club?',
+                'en'),
             {
                 'table_name': 'clubs',
                 'index': 1,
@@ -193,7 +196,8 @@ class BrockClubTests(unittest.TestCase):
     def test_club_description(self):
         '''Requesting the description of a club.'''
         self.assertEqual(
-            process_message('Tell me about the american sign language club.', 'en'),
+            process_message(
+                'Tell me about the american sign language club.', 'en'),
             {
                 'table_name': 'clubs',
                 'index': 1,
@@ -237,7 +241,7 @@ class BrockCourseTests(unittest.TestCase):
     def test_course_description(self):
         '''Requesting the description of a course.'''
         self.assertEqual(
-            process_message('can you tell me about COSC 4P02 course', 'en'),
+            process_message('Can you tell me about COSC 4P02 course?', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -246,12 +250,23 @@ class BrockCourseTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message('What is COSC 4P02 about?', 'en'),
+            {
+                'table_name': 'course_details',
+                'index': 789,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
     def test_course_prerequisites(self):
         '''Requesting the prerequisites of a course.'''
         self.assertEqual(
-            process_message('can you tell me about the prerequisites for COSC 4P02 course', 'en'),
+            process_message(
+                'Can you tell me the prerequisites for the COSC 4P02 course?',
+                'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -260,7 +275,16 @@ class BrockCourseTests(unittest.TestCase):
                 'attributes': 'prerequisites'
             }
         )
-        pass
+        self.assertEqual(
+            process_message('What are the prerequisites for COSC 4P02?', 'en'),
+            {
+                'table_name': 'course_details',
+                'index': 789,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'prerequisites'
+            }
+        )
 
 
 class BrockDepartmentTests(unittest.TestCase):
@@ -269,7 +293,9 @@ class BrockDepartmentTests(unittest.TestCase):
     def test_department_phone(self):
         '''Requesting the phone number of a department.'''
         self.assertEqual(
-            process_message('can you tell me the phone number for the Critical Animal Studies department', 'en'),
+            process_message(
+                'Can you tell me the phone number for the Critical Animal Studies department?',
+                'en'),
             {
                 'table_name': 'departments',
                 'index': 75,
@@ -278,26 +304,10 @@ class BrockDepartmentTests(unittest.TestCase):
                 'attributes': 'contact'
             }
         )
-        pass
-
-    def test_department_email(self):
-        '''Requesting the email of a department.'''
         self.assertEqual(
-            process_message('can you tell me the email for the Critical Animal Studies department', 'en'),
-            {
-                'table_name': 'departments',
-                'index': 75,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': 'contact'
-            }
-        )
-        pass
-
-    def test_department_description(self):
-        '''Requesting the description of a department.'''
-        self.assertEqual(
-            process_message('can you get information on the Department of Computer Science', 'en'),
+            process_message(
+                'What is the phone number of the Computer Science department?',
+                'en'),
             {
                 'table_name': 'departments',
                 'index': 68,
@@ -306,7 +316,60 @@ class BrockDepartmentTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+
+    def test_department_email(self):
+        '''Requesting the email of a department.'''
+        self.assertEqual(
+            process_message(
+                'Can you tell me the email for the Critical Animal Studies department?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 75,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'contact'
+            }
+        )
+        self.assertEqual(
+            process_message(
+                'What is the email for the Department of Computer Science?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 68,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'contact'
+            }
+        )
+
+    def test_department_description(self):
+        '''Requesting the description of a department.'''
+        self.assertEqual(
+            process_message(
+                'Can you tell me about the Critical Animal Studies department?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 75,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+        self.assertEqual(
+            process_message(
+                'Can you give me information about the Department of Computer Science?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 68,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
 
 class BrockExamsTests(unittest.TestCase):
@@ -324,7 +387,6 @@ class BrockExamsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
 
 
 class BrockImportantDatesTests(unittest.TestCase):
@@ -362,7 +424,9 @@ class BrockProgramsTests(unittest.TestCase):
     def test_program_description(self):
         '''Requests a description of a program.'''
         self.assertEqual(
-            process_message('can you tell me about the Engineering Science program', 'en'),
+            process_message(
+                'Can you tell me about the Engineering Science program?',
+                'en'),
             {
                 'table_name': 'programs',
                 'index': 31,
@@ -371,12 +435,13 @@ class BrockProgramsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
 
     def test_program_prerequisites(self):
         '''Requests the prerequisites of a program.'''
         self.assertEqual(
-            process_message('can you tell me about the prerequisites for the Engineering Science program', 'en'),
+            process_message(
+                'Can you tell me about the prerequisites for the Engineering Science program?',
+                'en'),
             {
                 'table_name': 'programs',
                 'index': 31,
@@ -385,7 +450,6 @@ class BrockProgramsTests(unittest.TestCase):
                 'attributes': 'prerequisites'
             }
         )
-        pass
 
 
 class BrockRestaurantsTests(unittest.TestCase):
@@ -394,7 +458,7 @@ class BrockRestaurantsTests(unittest.TestCase):
     def test_restaurant_list(self):
         '''Requests a list of dining options.'''
         self.assertEqual(
-            process_message('what restaurants are available at brock', 'en'),
+            process_message('What restaurants are available at Brock?', 'en'),
             {
                 'table_name': 'restaurants',
                 'index': None,
@@ -403,12 +467,24 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message(
+                'What dining options does Brock have available to students?',
+                'en'),
+            {
+                'table_name': 'restaurants',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
     def test_restaurant_description(self):
         '''Requests a description of a specific restaurant.'''
         self.assertEqual(
-            process_message('tell me about Burrito Boyz restaurant', 'en'),
+            process_message(
+                'Can you tell me about Burrito Boyz restaurant?', 'en'),
             {
                 'table_name': 'restaurants',
                 'index': 7,
@@ -417,12 +493,11 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
 
     def test_restaurant_hours(self):
         '''Requests the hours of a specific restaurant.'''
         self.assertEqual(
-            process_message('when is Burrito Boyz restaurant open', 'en'),
+            process_message('when is the Burrito Boyz restaurant open?', 'en'),
             {
                 'table_name': 'restaurants',
                 'index': 7,
@@ -431,7 +506,6 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': 'hours'
             }
         )
-        pass
 
 
 class BrockTransportationTests(unittest.TestCase):
@@ -440,7 +514,9 @@ class BrockTransportationTests(unittest.TestCase):
     def test_specific_transportation(self):
         '''Requesting transportation information in a specific area.'''
         self.assertEqual(
-            process_message('can you tell me about Welland transit', 'en'),
+            process_message(
+                'Can you tell me about the transportation options for Welland?',
+                'en'),
             {
                 'table_name': 'transportation',
                 'index': 2,
@@ -449,7 +525,7 @@ class BrockTransportationTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+
 
 class BrockNewsTests(unittest.TestCase):
     '''
@@ -457,9 +533,10 @@ class BrockNewsTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
+
     def test_brock_news(self):
         self.assertEqual(
-            process_message('What is the latest news at brock', 'en'),
+            process_message('What is the latest news at Brock?', 'en'),
             {
                 'table_name': 'brock_news',
                 'index': None,
@@ -468,7 +545,18 @@ class BrockNewsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message(
+                'What sort of things are happening at Brock University?',
+                'en'),
+            {
+                'table_name': 'brock_news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
 
 class NiagaraEventsTests(unittest.TestCase):
@@ -477,9 +565,11 @@ class NiagaraEventsTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
+
     def test_niagara_events(self):
         self.assertEqual(
-            process_message('events in the niagara region', 'en'),
+            process_message(
+                'What events are taking place in the Niagara region?', 'en'),
             {
                 'table_name': 'events',
                 'index': None,
@@ -488,7 +578,17 @@ class NiagaraEventsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message(
+                'Whats events are happening in Niagara right now?', 'en'),
+            {
+                'table_name': 'events',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
 
 class NiagaraNewsTests(unittest.TestCase):
@@ -497,9 +597,10 @@ class NiagaraNewsTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
+
     def test_niagara_news(self):
         self.assertEqual(
-            process_message('What is the latest news', 'en'),
+            process_message('Whats on the news in Niagara?', 'en'),
             {
                 'table_name': 'news',
                 'index': None,
@@ -508,7 +609,16 @@ class NiagaraNewsTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message('What is happening in the Niagara region?', 'en'),
+            {
+                'table_name': 'news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
 
 class NiagaraWeatherTests(unittest.TestCase):
@@ -517,9 +627,10 @@ class NiagaraWeatherTests(unittest.TestCase):
 
     NOTE: Mock data will be required as function pulls dynamic data
     '''
+
     def test_niagara_weather(self):
         self.assertEqual(
-            process_message('what is the weather like at brock', 'en'),
+            process_message('What is the weather like at Brock?', 'en'),
             {
                 'table_name': 'weather',
                 'index': None,
@@ -528,7 +639,17 @@ class NiagaraWeatherTests(unittest.TestCase):
                 'attributes': None
             }
         )
-        pass
+        self.assertEqual(
+            process_message(
+                'What is the weather like in St. Catharines?', 'en'),
+            {
+                'table_name': 'weather',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
 
 
 if __name__ == '__main__':
