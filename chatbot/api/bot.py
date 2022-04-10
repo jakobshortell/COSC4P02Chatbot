@@ -79,11 +79,12 @@ def process_message(message, lang):
                     "attributes": None or attributes
                 }
     else:
+        message = message.replace(' ', '+')
         msg = {
             "table_name": None,
             "index": None,
             "associated_indexes": None,
-            "messages": ["I am sorry. I don\'t know  what you are asking."],
+            "messages": ["I am sorry. I don\'t know  what you are asking.\nClick the link to Google your question https://www.google.com/search?q=" + message],
             "attributes": None
         }
 
