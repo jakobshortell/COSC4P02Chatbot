@@ -43,6 +43,62 @@ class IntentMisc:
         }
         write['intents'].append(intent)
         intent = {
+            "tag": "about brock",
+            "patterns": [
+                "tell me about brock",
+                "tell me about brock university",
+                "information about brock",
+                "information about brock university",
+                "brock university info",
+                "is brock a good school"
+            ],
+            "responses": [
+                None, None, None,
+                ["Brock University is one of Canada’s top post-secondary institutions. Located in historic Niagara \
+                region, Brock offers all the benefits of a young and modern university in a safe, community-minded city\
+                 with beautiful natural surroundings.\nClick the link to learn more: https://brocku.ca/about/"],
+                None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock covid",
+            "patterns": [
+                "what is brock university doing about covid-19",
+                "brock covid",
+                "brock covid-19",
+                "information about covid-19 at brock university",
+                "covid at brock",
+                "covid-19 requirements at brock"
+            ],
+            "responses": [
+                None, None, None,
+                ["Brock is committed to delivering to students a high-quality education and providing an outstanding \
+                experience while taking steps to address COVID-19.\nClick the link to learn more: https://brocku.ca/coronavirus/"],
+                None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock residence",
+            "patterns": [
+                "residence at brock university",
+                "I am looking for residence at brock",
+                "tell me about living at brock",
+                "staying at brock",
+                "living at brock",
+                "brock on campus living"
+            ],
+            "responses": [
+                None, None, None,
+                ["Live in one of Brock’s convenient and welcoming residences. You’ll stay close to campus, meet new \
+                friends, and become a part of our vibrant community. Residences at Brock are home to almost 2,800 \
+                students each year.\nClick the link to learn more: https://discover.brocku.ca/living/"],
+                None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
             "tag": "who are you",
             "patterns": [
                 "who are you",

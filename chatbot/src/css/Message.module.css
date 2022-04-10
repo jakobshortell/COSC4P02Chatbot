@@ -14,10 +14,35 @@
     white-space: pre-wrap;
 }
 
-.messageIcon {
-    display: none;
-    height: var(--icon-height);
+.messageIconUser {
+    display:none;
+    height: 45px;
+    padding: 1px;
+    position: relative;
+    
 }
+
+.messageIcon {
+    height: 17px;
+    width: 75px;
+    padding: 5px;
+}
+
+@keyframes wobble {
+	40% {
+		-webkit-transform: rotate(-400deg);
+	}
+	70% {
+		-webkit-transform: rotate(-300deg);
+	}
+	85% {
+		-webkit-transform: rotate(-380deg);
+	}
+    100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
 
 .messageBubble {
     max-width: 70%;

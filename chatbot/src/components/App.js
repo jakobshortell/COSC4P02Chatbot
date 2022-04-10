@@ -3,6 +3,8 @@ import { useRef, useState } from "react";
 // Styling
 import AppCSS from "../css/App.module.css";
 
+
+
 // Components
 import Header from "./Header";
 import Modal from "./Modal";
@@ -35,7 +37,7 @@ const App = () => {
 		}
 
 		// Correct hours
-		if (hours < 12) {
+		if (hours <= 12) {
 			if (hours === 0) {
 				hours = 12;
 			}
@@ -69,10 +71,12 @@ const App = () => {
 				author: "user",
 				content: message,
 			});
-
+			
 			inputRef.current.value = null;
-			addBotMessage(message);
+			document.getElementById("activedot").style.display = "flex";
+			setTimeout(() => {addBotMessage(message);}, 1000);
 		}
+	
 	}
 
 	function addBotMessage(userMessage) {
@@ -93,7 +97,9 @@ const App = () => {
 				}
 			})
 			.then((data) => {
+				//Need to add timeout here
 				// Create bot message
+				document.getElementById("activedot").style.display = "none";
 				if (data !== {}) {
 					addMessage({
 						author: "bot",
@@ -101,6 +107,9 @@ const App = () => {
 					});
 				}
 			});
+			
+			
+
 	}
 
 	function scroll() {
@@ -111,8 +120,8 @@ const App = () => {
 	return (
 		<div className={AppCSS.app}>
 			<Header modal={modalRef} language={languageRef} />
-			<Modal modal={modalRef} />
-			<MessageContainer messages={messages} />
+			<Modal modal={modalRef} />			
+			<MessageContainer messages={messages}/>
 			<Input input={inputRef} sendMessage={addUserMessage} />
 		</div>
 	);
