@@ -55,6 +55,11 @@
 .sendButtonImage {
 	height: 1rem;
 	width: 1rem;
+	transition: transform 1s;
+}
+
+.sendButtonImage:hover {
+	transform: rotate(-30deg);
 }
 
 @media only screen and (min-width: 600px) {

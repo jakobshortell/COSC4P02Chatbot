@@ -2,6 +2,7 @@ import React from 'react';
 
 // Styling
 import MessageContainerCSS from '../css/MessageContainer.module.css';
+import Dot from "./ActiveButton"
 
 // Components
 import Message from './Message';
@@ -10,6 +11,7 @@ const MessageContainer = ({ messages }) => {
 
 	return (
 		<div className={ MessageContainerCSS.messageContainer }>
+			<Dot/>
 			<ul className={ MessageContainerCSS.scrollable } id='scroll'>
 				{
 					messages.map((message) => {

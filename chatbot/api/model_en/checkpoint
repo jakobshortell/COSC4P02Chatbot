@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\somet\\COSC4P02Chatbot\\chatbot\\api\\model_en\\model.h5"
+all_model_checkpoint_paths: "C:\\Users\\somet\\COSC4P02Chatbot\\chatbot\\api\\model_en\\model.h5"

@@ -83,16 +83,16 @@ class CoursesScraper:
         # Loop through the rows
         for index, row in enumerate(course_rows):
             courses[index] = {
-                'program_code': code,
-                'course_code': self.fetch_course_code(row),
-                'title': self.fetch_course_title(row),
-                'duration': self.fetch_course_duration(row),
-                'day': self.fetch_course_day(row),
-                'time': self.fetch_course_time(row),
-                'type': self.fetch_course_type(row),
-                'instructor': self.fetch_course_instructor(row),
-                'section': self.fetch_course_section(row),
-                'location': self.fetch_course_location(row)
+                'program_code': code or 'N/A',
+                'course_code': self.fetch_course_code(row) or 'N/A',
+                'title': self.fetch_course_title(row) or 'N/A',
+                'duration': self.fetch_course_duration(row) or 'N/A',
+                'day': self.fetch_course_day(row) or 'N/A',
+                'time': self.fetch_course_time(row) or 'N/A',
+                'type': self.fetch_course_type(row) or 'N/A',
+                'instructor': self.fetch_course_instructor(row) or 'N/A',
+                'section': self.fetch_course_section(row) or 'N/A',
+                'location': self.fetch_course_location(row) or 'N/A'
             }
 
         # Store courses in the database
@@ -140,7 +140,10 @@ class CoursesScraper:
 
     def fetch_course_instructor(self, row):
         '''Extracts the course instructor from the course row.'''
-        return row.attrs['data-instructor']
+        try:
+            return row.attrs['data-instructor']
+        except:
+            return "N/A"
 
     def fetch_course_section(self, row):
         '''Extracts the course section from the course row.'''
@@ -218,3 +221,6 @@ class CoursesScraper:
             }
 
         return output
+
+#s = CoursesScraper()
+#s.fetch()
