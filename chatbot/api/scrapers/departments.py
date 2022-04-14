@@ -52,12 +52,12 @@ class DepartmentScraper:
         for index, department in enumerate(departments_list):
             # Pull department information
             entry = {
-                'name': self.get_name(department),
-                'link': self.get_link(department),
-                'extension': self.get_extension(department),
-                'email': self.get_email(department),
-                'social': self.get_social(department),
-                'description': self.get_description(department)
+                'name': self.get_name(department) or 'N/A',
+                'link': self.get_link(department) or 'N/A',
+                'extension': self.get_extension(department) or 'N/A',
+                'email': self.get_email(department) or 'N/A',
+                'social': self.get_social(department) or 'N/A',
+                'description': self.get_description(department) or 'N/A'
             }
 
             output[index] = entry

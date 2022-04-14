@@ -77,7 +77,7 @@ class UnionScraper:
             union = union[:i:]
             return union
         except:
-            return None
+            return 'N/A'
 
     def get_description(self, union):
         try:
@@ -89,7 +89,7 @@ class UnionScraper:
             union = union.replace('<br/>', '')
             return union
         except:
-            return None
+            return 'N/A'
 
 
     def get_hour(self, union):
@@ -118,7 +118,7 @@ class UnionScraper:
             return output
 
         except:
-            return None
+            return 'N/A'
 
     def store_union(self, union):
         with self.db_conn as conn:

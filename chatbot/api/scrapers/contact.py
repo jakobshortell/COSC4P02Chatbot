@@ -84,12 +84,12 @@ class ContactScraper:
         try:
             for index in range(cnt):
                 contacts[index] = {
-                    'department': department[index].text,
-                    'name': first_name[index].text + ' ' + last_name[index].text,
-                    'email': email[index].text,
-                    'title': title[index].text,
-                    'phone': "(905) 688-5550 x" + phone[index].text[4::],
-                    'location': location[index].text
+                    'department': department[index].text or 'N/A',
+                    'name': first_name[index].text + ' ' + last_name[index].text or 'N/A',
+                    'email': email[index].text or 'N/A',
+                    'title': title[index].text or 'N/A',
+                    'phone': "(905) 688-5550 x" + phone[index].text[4::] or 'N/A',
+                    'location': location[index].text or 'N/A'
                 }
             # Store contacts in the database
             self.store_contacts(contacts)

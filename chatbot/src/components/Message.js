@@ -22,7 +22,7 @@ export function Message({ author, content, time }) {
 				<img className={ MessageCSS.messageIconUser } src={ userIcon } alt='user-icon' />
 			</li>
 		)
-	} else if (author === 'bot') {
+	} else {
 		return (
 			<li className={` ${MessageCSS.message} ${MessageCSS.botMessage} `}>
 			
@@ -41,26 +41,5 @@ export function Message({ author, content, time }) {
 			</li>
 		)
 	}
-	else {
-		return (
-			<li className={` ${MessageCSS.message} ${MessageCSS.botMessage} `}>
-				
-				<div className={` ${MessageCSS.messageBubble} ${MessageCSS.botMessageBubble} `}>
-					<div>
-						<span className={` ${MessageCSS.botName} ${MessageCSS.name} `}>Brock University</span>
-						<span className={ MessageCSS.time }>{ time }</span>
-					</div>
-						<span><Linkify
-       						componentDecorator={(
-          					decoratedHref: string, key: Key) => (<SecureLink href={decoratedHref} key={key}>
-								  Link<img className={MessageCSS.link} src={linkIcon} alt='Link'/></SecureLink>)}>
-								  {content}
-								</Linkify>
-								<img id="icon" className={ MessageCSS.messageIcon } src={ botIcon } alt='bot-icon' /></span>
-					</div>
-			</li>
-		)
-	}
-
 }
 export default Message;

@@ -71,7 +71,7 @@ const App = () => {
 				author: "user",
 				content: message,
 			});
-			
+
 			inputRef.current.value = null;
 			document.getElementById("activedot").style.display = "flex";
 			setTimeout(() => {addBotMessage(message);}, 1000);
@@ -80,6 +80,8 @@ const App = () => {
 	}
 
 	function addBotMessage(userMessage) {
+		try {
+		var timeout = setTimeout(myTimeout, 30000);
 		fetch("/api", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
@@ -97,7 +99,6 @@ const App = () => {
 				}
 			})
 			.then((data) => {
-				//Need to add timeout here
 				// Create bot message
 				document.getElementById("activedot").style.display = "none";
 				if (data !== {}) {
@@ -105,12 +106,24 @@ const App = () => {
 						author: "bot",
 						content: data.content,
 					});
+					clearTimeout(timeout);
 				}
 			});
-			
-			
-
+		}
+		catch(err) {
+			addMessage({
+				author: "bot",
+				content: "Error, chatbot is not working right now",
+			});
+		}
 	}
+
+	function myTimeout() {
+		addMessage({
+			author: "bot",
+			content: "Chatbot is taking longer then expected.",
+		});
+	  }
 
 	function scroll() {
 		let chatHistory = document.getElementById("scroll");

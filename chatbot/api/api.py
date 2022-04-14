@@ -42,7 +42,7 @@ def club(data, index, attributes):
     if attributes == 'contact':
         msg = data[index]['name'] + ":\nEmail: " + data[index]['email']
     else:
-        msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nEmail: " + data[index]['email']
+        msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nEmail: " + data[index]['email']
     return msg
 
 def contact(data, index):
@@ -57,7 +57,7 @@ def department(data, index, attributes):
         msg = data[index]['name'] + ":\nLink:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
               + data[index]['extension']
     else:
-        msg = data[index]['name'] + ":\n" + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
+        msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
               "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
               data[index]['extension']
     return msg
@@ -73,13 +73,13 @@ def transport(data, index):
 
 def details(data, index, attributes):
     if attributes == 'prerequisites':
-        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nPrerequisites: " + \
-              data[index]['prerequisite']
+        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nPrerequisites: " + data[index]['prerequisite']
+
     else:
-        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\n" + data[index]['alt_course_code'] + \
-              "\n" + data[index]['course_description'] + "\n" + data[index]['hours'] + "\nRestrictions: " + \
+        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nAlt Course-Code: " + data[index]['alt_course_code'] + \
+              "\nDescription: " + data[index]['course_description'] + "\nHours:" + data[index]['hours'] + "\nRestrictions: " + \
               data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + \
-              "\n" + data[index]['corequisite'] + "\n" + data[index]['notes'] + "\n" + data[index]['replace_grade']
+              "\nCorequisite: " + data[index]['corequisite'] + "\nNotes: " + data[index]['notes'] + "\nReplace Grade: " + data[index]['replace_grade']
     return msg
 
 def building(data, index, attributes):
@@ -96,7 +96,7 @@ def restaurant(data, index, attributes):
         if attributes == 'hours':
             msg = data[index]['name'] + ":\n" + data[index]['hour']
         else:
-            msg = data[index]['name'] + ":\n" + data[index]['description'] + "\n" + data[index]['hour']
+            msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nHours: " + data[index]['hour']
     else:
         msg = 'Here is a list of restaurants available at Brock:'
         for index in data:
@@ -113,7 +113,7 @@ def program(data, index, attributes):
     if attributes == 'prerequisites':
         msg = data[index]['name'] + data[index]['prerequisites']
     else:
-        msg = data[index]['name'] + "\n" + data[index]['description'] + "\n" + data[index]['prerequisites']
+        msg = data[index]['name'] + "\nDescription: " + data[index]['description'] + "\nPrerequisites: " + data[index]['prerequisites']
     return msg
 
 def course(data, index, associated_indexes):
