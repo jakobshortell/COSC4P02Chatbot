@@ -46,11 +46,21 @@
 
 .dropdownMenu li {
 	height: calc(var(--header-height) / 2);
-	width: calc(var(--header-height) * 10);
+	width: calc(var(--header-height) * 5);
 	padding: 1rem;
 	background-color: var(--brock-primary);
 	display: flex;
 	align-items: center;
+}
+
+.languageLabel {
+	font-size: 1.25rem;
+	color: var(--brock-background);
+}
+
+.languageSelector {
+	margin-left: 2.5rem;
+	border: none;
 }
 
 .icon {
@@ -65,6 +75,16 @@
 
 .help:hover {
 	animation: wobble 0.3s linear;
+}
+
+.copy {
+	height: calc(var(--header-height) * 0.4);
+	width: calc(var(--header-height) * 0.4);
+	padding: calc(var(--header-height) * 0.15);
+}
+
+.copy:hover {
+	animation: bounce 0.3s linear;
 }
 
 .settings {
@@ -87,5 +107,16 @@
 	}
 	100% {
 		-webkit-transform: rotate(-20deg);
+	}
+}
+@keyframes bounce {
+	40% {
+		-webkit-transform: scale(1.2);
+	}
+	70% {
+		-webkit-transform: scale(0.8);
+	}
+	100% {
+		-webkit-transform: scale(1);
 	}
 }

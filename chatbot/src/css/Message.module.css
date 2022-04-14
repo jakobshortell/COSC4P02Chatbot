@@ -14,10 +14,35 @@
     white-space: pre-wrap;
 }
 
-.messageIcon {
-    display: none;
-    height: var(--icon-height);
+.messageIconUser {
+    display:none;
+    height: 45px;
+    padding: 1px;
+    position: relative;
+    
 }
+
+.messageIcon {
+    height: 17px;
+    width: 75px;
+    padding: 5px;
+}
+
+@keyframes wobble {
+	40% {
+		-webkit-transform: rotate(-400deg);
+	}
+	70% {
+		-webkit-transform: rotate(-300deg);
+	}
+	85% {
+		-webkit-transform: rotate(-380deg);
+	}
+    100% {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
 
 .messageBubble {
     max-width: 70%;
@@ -27,6 +52,7 @@
     display: flex;
     flex-direction: column;
 }
+
 
 .userMessageBubble {
     border-bottom-right-radius: 0;
@@ -53,12 +79,18 @@
     opacity: .75;
 }
 
+.link {
+    height: 15px;
+    width: 15px;
+    padding-left: 5px;
+
+}
+
 a {
     color: var(--brock-primary);
     text-underline-offset: 4px;
-    display: flex;
-    width: 180px;
-    white-space: nowrap;
+    width: 50px;
+    white-space:pre-wrap;
     overflow: hidden;
-}
+  }
 

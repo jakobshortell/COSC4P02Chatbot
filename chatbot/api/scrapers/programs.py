@@ -51,9 +51,9 @@ class ProgramScraper:
             self.browser.open(program.find('a', attrs={'class': 'readmore'}).get('href'))
             # Pull program information
             entry = {
-                'name': self.get_name(program),
-                'description': self.get_description(self.browser.page),
-                'prerequisites': self.get_prerequisites(self.browser.page)
+                'name': self.get_name(program) or 'N/A',
+                'description': self.get_description(self.browser.page) or 'N/A',
+                'prerequisites': self.get_prerequisites(self.browser.page) or 'N/A'
             }
 
             output[index] = entry

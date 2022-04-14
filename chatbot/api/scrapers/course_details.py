@@ -155,7 +155,7 @@ class CoursesDetailsScraper:
             return course[0][other_offer.end(): -1], course[1]
         else:
             # there is no cross listing for this course
-            return '', course[0]
+            return 'N/A', course[0]
 
     def store_course_details(self, output):
         with self.db_conn as conn:
@@ -182,7 +182,7 @@ class CoursesDetailsScraper:
 
     def fetch_details(self, course):
         """Get course details that don't always appear in the same index"""
-        details = [''] * 6
+        details = ['N/A'] * 6
         hours_search_terms = '^Lecture|^Seminar|^Lab|^Tutorial|^Online|^Theory|^Workshop|^Laboratories|^Field Trip,'
         for index in course:
             hours = re.search(hours_search_terms, index, re.IGNORECASE)
@@ -228,3 +228,6 @@ class CoursesDetailsScraper:
             if found_count == 2:
                 return course_details[index:]
         return course_details
+
+#s = CoursesDetailsScraper();
+#s.fetch()

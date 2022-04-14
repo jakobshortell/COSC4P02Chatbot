@@ -8,6 +8,7 @@ from scrapers.programs import ProgramScraper
 from scrapers.restaurant import RestaurantScraper
 from scrapers.buildings import BuildingScraper
 from scrapers.transportation import TransportationScraper
+from scrapers.contact import ContactScraper
 
 departments = DepartmentScraper().get()
 clubs = ClubScraper().get()
@@ -16,12 +17,19 @@ programs = ProgramScraper().get()
 restaurant = RestaurantScraper().get()
 buildings = BuildingScraper().get()
 transportation = TransportationScraper().get()
+contacts = ContactScraper().get()
 
 f = open("temp.txt", "w", encoding='utf-8')
 
 for i in departments:
     words = departments[i]['name'].lower()
     words = words.replace(' ', '\n')
+    f.write(words + '\n')
+
+for i in contacts:
+    words = contacts[i]['name'].lower()
+    words = words.replace(' ', '\n')
+    words = words.replace('-', '\n')
     f.write(words + '\n')
 
 for i in clubs:
@@ -54,11 +62,13 @@ for i in transportation:
     words = words.replace(' ', '\n')
     f.write(words + '\n')
 
+f.write(words + '\ncovid\ncovid-19')
+
 f.close()
 
 line_hash = set()
 
-f = open("customWords.txt", "w")
+f = open("intents_en/customWords.txt", "w")
 
 for line in open("temp.txt", "r"):
     hash_value = hashlib.md5(line.rstrip().encode('utf-8')).hexdigest()
