@@ -317,4 +317,14 @@ class IntentMisc:
         }
 
         write['intents'].append(intent)
+        intent = {
+            "tag": "break chatbot",
+            "patterns": [
+                "break chatbot"
+            ],
+            "responses": [
+                None, None, None, None, None
+            ]
+        }
+        write['intents'].append(intent)
         return write
