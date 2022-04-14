@@ -315,7 +315,6 @@ class IntentMisc:
                 None
             ]
         }
-
         write['intents'].append(intent)
         intent = {
             "tag": "break chatbot",
@@ -324,6 +323,73 @@ class IntentMisc:
             ],
             "responses": [
                 None, None, None, None, None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock departments",
+            "patterns": [
+                "tell me about brocks departments",
+                "brock departments",
+                "brock university departments"
+            ],
+            "responses": [
+                None, None, None, ["Brock is a comprehensive university with an expansive undergraduate system as well as advanced research, post-graduate and doctoral programs.\nClick the link to learn more: https://brocku.ca/academics/"], None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock programs",
+            "patterns": [
+                "tell me about brocks programs",
+                "brock programs",
+                "brock university programs",
+                "what programs are available at brock"
+            ],
+            "responses": [
+                None, None, None, ["As a comprehensive university, Brock has an expansive selection of undergraduate programs as well as advanced research, post-graduate and doctoral options.\nClick the link to learn more: https://brocku.ca/programs/"], None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock clubs",
+            "patterns": [
+                "tell me about brocks clubs",
+                "brock clubs",
+                "brock university clubs",
+                "what clubs are available at brock"
+            ],
+            "responses": [
+                None, None, None, ["Brock University features over 100 unique and amazing clubs! \nClick the link to learn more: https://www.brockbusu.ca/involvement/clubs/directory"], None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock parking",
+            "patterns": [
+                "tell me about parking at brock",
+                "brock parking",
+                "brock university parking",
+                "what parking options are available at brock"
+            ],
+            "responses": [
+                None, None, None, ["Brock University features a number of different parking services. From hourly to season parking passes. \nClick the link to learn more: https://brocku.ca/parking-services/"], None
+            ]
+        }
+        write['intents'].append(intent)
+        intent = {
+            "tag": "brock visiting",
+            "patterns": [
+                "tell me about visiting brock",
+                "brock visit",
+                "brock university visit",
+                "i would like to visit brock",
+                "brock tours",
+                "are tours available at brock",
+                "touring brock"
+            ],
+            "responses": [
+                None, None, None, ["Many of our alumni say they fell in love with Brock when they toured our beautiful campus. We hope that you’ll feel the same way once you’ve visited the University. Campus tours are led by Brock students eager to show you what makes this such a special place to live and learn. \nClick the link to learn more: https://brocku.ca/about/visit-brock"], None
             ]
         }
         write['intents'].append(intent)
