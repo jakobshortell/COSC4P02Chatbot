@@ -8,7 +8,8 @@ class IntentTransportation:
         for i in transportation:
             tag = transportation[i]['name'] + " departments"
             pattern = transportation[i]['name'] + " transit ", "can you tell me about the " + transportation[i][
-                'name'] + " transit ", "can you get information on the " + transportation[i]['name'] + " transit"
+                'name'] + " transit ", "can you get information on the " + transportation[i]['name'] + " transit", \
+                "Can you tell me about the transportation options for " + transportation[i]['name']
             response = 'transportation', i, None, None, None
             intent = {
                 "tag": tag,

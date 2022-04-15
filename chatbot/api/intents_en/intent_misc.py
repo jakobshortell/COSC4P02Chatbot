@@ -204,7 +204,8 @@ class IntentMisc:
                 "I'm Hungry",
                 "What is good to eat at brock",
                 "What food offerings are available at brock",
-                "can you tell restaurants at brock"
+                "can you tell restaurants at brock",
+                "What dining options does brock have available to students"
             ],
             "responses": [
                 "restaurants", None, None, None, None
@@ -217,7 +218,8 @@ class IntentMisc:
                 "brock university news",
                 "What is the latest news at brock",
                 "upcoming events at brock",
-                "whats up at brock"
+                "whats up at brock",
+                "what sort of things are happening at brock university"
             ],
             "responses": [
                 "brock_news", None, None, None, None
@@ -230,7 +232,9 @@ class IntentMisc:
                 "news",
                 "What is the latest news",
                 "niagara news",
-                "what is up around niagara"
+                "what is up around niagara",
+                "Whats on the news in niagara",
+                "What is happening in the niagara region"
             ],
             "responses": [
                 "news", None, None, None, None
@@ -243,7 +247,8 @@ class IntentMisc:
                 "events",
                 "What are some upcoming events",
                 "niagara events",
-                "events in the niagara region"
+                "events in the niagara region",
+                "what events are happening in niagara right now"
             ],
             "responses": [
                 "events", None, None, None, None

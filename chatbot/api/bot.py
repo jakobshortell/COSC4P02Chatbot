@@ -67,7 +67,7 @@ def process_message(message, lang):
     results_index = numpy.argmax(results)
     tag_index = labels[results_index]
 
-    if results[results_index] > 0.1:
+    if results[results_index] > 0.3:
         for tag in data["intents"]:
             if tag['tag'] == tag_index:
                 table_name, index, associated_indexes, messages, attributes = tag['responses']
