@@ -17,5 +17,5 @@ class brockNewsScraper:
             link_list = link_list[i::]
             i = link_list.find('</link>')
             link = link_list[:i:]
-            msg = msg + "\t• " + title + ": " + link + "\n"
+            msg = msg + "• " + title + ": " + link + "\n"
         return msg

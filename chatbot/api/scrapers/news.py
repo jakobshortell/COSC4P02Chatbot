@@ -7,5 +7,5 @@ class newsScraper:
         event_list = NewsFeed.entries
         msg = 'Here are some of the news in the Niagara region:\n'
         for i in event_list:
-            msg = msg + i.title + ': ' + i.link + '\n'
+            msg = msg + "• " + i.title + ': ' + i.link + '\n'
         return msg

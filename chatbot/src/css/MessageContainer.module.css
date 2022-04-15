@@ -8,6 +8,7 @@
     flex-direction: column-reverse;
 }
 
+
 .scrollable {
     overflow-y: auto;
     scroll-behavior: auto;

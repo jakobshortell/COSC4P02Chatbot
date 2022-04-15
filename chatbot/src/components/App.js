@@ -136,6 +136,7 @@ const App = () => {
 			<Modal modal={modalRef} />			
 			<MessageContainer messages={messages}/>
 			<Input input={inputRef} sendMessage={addUserMessage} />
+			
 		</div>
 	);
 };
