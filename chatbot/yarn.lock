@@ -6813,7 +6813,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@*, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -6963,6 +6963,13 @@ react-linkify@^1.0.0-alpha:
     linkify-it "^2.0.3"
     tlds "^1.199.0"
 
+react-native-styled-text@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-styled-text/-/react-native-styled-text-2.0.0.tgz#da68f6a2a24ffcc267c3625eb4d900bb63979a4c"
+  integrity sha512-p2ooBklMAy02QJnNH2RuwqEHGrs8CTSwOiqSmIUz+rbMNo9jcJFU0uSjRxORZGhXUN2ZZJ2Gqi8U/TQko0GOtw==
+  dependencies:
+    prop-types "*"
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -7022,6 +7029,11 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
+
+react-secure-link@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-secure-link/-/react-secure-link-3.0.3.tgz#c586e19a95f3bec587209e03df1a7fffb8690e5f"
+  integrity sha512-OToDEJjTtXa4MgQUOb3pfUYiDnmAUIUmt7/+T67iCU6GiKSfivMbJEaAIajV3qH69c46RAYoV/Yhc3n5UHwSuA==
 
 react@^17.0.2:
   version "17.0.2"
