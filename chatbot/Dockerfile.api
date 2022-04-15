@@ -3,7 +3,11 @@
 FROM python:3.9
 WORKDIR /app
 
-COPY chatbot/api/requirements.txt chatbot/api/api.py chatbot/api/.flaskenv ./
+RUN apt-get update \
+    && apt-get -y install libenchant-2-dev 
+
+#COPY chatbot/api/requirements.txt chatbot/api/api.py chatbot/api/.flaskenv ./
+COPY /chatbot/api ./
 RUN pip install -r ./requirements.txt
 ENV FLASK_ENV production
 

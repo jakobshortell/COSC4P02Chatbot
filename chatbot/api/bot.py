@@ -11,7 +11,7 @@ from textblob import TextBlob
 from nltk.stem.lancaster import LancasterStemmer
 
 
-# nltk.download('punkt')
+nltk.download('punkt')
 
 language = 'en'
 
