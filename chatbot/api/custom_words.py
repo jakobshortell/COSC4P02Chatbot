@@ -57,6 +57,12 @@ for i in buildings:
     words = words.replace(' ', '\n')
     f.write(words + '\n')
 
+for i in buildings:
+    words = buildings[i]['name'].lower()
+    words = words.replace('”', '')
+    words = words.replace(' ', '\n')
+    f.write(words + '\n')
+
 for i in transportation:
     words = transportation[i]['name'].lower()
     words = words.replace(' ', '\n')
