@@ -9,7 +9,8 @@ RUN apt-get update \
 #COPY chatbot/api/requirements.txt chatbot/api/api.py chatbot/api/.flaskenv ./
 COPY /chatbot/api ./
 RUN pip install -r ./requirements.txt
-ENV FLASK_ENV production
+ENV FLASK_ENV development
 
 EXPOSE 5000
-CMD ["gunicorn", "-b", ":5000", "api:app"]
+ #--log-level debug
+CMD ["gunicorn", "-b", ":5000", "api:app", "--timeout 600"]
