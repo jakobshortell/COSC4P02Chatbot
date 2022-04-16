@@ -39,14 +39,15 @@ scrapers = {
     'contacts': ContactScraper()
 }
 def club(data, index, attributes):
+    name = data[index]['name'].replace(' Club', '')
     if attributes == 'contact':
-        msg = data[index]['name'] + ":\nEmail: " + data[index]['email']
+        msg = "Here is the email address for the " + name + " Club:\nEmail: " + data[index]['email']
     else:
-        msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nEmail: " + data[index]['email']
+        msg = "Here is some information about the " + name + " Club:\nDescription: " + data[index]['description'] + "\nEmail: " + data[index]['email']
     return msg
 
 def contact(data, index):
-    msg = data[index]['name'] + " contact information:\n" + \
+    msg = "Here is the contact information for " + data[index]['name'] + ":\n" + \
           "\tDepartment: " + data[index]['department'] + "\n\tTitle: " + data[index]['title'] + \
           "\n\tEmail: " + data[index]['email'] + "\n\tPhone: " + data[index]['phone'] + \
           "\n\tLocation: " + data[index]['location']
@@ -54,10 +55,10 @@ def contact(data, index):
 
 def department(data, index, attributes):
     if attributes == 'contact':
-        msg = data[index]['name'] + ":\nLink:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
+        msg = "Here is the contact information for " + data[index]['name'] + ":\nLink:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" \
               + data[index]['extension']
     else:
-        msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
+        msg = "Here is some information about the " + data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nLink:\t" + data[index]['link'] +\
               "\nSocial:\t" + data[index]['social'] + "\nEmail:\t" + data[index]['email'] + "\nPhone:\t" + \
               data[index]['extension']
     return msg
@@ -67,16 +68,16 @@ def date(data, index):
     return msg
 
 def transport(data, index):
-    msg = data[index]['name'] + "\n" + data[index]['description'] + "\nClick here for a " + \
+    msg = "Here is some information about the " + data[index]['name'] + " transit:\n" + data[index]['description'] + "\nClick here for a " + \
           data[index]['name'] + " map: " + data[index]['link']
     return msg
 
 def details(data, index, attributes):
     if attributes == 'prerequisites':
-        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nPrerequisites: " + data[index]['prerequisite']
+        msg = data[index]['course_code'] + " " + data[index]['course_name'] + " requires " + data[index]['prerequisite'] + " as a prerequisite"
 
     else:
-        msg = data[index]['course_code'] + ": " + data[index]['course_name'] + "\nAlt Course-Code: " + data[index]['alt_course_code'] + \
+        msg = "Here is some information about " + data[index]['course_code'] + " " + data[index]['course_name'] + "\nAlt Course-Code: " + data[index]['alt_course_code'] + \
               "\nDescription: " + data[index]['course_description'] + "\nHours:" + data[index]['hours'] + "\nRestrictions: " + \
               data[index]['restrictions'] + "\nPrerequisites: " + data[index]['prerequisite'] + \
               "\nCorequisite: " + data[index]['corequisite'] + "\nNotes: " + data[index]['notes'] + "\nReplace Grade: " + data[index]['replace_grade']
@@ -94,7 +95,7 @@ def building(data, index, attributes):
 def restaurant(data, index, attributes):
     if index is not None:
         if attributes == 'hours':
-            msg = data[index]['name'] + ":\n" + data[index]['hour']
+            msg = "Here the hours for " + data[index]['name'] + ":\n" + data[index]['hour']
         else:
             msg = data[index]['name'] + ":\nDescription: " + data[index]['description'] + "\nHours: " + data[index]['hour']
     else:
@@ -105,25 +106,25 @@ def restaurant(data, index, attributes):
     return msg
 
 def exam(data, index):
-    msg = data[index]['course_code'] + " " + data[index]['duration'] + " " + data[index]['day'] + " " \
-          + data[index]['start'] + " " + data[index]['end'] + " " + data[index]['location']
+    msg = data[index]['course_code'] + " exam with duration " + data[index]['duration'] + " is on " + data[index]['day'] + ", starts at " \
+          + data[index]['start'] + ", ends at " + data[index]['end'] + " and is located at " + data[index]['location']
     return  msg
 
 def program(data, index, attributes):
     if attributes == 'prerequisites':
-        msg = data[index]['name'] + data[index]['prerequisites']
+        msg = data[index]['name'] + " requires " + data[index]['prerequisites']  + " as a prerequisite"
     else:
-        msg = data[index]['name'] + "\nDescription: " + data[index]['description'] + "\nPrerequisites: " + data[index]['prerequisites']
+        msg = "Here is some information about " + data[index]['name'] + "\nDescription: " + data[index]['description'] + "\nPrerequisites: " + data[index]['prerequisites']
     return msg
 
 def course(data, index, associated_indexes):
     msg_temp = ''
     for i in range(associated_indexes):
         x = index - i
-        msg_temp = msg_temp + "\n" + data[x]['duration'] + " " + data[x]['day'] + " " + data[x]['time'] + " " + \
-                   data[x]['type'] + " " + data[x]['instructor']
+        msg_temp = msg_temp + "\n" + data[x]['duration'] + " - " + data[x]['day'] + " - " + data[x]['time'] + " - " + \
+                data[x]['type'] + " - " + data[x]['instructor']
 
-    msg = data[index]['course_code'] + " " + data[index]['title'] + msg_temp
+    msg = "Here is the schedule for " + data[index]['course_code'] + " " + data[index]['title'] + "\nDuration - Day - Time - Type - Instructor" + msg_temp
     return msg
 
 @app.route('/api', methods=['POST', 'GET'])
