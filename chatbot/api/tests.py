@@ -23,20 +23,6 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Helo', 'en'),
-            {
-                'table_name': None,
-                'index': None,
-                'associated_indexes': None,
-                'messages': [
-                    'Hi there, how can I help?',
-                    'Hello, there, how can I help you today?',
-                    'Good to see you, do you have any question?'
-                ],
-                'attributes': None
-            }
-        )
-        self.assertEqual(
             process_message('Hey there!', 'en'),
             {
                 'table_name': None,
@@ -51,7 +37,24 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Hey th ere!', 'en'),
+            process_message('Hi', 'en'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'Hi there, how can I help?',
+                    'Hello, there, how can I help you today?',
+                    'Good to see you, do you have any question?'
+                ],
+                'attributes': None
+            }
+        )
+
+    def test_greeting_bad_grammar(self):
+        '''Saying a greeting to the chatbot with bad grammar.'''
+        self.assertEqual(
+            process_message('Helo', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -65,7 +68,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Hi', 'en'),
+            process_message('Hey th ere!', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -96,7 +99,7 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Byee', 'en'),
+            process_message('Goodbye', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -109,8 +112,11 @@ class GeneralTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_farewell_bad_grammar(self):
+        '''Saying goodbye to the chatbot with bad grammar.'''
         self.assertEqual(
-            process_message('Goodbye', 'en'),
+            process_message('Byee', 'en'),
             {
                 'table_name': None,
                 'index': None,
@@ -153,18 +159,6 @@ class GeneralTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Who mad eu?', 'en'),
-            {
-                'table_name': None,
-                'index': None,
-                'associated_indexes': None,
-                'messages': [
-                    'I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara'
-                ],
-                'attributes': None
-            }
-        )
-        self.assertEqual(
             process_message('Easter egg', 'en'),
             {
                 'table_name': None,
@@ -173,6 +167,21 @@ class GeneralTests(unittest.TestCase):
                 'messages': [
                     'This is an Easter-egg!',
                     'Turbo Encabulator: https://www.youtube.com/watch?v=Ac7G7xOG2Ag'
+                ],
+                'attributes': None
+            }
+        )
+
+    def test_misc_bad_grammar(self):
+        '''Saying any miscellaneous questions unrelated to the scraped data with bad grammar.'''
+        self.assertEqual(
+            process_message('Who mad eu?', 'en'),
+            {
+                'table_name': None,
+                'index': None,
+                'associated_indexes': None,
+                'messages': [
+                    'I was developed by Marmik Bhatt, Tom Wallace, Jakob Shortell, Aedel Panicker, Hyejin Kim, Liam Mckissock and Lucas Kumara'
                 ],
                 'attributes': None
             }
@@ -195,20 +204,23 @@ class BrockBuildingCodeTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Wat building is WH?', 'en'),
+            process_message('What is the building name of MCJ?', 'en'),
             {
                 'table_name': 'buildings',
-                'index': 73,
+                'index': 36,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
             }
         )
+
+    def test_building_name_bad_grammar(self):
+        '''Requesting a building name with bad grammar.'''
         self.assertEqual(
-            process_message('What is the building name of MCJ?', 'en'),
+            process_message('Wat building is WH?', 'en'),
             {
                 'table_name': 'buildings',
-                'index': 36,
+                'index': 73,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
@@ -240,7 +252,8 @@ class BrockBuildingCodeTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'What is the building code for makenzie chon block j', 'en'),
+                'Can you tell me the building code of Mackenzie Chown J Block?',
+                'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -249,10 +262,12 @@ class BrockBuildingCodeTests(unittest.TestCase):
                 'attributes': 'code'
             }
         )
+
+    def test_building_code_bad_grammar(self):
+        '''Requesting a building code with bad grammar.'''
         self.assertEqual(
             process_message(
-                'Can you tell me the building code of Mackenzie Chown J Block?',
-                'en'),
+                'What is the building code for makenzie chon block j', 'en'),
             {
                 'table_name': 'buildings',
                 'index': 36,
@@ -282,22 +297,25 @@ class BrockClubTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'Can u give me the contact e mail for the American Sign Langage club?',
-                'en'),
+                'What is the email for the chess club?', 'en'),
             {
                 'table_name': 'clubs',
-                'index': 1,
+                'index': 22,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': 'contact'
             }
         )
+
+    def test_club_email_bad_grammar(self):
+        '''Requesting the contact email of a club with bad grammar.'''
         self.assertEqual(
             process_message(
-                'What is the email for the chess club?', 'en'),
+                'Can u give me the contact e mail for the American Sign Langage club?',
+                'en'),
             {
                 'table_name': 'clubs',
-                'index': 22,
+                'index': 1,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': 'contact'
@@ -319,21 +337,24 @@ class BrockClubTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'Tell me abot the american signlanguage club.', 'en'),
+                'What is the chess club about?', 'en'),
             {
                 'table_name': 'clubs',
-                'index': 1,
+                'index': 22,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
             }
         )
+
+    def test_club_description_bad_grammar(self):
+        '''Requesting the description of a club with bad grammar.'''
         self.assertEqual(
             process_message(
-                'What is the chess club about?', 'en'),
+                'Tell me abot the american signlanguage club.', 'en'),
             {
                 'table_name': 'clubs',
-                'index': 22,
+                'index': 1,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
@@ -355,6 +376,9 @@ class BrockClubTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_unknown_club_bad_grammar(self):
+        '''Requesting club info that the bot doesn't have with bad grammar.'''
         self.assertEqual(
             process_message(
                 'Can you tell me about the computerer science club?', 'en'),
@@ -386,7 +410,7 @@ class BrockCourseTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('Can yout ell me abotu cosc 4p02?', 'en'),
+            process_message('What is COSC 4P02 about?', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -395,8 +419,11 @@ class BrockCourseTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_course_description_bad_grammar(self):
+        '''Requesting the description of a course with bad grammar.'''
         self.assertEqual(
-            process_message('What is COSC 4P02 about?', 'en'),
+            process_message('Can yout ell me abotu cosc 4p02?', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -421,9 +448,7 @@ class BrockCourseTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message(
-                'Can yout ell em the prerequeisites for the cosc 4P02 course?',
-                'en'),
+            process_message('What are the prerequisites for COSC 4P02?', 'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -432,8 +457,13 @@ class BrockCourseTests(unittest.TestCase):
                 'attributes': 'prerequisites'
             }
         )
+
+    def test_course_prerequisites_bad_grammar(self):
+        '''Requesting the prerequisites of a course with bad grammar.'''
         self.assertEqual(
-            process_message('What are the prerequisites for COSC 4P02?', 'en'),
+            process_message(
+                'Can yout ell em the prerequeisites for the cosc 4P02 course?',
+                'en'),
             {
                 'table_name': 'course_details',
                 'index': 789,
@@ -463,18 +493,6 @@ class BrockDepartmentTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'Can yout ell me the phone number for the critical animalst udies department?',
-                'en'),
-            {
-                'table_name': 'departments',
-                'index': 75,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': 'contact'
-            }
-        )
-        self.assertEqual(
-            process_message(
                 'What is the phone number of the Computer Science department?',
                 'en'),
             {
@@ -486,11 +504,11 @@ class BrockDepartmentTests(unittest.TestCase):
             }
         )
 
-    def test_department_email(self):
-        '''Requesting the email of a department.'''
+    def test_department_phone_bad_grammar(self):
+        '''Requesting the phone number of a department with bad grammar.'''
         self.assertEqual(
             process_message(
-                'Can you tell me the email for the Critical Animal Studies department?',
+                'Can yout ell me the phone number for the critical animalst udies department?',
                 'en'),
             {
                 'table_name': 'departments',
@@ -500,9 +518,12 @@ class BrockDepartmentTests(unittest.TestCase):
                 'attributes': 'contact'
             }
         )
+
+    def test_department_email(self):
+        '''Requesting the email of a department.'''
         self.assertEqual(
             process_message(
-                'Can you tell me the email  for the critical animal studies deparmtnet?',
+                'Can you tell me the email for the Critical Animal Studies department?',
                 'en'),
             {
                 'table_name': 'departments',
@@ -525,6 +546,21 @@ class BrockDepartmentTests(unittest.TestCase):
             }
         )
 
+    def test_department_email_bad_grammar(self):
+        '''Requesting the email of a department with bad grammar.'''
+        self.assertEqual(
+            process_message(
+                'Can you tell me the email  for the critical animal studies deparmtnet?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 75,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': 'contact'
+            }
+        )
+
     def test_department_description(self):
         '''Requesting the description of a department.'''
         self.assertEqual(
@@ -541,23 +577,26 @@ class BrockDepartmentTests(unittest.TestCase):
         )
         self.assertEqual(
             process_message(
-                'can you tell me about the crital nimal studies deparmtn?',
-                'en'),
-            {
-                'table_name': 'departments',
-                'index': 75,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': None
-            }
-        )
-        self.assertEqual(
-            process_message(
                 'Can you give me information about the Department of Computer Science?',
                 'en'),
             {
                 'table_name': 'departments',
                 'index': 68,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+
+    def test_department_description_bad_grammar(self):
+        '''Requesting the description of a department with bad grammar.'''
+        self.assertEqual(
+            process_message(
+                'can you tell me about the crital nimal studies deparmtn?',
+                'en'),
+            {
+                'table_name': 'departments',
+                'index': 75,
                 'associated_indexes': None,
                 'messages': None,
                 'attributes': None
@@ -581,6 +620,9 @@ class BrockExamsTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_exam_info_bad_grammar(self):
+        '''Requesting the information about a courses exam with bad grammar.'''
         self.assertEqual(
             process_message(
                 'Can you tell me when the actb 1p02 examp is?', 'en'),
@@ -640,6 +682,9 @@ class BrockProgramsTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_program_description_bad_grammar(self):
+        '''Requests a description of a program with bad grammar.'''
         self.assertEqual(
             process_message(
                 'can youtell me about the engineering science progrm?',
@@ -667,6 +712,9 @@ class BrockProgramsTests(unittest.TestCase):
                 'attributes': 'prerequisites'
             }
         )
+
+    def test_program_prerequisites_bad_grammar(self):
+        '''Requests the prerequisites of a program with bad grammar.'''
         self.assertEqual(
             process_message(
                 'can you tel me abotu the prerequestes for the enginering science program?',
@@ -697,7 +745,9 @@ class BrockRestaurantsTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('What restaurant s are availbel at brock?', 'en'),
+            process_message(
+                'What dining options does Brock have available to students?',
+                'en'),
             {
                 'table_name': 'restaurants',
                 'index': None,
@@ -706,10 +756,11 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_restaurant_list_bad_grammar(self):
+        '''Requests a list of dining options with bad grammar.'''
         self.assertEqual(
-            process_message(
-                'What dining options does Brock have available to students?',
-                'en'),
+            process_message('What restaurant s are availbel at brock?', 'en'),
             {
                 'table_name': 'restaurants',
                 'index': None,
@@ -732,6 +783,9 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_restaurant_description_bad_grammar(self):
+        '''Requests a description of a specific restaurant with bad grammar.'''
         self.assertEqual(
             process_message(
                 'Can you te ll me about the Burrito boyz restaurant?', 'en'),
@@ -756,6 +810,9 @@ class BrockRestaurantsTests(unittest.TestCase):
                 'attributes': 'hours'
             }
         )
+
+    def test_restaurant_hours_bad_grammar(self):
+        '''Requests the hours of a specific restaurant with bad grammar.'''
         self.assertEqual(
             process_message(
                 'When i s the burrito boys restaurant open?', 'en'),
@@ -786,6 +843,9 @@ class BrockTransportationTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_specific_transportation_bad_grammar(self):
+        '''Requesting transportation information in a specific area with bad grammar.'''
         self.assertEqual(
             process_message(
                 'can you tell me about th etreanspotiation obtions for Welland?',
@@ -808,18 +868,9 @@ class BrockNewsTests(unittest.TestCase):
     '''
 
     def test_brock_news(self):
+        '''Requesting the news from Brock university.'''
         self.assertEqual(
             process_message('What is the latest news at Brock?', 'en'),
-            {
-                'table_name': 'brock_news',
-                'index': None,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': None
-            }
-        )
-        self.assertEqual(
-            process_message('what is the latset news at brock?', 'en'),
             {
                 'table_name': 'brock_news',
                 'index': None,
@@ -841,6 +892,19 @@ class BrockNewsTests(unittest.TestCase):
             }
         )
 
+    def test_brock_news_bad_grammar(self):
+        '''Requesting the news from Brock university with bad grammar.'''
+        self.assertEqual(
+            process_message('what is the latset news at brock?', 'en'),
+            {
+                'table_name': 'brock_news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+
 
 class NiagaraEventsTests(unittest.TestCase):
     '''
@@ -850,20 +914,10 @@ class NiagaraEventsTests(unittest.TestCase):
     '''
 
     def test_niagara_events(self):
+        '''Requesting the events in the Niagara region.'''
         self.assertEqual(
             process_message(
                 'What events are taking place in the Niagara region?', 'en'),
-            {
-                'table_name': 'events',
-                'index': None,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': None
-            }
-        )
-        self.assertEqual(
-            process_message(
-                'what events aretaking place in tha niagra region?', 'en'),
             {
                 'table_name': 'events',
                 'index': None,
@@ -884,6 +938,20 @@ class NiagaraEventsTests(unittest.TestCase):
             }
         )
 
+    def test_niagara_events_bad_grammar(self):
+        '''Requesting the events in the Niagara region with bad grammar.'''
+        self.assertEqual(
+            process_message(
+                'what events aretaking place in tha niagra region?', 'en'),
+            {
+                'table_name': 'events',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+
 
 class NiagaraNewsTests(unittest.TestCase):
     '''
@@ -893,18 +961,9 @@ class NiagaraNewsTests(unittest.TestCase):
     '''
 
     def test_niagara_news(self):
+        '''Requesting the news in the Niagara region.'''
         self.assertEqual(
             process_message('Whats on the news in Niagara?', 'en'),
-            {
-                'table_name': 'news',
-                'index': None,
-                'associated_indexes': None,
-                'messages': None,
-                'attributes': None
-            }
-        )
-        self.assertEqual(
-            process_message('whats on teh news in niagara', 'en'),
             {
                 'table_name': 'news',
                 'index': None,
@@ -924,6 +983,19 @@ class NiagaraNewsTests(unittest.TestCase):
             }
         )
 
+    def test_niagara_news_bad_grammar(self):
+        '''Requesting the news in the Niagara region with bad grammar.'''
+        self.assertEqual(
+            process_message('whats on teh news in niagara', 'en'),
+            {
+                'table_name': 'news',
+                'index': None,
+                'associated_indexes': None,
+                'messages': None,
+                'attributes': None
+            }
+        )
+
 
 class NiagaraWeatherTests(unittest.TestCase):
     '''
@@ -933,6 +1005,7 @@ class NiagaraWeatherTests(unittest.TestCase):
     '''
 
     def test_niagara_weather(self):
+        '''Requesting the weather in St. Catharines/Brock.'''
         self.assertEqual(
             process_message('What is the weather like at Brock?', 'en'),
             {
@@ -944,7 +1017,8 @@ class NiagaraWeatherTests(unittest.TestCase):
             }
         )
         self.assertEqual(
-            process_message('what is the wether like at brock', 'en'),
+            process_message(
+                'What is the weather like in St. Catharines?', 'en'),
             {
                 'table_name': 'weather',
                 'index': None,
@@ -953,9 +1027,11 @@ class NiagaraWeatherTests(unittest.TestCase):
                 'attributes': None
             }
         )
+
+    def test_niagara_weather_bad_grammar(self):
+        '''Requesting the weather in St. Catharines/Brock with bad grammar.'''
         self.assertEqual(
-            process_message(
-                'What is the weather like in St. Catharines?', 'en'),
+            process_message('what is the wether like at brock', 'en'),
             {
                 'table_name': 'weather',
                 'index': None,
