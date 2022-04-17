@@ -74,7 +74,7 @@ const App = () => {
 
 			inputRef.current.value = null;
 			document.getElementById("activedot").style.display = "flex";
-			setTimeout(() => {addBotMessage(message);}, 3000);
+			setTimeout(() => {addBotMessage(message);}, 1000);
 		}
 	
 	}
