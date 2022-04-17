@@ -1,5 +1,11 @@
 services:
   api:
+    deploy:
+      resources:
+        limits:
+          memory: 10000M
+        reservations:
+          memory: 5000M
     build:
       context: .
       dockerfile: chatbot/Dockerfile.api
