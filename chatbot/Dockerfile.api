@@ -13,4 +13,4 @@ ENV FLASK_ENV development
 
 EXPOSE 5000
  #--log-level debug
-CMD ["gunicorn", "-b", ":5000", "api:app", "--timeout 6000", "--print-config"]
+CMD ["gunicorn", "-b", ":5000", "api:app", "--timeout 6000"]
