@@ -3,11 +3,11 @@ services:
     build:
       context: .
       dockerfile: chatbot/Dockerfile.api
-    image: react-flask-app-api
-  client:
+    image: brock-chatbot-api
+  web:
     build:
       context: .
-      dockerfile: chatbot/Dockerfile.client
-    image: react-flask-app-client
+      dockerfile: chatbot/Dockerfile.web
+    image: brock-chatbot-web
     ports:
       - "80:80"
